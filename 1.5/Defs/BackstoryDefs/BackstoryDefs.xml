@@ -1,5 +1,4 @@
-<?xml version="1.0"
- encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
     <!--__________ Backstories __________-->
@@ -13,8 +12,8 @@
     <!-- Raider Psycho -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Raider_Psycho</defName>
-        <identifier>FCP_Raiders_Raider_Psycho</identifier>
+        <defName>FCP_Backstory_Raiders_Raider_Psycho</defName>
+        <identifier>FCP_Backstory_Raiders_Raider_Psycho</identifier>
         <slot>Adulthood</slot>
         <title>Raider Psycho</title>
         <titleShort>Raider Psycho</titleShort>
@@ -26,7 +25,7 @@
         <workDisables>Medicine, Social, Intellectual</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders</li>
+            <li>FCP_Backstory_Raiders</li>
         </spawnCategories>
         <bodyTypeFemale>Female</bodyTypeFemale>
         <bodyTypeMale>Male</bodyTypeMale>
@@ -36,8 +35,8 @@
     <!-- Raider Slaver -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Raider_Slaver</defName>
-        <identifier>FCP_Raiders_Raider_Slaver</identifier>
+        <defName>FCP_Backstory_Raiders_Raider_Slaver</defName>
+        <identifier>FCP_Backstory_Raiders_Raider_Slaver</identifier>
         <slot>Adulthood</slot>
         <title>Raider Slaver</title>
         <titleShort>Raider Slaver</titleShort>
@@ -51,7 +50,7 @@
         <workDisables>None</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders</li>
+            <li>FCP_Backstory_Raiders</li>
         </spawnCategories>
         <bodyTypeFemale>Female</bodyTypeFemale>
         <bodyTypeMale>Male</bodyTypeMale>
@@ -61,8 +60,8 @@
     <!-- Raider Runt -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Raider_Runt</defName>
-        <identifier>FCP_Raiders_Raider_Runt</identifier>
+        <defName>FCP_Backstory_Raiders_Raider_Runt</defName>
+        <identifier>FCP_Backstory_Raiders_Raider_Runt</identifier>
         <slot>Adulthood</slot>
         <title>Raider Runt</title>
         <titleShort>Raider Runt</titleShort>
@@ -76,7 +75,7 @@
         <workDisables>None</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders</li>
+            <li>FCP_Backstory_Raiders</li>
         </spawnCategories>
         <bodyTypeFemale>Female</bodyTypeFemale>
         <bodyTypeMale>Male</bodyTypeMale>
@@ -86,8 +85,8 @@
     <!-- Raider Gunslinger -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Raider_Gunslinger</defName>
-        <identifier>FCP_Raiders_Raider_Gunslinger</identifier>
+        <defName>FCP_Backstory_Raiders_Raider_Gunslinger</defName>
+        <identifier>FCP_Backstory_Raiders_Raider_Gunslinger</identifier>
         <slot>Adulthood</slot>
         <title>Raider Gunslinger</title>
         <titleShort>Raider Gunslinger</titleShort>
@@ -101,7 +100,7 @@
         <workDisables>None</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders</li>
+            <li>FCP_Backstory_Raiders</li>
         </spawnCategories>
         <bodyTypeFemale>Female</bodyTypeFemale>
         <bodyTypeMale>Male</bodyTypeMale>
@@ -111,8 +110,8 @@
     <!-- Raider Iconoclast -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Raider_Iconoclast</defName>
-        <identifier>FCP_Raiders_Raider_Iconoclast</identifier>
+        <defName>FCP_Backstory_Raiders_Raider_Iconoclast</defName>
+        <identifier>FCP_Backstory_Raiders_Raider_Iconoclast</identifier>
         <slot>Adulthood</slot>
         <title>Raider Iconoclast</title>
         <titleShort>Raider Iconoclast</titleShort>
@@ -125,7 +124,7 @@
         <workDisables>Construction, Crafting</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders</li>
+            <li>FCP_Backstory_Raiders</li>
         </spawnCategories>
         <bodyTypeFemale>Female</bodyTypeFemale>
         <bodyTypeMale>Male</bodyTypeMale>
@@ -135,8 +134,8 @@
     <!-- Raider Pit Fighter -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Raider_Pit_Fighter</defName>
-        <identifier>FCP_Raiders_Raider_Pit_Fighter</identifier>
+        <defName>FCP_Backstory_Raiders_Raider_Pit_Fighter</defName>
+        <identifier>FCP_Backstory_Raiders_Raider_Pit_Fighter</identifier>
         <slot>Adulthood</slot>
         <title>Raider Pit Fighter</title>
         <titleShort>Raider Pit Fightert</titleShort>
@@ -148,7 +147,7 @@
         <workDisables>None</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders</li>
+            <li>FCP_Backstory_Raiders</li>
         </spawnCategories>
         <bodyTypeFemale>Female</bodyTypeFemale>
         <bodyTypeMale>Male</bodyTypeMale>
@@ -158,8 +157,8 @@
     <!-- Raider Highwayman -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Raider_Highwayman</defName>
-        <identifier>FCP_Raiders_Raider_Highwayman</identifier>
+        <defName>FCP_Backstory_Raiders_Raider_Highwayman</defName>
+        <identifier>FCP_Backstory_Raiders_Raider_Highwayman</identifier>
         <slot>Adulthood</slot>
         <title>Raider Highwayman</title>
         <titleShort>Raider Highwayman</titleShort>
@@ -174,7 +173,7 @@
         <workDisables>None</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders</li>
+            <li>FCP_Backstory_Raiders</li>
         </spawnCategories>
         <bodyTypeFemale>Female</bodyTypeFemale>
         <bodyTypeMale>Male</bodyTypeMale>
@@ -184,8 +183,8 @@
     <!-- Raider Pyromaniac -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Raider_Pyromaniac</defName>
-        <identifier>FCP_Raiders_Raider_Pyromaniac</identifier>
+        <defName>FCP_Backstory_Raiders_Raider_Pyromaniac</defName>
+        <identifier>FCP_Backstory_Raiders_Raider_Pyromaniac</identifier>
         <slot>Adulthood</slot>
         <title>Raider Pyromaniac</title>
         <titleShort>Raider Pyromaniac</titleShort>
@@ -199,7 +198,7 @@
         <workDisables>FireFighting, Burns</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders</li>
+            <li>FCP_Backstory_Raiders</li>
         </spawnCategories>
         <bodyTypeFemale>Female</bodyTypeFemale>
         <bodyTypeMale>Male</bodyTypeMale>
@@ -209,8 +208,8 @@
     <!-- Raider Leader -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Raider_Leader</defName>
-        <identifier>FCP_Raiders_Raider_Leader</identifier>
+        <defName>FCP_Backstory_Raiders_Raider_Leader</defName>
+        <identifier>FCP_Backstory_Raiders_Raider_Leader</identifier>
         <slot>Adulthood</slot>
         <title>Raider Leader</title>
         <titleShort>Raider Leader</titleShort>
@@ -225,7 +224,7 @@
         <workDisables>Cleaning</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders</li>
+            <li>FCP_Backstory_Raiders</li>
         </spawnCategories>
         <bodyTypeFemale>Female</bodyTypeFemale>
         <bodyTypeMale>Male</bodyTypeMale>
@@ -235,8 +234,8 @@
     <!-- Raider Fencer -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Raider_Fencer</defName>
-        <identifier>FCP_Raiders_Raider_Fencer</identifier>
+        <defName>FCP_Backstory_Raiders_Raider_Fencer</defName>
+        <identifier>FCP_Backstory_Raiders_Raider_Fencer</identifier>
         <slot>Adulthood</slot>
         <title>Raider Fencer</title>
         <titleShort>Raider Fencer</titleShort>
@@ -250,8 +249,8 @@
         <workDisables>None</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders</li>
-            <li>FCP_Raiders_Fence</li>
+            <li>FCP_Backstory_Raiders</li>
+            <li>FCP_Backstory_Raiders_Fence</li>
         </spawnCategories>
         <bodyTypeFemale>Female</bodyTypeFemale>
         <bodyTypeMale>Male</bodyTypeMale>
@@ -261,8 +260,8 @@
     <!-- Raider Outcast -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Raider_Outcast</defName>
-        <identifier>FCP_Raiders_Raider_Outcast</identifier>
+        <defName>FCP_Backstory_Raiders_Raider_Outcast</defName>
+        <identifier>FCP_Backstory_Raiders_Raider_Outcast</identifier>
         <slot>Adulthood</slot>
         <title>Raider Outcast</title>
         <titleShort>Raider Outcast</titleShort>
@@ -276,7 +275,7 @@
         <workDisables>None</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders</li>
+            <li>FCP_Backstory_Raiders</li>
         </spawnCategories>
         <bodyTypeFemale>Female</bodyTypeFemale>
         <bodyTypeMale>Male</bodyTypeMale>
@@ -286,8 +285,8 @@
     <!-- Raider Tinkerer -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Raider_Tinkerer</defName>
-        <identifier>FCP_Raiders_Raider_Tinkerer</identifier>
+        <defName>FCP_Backstory_Raiders_Raider_Tinkerer</defName>
+        <identifier>FCP_Backstory_Raiders_Raider_Tinkerer</identifier>
         <slot>Adulthood</slot>
         <title>Raider Tinkerer</title>
         <titleShort>Raider Tinkerer</titleShort>
@@ -301,7 +300,7 @@
         <workDisables>PlantWork, Animals</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders</li>
+            <li>FCP_Backstory_Raiders</li>
         </spawnCategories>
         <bodyTypeFemale>Female</bodyTypeFemale>
         <bodyTypeMale>Male</bodyTypeMale>
@@ -311,8 +310,8 @@
     <!-- Raider Rustler -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Raider_Rustler</defName>
-        <identifier>FCP_Raiders_Raider_Rustler</identifier>
+        <defName>FCP_Backstory_Raiders_Raider_Rustler</defName>
+        <identifier>FCP_Backstory_Raiders_Raider_Rustler</identifier>
         <slot>Adulthood</slot>
         <title>Raider Rustler</title>
         <titleShort>Raider Rustler</titleShort>
@@ -326,7 +325,7 @@
         <workDisables>None</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders</li>
+            <li>FCP_Backstory_Raiders</li>
         </spawnCategories>
         <bodyTypeFemale>Female</bodyTypeFemale>
         <bodyTypeMale>Male</bodyTypeMale>
@@ -336,8 +335,8 @@
     <!-- Hideout Builder -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Hideout_Builder</defName>
-        <identifier>FCP_Raiders_Hideout_Builder</identifier>
+        <defName>FCP_Backstory_Raiders_Hideout_Builder</defName>
+        <identifier>FCP_Backstory_Raiders_Hideout_Builder</identifier>
         <slot>Adulthood</slot>
         <title>Hideout Builder</title>
         <titleShort>Hideout Builder</titleShort>
@@ -351,7 +350,7 @@
         <workDisables>PlantWork</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders</li>
+            <li>FCP_Backstory_Raiders</li>
         </spawnCategories>
         <bodyTypeFemale>Female</bodyTypeFemale>
         <bodyTypeMale>Male</bodyTypeMale>
@@ -361,8 +360,8 @@
     <!-- Raider Beastmaster -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Raider_Beastmaster</defName>
-        <identifier>FCP_Raiders_Raider_Beastmaster</identifier>
+        <defName>FCP_Backstory_Raiders_Raider_Beastmaster</defName>
+        <identifier>FCP_Backstory_Raiders_Raider_Beastmaster</identifier>
         <slot>Adulthood</slot>
         <title>Raider Beastmaster</title>
         <titleShort>Raider Beastmaster</titleShort>
@@ -376,7 +375,7 @@
         <workDisables>None</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders</li>
+            <li>FCP_Backstory_Raiders</li>
         </spawnCategories>
         <bodyTypeFemale>Female</bodyTypeFemale>
         <bodyTypeMale>Male</bodyTypeMale>
@@ -386,8 +385,8 @@
     <!-- Raider Cook -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Raider_Cook</defName>
-        <identifier>FCP_Raiders_Raider_Cook</identifier>
+        <defName>FCP_Backstory_Raiders_Raider_Cook</defName>
+        <identifier>FCP_Backstory_Raiders_Raider_Cook</identifier>
         <slot>Adulthood</slot>
         <title>Raider Cook</title>
         <titleShort>Raider Cook</titleShort>
@@ -401,7 +400,7 @@
         <workDisables>None</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders</li>
+            <li>FCP_Backstory_Raiders</li>
         </spawnCategories>
         <bodyTypeFemale>Female</bodyTypeFemale>
         <bodyTypeMale>Male</bodyTypeMale>
@@ -411,8 +410,8 @@
     <!-- Raider Traitor -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Raider_Traitor</defName>
-        <identifier>FCP_Raiders_Raider_Traitor</identifier>
+        <defName>FCP_Backstory_Raiders_Raider_Traitor</defName>
+        <identifier>FCP_Backstory_Raiders_Raider_Traitor</identifier>
         <slot>Adulthood</slot>
         <title>Raider Traitor</title>
         <titleShort>Raider Traitor</titleShort>
@@ -427,7 +426,7 @@
         <workDisables>None</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders</li>
+            <li>FCP_Backstory_Raiders</li>
         </spawnCategories>
         <bodyTypeFemale>Female</bodyTypeFemale>
         <bodyTypeMale>Male</bodyTypeMale>
@@ -437,8 +436,8 @@
     <!-- Raider Anarchist -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Raider_Anarchist</defName>
-        <identifier>FCP_Raiders_Raider_Anarchist</identifier>
+        <defName>FCP_Backstory_Raiders_Raider_Anarchist</defName>
+        <identifier>FCP_Backstory_Raiders_Raider_Anarchist</identifier>
         <slot>Adulthood</slot>
         <title>Raider Anarchist</title>
         <titleShort>Raider Anarchist</titleShort>
@@ -452,7 +451,7 @@
         <workDisables>None</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders</li>
+            <li>FCP_Backstory_Raiders</li>
         </spawnCategories>
         <bodyTypeFemale>Female</bodyTypeFemale>
         <bodyTypeMale>Male</bodyTypeMale>
@@ -462,8 +461,8 @@
     <!-- Raider Thrall -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Raider_Thrall</defName>
-        <identifier>FCP_Raiders_Raider_Thrall</identifier>
+        <defName>FCP_Backstory_Raiders_Raider_Thrall</defName>
+        <identifier>FCP_Backstory_Raiders_Raider_Thrall</identifier>
         <slot>Adulthood</slot>
         <title>Raider Thrall</title>
         <titleShort>Raider Thrall</titleShort>
@@ -477,7 +476,7 @@
         <workDisables>Violent</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders</li>
+            <li>FCP_Backstory_Raiders</li>
         </spawnCategories>
         <bodyTypeFemale>Female</bodyTypeFemale>
         <bodyTypeMale>Male</bodyTypeMale>
@@ -487,8 +486,8 @@
     <!-- Deranged Artist -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Deranged_Artist</defName>
-        <identifier>FCP_Raiders_Deranged_Artist</identifier>
+        <defName>FCP_Backstory_Raiders_Deranged_Artist</defName>
+        <identifier>FCP_Backstory_Raiders_Deranged_Artist</identifier>
         <slot>Adulthood</slot>
         <title>Deranged Artist</title>
         <titleShort>Deranged Artist</titleShort>
@@ -502,7 +501,7 @@
         <workDisables>Social</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders</li>
+            <li>FCP_Backstory_Raiders</li>
         </spawnCategories>
         <bodyTypeFemale>Female</bodyTypeFemale>
         <bodyTypeMale>Male</bodyTypeMale>
@@ -512,8 +511,8 @@
     <!-- Disinherited Farmer -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Disinherited_Farmer</defName>
-        <identifier>FCP_Raiders_Disinherited_Farmer</identifier>
+        <defName>FCP_Backstory_Raiders_Disinherited_Farmer</defName>
+        <identifier>FCP_Backstory_Raiders_Disinherited_Farmer</identifier>
         <slot>Adulthood</slot>
         <title>Disinherited Farmer</title>
         <titleShort>Disinherited Farmer</titleShort>
@@ -527,7 +526,7 @@
         <workDisables>Intellectual</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders</li>
+            <li>FCP_Backstory_Raiders</li>
         </spawnCategories>
         <bodyTypeFemale>Female</bodyTypeFemale>
         <bodyTypeMale>Male</bodyTypeMale>
@@ -537,8 +536,8 @@
     <!-- Raider Bartender -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Raider_Bartender</defName>
-        <identifier>FCP_Raiders_Raider_Bartender</identifier>
+        <defName>FCP_Backstory_Raiders_Raider_Bartender</defName>
+        <identifier>FCP_Backstory_Raiders_Raider_Bartender</identifier>
         <slot>Adulthood</slot>
         <title>Raider Bartender</title>
         <titleShort>Raider Bartender</titleShort>
@@ -554,7 +553,7 @@
         <workDisables>None</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders</li>
+            <li>FCP_Backstory_Raiders</li>
         </spawnCategories>
         <bodyTypeFemale>Female</bodyTypeFemale>
         <bodyTypeMale>Male</bodyTypeMale>
@@ -564,8 +563,8 @@
     <!-- Raider Junkie -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Raider_Junkie</defName>
-        <identifier>FCP_Raiders_Raider_Junkie</identifier>
+        <defName>FCP_Backstory_Raiders_Raider_Junkie</defName>
+        <identifier>FCP_Backstory_Raiders_Raider_Junkie</identifier>
         <slot>Adulthood</slot>
         <title>Raider Junkie</title>
         <titleShort>Raider Junkie</titleShort>
@@ -580,7 +579,7 @@
         <workDisables>None</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders</li>
+            <li>FCP_Backstory_Raiders</li>
         </spawnCategories>
         <bodyTypeFemale>Female</bodyTypeFemale>
         <bodyTypeMale>Male</bodyTypeMale>
@@ -592,8 +591,8 @@
     <!-- Warlord’s Kid -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Warlords_Kid</defName>
-        <identifier>FCP_Raiders_Warlords_Kid</identifier>
+        <defName>FCP_Backstory_Raiders_Warlords_Kid</defName>
+        <identifier>FCP_Backstory_Raiders_Warlords_Kid</identifier>
         <slot>Childhood</slot>
         <title>Warlord’s Kid</title>
         <titleShort>Warlord’s Kid</titleShort>
@@ -608,7 +607,7 @@
         <workDisables>ManualDumb</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders_Child</li>
+            <li>FCP_Backstory_Raiders_Child</li>
         </spawnCategories>
         <possessions />
     </BackstoryDef>
@@ -616,8 +615,8 @@
     <!-- Born Raider -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Born_Raider</defName>
-        <identifier>FCP_Raiders_Born_Raider</identifier>
+        <defName>FCP_Backstory_Raiders_Born_Raider</defName>
+        <identifier>FCP_Backstory_Raiders_Born_Raider</identifier>
         <slot>Childhood</slot>
         <title>Born Raider</title>
         <titleShort>Born Raider</titleShort>
@@ -632,7 +631,7 @@
         <workDisables>ManualDumb</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders_Child</li>
+            <li>FCP_Backstory_Raiders_Child</li>
         </spawnCategories>
         <possessions />
     </BackstoryDef>
@@ -640,8 +639,8 @@
     <!-- Stolen Child -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Stolen_Child</defName>
-        <identifier>FCP_Raiders_Stolen_Child</identifier>
+        <defName>FCP_Backstory_Raiders_Stolen_Child</defName>
+        <identifier>FCP_Backstory_Raiders_Stolen_Child</identifier>
         <slot>Childhood</slot>
         <title>Stolen Child</title>
         <titleShort>Stolen Child</titleShort>
@@ -654,7 +653,7 @@
         <workDisables>None</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders_Child</li>
+            <li>FCP_Backstory_Raiders_Child</li>
         </spawnCategories>
         <possessions />
     </BackstoryDef>
@@ -662,8 +661,8 @@
     <!-- Sold to Raiders -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Sold_to_Raiders</defName>
-        <identifier>FCP_Raiders_Sold_to_Raiders</identifier>
+        <defName>FCP_Backstory_Raiders_Sold_to_Raiders</defName>
+        <identifier>FCP_Backstory_Raiders_Sold_to_Raiders</identifier>
         <slot>Childhood</slot>
         <title>Sold to Raiders</title>
         <titleShort>Sold to Raiders</titleShort>
@@ -677,7 +676,7 @@
         <workDisables>None</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders_Child</li>
+            <li>FCP_Backstory_Raiders_Child</li>
         </spawnCategories>
         <possessions />
     </BackstoryDef>
@@ -685,8 +684,8 @@
     <!-- Pressganged -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Pressganged</defName>
-        <identifier>FCP_Raiders_Pressganged</identifier>
+        <defName>FCP_Backstory_Raiders_Pressganged</defName>
+        <identifier>FCP_Backstory_Raiders_Pressganged</identifier>
         <slot>Childhood</slot>
         <title>Pressganged</title>
         <titleShort>Pressganged</titleShort>
@@ -699,7 +698,7 @@
         <workDisables>None</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders_Child</li>
+            <li>FCP_Backstory_Raiders_Child</li>
         </spawnCategories>
         <possessions />
     </BackstoryDef>
@@ -707,8 +706,8 @@
     <!-- Jet Baby -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Jet_Baby</defName>
-        <identifier>FCP_Raiders_Jet_Baby</identifier>
+        <defName>FCP_Backstory_Raiders_Jet_Baby</defName>
+        <identifier>FCP_Backstory_Raiders_Jet_Baby</identifier>
         <slot>Childhood</slot>
         <title>Jet Baby</title>
         <titleShort>Jet Baby</titleShort>
@@ -720,7 +719,7 @@
         <workDisables>ManualSkilled</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders_Child</li>
+            <li>FCP_Backstory_Raiders_Child</li>
         </spawnCategories>
         <possessions />
     </BackstoryDef>
@@ -728,8 +727,8 @@
     <!-- Junior Arsonist -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Junior_Arsonist</defName>
-        <identifier>FCP_Raiders_Junior_Arsonist</identifier>
+        <defName>FCP_Backstory_Raiders_Junior_Arsonist</defName>
+        <identifier>FCP_Backstory_Raiders_Junior_Arsonist</identifier>
         <slot>Childhood</slot>
         <title>Junior Arsonist</title>
         <titleShort>Junior Arsonist</titleShort>
@@ -742,7 +741,7 @@
         <workDisables>Firefighting</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders_Child</li>
+            <li>FCP_Backstory_Raiders_Child</li>
         </spawnCategories>
         <possessions />
     </BackstoryDef>
@@ -750,8 +749,8 @@
     <!-- Upstart Gangster -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Upstart_Gangster</defName>
-        <identifier>FCP_Raiders_Upstart_Gangster</identifier>
+        <defName>FCP_Backstory_Raiders_Upstart_Gangster</defName>
+        <identifier>FCP_Backstory_Raiders_Upstart_Gangster</identifier>
         <slot>Childhood</slot>
         <title>Upstart Gangster</title>
         <titleShort>Upstart Gangster</titleShort>
@@ -764,7 +763,7 @@
         <workDisables>None</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders_Child</li>
+            <li>FCP_Backstory_Raiders_Child</li>
         </spawnCategories>
         <possessions />
     </BackstoryDef>
@@ -772,8 +771,8 @@
     <!-- Runaway Kid -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Runaway_Kid</defName>
-        <identifier>FCP_Raiders_Runaway_Kid</identifier>
+        <defName>FCP_Backstory_Raiders_Runaway_Kid</defName>
+        <identifier>FCP_Backstory_Raiders_Runaway_Kid</identifier>
         <slot>Childhood</slot>
         <title>Runaway Kid</title>
         <titleShort>Runaway Kid</titleShort>
@@ -786,8 +785,8 @@
         <workDisables>None</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders_Child</li>
-            <li>FCP_Wastelanders_Child</li>
+            <li>FCP_Backstory_Raiders_Child</li>
+            <li>FCP_Backstory_Wastelanders_Child</li>
         </spawnCategories>
         <possessions />
     </BackstoryDef>
@@ -795,8 +794,8 @@
     <!-- Outcast Child -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Outcast_Child</defName>
-        <identifier>FCP_Raiders_Outcast_Child</identifier>
+        <defName>FCP_Backstory_Raiders_Outcast_Child</defName>
+        <identifier>FCP_Backstory_Raiders_Outcast_Child</identifier>
         <slot>Childhood</slot>
         <title>Outcast Child</title>
         <titleShort>Outcast Child</titleShort>
@@ -810,8 +809,8 @@
         <workDisables>None</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders_Child</li>
-            <li>FCP_Wastelanders_Child</li>
+            <li>FCP_Backstory_Raiders_Child</li>
+            <li>FCP_Backstory_Wastelanders_Child</li>
         </spawnCategories>
         <possessions />
     </BackstoryDef>
@@ -819,8 +818,8 @@
     <!-- Brutal Tribal -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Brutal_Tribal</defName>
-        <identifier>FCP_Raiders_Brutal_Tribal</identifier>
+        <defName>FCP_Backstory_Raiders_Brutal_Tribal</defName>
+        <identifier>FCP_Backstory_Raiders_Brutal_Tribal</identifier>
         <slot>Childhood</slot>
         <title>Brutal Tribal</title>
         <titleShort>Brutal Tribal</titleShort>
@@ -834,7 +833,7 @@
         <workDisables>Intellectual, Caring</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders_Child</li>
+            <li>FCP_Backstory_Raiders_Child</li>
         </spawnCategories>
         <possessions />
     </BackstoryDef>
@@ -842,8 +841,8 @@
     <!-- Abandoned Wastelander -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Abandoned_Wastelander</defName>
-        <identifier>FCP_Raiders_Abandoned_Wastelander</identifier>
+        <defName>FCP_Backstory_Raiders_Abandoned_Wastelander</defName>
+        <identifier>FCP_Backstory_Raiders_Abandoned_Wastelander</identifier>
         <slot>Childhood</slot>
         <title>Abandoned Wastelander</title>
         <titleShort>Abandoned Wastelander</titleShort>
@@ -855,8 +854,8 @@
         <workDisables>None</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders_Child</li>
-            <li>FCP_Wastelanders_Child</li>
+            <li>FCP_Backstory_Raiders_Child</li>
+            <li>FCP_Backstory_Wastelanders_Child</li>
         </spawnCategories>
         <possessions />
     </BackstoryDef>
@@ -864,8 +863,8 @@
     <!-- Graffiti Artist -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Graffiti_Artist</defName>
-        <identifier>FCP_Raiders_Graffiti_Artist</identifier>
+        <defName>FCP_Backstory_Raiders_Graffiti_Artist</defName>
+        <identifier>FCP_Backstory_Raiders_Graffiti_Artist</identifier>
         <slot>Childhood</slot>
         <title>Graffiti Artist</title>
         <titleShort>Graffiti Artist</titleShort>
@@ -877,7 +876,7 @@
         <workDisables>Cleaning</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders_Child</li>
+            <li>FCP_Backstory_Raiders_Child</li>
         </spawnCategories>
         <possessions />
     </BackstoryDef>
@@ -885,8 +884,8 @@
     <!-- Camp Tender -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Camp_Tender</defName>
-        <identifier>FCP_Raiders_Camp_Tender</identifier>
+        <defName>FCP_Backstory_Raiders_Camp_Tender</defName>
+        <identifier>FCP_Backstory_Raiders_Camp_Tender</identifier>
         <slot>Childhood</slot>
         <title>Camp Tender</title>
         <titleShort>Camp Tender</titleShort>
@@ -901,7 +900,7 @@
         <workDisables>None</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders_Child</li>
+            <li>FCP_Backstory_Raiders_Child</li>
         </spawnCategories>
         <possessions />
     </BackstoryDef>
@@ -909,8 +908,8 @@
     <!-- Wilful Newby -->
 
     <BackstoryDef>
-        <defName>FCP_Raiders_Wilful Newby</defName>
-        <identifier>FCP_Raiders_Wilful Newby</identifier>
+        <defName>FCP_Backstory_Raiders_Wilful_Newby</defName>
+        <identifier>FCP_Backstory_Raiders_Wilful_Newby</identifier>
         <slot>Childhood</slot>
         <title>Wilful Newby</title>
         <titleShort>CWilful Newby</titleShort>
@@ -925,7 +924,7 @@
         <workDisables>None</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Raiders_Child</li>
+            <li>FCP_Backstory_Raiders_Child</li>
         </spawnCategories>
         <possessions />
     </BackstoryDef>
