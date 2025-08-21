@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Cultures and Styles __________-->
+
+    <!--_____ Raider _____-->
+
+    <!-- Cultures -->
+    
+    <CultureDef>
+        <defName>FCP_Culture_Raider</defName>
+        <label>Raider</label>
+        <description>Culture of those in the Raider Gangs.</description>
+        <pawnNameMaker>FCP_Raider_Namer_Male</pawnNameMaker>
+        <pawnNameMakerFemale>FCP_Raider_Namer_Female</pawnNameMakerFemale>
+        <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoAstropolitan</ideoNameMaker>
+        <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityAstropolitan</deityNameMaker>
+        <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerAstropolitan</deityTypeMaker>
+        <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">FCP_LeaderTitleMaker_Raider</leaderTitleMaker>
+        <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
+        <allowedPlaceTags>
+            <li>OriginSpacer</li>
+        </allowedPlaceTags>
+        <iconPath>World_Icon/Raider_Icon/FCP_Raider_World_Icon</iconPath>
+        <styleItemTags>
+            <li>
+                <tag>Urban</tag>
+                <baseWeight>1</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
+                <tag>Rural</tag>
+                <baseWeight>1</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
+                <tag>NoBeard</tag>
+                <baseWeight>0.9</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
+                <tag>BeardUrban</tag>
+                <baseWeight>0.5</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
+                <tag>BeardRural</tag>
+                <baseWeight>0.5</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+        </styleItemTags>
+    </CultureDef>
+
+    <!-- Styles -->
+    
+    <StyleCategoryDef>
+        <defName>FCP_Style_Raider</defName>
+        <label>Raider</label>
+        <iconPath>World_Icon/Raider_Icon/FCP_Raider_World_Icon</iconPath>
+        <soundOngoingRitual>FCP_Sound_Raider</soundOngoingRitual>
+        <ritualVisualEffectDef>Rustic</ritualVisualEffectDef>
+        <thingDefStyles>
+        </thingDefStyles>
+      </StyleCategoryDef>
+
+</Defs>
