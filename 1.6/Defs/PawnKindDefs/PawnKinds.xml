@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Pawnkinds __________-->
+
+    <!--_____ Raider Pawnkinds _____-->
+
+    <!--___ Base Pawnkinds ___-->
+
+    <!-- Raider Scavver -->
+
+    <PawnKindDef ParentName="FCP_RaiderKindBase">
+        <defName>FCP_Pawnkind_Raider_Scavver</defName>
+        <label>raider scavver</label>
+        <combatPower>60</combatPower>
+        <itemQuality>Poor</itemQuality>
+        <gearHealthRange>0.5~1.2</gearHealthRange>
+        <apparelMoney>500</apparelMoney>
+        <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+        <apparelTags>
+            <li>FCP_Raider_Scavver</li>
+        </apparelTags>
+        <weaponMoney>400</weaponMoney>
+        <weaponTags>
+            <li>FCP_Raider_Weapon</li>
+        </weaponTags>
+        <disallowedTraits>
+            <li>Kind</li>
+        </disallowedTraits>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <techHediffsMoney>0~0</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <techHediffsChance>0.01</techHediffsChance>
+        <initialWillRange>1~2</initialWillRange>
+        <initialResistanceRange>10~18</initialResistanceRange>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Raiders_Child</li>
+                    <li>FCP_Backstory_Wastelander_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Raiders</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Raider Bruiser -->
+
+    <PawnKindDef ParentName="FCP_RaiderKindBase">
+        <defName>FCP_Pawnkind_Raider_Bruiser</defName>
+        <label>raider bruiser</label>
+        <combatPower>90</combatPower>
+        <itemQuality>Poor</itemQuality>
+        <gearHealthRange>0.4~1.0</gearHealthRange>
+        <apparelMoney>700</apparelMoney>
+        <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+        <apparelTags>
+            <li>FCP_Raider_Bruiser</li>
+        </apparelTags>
+        <weaponMoney>600</weaponMoney>
+        <weaponTags>
+            <li>FCP_Raider_Weapon</li>
+        </weaponTags>
+        <disallowedTraits>
+            <li>Kind</li>
+        </disallowedTraits>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <techHediffsMoney>0~0</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <techHediffsChance>0.01</techHediffsChance>
+        <initialWillRange>2~4</initialWillRange>
+        <initialResistanceRange>15~22</initialResistanceRange>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Raiders_Child</li>
+                    <li>FCP_Backstory_Wastelander_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Raiders</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Raider Boss -->
+
+    <PawnKindDef ParentName="FCP_RaiderKindBase">
+        <defName>FCP_Pawnkind_Raider_Boss</defName>
+        <label>raider boss</label>
+        <combatPower>150</combatPower>
+        <itemQuality>Poor</itemQuality>
+        <gearHealthRange>0.7~1.5</gearHealthRange>
+        <apparelMoney>1200</apparelMoney>
+        <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+        <apparelTags>
+            <li>FCP_Raider_Boss</li>
+        </apparelTags>
+        <weaponMoney>1200</weaponMoney>
+        <weaponTags>
+            <li>FCP_Raider_Weapon</li>
+        </weaponTags>
+        <disallowedTraits>
+            <li>Kind</li>
+        </disallowedTraits>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <techHediffsMoney>0~0</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <techHediffsChance>0.02</techHediffsChance>
+        <initialWillRange>3~6</initialWillRange>
+        <initialResistanceRange>20~30</initialResistanceRange>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Raiders_Child</li>
+                    <li>FCP_Backstory_Wastelander_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Raiders_Boss</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
