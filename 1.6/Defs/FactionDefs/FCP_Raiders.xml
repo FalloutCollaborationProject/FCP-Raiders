@@ -6,11 +6,11 @@
     <!-- Raiders -->
 
     <FactionDef ParentName="FactionBase">
-        <defName>FCP_Faction_Raiders</defName>
+        <defName>FCP_Faction_Raider</defName>
         <label>Raider Gangs</label>
         <description>The Raider Gangs are a loose confederation of bandit groups operating in the wasteland. They are known for their brutal tactics, scavenging, and raiding of settlements. While they often fight among themselves, they can unite against common foes. The Raiders reject the old world values and instead embrace a survival-of-the-fittest mentality. They are feared and despised by many, but also hold a certain allure for those seeking freedom from the constraints of civilization.</description>
         <royalTitleTags>
-            <li>FCP_Title_Raiders</li>
+            <li>FCP_Title_Raider</li>
         </royalTitleTags>
         <royalFavorLabel>Trophies</royalFavorLabel>
         <royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
@@ -28,12 +28,12 @@
         <canSiege>true</canSiege>
         <canStageAttacks>true</canStageAttacks>
         <leaderTitle>Raider Boss</leaderTitle>
-        <factionIconPath>World_Icon/Raiders_Icon/FCP_Raiders_World_Icon</factionIconPath>
+        <factionIconPath>World_Icon/Raider_Icon/FCP_Raider_World_Icon</factionIconPath>
         <techLevel>Industrial</techLevel>
         <fixedName>Raider Gangs</fixedName>
-        <settlementNameMaker>FCP_Namer_Settlement_Raiders</settlementNameMaker>
+        <settlementNameMaker>FCP_Namer_Settlement_Raider</settlementNameMaker>
         <allowedCultures>
-            <li>FCP_Culture_Raiders</li>
+            <li>FCP_Culture_Raider</li>
         </allowedCultures>
 
         <!--__________ Ideology __________-->
@@ -181,7 +181,7 @@
             </li>
             <!-- Ideology stuff -->
             <li Class="FCP.Core.ModExtension_FixedIdeo">
-                <ideoIconDef>FCP_Icon_Raiders</ideoIconDef>
+                <ideoIconDef>FCP_Icon_Raider</ideoIconDef>
                 <ideoColorDef>LightGrey</ideoColorDef>
                 <memberName>Raider</memberName>
                 <adjective>Raider Gang</adjective>
@@ -223,7 +223,7 @@
     </FactionDef>
 
     <ThingSetMakerDef>
-        <defName>FCP_RaidersRaidLootMaker</defName>
+        <defName>FCP_RaiderRaidLootMaker</defName>
         <root Class="ThingSetMaker_MarketValue">
             <fixedParams>
                 <filter>
