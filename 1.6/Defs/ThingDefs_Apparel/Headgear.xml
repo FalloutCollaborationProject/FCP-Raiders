@@ -5,7 +5,7 @@
 
     <!-- Raider Base -->
 
-    <ThingDef Name="FCP_Raider_Helmet_Base" ParentName="ApparelBase">
+    <ThingDef Name="FCP_Raider_Helmet_Base" ParentName="ApparelBase" Abstract="True">
         <smeltable>false</smeltable>
         <recipeMaker Inherit= "false">
             <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
@@ -33,7 +33,7 @@
             <ArmorRating_Heat>0.1</ArmorRating_Heat>
             <EquipDelay>1.2</EquipDelay>
         </statBases>
-        <apparel>40
+        <apparel>
             <bodyPartGroups>
                 <li>UpperHead</li>
             </bodyPartGroups>
@@ -53,7 +53,7 @@
 
     <!-- Fiend Base -->
 
-    <ThingDef Name="FCP_Fiend_Helmet_Base" ParentName="ApparelBase">
+    <ThingDef Name="FCP_Fiend_Helmet_Base" ParentName="ApparelBase" Abstract="True">
         <smeltable>false</smeltable>
         <recipeMaker Inherit= "false">
             <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>

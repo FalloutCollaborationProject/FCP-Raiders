@@ -4,7 +4,7 @@
 	<!--_____ Raider Armor (FoNV) _____-->
 
 	<!-- Base -->
-	<ThingDef Name="FCP_Raider_Armor_Base" ParentName="ApparelBase">
+	<ThingDef Name="FCP_Raider_Armor_Base" ParentName="ApparelBase" Abstract="True">
 		<smeltable>false</smeltable>
 		<recipeMaker Inherit= "false">
 			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
@@ -42,7 +42,7 @@
 				<li>Legs</li>
 			</bodyPartGroups>
 			<layers>
-				<li>Skin</li>
+				<li>OnSkin</li>
 				<li>Middle</li>
 				<li>Shell</li>
 			</layers>
