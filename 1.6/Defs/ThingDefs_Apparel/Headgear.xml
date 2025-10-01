@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <!--_____ Raider Helmets (FoNV) _____-->
+
+    <!-- Raider Base -->
+
+    <ThingDef Name="FCP_Raider_Helmet_Base" ParentName="ApparelBase">
+        <smeltable>false</smeltable>
+        <recipeMaker Inherit= "false">
+            <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>FCP_Research_Apparel_Production</researchPrerequisite>
+            <recipeUsers>
+                <li>FCP_Production_Tailoring_Workbench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <costList>
+            <Cloth>15</Cloth>
+        </costList>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToMake>1200</WorkToMake>
+            <Mass>0.25</Mass>
+            <MarketValue>50</MarketValue>
+            <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.1</ArmorRating_Heat>
+            <EquipDelay>1.2</EquipDelay>
+        </statBases>
+        <apparel>40
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>FCP_Raider_Armor</li>
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="FCP.Core.CompProperties_LabelColored">
+                <rarity>Common</rarity>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- Fiend Base -->
+
+    <ThingDef Name="FCP_Fiend_Helmet_Base" ParentName="ApparelBase">
+        <smeltable>false</smeltable>
+        <recipeMaker Inherit= "false">
+            <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>FCP_Research_Apparel_Production</researchPrerequisite>
+            <recipeUsers>
+                <li>FCP_Production_Tailoring_Workbench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <costList>
+            <Cloth>15</Cloth>
+        </costList>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToMake>3600</WorkToMake>
+            <Mass>0.25</Mass>
+            <MarketValue>50</MarketValue>
+            <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.1</ArmorRating_Heat>
+            <EquipDelay>1.2</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ShootingAccuracyPawn>0.05</ShootingAccuracyPawn>            <!-- Perception +1 -->
+        </equippedStatOffsets>
+        <apparel>40
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>FCP_Fiends_Armor</li>
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="FCP.Core.CompProperties_LabelColored">
+                <rarity>Common</rarity>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- Fiends -->
+
+    <ThingDef ParentName="FCP_Raider_Helmet_Base">
+        <defName>FCP_Apparel_Fiend_Helmet</defName>
+        <description>A basic leather helmet, with a young bighorner's skull affixed to the top for decoration. The skull has a red bullseye on it, most often worn by the fiends, a particularly vicious group of raiders originating from the Mojave wasteland. It doesn’t protect well, but looks quite intimidating, which is more important to most raiders anyway.</description>
+        <label>Raider Wastehound Helmet</label>
+        <graphicData>
+            <texPath>Things/Headgear/Fiend_Helmet/Fiend_Helmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <apparel>
+            <wornGraphicPath>Things/Headgear/Fiend_Helmet/Fiend_Helmet</wornGraphicPath>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="FCP_Raider_Helmet_Base">
+        <defName>FCP_Apparel_Fiend_Warrior_Helmet</defName>
+        <description>A basic leather helmet, with a young bighorner's skull affixed to the top for decoration. The skull has a red bullseye on it, most often worn by the fiends, a particularly vicious group of raiders originating from the Mojave wasteland. It doesn’t protect well, but looks quite intimidating, which is more important to most raiders anyway.</description>
+        <label>Raider Wastehound Helmet</label>
+        <graphicData>
+            <texPath>Things/Headgear/Fiend_Warrior_Helmet/Fiend_Warrior_Helmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <apparel>
+            <wornGraphicPath>Things/Headgear/Fiend_Warrior_Helmet/Fiend_Warrior_Helmet</wornGraphicPath>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="FCP_Raider_Helmet_Base">
+        <defName>FCP_Apparel_Fiend_Battle_Helmet</defName>
+        <description>A basic leather helmet, with a young bighorner's skull affixed to the top for decoration. The skull has a red bullseye on it, most often worn by the fiends, a particularly vicious group of raiders originating from the Mojave wasteland. It doesn’t protect well, but looks quite intimidating, which is more important to most raiders anyway.</description>
+        <label>Raider Wastehound Helmet</label>
+        <graphicData>
+            <texPath>Things/Headgear/Fiend_Battle_Helmet/Fiend_Battle_Helmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <apparel>
+            <wornGraphicPath>Things/Headgear/Fiend_Battle_Helmet/Fiend_Battle_Helmet</wornGraphicPath>
+        </apparel>
+    </ThingDef>
+
+    <!-- Wastehound -->
+
+    <ThingDef ParentName="FCP_Raider_Helmet_Base">
+        <defName>FCP_Apparel_Raider_Wastehound_Helmet</defName>
+        <description>A helmet constructed of several pieces of heavy burlap crudely stitched together. It also includes eye protection that looks like it was torn from a gas mask and tufts of hair. Not very potent armor, but it does intimidate the foe quite well.</description>
+        <label>Raider Wastehound Helmet</label>
+        <graphicData>
+            <texPath>Things/Headgear/Raider_Wastehound_Helmet/Raider_Wastehound_Helmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <apparel>
+            <wornGraphicPath>Things/Headgear/Raider_Wastehound_Helmet/Raider_Wastehound_Helmet</wornGraphicPath>
+        </apparel>
+    </ThingDef>
+
+    <!-- Blastmaster -->
+
+    <ThingDef ParentName="FCP_Raider_Helmet_Base">
+        <defName>FCP_Apparel_Raider_Blastmaster_Helmet</defName>
+        <description>Comprised of a firefighter's helmet worn on top of a gas mask, the blastmaster helmet does provide decent protection and is often covered with fire-retardant substances.</description>
+        <label>Raider Blastmaster Helmet</label>
+        <equippedStatOffsets>
+            <ShootingAccuracyPawn>0.05</ShootingAccuracyPawn>            <!-- Guns +5 Explosives +5 -->
+        </equippedStatOffsets>
+        <graphicData>
+            <texPath>Things/Headgear/Blastmaster_Helmet/Blastmaster_Helmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <apparel>
+            <wornGraphicPath>Things/Headgear/Blastmaster_Helmet/Blastmaster_Helmet</wornGraphicPath>
+        </apparel>
+    </ThingDef>
+
+    <!-- Psycho-Tic -->
+
+    <ThingDef ParentName="FCP_Raider_Helmet_Base">
+        <defName>FCP_Apparel_Raider_Psycho_Tic_Helmet</defName>
+        <description>A leather skull cap with goggles and handlebars jutting out of the sides of the head. It is not very protective, and its main use is intimidation.</description>
+        <label>Raider Psycho-Tic Helmet</label>
+        <graphicData>
+            <texPath>Things/Headgear/Raider_Psycho_Tic_Helmet/Raider_Psycho_Tic_Helmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <apparel>
+            <wornGraphicPath>Things/Headgear/Raider_Psycho_Tic_Helmet/Raider_Psycho_Tic_Helmet</wornGraphicPath>
+        </apparel>
+    </ThingDef>
+
+    <!-- Arclight -->
+
+    <ThingDef ParentName="FCP_Raider_Helmet_Base">
+        <defName>FCP_Apparel_Raider_Arclight_Helmet</defName>
+        <description>A repurposed welding mask. It offers fairly good protection from the front but leaves the back of the head virtually unprotected. It encourages its wearer to storm blindly at the enemy, as retreating becomes a bad, and often fatal, idea.</description>
+        <label>Raider Arclight Helmet</label>
+        <costList Inherit="False">
+            <Steel>15</Steel>
+        </costList>
+        <statBases Inherit="False">
+            <MaxHitPoints>150</MaxHitPoints>
+            <WorkToMake>2300</WorkToMake>
+            <Mass>1.0</Mass>
+            <MarketValue>50</MarketValue>
+            <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.2</ArmorRating_Heat>
+            <EquipDelay>1.2</EquipDelay>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Headgear/Raider_Arclight_Helmet/Raider_Arclight_Helmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <apparel>
+            <wornGraphicPath>Things/Headgear/Raider_Arclight_Helmet/Raider_Arclight_Helmet</wornGraphicPath>
+        </apparel>
+    </ThingDef>
+
+    <!--_____ Raider Helmets (Fo4) _____-->
+
+    <!-- Gas Mask (Goggles) -->
+
+    <ThingDef ParentName="ApparelBase">
+        <defName>FCP_Apparel_Gasmask_Goggles</defName>
+        <description>A simple gas mask that covers the entire face, often seen worn by raiders. It is held on to the wearer by adjustable straps. It’s not very protective against bullets and other physical attacks but provides medium protection against toxins and radiation.</description>
+        <label>Gas Mask with Goggles</label>
+        <smeltable>false</smeltable>
+        <graphicData>
+            <texPath>Things/Headgear/Gas_Mask_With_Goggles/Gas_Mask_With_Goggles</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker Inherit= "false">
+            <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>FCP_Research_Apparel_Production</researchPrerequisite>
+            <recipeUsers>
+                <li>FCP_Production_Tailoring_Workbench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <costList>
+            <Cloth>15</Cloth>
+            <Chemfuel>10</Chemfuel>
+        </costList>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToMake>4000</WorkToMake>
+            <Mass>1.0</Mass>
+            <MarketValue>200</MarketValue>
+            <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.2</ArmorRating_Heat>
+            <EquipDelay>1.2</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ToxicEnvironmentResistance>0.80</ToxicEnvironmentResistance>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>Neck</li>
+                <li>Torso</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Headgear/Gas_Mask_With_Goggles/Gas_Mask_With_Goggles</wornGraphicPath>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <tags>
+                <li>FCP_Raider_Armor</li>
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="FCP.Core.CompProperties_LabelColored">
+                <rarity>Common</rarity>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- Assault Gasmask -->
+
+    <ThingDef ParentName="ApparelBase">
+        <defName>FCP_Apparel_Assault_Gas_Mask</defName>
+        <description>An armored gasmask worn underneath a cloth hood. It provides decent protection against bullets and hazardous gases and similar substances and is most often worn by raiders.</description>
+        <label>Assault Gasmask</label>
+        <smeltable>false</smeltable>
+        <graphicData>
+            <texPath>Things/Headgear/Assault_Gas_Mask/Assault_Gas_Mask</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker Inherit= "false">
+            <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>FCP_Research_Apparel_Production</researchPrerequisite>
+            <recipeUsers>
+                <li>FCP_Production_Tailoring_Workbench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <costList>
+            <Cloth>15</Cloth>
+            <Steel>10</Steel>
+        </costList>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToMake>4000</WorkToMake>
+            <Mass>1.0</Mass>
+            <MarketValue>200</MarketValue>
+            <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.2</ArmorRating_Heat>
+            <EquipDelay>1.2</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ToxicEnvironmentResistance>0.80</ToxicEnvironmentResistance>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>Neck</li>
+                <li>Torso</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Headgear/Assault_Gas_Mask/Assault_Gas_Mask</wornGraphicPath>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <tags>
+                <li>FCP_Raider_Armor</li>
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="FCP.Core.CompProperties_LabelColored">
+                <rarity>Common</rarity>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- Sack Hood -->
+
+    <ThingDef ParentName="ApparelBase">
+        <defName>FCP_Apparel_Sack_Hood</defName>
+        <description>A simple hood often worn by raiders. It provides barely any protection against bullets but is (barely) better than no helmet at all.</description>
+        <label>Sack Hood</label>
+        <smeltable>false</smeltable>
+        <graphicData>
+            <texPath>Things/Headgear/Sack_Hood/Sack_Hood</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker Inherit= "false">
+            <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>FCP_Research_Apparel_Production</researchPrerequisite>
+            <recipeUsers>
+                <li>FCP_Production_Tailoring_Workbench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <costList>
+            <Cloth>25</Cloth>
+        </costList>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToMake>4000</WorkToMake>
+            <Mass>1.0</Mass>
+            <MarketValue>200</MarketValue>
+            <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.2</ArmorRating_Heat>
+            <EquipDelay>1.2</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>Neck</li>
+                <li>Torso</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Headgear/Sack_Hood/Sack_Hood</wornGraphicPath>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <tags>
+                <li>FCP_Raider_Armor</li>
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="FCP.Core.CompProperties_LabelColored">
+                <rarity>Common</rarity>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>

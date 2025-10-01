@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!--_____ Raider Armor (FoNV) _____-->
+
+	<!-- Base -->
+	<ThingDef Name="FCP_Raider_Armor_Base" ParentName="ApparelBase">
+		<smeltable>false</smeltable>
+		<recipeMaker Inherit= "false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>FCP_Research_Apparel_Production</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>				<!-- Uses tailoring bench because it's mostly clothes -->
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Cloth>60</Cloth>
+		</costList>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>4600</WorkToMake>			<!-- Cheap and quickly made but bad for protection -->
+			<Mass>1</Mass>
+			<MarketValue>70</MarketValue>
+			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			<Insulation_Cold>1</Insulation_Cold>
+			<Insulation_Heat>3</Insulation_Heat>
+			<EquipDelay>1.2</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Skin</li>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>FCP_Raider_Armor</li>
+			</tags>
+		</apparel>
+		<comps>
+			<li Class="FCP.Core.CompProperties_LabelColored">
+				<rarity>Common</rarity>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- Badlands -->
+
+	<ThingDef ParentName="FCP_Raider_Armor_Base">
+		<defName>FCP_Apparel_Raider_Badlands_Armor</defName>
+		<description>A piece of tattered clothing, wrapped up in some places with duct tape, a wide leather belt, and black combat boots. These clothes are often worn by raiders and provide barely any protection.</description>
+		<label>Raider Badlands Armor</label>
+		<graphicData>
+			<texPath>Things/Apparel/Badlands_Armor/Badlands_Armor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Badlands_Armor/Badlands_Armor</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+
+	<!-- Blastmaster -->
+
+	<ThingDef ParentName="FCP_Raider_Armor_Base">
+		<defName>FCP_Apparel_Raider_Blastmaster_Armor</defName>
+		<description> leather coat covered in an excessive number of rags, chains, and metal plates with pieces of rebar welded onto them. As far as raider armors go, this one protects fairly well, but in turn is quite heavy. Usually worn by raiders with (some) self-preservation instinct.</description>
+		<label>Raider Blastmaster Armor</label>
+		<graphicData>
+			<texPath>Things/Apparel/Blastmaster_Armor/Blastmaster_Armor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Blastmaster_Armor/Blastmaster_Armor</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+
+	<!-- Painspike -->
+
+	<ThingDef ParentName="FCP_Raider_Armor_Base">
+		<defName>FCP_Apparel_Raider_Painspike_Armor</defName>
+		<description>A piece of tattered clothing, wrapped up in some places with duct tape, a wide leather belt, and black combat boots. These clothes are often worn by raiders and provide barely any protection.</description>
+		<label>Raider Painspike Armor</label>
+		<graphicData>
+			<texPath>Things/Apparel/Painspike_Armor/Painspike_Armor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Painspike_Armor/Painspike_Armor</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+
+	<!-- Sadist -->
+
+	<ThingDef ParentName="FCP_Raider_Armor_Base">
+		<defName>FCP_Apparel_Raider_Sadist_Armor</defName>
+		<description>This archaic armor consists of metal chaps and a leather plate of sorts worn on the left shoulder. It leaves the shoulders of its wearer bare and unprotected. Most raiders care little about that though, as its primary use is intimidation of the foe.</description>
+		<label>Raider Sadist Armor</label>
+		<graphicData>
+			<texPath>Things/Apparel/Sadist_Armor/Sadist_Armor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Sadist_Armor/Sadist_Armor</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+
+	<!--_____ Raider Armor (Fo4) _____-->
+
+	<!-- Long Johns -->
+
+	<ThingDef ParentName="ApparelBase">
+		<defName>FCP_Apparel_Raider_Long_Johns</defName>
+		<description>A piece of tattered clothing, wrapped up in some places with duct tape, a wide leather belt, and black combat boots. These clothes are often worn by raiders and provide barely any protection.</description>
+		<label>Raider Armor</label>
+		<smeltable>false</smeltable>
+		<graphicData>
+			<texPath>Things/Apparel/Long_Johns/Long_Johns</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker Inherit= "false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>FCP_Research_Apparel_Production</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Cloth>40</Cloth>
+		</costList>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>0.25</Mass>
+			<MarketValue>200</MarketValue>
+			<ArmorRating_Sharp>0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0</ArmorRating_Blunt>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
+			<EquipDelay>1.2</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Long_Johns/Long_Johns</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>FCP_Raider_Armor</li>
+			</tags>
+		</apparel>
+		<comps>
+			<li Class="FCP.Core.CompProperties_LabelColored">
+				<rarity>Common</rarity>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- Raider Light -->
+
+	<ThingDef ParentName="ApparelBase">
+		<defName>FCP_Apparel_Raider_Armor_Light</defName>
+		<description>Low-tech, homemade armour with a barbaric appearance. It varies in quality and appearance with most consisting of scrap metal plates melded into armor pieces reinforced by metal bars along with wires fastened together by leather straps. The light version of the raider armor provides only basic protection but is less heavy than other variants. Not the best armor, but certainly better than nothing.</description>
+		<label>Raider Armor</label>
+		<smeltable>false</smeltable>
+		<graphicData>
+			<texPath>Things/Apparel/Raider_Light_Armor/Raider_Light_Armor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker Inherit= "false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>FCP_Research_Armor_Production</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Armor_Workbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>40</Steel>
+		</costList>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>5200</WorkToMake>
+			<Mass>5.0</Mass>
+			<MarketValue>200</MarketValue>
+			<ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			<EquipDelay>1.2</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Raider_Light_Armor/Raider_Light_Armor</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>FCP_Raider_Armor</li>
+			</tags>
+		</apparel>
+		<comps>
+			<li Class="FCP.Core.CompProperties_LabelColored">
+				<rarity>Common</rarity>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="ApparelBase">
+		<defName>FCP_Apparel_Raider_Shoulders_Light</defName>
+		<description>TODO</description>
+		<label>Raider Appendages</label>
+		<smeltable>false</smeltable>
+		<graphicData>
+			<texPath>MakeTexturesForRaiderShouldersPls</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker Inherit= "false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>FCP_Research_Armor_Production</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Armor_Workbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>15</Steel>
+		</costList>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>175</MaxHitPoints>
+			<WorkToMake>3100</WorkToMake>
+			<Mass>3.0</Mass>
+			<MarketValue>125</MarketValue>
+			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.1</ArmorRating_Heat>
+			<EquipDelay>1.2</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>MakeTexturesForRaiderShouldersPls</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>FCP_Raider_Armor</li>
+			</tags>
+		</apparel>
+		<comps>
+			<li Class="FCP.Core.CompProperties_LabelColored">
+				<rarity>Common</rarity>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- Raider Medium -->
+
+	<ThingDef ParentName="ApparelBase">
+		<defName>FCP_Apparel_Raider_Armor_Medium</defName>
+		<description>Low-tech, homemade armour with a barbaric appearance. It varies in quality and appearance with most consisting of scrap metal plates melded into armor pieces reinforced by metal bars along with wires fastened together by leather straps.This version offers slightly more protection than the lighter version, but still isn’t that great. Plus, it weighs a whole lot more</description>
+		<label>Sturdy Raider Armor</label>
+		<smeltable>false</smeltable>
+		<graphicData>
+			<texPath>Things/Apparel/Raider_Medium_Armor/Raider_Medium_Armor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker Inherit= "false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>FCP_Research_Armor_Production</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Armor_Workbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>65</Steel>
+		</costList>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>9200</WorkToMake>
+			<Mass>7.0</Mass>
+			<MarketValue>350</MarketValue>
+			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<EquipDelay>1.2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.5</MoveSpeed>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Raider_Medium_Armor/Raider_Medium_Armor</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>FCP_Raider_Armor</li>
+			</tags>
+		</apparel>
+		<comps>
+			<li Class="FCP.Core.CompProperties_LabelColored">
+				<rarity>Common</rarity>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="ApparelBase">
+		<defName>FCP_Apparel_Raider_Shoulders_Medium</defName>
+		<description>TODO</description>
+		<label>Sturdy Raider Appendages</label>
+		<smeltable>false</smeltable>
+		<graphicData>
+			<texPath>MakeTexturesForRaiderShouldersPls</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker Inherit= "false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>FCP_Research_Armor_Production</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Armor_Workbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>30</Steel>
+		</costList>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>175</MaxHitPoints>
+			<WorkToMake>3100</WorkToMake>
+			<Mass>5.0</Mass>
+			<MarketValue>125</MarketValue>
+			<ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<EquipDelay>1.2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>MakeTexturesForRaiderShouldersPls</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>FCP_Raider_Armor</li>
+			</tags>
+		</apparel>
+		<comps>
+			<li Class="FCP.Core.CompProperties_LabelColored">
+				<rarity>Common</rarity>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- Raider Heavy -->
+
+	<ThingDef ParentName="ApparelBase">
+		<defName>FCP_Apparel_Raider_Armor_Heavy</defName>
+		<description>Low-tech, homemade armour with a barbaric appearance. It varies in quality and appearance with most consisting of scrap metal plates melded into armor pieces reinforced by metal bars along with wires fastened together by leather straps.The heavy raider armor is usually reserved for leaders and others who bellow orders to the gang. While it protects a whole lot better than the other version, it is also bulky and heavy, severely impairing the wearers freedom of movement.</description>
+		<label>Heavy Raider Armor</label>
+		<smeltable>false</smeltable>
+		<graphicData>
+			<texPath>Things/Apparel/Raider_Heavy_Armor/Raider_Heavy_Armor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker Inherit= "false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>FCP_Research_Armor_Production</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Armor_Workbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>100</Steel>
+		</costList>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>9200</WorkToMake>
+			<Mass>7.0</Mass>
+			<MarketValue>350</MarketValue>
+			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.8</ArmorRating_Heat>
+			<EquipDelay>1.2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.10</MoveSpeed>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Raider_Heavy_Armor/Raider_Heavy_Armor</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>FCP_Raider_Armor</li>
+			</tags>
+		</apparel>
+		<comps>
+			<li Class="FCP.Core.CompProperties_LabelColored">
+				<rarity>Common</rarity>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="ApparelBase">
+		<defName>FCP_Apparel_Raider_Shoulders_Heavy</defName>
+		<description>TODO</description>
+		<label>Heavy Raider Appendages</label>
+		<smeltable>false</smeltable>
+		<graphicData>
+			<texPath>MakeTexturesForRaiderShouldersPls</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker Inherit= "false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>FCP_Research_Armor_Production</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Armor_Workbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>175</MaxHitPoints>
+			<WorkToMake>3100</WorkToMake>
+			<Mass>5.0</Mass>
+			<MarketValue>125</MarketValue>
+			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.12</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.6</ArmorRating_Heat>
+			<EquipDelay>1.2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.5</MoveSpeed>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>MakeTexturesForRaiderShouldersPls</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>FCP_Raider_Armor</li>
+			</tags>
+		</apparel>
+		<comps>
+			<li Class="FCP.Core.CompProperties_LabelColored">
+				<rarity>Common</rarity>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>
