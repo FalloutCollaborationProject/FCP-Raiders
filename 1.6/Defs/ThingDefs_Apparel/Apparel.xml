@@ -4,6 +4,7 @@
 	<!--_____ Raider Armor (FoNV) _____-->
 
 	<!-- Base -->
+	
 	<ThingDef Name="FCP_Raider_Armor_Base" ParentName="ApparelBase" Abstract="True">
 		<smeltable>false</smeltable>
 		<recipeMaker Inherit= "false">
