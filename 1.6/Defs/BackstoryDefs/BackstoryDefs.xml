@@ -22,7 +22,10 @@
             <Shooting>3</Shooting>
             <Melee>5</Melee>
         </skillGains>
-        <workDisables>Medicine, Social, Intellectual</workDisables>
+        <workDisables>
+            <li>Social</li>
+            <li>Intellectual</li>
+        </workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
             <li>FCP_Backstory_Raiders</li>
@@ -121,7 +124,10 @@
             <Melee>4</Melee>
             <Mining>4</Mining>
         </skillGains>
-        <workDisables>Construction, Crafting</workDisables>
+        <workDisables>
+            <li>Constructing</li>
+            <li>Crafting</li>
+        </workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
             <li>FCP_Backstory_Raiders</li>
@@ -195,7 +201,9 @@
             <Cooking>4</Cooking>
             <Medicine>4</Medicine>
         </skillGains>
-        <workDisables>FireFighting, Burns</workDisables>
+        <workDisables>
+            <li>Firefighting</li>
+        </workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
             <li>FCP_Backstory_Raiders</li>

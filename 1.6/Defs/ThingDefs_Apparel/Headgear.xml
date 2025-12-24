@@ -107,39 +107,39 @@
     <ThingDef ParentName="FCP_Raider_Helmet_Base">
         <defName>FCP_Apparel_Fiend_Helmet</defName>
         <description>A basic leather helmet, with a young bighorner's skull affixed to the top for decoration. The skull has a red bullseye on it, most often worn by the fiends, a particularly vicious group of raiders originating from the Mojave wasteland. It doesn’t protect well, but looks quite intimidating, which is more important to most raiders anyway.</description>
-        <label>Raider Wastehound Helmet</label>
+        <label>Raider Fiend Helmet</label>
         <graphicData>
-            <texPath>Things/Headgear/Fiend_Helmet/Fiend_Helmet</texPath>
+            <texPath>Things/Headgear/Fiend_Helmet/FCP_Fiend_Helmet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <apparel>
-            <wornGraphicPath>Things/Headgear/Fiend_Helmet/Fiend_Helmet</wornGraphicPath>
+            <wornGraphicPath>Things/Headgear/Fiend_Helmet/FCP_Fiend_Helmet</wornGraphicPath>
         </apparel>
     </ThingDef>
 
     <ThingDef ParentName="FCP_Raider_Helmet_Base">
         <defName>FCP_Apparel_Fiend_Warrior_Helmet</defName>
         <description>A basic leather helmet, with a young bighorner's skull affixed to the top for decoration. The skull has a red bullseye on it, most often worn by the fiends, a particularly vicious group of raiders originating from the Mojave wasteland. It doesn’t protect well, but looks quite intimidating, which is more important to most raiders anyway.</description>
-        <label>Raider Wastehound Helmet</label>
+        <label>Raider Fiend Warrior Helmet</label>
         <graphicData>
-            <texPath>Things/Headgear/Fiend_Warrior_Helmet/Fiend_Warrior_Helmet</texPath>
+            <texPath>Things/Headgear/Fiend_Warrior_Helmet/FCP_Fiend_Warrior_Helmet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <apparel>
-            <wornGraphicPath>Things/Headgear/Fiend_Warrior_Helmet/Fiend_Warrior_Helmet</wornGraphicPath>
+            <wornGraphicPath>Things/Headgear/Fiend_Warrior_Helmet/FCP_Fiend_Warrior_Helmet</wornGraphicPath>
         </apparel>
     </ThingDef>
 
     <ThingDef ParentName="FCP_Raider_Helmet_Base">
         <defName>FCP_Apparel_Fiend_Battle_Helmet</defName>
         <description>A basic leather helmet, with a young bighorner's skull affixed to the top for decoration. The skull has a red bullseye on it, most often worn by the fiends, a particularly vicious group of raiders originating from the Mojave wasteland. It doesn’t protect well, but looks quite intimidating, which is more important to most raiders anyway.</description>
-        <label>Raider Wastehound Helmet</label>
+        <label>Raider Fiend Battle Helmet</label>
         <graphicData>
-            <texPath>Things/Headgear/Fiend_Battle_Helmet/Fiend_Battle_Helmet</texPath>
+            <texPath>Things/Headgear/Fiend_Battle_Helmet/FCP_Fiend_Battle_Helmet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <apparel>
-            <wornGraphicPath>Things/Headgear/Fiend_Battle_Helmet/Fiend_Battle_Helmet</wornGraphicPath>
+            <wornGraphicPath>Things/Headgear/Fiend_Battle_Helmet/FCP_Fiend_Battle_Helmet</wornGraphicPath>
         </apparel>
     </ThingDef>
 
@@ -150,11 +150,11 @@
         <description>A helmet constructed of several pieces of heavy burlap crudely stitched together. It also includes eye protection that looks like it was torn from a gas mask and tufts of hair. Not very potent armor, but it does intimidate the foe quite well.</description>
         <label>Raider Wastehound Helmet</label>
         <graphicData>
-            <texPath>Things/Headgear/Raider_Wastehound_Helmet/Raider_Wastehound_Helmet</texPath>
+            <texPath>Things/Headgear/Raider_Wastehound_Helmet/FCP_Raider_Psycho_Tic_Helmet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <apparel>
-            <wornGraphicPath>Things/Headgear/Raider_Wastehound_Helmet/Raider_Wastehound_Helmet</wornGraphicPath>
+            <wornGraphicPath>Things/Headgear/Raider_Wastehound_Helmet/FCP_Raider_Wastehound_Helmet</wornGraphicPath>
         </apparel>
     </ThingDef>
 
@@ -168,11 +168,11 @@
             <ShootingAccuracyPawn>0.05</ShootingAccuracyPawn>            <!-- Guns +5 Explosives +5 -->
         </equippedStatOffsets>
         <graphicData>
-            <texPath>Things/Headgear/Blastmaster_Helmet/Blastmaster_Helmet</texPath>
+            <texPath>Things/Headgear/Blastmaster_Helmet/FCP_Blastmaster_Helmet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <apparel>
-            <wornGraphicPath>Things/Headgear/Blastmaster_Helmet/Blastmaster_Helmet</wornGraphicPath>
+            <wornGraphicPath>Things/Headgear/Blastmaster_Helmet/FCP_Blastmaster_Helmet</wornGraphicPath>
         </apparel>
     </ThingDef>
 
@@ -183,11 +183,11 @@
         <description>A leather skull cap with goggles and handlebars jutting out of the sides of the head. It is not very protective, and its main use is intimidation.</description>
         <label>Raider Psycho-Tic Helmet</label>
         <graphicData>
-            <texPath>Things/Headgear/Raider_Psycho_Tic_Helmet/Raider_Psycho_Tic_Helmet</texPath>
+            <texPath>Things/Headgear/Raider_Psycho_Tic_Helmet/FCP_Raider_Psycho_Tic_Helmet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <apparel>
-            <wornGraphicPath>Things/Headgear/Raider_Psycho_Tic_Helmet/Raider_Psycho_Tic_Helmet</wornGraphicPath>
+            <wornGraphicPath>Things/Headgear/Raider_Psycho_Tic_Helmet/FCP_Raider_Psycho_Tic_Helmet</wornGraphicPath>
         </apparel>
     </ThingDef>
 
@@ -229,7 +229,7 @@
         <label>Gas Mask with Goggles</label>
         <smeltable>false</smeltable>
         <graphicData>
-            <texPath>Things/Headgear/Gas_Mask_With_Goggles/Gas_Mask_With_Goggles</texPath>
+            <texPath>Things/Headgear/Gas_Mask_With_Goggles/FCP_Gas_Mask_With_Goggles</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker Inherit= "false">
@@ -267,7 +267,7 @@
                 <li>Neck</li>
                 <li>Torso</li>
             </bodyPartGroups>
-            <wornGraphicPath>Things/Headgear/Gas_Mask_With_Goggles/Gas_Mask_With_Goggles</wornGraphicPath>
+            <wornGraphicPath>Things/Headgear/Gas_Mask_With_Goggles/FCP_Gas_Mask_With_Goggles</wornGraphicPath>
             <layers>
                 <li>Shell</li>
             </layers>
@@ -290,7 +290,7 @@
         <label>Assault Gasmask</label>
         <smeltable>false</smeltable>
         <graphicData>
-            <texPath>Things/Headgear/Assault_Gas_Mask/Assault_Gas_Mask</texPath>
+            <texPath>Things/Headgear/Assault_Gas_Mask/FCP_Assault_Gas_Mask</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker Inherit= "false">
@@ -328,7 +328,7 @@
                 <li>Neck</li>
                 <li>Torso</li>
             </bodyPartGroups>
-            <wornGraphicPath>Things/Headgear/Assault_Gas_Mask/Assault_Gas_Mask</wornGraphicPath>
+            <wornGraphicPath>Things/Headgear/Assault_Gas_Mask/FCP_Assault_Gas_Mask</wornGraphicPath>
             <layers>
                 <li>Shell</li>
             </layers>
@@ -351,7 +351,7 @@
         <label>Sack Hood</label>
         <smeltable>false</smeltable>
         <graphicData>
-            <texPath>Things/Headgear/Sack_Hood/Sack_Hood</texPath>
+            <texPath>Things/Headgear/Sack_Hood/FCP_Sack_Hood</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker Inherit= "false">
@@ -388,7 +388,7 @@
                 <li>Neck</li>
                 <li>Torso</li>
             </bodyPartGroups>
-            <wornGraphicPath>Things/Headgear/Sack_Hood/Sack_Hood</wornGraphicPath>
+            <wornGraphicPath>Things/Headgear/Sack_Hood/FCP_Sack_Hood</wornGraphicPath>
             <layers>
                 <li>Shell</li>
             </layers>

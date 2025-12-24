@@ -160,14 +160,14 @@
                     <li MayRequire="Rick.FCP.Legion">FCP_Faction_Caesars_Legion</li>
                     <li MayRequire="Rick.FCP.NCR">FCP_Faction_NCR</li>
                     <li MayRequire="Rick.FCP.NCR">FCP_Faction_NCR_Deserters</li>
-                    <li>Faction_OutlanderCivil</li>
-                    <li>Faction_OutlanderRough</li>
-                    <li>Faction_TribeCivil</li>
-                    <li>Faction_TribeRough</li>
-                    <li>Faction_TribeSavage</li>
-                    <li>Faction_Mechanoid</li>
-                    <li>Faction_Insect</li>
-                    <li>Faction_Colony</li>
+                    <li>OutlanderCivil</li>
+                    <li>OutlanderRough</li>
+                    <li>TribeCivil</li>
+                    <li>TribeRough</li>
+                    <li>TribeSavage</li>
+                    <li>Mechanoid</li>
+                    <li>Insect</li>
+                    <li>PlayerColony</li>
                 </hostileFactionDefs>
             </li>
             <!-- Make them unable to use drop pods -->

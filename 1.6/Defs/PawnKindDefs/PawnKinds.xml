@@ -9,10 +9,11 @@
 
     <!-- Raider Scavver -->
 
-    <PawnKindDef ParentName="FCP_RaiderKindBase">
+    <PawnKindDef>
         <defName>FCP_Pawnkind_Raider_Scavver</defName>
         <label>raider scavver</label>
         <combatPower>60</combatPower>
+        <race>Human</race>
         <itemQuality>Poor</itemQuality>
         <gearHealthRange>0.5~1.2</gearHealthRange>
         <apparelMoney>500</apparelMoney>
@@ -53,10 +54,11 @@
 
     <!-- Raider Bruiser -->
 
-    <PawnKindDef ParentName="FCP_RaiderKindBase">
+    <PawnKindDef>
         <defName>FCP_Pawnkind_Raider_Bruiser</defName>
         <label>raider bruiser</label>
         <combatPower>90</combatPower>
+        <race>Human</race>
         <itemQuality>Poor</itemQuality>
         <gearHealthRange>0.4~1.0</gearHealthRange>
         <apparelMoney>700</apparelMoney>
@@ -97,10 +99,11 @@
 
     <!-- Raider Boss -->
 
-    <PawnKindDef ParentName="FCP_RaiderKindBase">
+    <PawnKindDef>
         <defName>FCP_Pawnkind_Raider_Boss</defName>
         <label>raider boss</label>
         <combatPower>150</combatPower>
+        <race>Human</race>
         <itemQuality>Poor</itemQuality>
         <gearHealthRange>0.7~1.5</gearHealthRange>
         <apparelMoney>1200</apparelMoney>
@@ -138,3 +141,5 @@
         </backstoryFiltersOverride>
         <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
     </PawnKindDef>
+
+</Defs>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-    <ThingDef ParentName="FCP_Apparel_Power_Armor_Base">
+    <ThingDef ParentName="FCP_Apparel_Power_Armor_Base" MayRequire="Rick.FCP.PowerArmor">
         <defName>FCP_Apparel_Raider_Power_Armor_Armor</defName>
         <label>T-45 Power Armor</label>
         <description>Power armor that has been "modified" over time by raiders. The repairs are crude at best and the armor has lost all power to it making it a large, heavy and combersome armor.</description>
@@ -26,7 +26,7 @@
         </apparel>
     </ThingDef>
 
-    <ThingDef ParentName="HatBase">
+    <ThingDef ParentName="HatBase" MayRequire="Rick.FCP.PowerArmor">
         <defName>FCP_Apparel_Power_Armor_T45_Helmet</defName>
         <label>T-45 Power Armor Helmet</label>
         <description>Power armor that has been "modified" over time by raiders. The repairs are crude at best and the armor has lost all power to it making it a large, heavy and combersome armor.</description>
