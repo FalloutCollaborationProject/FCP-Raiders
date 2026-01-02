@@ -234,6 +234,7 @@
 		</comps>
 	</ThingDef>
 
+	<!-- TODO: These shoulder items need textures created before they can be enabled
 	<ThingDef ParentName="ApparelBase">
 		<defName>FCP_Apparel_Raider_Shoulders_Light</defName>
 		<description>TODO</description>
@@ -289,6 +290,7 @@
 			</li>
 		</comps>
 	</ThingDef>
+	-->
 
 	<!-- Raider Medium -->
 
@@ -350,6 +352,7 @@
 		</comps>
 	</ThingDef>
 
+	<!--
 	<ThingDef ParentName="ApparelBase">
 		<defName>FCP_Apparel_Raider_Shoulders_Medium</defName>
 		<description>TODO</description>
@@ -408,6 +411,7 @@
 			</li>
 		</comps>
 	</ThingDef>
+	-->
 
 	<!-- Raider Heavy -->
 
@@ -469,6 +473,7 @@
 		</comps>
 	</ThingDef>
 
+	<!--
 	<ThingDef ParentName="ApparelBase">
 		<defName>FCP_Apparel_Raider_Shoulders_Heavy</defName>
 		<description>TODO</description>
@@ -527,5 +532,6 @@
 			</li>
 		</comps>
 	</ThingDef>
+	-->
 
 </Defs>

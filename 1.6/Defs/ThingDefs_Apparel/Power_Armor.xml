@@ -69,9 +69,9 @@
                 <rarity>Rare</rarity>
             </li>
             <li Class="RangerRick_PowerArmor.CompProperties_PowerArmor">
-                <requiredApparels>
+                <requiredApparel>
                     <li>FCP_Apparel_Power_Armor_Frame</li>
-                </requiredApparels>
+                </requiredApparel>
                 <workDisables>
                     <li>Construction</li>
                 </workDisables>

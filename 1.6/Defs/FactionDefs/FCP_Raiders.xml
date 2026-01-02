@@ -31,7 +31,7 @@
         <factionIconPath>World_Icon/Raider_Icon/FCP_Raider_World_Icon</factionIconPath>
         <techLevel>Industrial</techLevel>
         <fixedName>Raider Gangs</fixedName>
-        <settlementNameMaker>FCP_Namer_Settlement_Raider</settlementNameMaker>
+        <settlementNameMaker>FCP_Namer_Settlement_Raiders</settlementNameMaker>
         <allowedCultures>
             <li>FCP_Culture_Raider</li>
         </allowedCultures>
@@ -47,9 +47,7 @@
         </styles>
         <forcedMemes>
             <!-- Structure -->
-            <li MayRequire="Ludeon.RimWorld.Ideology"></li>
-            <!-- Memes -->
-            <li MayRequire="Ludeon.RimWorld.Ideology"></li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
         </forcedMemes>
         <requiredPreceptsOnly>true</requiredPreceptsOnly>
 
@@ -99,7 +97,7 @@
         <!-- Trader Kind Arrival Options -->
         
         <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
-        <raidLootMaker>FCP_RaidersRaidLootMaker</raidLootMaker>
+        <raidLootMaker>FCP_RaiderRaidLootMaker</raidLootMaker>
         <maxPawnCostPerTotalPointsCurve>
             <points>
                 <li>(0,35)</li>
@@ -196,20 +194,7 @@
                         <disableApparelRequirements>true</disableApparelRequirements>
                         <!--<apparelRequirementsOverride></apparelRequirementsOverride>-->
                     </li>
-                    <li>
-                        <preceptDef>FCP_IdeoRole_Raider</preceptDef>
-                        <newName>Raider Waster</newName>
-                        <disableApparelRequirements>true</disableApparelRequirements>
-                        <!--<apparelRequirementsOverride></apparelRequirementsOverride>-->
-                    </li>
                 </roleOverrides>
-            </li>
-            <!-- Enlistment stuff -->
-            <li Class="FCP.Enlist.FactionEnlistOptions">
-                <enlistOptionsDefs>
-                    <li>FCP_Enlistment_Raiders</li>
-                </enlistOptionsDefs>
-                <ignoreAutoAssignedDefs>true</ignoreAutoAssignedDefs>
             </li>
             <!-- Territory stuff -->
             <!-- <li class="FCP.Core.ModExtension_FactionTerritory">
