@@ -68,10 +68,12 @@
             <li Class="FCP.Core.CompProperties_LabelColored">
                 <rarity>Rare</rarity>
             </li>
-            <li Class="RangerRick_PowerArmor.CompProperties_PowerArmor">
-                <requiredApparel>
+            <li Class="RangerRick_PowerArmor.CompProperties_ApparelRequirement">
+                <requiredApparels>
                     <li>FCP_Apparel_Power_Armor_Frame</li>
-                </requiredApparel>
+                </requiredApparels>
+            </li>
+            <li Class="RangerRick_PowerArmor.CompProperties_PowerArmor">
                 <workDisables>
                     <li>Construction</li>
                 </workDisables>
