@@ -24,6 +24,16 @@
         <iconPath>World_Icon/Raider_Icon/FCP_Raider_World_Icon</iconPath>
         <styleItemTags>
             <li>
+                <tag>Raider</tag>
+                <baseWeight>1</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
+                <tag>Wasteland</tag>
+                <baseWeight>0.5</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
                 <tag>Urban</tag>
                 <baseWeight>1</baseWeight>
                 <weightFactor>1</weightFactor>

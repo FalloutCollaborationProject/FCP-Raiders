@@ -14,16 +14,19 @@
         <label>raider scavver</label>
         <combatPower>60</combatPower>
         <race>Human</race>
+        <xenotypeSet Inherit="False" />
         <itemQuality>Poor</itemQuality>
         <gearHealthRange>0.5~1.2</gearHealthRange>
         <apparelMoney>500</apparelMoney>
         <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
         <apparelTags>
-            <li>FCP_Raider_Scavver</li>
+            <li>FCP_Raider_Armor</li>
         </apparelTags>
         <weaponMoney>400</weaponMoney>
         <weaponTags>
-            <li>FCP_Raider_Weapon</li>
+            <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Makeshift</li>
+            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pipe_Weapons</li>
+            <li>Gun</li>
         </weaponTags>
         <disallowedTraits>
             <li>Kind</li>
@@ -59,16 +62,19 @@
         <label>raider bruiser</label>
         <combatPower>90</combatPower>
         <race>Human</race>
+        <xenotypeSet Inherit="False" />
         <itemQuality>Poor</itemQuality>
         <gearHealthRange>0.4~1.0</gearHealthRange>
         <apparelMoney>700</apparelMoney>
         <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
         <apparelTags>
-            <li>FCP_Raider_Bruiser</li>
+            <li>FCP_Raider_Armor</li>
         </apparelTags>
         <weaponMoney>600</weaponMoney>
         <weaponTags>
-            <li>FCP_Raider_Weapon</li>
+            <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Makeshift</li>
+            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pipe_Weapons</li>
+            <li>Gun</li>
         </weaponTags>
         <disallowedTraits>
             <li>Kind</li>
@@ -104,16 +110,20 @@
         <label>raider boss</label>
         <combatPower>150</combatPower>
         <race>Human</race>
+        <xenotypeSet Inherit="False" />
+        <factionLeader>true</factionLeader>
         <itemQuality>Poor</itemQuality>
         <gearHealthRange>0.7~1.5</gearHealthRange>
         <apparelMoney>1200</apparelMoney>
         <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
         <apparelTags>
-            <li>FCP_Raider_Boss</li>
+            <li>FCP_Raider_Armor</li>
         </apparelTags>
         <weaponMoney>1200</weaponMoney>
         <weaponTags>
-            <li>FCP_Raider_Weapon</li>
+            <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Makeshift</li>
+            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pipe_Weapons</li>
+            <li>Gun</li>
         </weaponTags>
         <disallowedTraits>
             <li>Kind</li>
@@ -135,7 +145,7 @@
                     <li>FCP_Backstory_Wastelander_Child</li>
                 </categoriesChildhood>
                 <categoriesAdulthood>
-                    <li>FCP_Backstory_Raiders_Boss</li>
+                    <li>FCP_Backstory_Raiders</li>
                 </categoriesAdulthood>
             </li>
         </backstoryFiltersOverride>

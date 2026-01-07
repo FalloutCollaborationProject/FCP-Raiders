@@ -19,6 +19,10 @@
     </modDependencies>
     <loadAfter>
         <li>Rick.FCP.Core.Tools</li>
+        <li>Rick.FCP.BallisticWeapons</li>
+        <li>Rick.FCP.Legion</li>
+        <li>Rick.FCP.MeleeWeapons</li>
+        <li>Rick.FCP.NCR</li>
         <li>Rick.FCP.PowerArmor</li>
     </loadAfter>
 

@@ -25,6 +25,7 @@
         <categoryTag>Outlander</categoryTag>
         <settlementGenerationWeight>1</settlementGenerationWeight>
         <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <permanentEnemy>true</permanentEnemy>
         <canSiege>true</canSiege>
         <canStageAttacks>true</canStageAttacks>
         <leaderTitle>Raider Boss</leaderTitle>
@@ -51,19 +52,19 @@
         </forcedMemes>
         <requiredPreceptsOnly>true</requiredPreceptsOnly>
 
-        <!--__________ Biotech __________-->
+		<!--__________ Biotech __________-->
 
-        <xenotypeSet>
-            <xenotypeChances>
-                <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
-                <Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
-                <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
-                <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
-                <Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
-                <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
-                <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
-            </xenotypeChances>
-        </xenotypeSet>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
+				<Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
+				<Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+				<Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+				<Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+				<Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+				<Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+			</xenotypeChances>
+		</xenotypeSet>
 
         <!--__________ Backstories __________-->
         
@@ -121,7 +122,9 @@
                     <li>EmergeFromWater</li>
                 </disallowedStrategies>
                 <options>
-
+                    <FCP_Pawnkind_Raider_Scavver>10</FCP_Pawnkind_Raider_Scavver>
+                    <FCP_Pawnkind_Raider_Bruiser>5</FCP_Pawnkind_Raider_Bruiser>
+                    <FCP_Pawnkind_Raider_Boss>1</FCP_Pawnkind_Raider_Boss>
                 </options>
             </li>
 
@@ -133,7 +136,9 @@
                     <li>EmergeFromWater</li>
                 </disallowedStrategies>
                 <options>
-
+                    <FCP_Pawnkind_Raider_Scavver>10</FCP_Pawnkind_Raider_Scavver>
+                    <FCP_Pawnkind_Raider_Bruiser>5</FCP_Pawnkind_Raider_Bruiser>
+                    <FCP_Pawnkind_Raider_Boss>1</FCP_Pawnkind_Raider_Boss>
                 </options>
                 <characterDefs>
 
@@ -141,12 +146,25 @@
                 <characterChance>0.50</characterChance>
             </li>
 
+            <!-- Raiders Peaceful/Leader Generation -->
+
+            <li>
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <FCP_Pawnkind_Raider_Scavver>10</FCP_Pawnkind_Raider_Scavver>
+                    <FCP_Pawnkind_Raider_Bruiser>5</FCP_Pawnkind_Raider_Bruiser>
+                    <FCP_Pawnkind_Raider_Boss>3</FCP_Pawnkind_Raider_Boss>
+                </options>
+            </li>
+
             <!-- Raiders Settlement -->
 
             <li>
                 <kindDef>Settlement</kindDef>
                 <options>
-
+                    <FCP_Pawnkind_Raider_Scavver>10</FCP_Pawnkind_Raider_Scavver>
+                    <FCP_Pawnkind_Raider_Bruiser>5</FCP_Pawnkind_Raider_Bruiser>
+                    <FCP_Pawnkind_Raider_Boss>2</FCP_Pawnkind_Raider_Boss>
                 </options>
             </li>
         </pawnGroupMakers>
