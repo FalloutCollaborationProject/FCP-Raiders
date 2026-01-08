@@ -118,7 +118,7 @@
 		</apparel>
 	</ThingDef>
 
-	<!--_____ Raider Armor (Fo4) _____-->
+	<!--_____ Raider Armor _____-->
 
 	<!-- Long Johns -->
 
@@ -234,64 +234,6 @@
 		</comps>
 	</ThingDef>
 
-	<!-- TODO: These shoulder items need textures created before they can be enabled
-	<ThingDef ParentName="ApparelBase">
-		<defName>FCP_Apparel_Raider_Shoulders_Light</defName>
-		<description>TODO</description>
-		<label>Raider Appendages</label>
-		<smeltable>false</smeltable>
-		<graphicData>
-			<texPath>MakeTexturesForRaiderShouldersPls</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<recipeMaker Inherit= "false">
-			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
-			<skillRequirements>
-				<Crafting>4</Crafting>
-			</skillRequirements>
-			<researchPrerequisite>FCP_Research_Armor_Production</researchPrerequisite>
-			<recipeUsers>
-				<li>FCP_Production_Armor_Workbench</li>
-			</recipeUsers>
-		</recipeMaker>
-		<costList>
-			<Steel>15</Steel>
-		</costList>
-		<thingCategories>
-			<li>ApparelArmor</li>
-		</thingCategories>
-		<statBases>
-			<MaxHitPoints>175</MaxHitPoints>
-			<WorkToMake>3100</WorkToMake>
-			<Mass>3.0</Mass>
-			<MarketValue>125</MarketValue>
-			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.1</ArmorRating_Heat>
-			<EquipDelay>1.2</EquipDelay>
-		</statBases>
-		<apparel>
-			<bodyPartGroups>
-				<li>Shoulders</li>
-				<li>Arms</li>
-				<li>Legs</li>
-			</bodyPartGroups>
-			<wornGraphicPath>MakeTexturesForRaiderShouldersPls</wornGraphicPath>
-			<layers>
-				<li>Middle</li>
-			</layers>
-			<tags>
-				<li>FCP_Raider_Armor</li>
-			</tags>
-		</apparel>
-		<comps>
-			<li Class="FCP.Core.CompProperties_LabelColored">
-				<rarity>Common</rarity>
-			</li>
-		</comps>
-	</ThingDef>
-	-->
-
 	<!-- Raider Medium -->
 
 	<ThingDef ParentName="ApparelBase">
@@ -351,67 +293,6 @@
 			</li>
 		</comps>
 	</ThingDef>
-
-	<!--
-	<ThingDef ParentName="ApparelBase">
-		<defName>FCP_Apparel_Raider_Shoulders_Medium</defName>
-		<description>TODO</description>
-		<label>Sturdy Raider Appendages</label>
-		<smeltable>false</smeltable>
-		<graphicData>
-			<texPath>MakeTexturesForRaiderShouldersPls</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<recipeMaker Inherit= "false">
-			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
-			<skillRequirements>
-				<Crafting>5</Crafting>
-			</skillRequirements>
-			<researchPrerequisite>FCP_Research_Armor_Production</researchPrerequisite>
-			<recipeUsers>
-				<li>FCP_Production_Armor_Workbench</li>
-			</recipeUsers>
-		</recipeMaker>
-		<costList>
-			<Steel>30</Steel>
-		</costList>
-		<thingCategories>
-			<li>ApparelArmor</li>
-		</thingCategories>
-		<statBases>
-			<MaxHitPoints>175</MaxHitPoints>
-			<WorkToMake>3100</WorkToMake>
-			<Mass>5.0</Mass>
-			<MarketValue>125</MarketValue>
-			<ArmorRating_Sharp>0.10</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.4</ArmorRating_Heat>
-			<EquipDelay>1.2</EquipDelay>
-		</statBases>
-		<equippedStatOffsets>
-			<MoveSpeed>-0.2</MoveSpeed>
-		</equippedStatOffsets>
-		<apparel>
-			<bodyPartGroups>
-				<li>Shoulders</li>
-				<li>Arms</li>
-				<li>Legs</li>
-			</bodyPartGroups>
-			<wornGraphicPath>MakeTexturesForRaiderShouldersPls</wornGraphicPath>
-			<layers>
-				<li>Middle</li>
-			</layers>
-			<tags>
-				<li>FCP_Raider_Armor</li>
-			</tags>
-		</apparel>
-		<comps>
-			<li Class="FCP.Core.CompProperties_LabelColored">
-				<rarity>Common</rarity>
-			</li>
-		</comps>
-	</ThingDef>
-	-->
 
 	<!-- Raider Heavy -->
 
@@ -473,65 +354,84 @@
 		</comps>
 	</ThingDef>
 
-	<!--
-	<ThingDef ParentName="ApparelBase">
-		<defName>FCP_Apparel_Raider_Shoulders_Heavy</defName>
-		<description>TODO</description>
-		<label>Heavy Raider Appendages</label>
-		<smeltable>false</smeltable>
+	<!-- Tire Armor -->
+
+	<ThingDef ParentName="FCP_Raider_Armor_Base">
+		<defName>FCP_Apparel_Raider_Tire_Armor</defName>
+		<description>Makeshift armor constructed from scavenged tire rubber and metal scraps. The thick rubber provides decent protection against blunt impacts while remaining surprisingly flexible. Popular among raiders who value mobility over heavy protection.</description>
+		<label>Raider Tire Armor</label>
 		<graphicData>
-			<texPath>MakeTexturesForRaiderShouldersPls</texPath>
+			<texPath>Things/Apparel/Tire_Armor/FCP_Tire_Armor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<recipeMaker Inherit= "false">
-			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
-			<skillRequirements>
-				<Crafting>6</Crafting>
-			</skillRequirements>
-			<researchPrerequisite>FCP_Research_Armor_Production</researchPrerequisite>
-			<recipeUsers>
-				<li>FCP_Production_Armor_Workbench</li>
-			</recipeUsers>
-		</recipeMaker>
 		<costList>
-			<Steel>50</Steel>
+			<Cloth>50</Cloth>
+			<Steel>15</Steel>
 		</costList>
-		<thingCategories>
-			<li>ApparelArmor</li>
-		</thingCategories>
 		<statBases>
-			<MaxHitPoints>175</MaxHitPoints>
-			<WorkToMake>3100</WorkToMake>
-			<Mass>5.0</Mass>
-			<MarketValue>125</MarketValue>
-			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.12</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.6</ArmorRating_Heat>
-			<EquipDelay>1.2</EquipDelay>
+			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.25</ArmorRating_Heat>
+			<Mass>1.2</Mass>
+			<MarketValue>75</MarketValue>
 		</statBases>
-		<equippedStatOffsets>
-			<MoveSpeed>-0.5</MoveSpeed>
-		</equippedStatOffsets>
 		<apparel>
-			<bodyPartGroups>
-				<li>Shoulders</li>
-				<li>Arms</li>
-				<li>Legs</li>
-			</bodyPartGroups>
-			<wornGraphicPath>MakeTexturesForRaiderShouldersPls</wornGraphicPath>
-			<layers>
-				<li>Middle</li>
-			</layers>
-			<tags>
-				<li>FCP_Raider_Armor</li>
-			</tags>
+			<wornGraphicPath>Things/Apparel/Tire_Armor/FCP_Tire_Armor</wornGraphicPath>
 		</apparel>
-		<comps>
-			<li Class="FCP.Core.CompProperties_LabelColored">
-				<rarity>Common</rarity>
-			</li>
-		</comps>
 	</ThingDef>
-	-->
+
+	<!-- Raider Leathers -->
+
+	<ThingDef ParentName="FCP_Raider_Armor_Base">
+		<defName>FCP_Apparel_Raider_Leathers</defName>
+		<description>A crude leather outfit cobbled together from various animal hides and scraps. While offering minimal protection, it's lightweight and allows for quick movement - essential for hit-and-run raider tactics.</description>
+		<label>Raider Leathers</label>
+		<graphicData>
+			<texPath>Things/Apparel/Raider_leathers/FCP_Raider_leathers</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costList>
+			<Leather_Plain>55</Leather_Plain>
+			<Cloth>20</Cloth>
+		</costList>
+		<statBases>
+			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.15</ArmorRating_Heat>
+			<Mass>0.8</Mass>
+			<MarketValue>65</MarketValue>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Raider_leathers/FCP_Raider_leathers</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+
+	<!-- Leather Coat -->
+
+	<ThingDef ParentName="FCP_Raider_Armor_Base">
+		<defName>FCP_Apparel_Raider_Leather_Coat</defName>
+		<description>A long leather duster worn by raider leaders and those who have survived long enough to earn some respect. Offers better protection than basic raider armor while maintaining an intimidating appearance.</description>
+		<label>Raider Leather Coat</label>
+		<graphicData>
+			<texPath>Things/Apparel/Leather_Coat/FCP_Leather_Coat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costList>
+			<Leather_Plain>70</Leather_Plain>
+			<Cloth>25</Cloth>
+		</costList>
+		<statBases>
+			<MaxHitPoints>160</MaxHitPoints>
+			<WorkToMake>5200</WorkToMake>
+			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.25</ArmorRating_Heat>
+			<Mass>1.1</Mass>
+			<MarketValue>90</MarketValue>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Leather_Coat/FCP_Leather_Coat</wornGraphicPath>
+		</apparel>
+	</ThingDef>
 
 </Defs>

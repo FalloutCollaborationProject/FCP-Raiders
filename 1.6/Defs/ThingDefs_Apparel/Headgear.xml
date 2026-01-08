@@ -102,7 +102,9 @@
         </comps>
     </ThingDef>
 
-    <!-- Fiends -->
+    <!--__ Fiends __-->
+
+    <!-- Raider Fiend Helmet -->
 
     <ThingDef ParentName="FCP_Raider_Helmet_Base">
         <defName>FCP_Apparel_Fiend_Helmet</defName>
@@ -117,6 +119,8 @@
         </apparel>
     </ThingDef>
 
+    <!-- Raider Fiend Warrior Helmet -->
+
     <ThingDef ParentName="FCP_Raider_Helmet_Base">
         <defName>FCP_Apparel_Fiend_Warrior_Helmet</defName>
         <description>A basic leather helmet, with a young bighorner's skull affixed to the top for decoration. The skull has a red bullseye on it, most often worn by the fiends, a particularly vicious group of raiders originating from the Mojave wasteland. It doesn’t protect well, but looks quite intimidating, which is more important to most raiders anyway.</description>
@@ -129,6 +133,8 @@
             <wornGraphicPath>Things/Headgear/Fiend_Warrior_Helmet/FCP_Fiend_Warrior_Helmet</wornGraphicPath>
         </apparel>
     </ThingDef>
+
+    <!-- Raider Fiend Battle Helmet -->
 
     <ThingDef ParentName="FCP_Raider_Helmet_Base">
         <defName>FCP_Apparel_Fiend_Battle_Helmet</defName>
@@ -219,129 +225,7 @@
         </apparel>
     </ThingDef>
 
-    <!--_____ Raider Helmets (Fo4) _____-->
-
-    <!-- Gas Mask (Goggles) -->
-
-    <ThingDef ParentName="ApparelBase">
-        <defName>FCP_Apparel_Gasmask_Goggles</defName>
-        <description>A simple gas mask that covers the entire face, often seen worn by raiders. It is held on to the wearer by adjustable straps. It’s not very protective against bullets and other physical attacks but provides medium protection against toxins and radiation.</description>
-        <label>Gas Mask with Goggles</label>
-        <smeltable>false</smeltable>
-        <graphicData>
-            <texPath>Things/Headgear/Gas_Mask_With_Goggles/FCP_Gas_Mask_With_Goggles</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <recipeMaker Inherit= "false">
-            <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
-            <skillRequirements>
-                <Crafting>4</Crafting>
-            </skillRequirements>
-            <researchPrerequisite>FCP_Research_Apparel_Production</researchPrerequisite>
-            <recipeUsers>
-                <li>FCP_Production_Tailoring_Workbench</li>
-            </recipeUsers>
-        </recipeMaker>
-        <costList>
-            <Cloth>15</Cloth>
-            <Chemfuel>10</Chemfuel>
-        </costList>
-        <thingCategories>
-            <li>ApparelArmor</li>
-        </thingCategories>
-        <statBases>
-            <MaxHitPoints>200</MaxHitPoints>
-            <WorkToMake>4000</WorkToMake>
-            <Mass>1.0</Mass>
-            <MarketValue>200</MarketValue>
-            <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.2</ArmorRating_Heat>
-            <EquipDelay>1.2</EquipDelay>
-        </statBases>
-        <equippedStatOffsets>
-            <ToxicEnvironmentResistance>0.80</ToxicEnvironmentResistance>
-        </equippedStatOffsets>
-        <apparel>
-            <bodyPartGroups>
-                <li>Neck</li>
-                <li>Torso</li>
-            </bodyPartGroups>
-            <wornGraphicPath>Things/Headgear/Gas_Mask_With_Goggles/FCP_Gas_Mask_With_Goggles</wornGraphicPath>
-            <layers>
-                <li>Shell</li>
-            </layers>
-            <tags>
-                <li>FCP_Raider_Armor</li>
-            </tags>
-        </apparel>
-        <comps>
-            <li Class="FCP.Core.CompProperties_LabelColored">
-                <rarity>Common</rarity>
-            </li>
-        </comps>
-    </ThingDef>
-
-    <!-- Assault Gasmask -->
-
-    <ThingDef ParentName="ApparelBase">
-        <defName>FCP_Apparel_Assault_Gas_Mask</defName>
-        <description>An armored gasmask worn underneath a cloth hood. It provides decent protection against bullets and hazardous gases and similar substances and is most often worn by raiders.</description>
-        <label>Assault Gasmask</label>
-        <smeltable>false</smeltable>
-        <graphicData>
-            <texPath>Things/Headgear/Assault_Gas_Mask/FCP_Assault_Gas_Mask</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <recipeMaker Inherit= "false">
-            <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
-            <skillRequirements>
-                <Crafting>4</Crafting>
-            </skillRequirements>
-            <researchPrerequisite>FCP_Research_Apparel_Production</researchPrerequisite>
-            <recipeUsers>
-                <li>FCP_Production_Tailoring_Workbench</li>
-            </recipeUsers>
-        </recipeMaker>
-        <costList>
-            <Cloth>15</Cloth>
-            <Steel>10</Steel>
-        </costList>
-        <thingCategories>
-            <li>ApparelArmor</li>
-        </thingCategories>
-        <statBases>
-            <MaxHitPoints>200</MaxHitPoints>
-            <WorkToMake>4000</WorkToMake>
-            <Mass>1.0</Mass>
-            <MarketValue>200</MarketValue>
-            <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.2</ArmorRating_Heat>
-            <EquipDelay>1.2</EquipDelay>
-        </statBases>
-        <equippedStatOffsets>
-            <ToxicEnvironmentResistance>0.80</ToxicEnvironmentResistance>
-        </equippedStatOffsets>
-        <apparel>
-            <bodyPartGroups>
-                <li>Neck</li>
-                <li>Torso</li>
-            </bodyPartGroups>
-            <wornGraphicPath>Things/Headgear/Assault_Gas_Mask/FCP_Assault_Gas_Mask</wornGraphicPath>
-            <layers>
-                <li>Shell</li>
-            </layers>
-            <tags>
-                <li>FCP_Raider_Armor</li>
-            </tags>
-        </apparel>
-        <comps>
-            <li Class="FCP.Core.CompProperties_LabelColored">
-                <rarity>Common</rarity>
-            </li>
-        </comps>
-    </ThingDef>
+    <!--_____ Raider Helmets _____-->
 
     <!-- Sack Hood -->
 
@@ -399,6 +283,376 @@
         <comps>
             <li Class="FCP.Core.CompProperties_LabelColored">
                 <rarity>Common</rarity>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- Armored Raider Skull Gas Mask -->
+
+    <ThingDef ParentName="FCP_Raider_Helmet_Base">
+        <defName>FCP_Apparel_Armored_Raider_Skull_Gas_Mask</defName>
+        <description>A gas mask fitted with a reinforced metal skull plate. The combination of functional protection and terrifying aesthetics makes this a favored piece of headgear among raider elites.</description>
+        <label>Armored Raider Skull Gas Mask</label>
+        <recipeMaker Inherit="false">
+            <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>FCP_Research_Apparel_Production</researchPrerequisite>
+            <recipeUsers>
+                <li>FCP_Production_Tailoring_Workbench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <costList Inherit="False">
+            <Steel>20</Steel>
+            <Cloth>10</Cloth>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <statBases Inherit="False">
+            <MaxHitPoints>120</MaxHitPoints>
+            <WorkToMake>2500</WorkToMake>
+            <Mass>0.8</Mass>
+            <MarketValue>75</MarketValue>
+            <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.15</ArmorRating_Heat>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ToxicEnvironmentResistance>0.75</ToxicEnvironmentResistance>
+        </equippedStatOffsets>
+        <graphicData>
+            <texPath>Things/Headgear/Armored_Raider_Skull_Gas_Mask/FCP_Armored_Raider_Skull_Gas_Mask</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <apparel>
+            <wornGraphicPath>Things/Headgear/Armored_Raider_Skull_Gas_Mask/FCP_Armored_Raider_Skull_Gas_Mask</wornGraphicPath>
+        </apparel>
+    </ThingDef>
+
+    <!-- Rusty Raider Skull Gas Mask -->
+
+    <ThingDef ParentName="FCP_Raider_Helmet_Base">
+        <defName>FCP_Apparel_Rusty_Raider_Skull_Gas_Mask</defName>
+        <description>A weathered gas mask with a corroded skull plate attached. Despite its deteriorated condition, it still provides adequate protection and maintains the intimidating raider aesthetic.</description>
+        <label>Rusty Raider Skull Gas Mask</label>
+        <recipeMaker Inherit="false">
+            <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>FCP_Research_Apparel_Production</researchPrerequisite>
+            <recipeUsers>
+                <li>FCP_Production_Tailoring_Workbench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <costList Inherit="False">
+            <Steel>12</Steel>
+            <Cloth>8</Cloth>
+        </costList>
+        <statBases Inherit="False">
+            <MaxHitPoints>90</MaxHitPoints>
+            <WorkToMake>1800</WorkToMake>
+            <Mass>0.6</Mass>
+            <MarketValue>45</MarketValue>
+            <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.12</ArmorRating_Heat>
+            <EquipDelay>1.3</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ToxicEnvironmentResistance>0.60</ToxicEnvironmentResistance>
+        </equippedStatOffsets>
+        <graphicData>
+            <texPath>Things/Headgear/Rusty_Raider_Skull_Gas_Mask/FCP_Rusty_Raider_Skull_Gas_Mask</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <apparel>
+            <wornGraphicPath>Things/Headgear/Rusty_Raider_Skull_Gas_Mask/FCP_Rusty_Raider_Skull_Gas_Mask</wornGraphicPath>
+        </apparel>
+    </ThingDef>
+
+    <!--_____ Raider Power Armor Helmets _____-->
+
+    <!-- Raider Power Armor Helmet -->
+
+    <ThingDef ParentName="HatBase" MayRequire="Rick.FCP.PowerArmor">
+        <defName>FCP_Apparel_Raider_Power_Armor_Helmet</defName>
+        <label>Raider Power Armor Helmet</label>
+        <description>A power armor helmet that has been crudely modified by raiders. The internal systems barely function, but it still provides excellent protection against most threats.</description>
+        <techLevel>Industrial</techLevel>
+        <graphicData>
+            <texPath>Things/Headgear/Raider_Power_Armor_Helmet/FCP_Raider_Power_Armor_Helmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <smeltable>false</smeltable>
+        <statBases>
+            <WorkToMake>3000</WorkToMake>
+            <MaxHitPoints>80</MaxHitPoints>
+            <Mass>0.8</Mass>
+            <ArmorRating_Sharp>0.95</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.95</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.75</ArmorRating_Heat>
+            <Insulation_Heat>2</Insulation_Heat>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ToxicEnvironmentResistance>0.75</ToxicEnvironmentResistance>
+            <MoveSpeed>-0.06</MoveSpeed>
+            <AimingDelayFactor>0.015</AimingDelayFactor>
+            <SocialImpact>-0.06</SocialImpact>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Headgear/Raider_Power_Armor_Helmet/FCP_Raider_Power_Armor_Helmet</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+            <developmentalStageFilter>Adult</developmentalStageFilter>
+            <tags>
+                <li>FCP_Raider_Power_Armor</li>
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="FCP.Core.CompProperties_LabelColored">
+                <rarity>Rare</rarity>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- Junkyard Power Armor Helmet -->
+
+    <ThingDef ParentName="HatBase" MayRequire="Rick.FCP.PowerArmor">
+        <defName>FCP_Apparel_Junkyard_Power_Armor_Helmet</defName>
+        <label>Junkyard Power Armor Helmet</label>
+        <description>A makeshift power armor helmet assembled from salvaged parts. While not as protective as military-grade helmets, it's still far superior to conventional raider headgear.</description>
+        <techLevel>Industrial</techLevel>
+        <graphicData>
+            <texPath>Things/Headgear/Junkyard_Power_Armor_Helmet/FCP_Junkyard_Power_Armor_Helmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <smeltable>false</smeltable>
+        <statBases>
+            <WorkToMake>2800</WorkToMake>
+            <MaxHitPoints>75</MaxHitPoints>
+            <Mass>0.7</Mass>
+            <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.70</ArmorRating_Heat>
+            <Insulation_Heat>1.8</Insulation_Heat>
+            <EquipDelay>2.8</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ToxicEnvironmentResistance>0.70</ToxicEnvironmentResistance>
+            <MoveSpeed>-0.08</MoveSpeed>
+            <AimingDelayFactor>0.02</AimingDelayFactor>
+            <SocialImpact>-0.07</SocialImpact>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Headgear/Junkyard_Power_Armor_Helmet/FCP_Junkyard_Power_Armor_Helmet</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+            <developmentalStageFilter>Adult</developmentalStageFilter>
+            <tags>
+                <li>FCP_Raider_Power_Armor</li>
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="FCP.Core.CompProperties_LabelColored">
+                <rarity>Rare</rarity>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- Scabber Power Armor Helmet -->
+
+    <ThingDef ParentName="HatBase" MayRequire="Rick.FCP.PowerArmor">
+        <defName>FCP_Apparel_Scabber_Power_Armor_Helmet</defName>
+        <label>Scabber Power Armor Helmet</label>
+        <description>A heavily corroded power armor helmet covered in rust and decay. Despite its deteriorated appearance, the core structure remains solid and provides substantial protection.</description>
+        <techLevel>Industrial</techLevel>
+        <graphicData>
+            <texPath>Things/Headgear/Scabber_Power_Armor_Helmet/FCP_Scabber_Power_Armor_Helmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <smeltable>false</smeltable>
+        <statBases>
+            <WorkToMake>2600</WorkToMake>
+            <MaxHitPoints>70</MaxHitPoints>
+            <Mass>0.75</Mass>
+            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.85</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.65</ArmorRating_Heat>
+            <Insulation_Heat>1.5</Insulation_Heat>
+            <EquipDelay>2.9</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ToxicEnvironmentResistance>0.65</ToxicEnvironmentResistance>
+            <MoveSpeed>-0.09</MoveSpeed>
+            <AimingDelayFactor>0.025</AimingDelayFactor>
+            <SocialImpact>-0.08</SocialImpact>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Headgear/Scabber_Power_Armor_Helmet/FCP_Scabber_Power_Armor_Helmet</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+            <developmentalStageFilter>Adult</developmentalStageFilter>
+            <tags>
+                <li>FCP_Raider_Power_Armor</li>
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="FCP.Core.CompProperties_LabelColored">
+                <rarity>Rare</rarity>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- Waster Power Armor Helmet -->
+
+    <ThingDef ParentName="HatBase" MayRequire="Rick.FCP.PowerArmor">
+        <defName>FCP_Apparel_Waster_Power_Armor_Helmet</defName>
+        <label>Waster Power Armor Helmet</label>
+        <description>A battle-worn power armor helmet showing signs of extensive use and makeshift repairs. While not pristine, it remains a formidable piece of protective gear.</description>
+        <techLevel>Industrial</techLevel>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>FCP_Research_Armor_Production</researchPrerequisite>
+            <recipeUsers>
+                <li>FCP_Production_Armor_Workbench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <costList>
+            <Steel>34</Steel>
+            <Plasteel>7</Plasteel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+        </costList>
+        <graphicData>
+            <texPath>Things/Headgear/Waster_Power_Armor_Helmet/FCP_Waster_Power_Armor_Helmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <smeltable>false</smeltable>
+        <statBases>
+            <WorkToMake>2900</WorkToMake>
+            <MaxHitPoints>78</MaxHitPoints>
+            <Mass>0.75</Mass>
+            <MarketValue>460</MarketValue>
+            <ArmorRating_Sharp>0.92</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.92</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.72</ArmorRating_Heat>
+            <Insulation_Heat>1.9</Insulation_Heat>
+            <EquipDelay>2.85</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ToxicEnvironmentResistance>0.72</ToxicEnvironmentResistance>
+            <MoveSpeed>-0.07</MoveSpeed>
+            <AimingDelayFactor>0.018</AimingDelayFactor>
+            <SocialImpact>-0.065</SocialImpact>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Headgear/Waster_Power_Armor_Helmet/FCP_Waster_Power_Armor_Helmet</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+            <developmentalStageFilter>Adult</developmentalStageFilter>
+            <tags>
+                <li>FCP_Raider_Power_Armor</li>
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="FCP.Core.CompProperties_LabelColored">
+                <rarity>Rare</rarity>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- Mrfuzzy Power Armor Helmet -->
+
+    <ThingDef ParentName="HatBase" MayRequire="Rick.FCP.PowerArmor">
+        <defName>FCP_Apparel_Mrfuzzy_Power_Armor_Helmet</defName>
+        <label>Mr Fuzzy Power Armor Helmet</label>
+        <description>An unusual power armor helmet that has been modified with a Mr. Fuzzy mascot theme. Despite its absurd appearance, it provides the same protection as standard raider power armor helmets.</description>
+        <techLevel>Industrial</techLevel>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>FCP_Research_Armor_Production</researchPrerequisite>
+            <recipeUsers>
+                <li>FCP_Production_Armor_Workbench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <costList>
+            <Steel>35</Steel>
+            <Plasteel>8</Plasteel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <Cloth>15</Cloth>
+        </costList>
+        <graphicData>
+            <texPath>Things/Headgear/Mrfuzzy_Power_Armor_Helmet/Mrfuzzy_New_Power_Armor_Helmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <smeltable>false</smeltable>
+        <statBases>
+            <WorkToMake>3000</WorkToMake>
+            <MaxHitPoints>80</MaxHitPoints>
+            <Mass>0.85</Mass>
+            <MarketValue>500</MarketValue>
+            <ArmorRating_Sharp>0.95</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.95</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.75</ArmorRating_Heat>
+            <Insulation_Heat>2</Insulation_Heat>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ToxicEnvironmentResistance>0.75</ToxicEnvironmentResistance>
+            <MoveSpeed>-0.06</MoveSpeed>
+            <AimingDelayFactor>0.015</AimingDelayFactor>
+            <SocialImpact>0.05</SocialImpact>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Headgear/Mrfuzzy_Power_Armor_Helmet/Mrfuzzy_New_Power_Armor_Helmet</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+            <developmentalStageFilter>Adult</developmentalStageFilter>
+            <tags>
+                <li>FCP_Raider_Power_Armor</li>
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="FCP.Core.CompProperties_LabelColored">
+                <rarity>Rare</rarity>
             </li>
         </comps>
     </ThingDef>

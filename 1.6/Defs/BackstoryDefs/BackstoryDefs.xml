@@ -9,932 +9,3769 @@
 
     <!--__ Adults __-->
 
-    <!-- Raider Psycho -->
+    <!--___ Slavers ___-->
 
-    <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Raider_Psycho</defName>
-        <identifier>FCP_Backstory_Raiders_Raider_Psycho</identifier>
+    <!-- Slaver Collarer -->
+
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
+        <defName>FCP_Slaver_Collarer</defName>
+        <title>slaver collarer</title>
+        <titleShort>collarer</titleShort>
+        <baseDesc>[PAWN_nameDef] specialized in capturing live prey for the slaver markets. [PAWN_pronoun] perfected the use of shock collars and mesmetrons to subdue targets without killing them.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <slot>Adulthood</slot>
-        <title>Raider Psycho</title>
-        <titleShort>Raider Psycho</titleShort>
-        <description>[PAWN_nameDef] was part of a particular violent group of raiders. [PAWN_nameDef] was feared even among [PAWN_possessive] fellow raiders for [PAWN_possessive] violent, volatile and utter psychopathic nature.</description>
+        <spawnCategories>
+            <li>FCP_Backstory_Slavers</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>4</Shooting>
+            <Melee>3</Melee>
+            <Social>2</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Slave Overseer -->
+
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
+        <defName>FCP_Slaver_Overseer</defName>
+        <title>slave overseer</title>
+        <titleShort>overseer</titleShort>
+        <baseDesc>[PAWN_nameDef] kept slaves in line through brutality and fear. [PAWN_pronoun] became an expert at breaking spirits and maximizing productivity from captive labor.</baseDesc>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Slavers</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>5</Melee>
+            <Social>-3</Social>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+        <workDisables>
+            <li>Caring</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <!-- Slave Trader -->
+
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
+        <defName>FCP_Slaver_Trader</defName>
+        <title>slave trader</title>
+        <titleShort>trader</titleShort>
+        <baseDesc>[PAWN_nameDef] dealt in human cargo, negotiating prices and arranging sales across the wasteland. [PAWN_pronoun] viewed people as nothing more than commodities to be bought and sold.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Slavers</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>6</Social>
+            <Intellectual>3</Intellectual>
+            <Shooting>2</Shooting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Paradise Falls Slaver -->
+
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
+        <defName>FCP_Slaver_ParadiseFalls</defName>
+        <title>Paradise Falls slaver</title>
+        <titleShort>slaver</titleShort>
+        <baseDesc>[PAWN_nameDef] operated out of Paradise Falls, the infamous slaver hub. [PAWN_pronoun] raided settlements and captured wastelanders to sell at the slave markets.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Slavers</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>5</Shooting>
+            <Melee>3</Melee>
+            <Social>1</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Former Slave Turned Slaver -->
+
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
+        <defName>FCP_Slaver_FormerSlave</defName>
+        <title>former slave turned slaver</title>
+        <titleShort>turncoat</titleShort>
+        <baseDesc>[PAWN_nameDef] was once a slave who earned freedom by betraying fellow captives. [PAWN_pronoun] now works for the masters, using intimate knowledge of slave psychology to prevent escapes.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Slavers</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>4</Social>
+            <Intellectual>3</Intellectual>
+            <Melee>2</Melee>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Pitt Recruiter -->
+
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
+        <defName>FCP_Slaver_PittRecruiter</defName>
+        <title>Pitt recruiter</title>
+        <titleShort>recruiter</titleShort>
+        <baseDesc>[PAWN_nameDef] "recruited" workers for The Pitt's steel mills. [PAWN_pronoun] used lies and force to trick or capture people into a lifetime of industrial slavery.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Slavers</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>5</Social>
+            <Shooting>3</Shooting>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+        <workDisables>
+            <li>Caring</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <!-- Child Catcher -->
+
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
+        <defName>FCP_Slaver_ChildCatcher</defName>
+        <title>child catcher</title>
+        <titleShort>catcher</titleShort>
+        <baseDesc>[PAWN_nameDef] specialized in capturing children for the slave markets. Young slaves fetched high prices, and [PAWN_pronoun] had no qualms about orphaning families.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Slavers</li>
+        </spawnCategories>
         <skillGains>
             <Shooting>3</Shooting>
+            <Melee>4</Melee>
+            <Social>-2</Social>
+        </skillGains>
+        <workDisables>
+            <li>Caring</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <!-- Collar Technician -->
+
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
+        <defName>FCP_Slaver_CollarTech</defName>
+        <title>collar technician</title>
+        <titleShort>tech</titleShort>
+        <baseDesc>[PAWN_nameDef] maintained the electronic slave collars that kept captives compliant. [PAWN_pronoun] ensured every collar was properly calibrated to deliver maximum pain without killing the merchandise.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Slavers</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>5</Crafting>
+            <Intellectual>4</Intellectual>
+            <Shooting>1</Shooting>
+        </skillGains>
+        <workDisables>
+            <li>Caring</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <!-- Slave Caravan Guard -->
+
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
+        <defName>FCP_Slaver_CaravanGuard</defName>
+        <title>slave caravan guard</title>
+        <titleShort>guard</titleShort>
+        <baseDesc>[PAWN_nameDef] escorted slave caravans across dangerous wasteland territories. [PAWN_pronoun] became skilled at preventing escapes while fending off raiders and wildlife.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Slavers</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>5</Shooting>
+            <Melee>4</Melee>
+            <Animals>2</Animals>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Slave Breaker -->
+
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
+        <defName>FCP_Slaver_Breaker</defName>
+        <title>slave breaker</title>
+        <titleShort>breaker</titleShort>
+        <baseDesc>[PAWN_nameDef] specialized in "breaking in" new slaves, crushing their will to resist through psychological and physical torture. [PAWN_pronoun] took pride in creating obedient chattel.</baseDesc>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Slavers</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>6</Melee>
+            <Social>2</Social>
+            <Medicine>-2</Medicine>
+        </skillGains>
+        <workDisables>
+            <li>Caring</li>
+            <li>Social</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <!-- Slave Appraiser -->
+
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
+        <defName>FCP_Slaver_Appraiser</defName>
+        <title>slave appraiser</title>
+        <titleShort>appraiser</titleShort>
+        <baseDesc>[PAWN_nameDef] evaluated captured slaves to determine their market value. [PAWN_pronoun] assessed physical condition, skills, and potential uses with cold, calculating efficiency.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Slavers</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>5</Intellectual>
+            <Social>4</Social>
+            <Medicine>3</Medicine>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Raider Slave Driver -->
+
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
+        <defName>FCP_Slaver_RaidLeader</defName>
+        <title>slaver raid leader</title>
+        <titleShort>raid leader</titleShort>
+        <baseDesc>[PAWN_nameDef] led raiding parties to capture fresh slaves from settlements and caravans. [PAWN_pronoun] planned ambushes and coordinated attacks to maximize captures while minimizing damage to the merchandise.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Slavers</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>5</Shooting>
+            <Melee>4</Melee>
+            <Social>3</Social>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Slave Pen Keeper -->
+
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
+        <defName>FCP_Slaver_PenKeeper</defName>
+        <title>slave pen keeper</title>
+        <titleShort>pen keeper</titleShort>
+        <baseDesc>[PAWN_nameDef] managed the holding pens where slaves were kept before sale. [PAWN_pronoun] kept them alive and presentable while ensuring none could escape.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Slavers</li>
+        </spawnCategories>
+        <skillGains>
+            <Construction>3</Construction>
+            <Melee>4</Melee>
+            <Cooking>2</Cooking>
+        </skillGains>
+        <workDisables>
+            <li>Caring</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <!-- Mesmetron Specialist -->
+
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
+        <defName>FCP_Slaver_Mesmetron</defName>
+        <title>mesmetron specialist</title>
+        <titleShort>mesmetron user</titleShort>
+        <baseDesc>[PAWN_nameDef] mastered the use of the mesmetron, a device that hypnotizes targets into submission. [PAWN_pronoun] could capture marks without a fight, making them walk willingly into bondage.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Slavers</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>4</Shooting>
+            <Social>3</Social>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Slaver Enforcer -->
+
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
+        <defName>FCP_Slaver_Enforcer</defName>
+        <title>slaver enforcer</title>
+        <titleShort>enforcer</titleShort>
+        <baseDesc>[PAWN_nameDef] served as muscle for slaving operations, intimidating both slaves and rivals. [PAWN_pronoun] dealt with escape attempts through brutal public punishments.</baseDesc>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Slavers</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>6</Melee>
+            <Shooting>3</Shooting>
+            <Social>-3</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Vault Dweller Hunter -->
+
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
+        <defName>FCP_Slaver_VaultHunter</defName>
+        <title>vault dweller hunter</title>
+        <titleShort>vault hunter</titleShort>
+        <baseDesc>[PAWN_nameDef] specialized in raiding vaults for their inhabitants. Vault dwellers were prized as slaves - healthy, educated, and unused to wasteland hardships made them easy to control.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Slavers</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>4</Shooting>
+            <Construction>3</Construction>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Slave Auctioneer -->
+
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
+        <defName>FCP_Slaver_Auctioneer</defName>
+        <title>slave auctioneer</title>
+        <titleShort>auctioneer</titleShort>
+        <baseDesc>[PAWN_nameDef] conducted slave auctions, driving up prices through showmanship and manipulation. [PAWN_pronoun] presented human beings like livestock, emphasizing their qualities to maximize profits.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Slavers</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>7</Social>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+        <workDisables>
+            <li>Caring</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <!-- Escaped Slave Tracker -->
+
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
+        <defName>FCP_Slaver_Tracker</defName>
+        <title>escaped slave tracker</title>
+        <titleShort>tracker</titleShort>
+        <baseDesc>[PAWN_nameDef] hunted down escaped slaves across the wasteland. [PAWN_pronoun] used tracking skills and knowledge of the terrain to recapture runaways, making brutal examples of them.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Slavers</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>4</Shooting>
+            <Animals>4</Animals>
+            <Melee>3</Melee>
+            <Medicine>2</Medicine>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Slave Chem Dealer -->
+
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
+        <defName>FCP_Slaver_ChemDealer</defName>
+        <title>slave chem dealer</title>
+        <titleShort>chem dealer</titleShort>
+        <baseDesc>[PAWN_nameDef] kept slaves addicted to chems to ensure compliance. [PAWN_pronoun] controlled the supply, making slaves dependent and desperate for their next fix.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Slavers</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>4</Intellectual>
+            <Crafting>3</Crafting>
+            <Social>3</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Slave Branding Master -->
+
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
+        <defName>FCP_Slaver_BrandingMaster</defName>
+        <title>branding master</title>
+        <titleShort>brander</titleShort>
+        <baseDesc>[PAWN_nameDef] marked slaves with hot irons or tattoos to denote ownership. [PAWN_pronoun] took grim satisfaction in permanently marking captives as property.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Slavers</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>4</Crafting>
+            <Artistic>3</Artistic>
+            <Melee>2</Melee>
+        </skillGains>
+        <workDisables>
+            <li>Caring</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <!--___ Jackals ___-->
+
+    <!-- Jackal Initiate -->
+
+    <BackstoryDef>
+        <defName>FCP_Jackal_Initiate</defName>
+        <title>Jackal initiate</title>
+        <titleShort>initiate</titleShort>
+        <baseDesc>[PAWN_nameDef] joined the Jackals, a savage raider gang known for their brutality. [PAWN_pronoun] proved themselves through violence and cruelty to earn a place among the pack.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Jackals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>4</Melee>
+            <Shooting>2</Shooting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Jackal Ambusher -->
+
+    <BackstoryDef>
+        <defName>FCP_Jackal_Ambusher</defName>
+        <title>Jackal ambusher</title>
+        <titleShort>ambusher</titleShort>
+        <baseDesc>[PAWN_nameDef] specialized in setting up ambushes along roads and trade routes for the Jackals. [PAWN_pronoun] learned to strike fast, take what they could carry, and disappear before help arrived.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Jackals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>5</Shooting>
+            <Melee>3</Melee>
+            <Animals>2</Animals>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Jackal Pack Leader -->
+
+    <BackstoryDef>
+        <defName>FCP_Jackal_PackLeader</defName>
+        <title>Jackal pack leader</title>
+        <titleShort>pack leader</titleShort>
+        <baseDesc>[PAWN_nameDef] led a pack of Jackal raiders through intimidation and proven kills. [PAWN_pronoun] earned respect through savage brutality and successful raids.</baseDesc>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Jackals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>6</Melee>
+            <Shooting>4</Shooting>
+            <Social>2</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Jackal Scavenger -->
+
+    <BackstoryDef>
+        <defName>FCP_Jackal_Scavenger</defName>
+        <title>Jackal scavenger</title>
+        <titleShort>scavenger</titleShort>
+        <baseDesc>[PAWN_nameDef] picked through the remains of Jackal raids, salvaging weapons, supplies, and anything valuable from corpses. [PAWN_pronoun] had no qualms about looting the dead.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Jackals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>3</Intellectual>
+            <Medicine>2</Medicine>
+            <Shooting>2</Shooting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Jackal Enforcer -->
+
+    <BackstoryDef>
+        <defName>FCP_Jackal_Enforcer</defName>
+        <title>Jackal enforcer</title>
+        <titleShort>enforcer</titleShort>
+        <baseDesc>[PAWN_nameDef] kept other Jackals in line through fear and violence. [PAWN_pronoun] dealt with cowards, traitors, and anyone who challenged the pack's authority with brutal efficiency.</baseDesc>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Jackals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>7</Melee>
+            <Shooting>2</Shooting>
+            <Social>-2</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Jackal Raider -->
+
+    <BackstoryDef>
+        <defName>FCP_Jackal_Raider</defName>
+        <title>Jackal raider</title>
+        <titleShort>raider</titleShort>
+        <baseDesc>[PAWN_nameDef] raided caravans and settlements with the Jackals, taking whatever wasn't nailed down and killing anyone who resisted. [PAWN_pronoun] lived for the thrill of violence and plunder.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Jackals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>4</Shooting>
+            <Melee>4</Melee>
+            <Social>-1</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Jackal Scout -->
+
+    <BackstoryDef>
+        <defName>FCP_Jackal_Scout</defName>
+        <title>Jackal scout</title>
+        <titleShort>scout</titleShort>
+        <baseDesc>[PAWN_nameDef] scouted targets for Jackal raids, tracking caravans and identifying weak settlements. [PAWN_pronoun] had a keen eye for vulnerable prey.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Jackals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Animals>4</Animals>
+            <Shooting>3</Shooting>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Jackal Bruiser -->
+
+    <BackstoryDef>
+        <defName>FCP_Jackal_Bruiser</defName>
+        <title>Jackal bruiser</title>
+        <titleShort>bruiser</titleShort>
+        <baseDesc>[PAWN_nameDef] was the muscle for Jackal operations, breaking down doors and overwhelming defenders through sheer force. [PAWN_pronoun] preferred close combat where they could feel bones break.</baseDesc>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+        <bodyTypeFemale>Hulk</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Jackals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>8</Melee>
+            <Construction>2</Construction>
+        </skillGains>
+        <workDisables>
+            <li>Intellectual</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <!-- Jackal Gunner -->
+
+    <BackstoryDef>
+        <defName>FCP_Jackal_Gunner</defName>
+        <title>Jackal gunner</title>
+        <titleShort>gunner</titleShort>
+        <baseDesc>[PAWN_nameDef] provided covering fire during Jackal raids, keeping defenders pinned while the pack closed in. [PAWN_pronoun] took pride in their accuracy and kill count.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Jackals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>7</Shooting>
+            <Crafting>2</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Jackal Torturer -->
+
+    <BackstoryDef>
+        <defName>FCP_Jackal_Torturer</defName>
+        <title>Jackal torturer</title>
+        <titleShort>torturer</titleShort>
+        <baseDesc>[PAWN_nameDef] extracted information from captives through pain and fear. The Jackals had no mercy for prisoners, and [PAWN_pronoun] made sure everyone knew it.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Jackals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>3</Melee>
+            <Social>-2</Social>
+        </skillGains>
+        <workDisables>
+            <li>Caring</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <!-- Jackal Cannibal -->
+
+    <BackstoryDef>
+        <defName>FCP_Jackal_Cannibal</defName>
+        <title>Jackal cannibal</title>
+        <titleShort>cannibal</titleShort>
+        <baseDesc>[PAWN_nameDef] embraced the most savage traditions of the Jackals, consuming the flesh of their enemies. [PAWN_pronoun] believed it granted them the strength of the conquered.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Jackals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
             <Melee>5</Melee>
+            <Cooking>-2</Cooking>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Jackal Wasteland Survivor -->
+
+    <BackstoryDef>
+        <defName>FCP_Jackal_WastelandSurvivor</defName>
+        <title>Jackal wasteland survivor</title>
+        <titleShort>survivor</titleShort>
+        <baseDesc>[PAWN_nameDef] survived the harsh wasteland through cunning and the protection of the Jackal pack. [PAWN_pronoun] learned that only the strong survive, and mercy is a luxury.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Jackals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Plants>3</Plants>
+            <Animals>3</Animals>
+            <Shooting>2</Shooting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Jackal Drug Runner -->
+
+    <BackstoryDef>
+        <defName>FCP_Jackal_DrugRunner</defName>
+        <title>Jackal drug runner</title>
+        <titleShort>drug runner</titleShort>
+        <baseDesc>[PAWN_nameDef] smuggled chems and drugs for the Jackals, both to sell and to keep the pack hopped up on combat stims during raids. [PAWN_pronoun] sampled the merchandise frequently.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Jackals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>4</Intellectual>
+            <Crafting>3</Crafting>
+            <Social>2</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Jackal Demolitionist -->
+
+    <BackstoryDef>
+        <defName>FCP_Jackal_Demolitionist</defName>
+        <title>Jackal demolitionist</title>
+        <titleShort>demolitionist</titleShort>
+        <baseDesc>[PAWN_nameDef] handled explosives for the Jackals, blowing open vaults, destroying fortifications, and creating chaos during raids. [PAWN_pronoun] loved the sound of destruction.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Jackals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>5</Crafting>
+            <Intellectual>3</Intellectual>
+            <Construction>2</Construction>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Jackal War Boy -->
+
+    <BackstoryDef>
+        <defName>FCP_Jackal_WarBoy</defName>
+        <title>Jackal war boy</title>
+        <titleShort>war boy</titleShort>
+        <baseDesc>[PAWN_nameDef] grew up in the Jackal gang, knowing nothing but violence and raiding. [PAWN_pronoun] seeks glory in combat and dreams of dying in battle.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Jackals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>4</Shooting>
+            <Melee>5</Melee>
+            <Social>-3</Social>
+        </skillGains>
+        <workDisables>
+            <li>Artistic</li>
+            <li>Intellectual</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <!-- Jackal Bounty Hunter -->
+
+    <BackstoryDef>
+        <defName>FCP_Jackal_BountyHunter</defName>
+        <title>Jackal bounty hunter</title>
+        <titleShort>bounty hunter</titleShort>
+        <baseDesc>[PAWN_nameDef] tracked down marks for the Jackals - escaped slaves, rival gang members, and anyone with a price on their head. [PAWN_pronoun] always brought them back, dead or alive.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Jackals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>5</Shooting>
+            <Animals>3</Animals>
+            <Melee>3</Melee>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Jackal Camp Guard -->
+
+    <BackstoryDef>
+        <defName>FCP_Jackal_CampGuard</defName>
+        <title>Jackal camp guard</title>
+        <titleShort>camp guard</titleShort>
+        <baseDesc>[PAWN_nameDef] guarded Jackal camps and safehouses from rival gangs and NCR patrols. [PAWN_pronoun] stayed alert for threats while the pack slept.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Jackals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>4</Shooting>
+            <Melee>3</Melee>
+            <Construction>2</Construction>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Jackal Executioner -->
+
+    <BackstoryDef>
+        <defName>FCP_Jackal_Executioner</defName>
+        <title>Jackal executioner</title>
+        <titleShort>executioner</titleShort>
+        <baseDesc>[PAWN_nameDef] carried out executions for the Jackals, killing prisoners, traitors, and anyone who crossed the gang. [PAWN_pronoun] made deaths public and brutal to send a message.</baseDesc>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Jackals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>7</Melee>
+        </skillGains>
+        <workDisables>
+            <li>Caring</li>
+            <li>Social</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <!-- Jackal Mechanic -->
+
+    <BackstoryDef>
+        <defName>FCP_Jackal_Mechanic</defName>
+        <title>Jackal mechanic</title>
+        <titleShort>mechanic</titleShort>
+        <baseDesc>[PAWN_nameDef] kept Jackal vehicles and weapons functioning through scavenged parts and improvised repairs. [PAWN_pronoun] learned to make do with whatever scraps were available.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Jackals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>6</Crafting>
+            <Intellectual>3</Intellectual>
+            <Construction>2</Construction>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Jackal Berserker -->
+
+    <BackstoryDef>
+        <defName>FCP_Jackal_Berserker</defName>
+        <title>Jackal berserker</title>
+        <titleShort>berserker</titleShort>
+        <baseDesc>[PAWN_nameDef] flew into violent rages during combat, attacking with reckless abandon. The Jackals valued [PAWN_objective] as a weapon pointed at their enemies.</baseDesc>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+        <bodyTypeFemale>Hulk</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Jackals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>8</Melee>
+            <Shooting>-2</Shooting>
+        </skillGains>
+        <workDisables>
+            <li>Intellectual</li>
+            <li>Artistic</li>
+            <li>Social</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <!--___ Vipers ___-->
+
+    <!-- Viper Cultist -->
+
+    <BackstoryDef>
+        <defName>FCP_Viper_Cultist</defName>
+        <title>Viper cultist</title>
+        <titleShort>cultist</titleShort>
+        <baseDesc>[PAWN_nameDef] joined the Vipers, a cult that worships the Great Serpent. [PAWN_pronoun] believes that venom purifies the wasteland and that snakes are sacred creatures.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Vipers</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>3</Melee>
+            <Medicine>2</Medicine>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Viper Venom Master -->
+
+    <BackstoryDef>
+        <defName>FCP_Viper_VenomMaster</defName>
+        <title>Viper venom master</title>
+        <titleShort>venom master</titleShort>
+        <baseDesc>[PAWN_nameDef] mastered the art of extracting and weaponizing snake venom. [PAWN_pronoun] coated blades and arrows with deadly toxins, making every wound potentially fatal.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Vipers</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>5</Intellectual>
+            <Crafting>4</Crafting>
+            <Medicine>3</Medicine>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Viper Snake Handler -->
+
+    <BackstoryDef>
+        <defName>FCP_Viper_SnakeHandler</defName>
+        <title>Viper snake handler</title>
+        <titleShort>snake handler</titleShort>
+        <baseDesc>[PAWN_nameDef] tended to the sacred serpents kept by the Vipers, feeding them and harvesting their venom. [PAWN_pronoun] learned to handle even the deadliest snakes without fear.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Vipers</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Animals>6</Animals>
+            <Medicine>3</Medicine>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Viper Priest -->
+
+    <BackstoryDef>
+        <defName>FCP_Viper_Priest</defName>
+        <title>Viper priest</title>
+        <titleShort>priest</titleShort>
+        <baseDesc>[PAWN_nameDef] preached the gospel of the Great Serpent, leading rituals and converting wastelanders to the Viper faith. [PAWN_pronoun] believed venom was a gift from the divine.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Vipers</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>6</Social>
+            <Intellectual>4</Intellectual>
+            <Artistic>2</Artistic>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Viper Poison Blade -->
+
+    <BackstoryDef>
+        <defName>FCP_Viper_PoisonBlade</defName>
+        <title>Viper poison blade</title>
+        <titleShort>poison blade</titleShort>
+        <baseDesc>[PAWN_nameDef] specialized in close combat with venom-coated weapons. Every cut [PAWN_pronoun] inflicted carried deadly toxins that would slowly kill even armored foes.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Vipers</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>6</Melee>
+            <Medicine>3</Medicine>
+            <Shooting>2</Shooting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Viper Assassin -->
+
+    <BackstoryDef>
+        <defName>FCP_Viper_Assassin</defName>
+        <title>Viper assassin</title>
+        <titleShort>assassin</titleShort>
+        <baseDesc>[PAWN_nameDef] hunted targets for the Vipers, using poisoned weapons to ensure kills. [PAWN_pronoun] struck from the shadows, leaving victims to die slowly from venom.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Vipers</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>5</Shooting>
+            <Melee>4</Melee>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Viper Fangbearer -->
+
+    <BackstoryDef>
+        <defName>FCP_Viper_Fangbearer</defName>
+        <title>Viper fangbearer</title>
+        <titleShort>fangbearer</titleShort>
+        <baseDesc>[PAWN_nameDef] was chosen to bear the sacred fangs - implanted snake teeth that marked [PAWN_objective] as one of the faithful. [PAWN_pronoun] lived for the cult's twisted ideology.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Vipers</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>5</Melee>
+            <Artistic>2</Artistic>
+            <Social>2</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Viper Toxic Raider -->
+
+    <BackstoryDef>
+        <defName>FCP_Viper_ToxicRaider</defName>
+        <title>Viper toxic raider</title>
+        <titleShort>toxic raider</titleShort>
+        <baseDesc>[PAWN_nameDef] raided caravans and settlements, spreading the Vipers' toxic influence. [PAWN_pronoun] used poison gas and venomous weapons to incapacitate victims.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Vipers</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>4</Shooting>
+            <Melee>3</Melee>
+            <Crafting>2</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Viper Venom Brewer -->
+
+    <BackstoryDef>
+        <defName>FCP_Viper_VenomBrewer</defName>
+        <title>Viper venom brewer</title>
+        <titleShort>venom brewer</titleShort>
+        <baseDesc>[PAWN_nameDef] brewed toxins, poisons, and venomous concoctions for the Vipers. [PAWN_pronoun] experimented with different snake venoms to create ever-deadlier mixtures.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Vipers</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>6</Intellectual>
+            <Crafting>5</Crafting>
+            <Medicine>3</Medicine>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Viper Scale Warrior -->
+
+    <BackstoryDef>
+        <defName>FCP_Viper_ScaleWarrior</defName>
+        <title>Viper scale warrior</title>
+        <titleShort>scale warrior</titleShort>
+        <baseDesc>[PAWN_nameDef] wore armor decorated with snake scales and fought with serpentine grace. [PAWN_pronoun] believed the spirit of snakes guided [PAWN_possessive] strikes.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Vipers</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>6</Melee>
+            <Crafting>3</Crafting>
+            <Artistic>2</Artistic>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Viper Desert Stalker -->
+
+    <BackstoryDef>
+        <defName>FCP_Viper_DesertStalker</defName>
+        <title>Viper desert stalker</title>
+        <titleShort>stalker</titleShort>
+        <baseDesc>[PAWN_nameDef] tracked prey across the Mojave desert for the Vipers, moving silently like a serpent hunting in the sand. [PAWN_pronoun] struck without warning, then vanished.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Vipers</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>5</Shooting>
+            <Animals>4</Animals>
+            <Plants>2</Plants>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Viper Toxic Shaman -->
+
+    <BackstoryDef>
+        <defName>FCP_Viper_ToxicShaman</defName>
+        <title>Viper toxic shaman</title>
+        <titleShort>shaman</titleShort>
+        <baseDesc>[PAWN_nameDef] served as a spiritual guide for the Vipers, interpreting snake movements as divine messages. [PAWN_pronoun] conducted rituals involving venom consumption and serpent worship.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Vipers</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>5</Social>
+            <Intellectual>5</Intellectual>
+            <Medicine>3</Medicine>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Viper Envenomated Marksman -->
+
+    <BackstoryDef>
+        <defName>FCP_Viper_EnvenomatedMarksman</defName>
+        <title>Viper envenomated marksman</title>
+        <titleShort>marksman</titleShort>
+        <baseDesc>[PAWN_nameDef] specialized in long-range kills with poisoned arrows and bullets. [PAWN_pronoun] could drop targets from afar, letting venom do the rest of the work.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Vipers</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>7</Shooting>
+            <Crafting>2</Crafting>
+            <Medicine>2</Medicine>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Viper Serpent Guard -->
+
+    <BackstoryDef>
+        <defName>FCP_Viper_SerpentGuard</defName>
+        <title>Viper serpent guard</title>
+        <titleShort>serpent guard</titleShort>
+        <baseDesc>[PAWN_nameDef] protected Viper camps and holy sites from intruders. [PAWN_pronoun] guarded the sacred snakes with deadly devotion, killing anyone who threatened them.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Vipers</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>5</Melee>
+            <Shooting>4</Shooting>
+            <Animals>3</Animals>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Viper Convert Maker -->
+
+    <BackstoryDef>
+        <defName>FCP_Viper_ConvertMaker</defName>
+        <title>Viper convert maker</title>
+        <titleShort>convert maker</titleShort>
+        <baseDesc>[PAWN_nameDef] captured wastelanders and forced them to join the Vipers through indoctrination and torture. [PAWN_pronoun] broke minds and forged new believers in the Great Serpent.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Vipers</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>5</Social>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+        <workDisables>
+            <li>Caring</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <!-- Viper Venom Addict -->
+
+    <BackstoryDef>
+        <defName>FCP_Viper_VenomAddict</defName>
+        <title>Viper venom addict</title>
+        <titleShort>venom addict</titleShort>
+        <baseDesc>[PAWN_nameDef] regularly ingested small doses of snake venom to build immunity. Over time, [PAWN_pronoun] became addicted to the rush, craving the toxin's effects.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Vipers</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Medicine>4</Medicine>
+            <Melee>3</Melee>
+            <Intellectual>-1</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Viper Ritual Slayer -->
+
+    <BackstoryDef>
+        <defName>FCP_Viper_RitualSlayer</defName>
+        <title>Viper ritual slayer</title>
+        <titleShort>ritual slayer</titleShort>
+        <baseDesc>[PAWN_nameDef] performed ritual sacrifices to the Great Serpent, using venom-coated blades to send victims to their god. [PAWN_pronoun] believed each death fed the serpent's power.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Vipers</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>6</Melee>
+            <Artistic>3</Artistic>
+            <Social>-2</Social>
+        </skillGains>
+        <workDisables>
+            <li>Caring</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <!-- Viper Scavenger -->
+
+    <BackstoryDef>
+        <defName>FCP_Viper_ScavengerCult</defName>
+        <title>Viper scavenger</title>
+        <titleShort>scavenger</titleShort>
+        <baseDesc>[PAWN_nameDef] scavenged the wasteland for snake habitats, collecting venom and hunting for food. [PAWN_pronoun] survived by knowing where serpents nested and how to avoid their strikes.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Vipers</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Plants>4</Plants>
+            <Animals>5</Animals>
+            <Medicine>3</Medicine>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Viper Venom Warrior -->
+
+    <BackstoryDef>
+        <defName>FCP_Viper_VenomWarrior</defName>
+        <title>Viper venom warrior</title>
+        <titleShort>venom warrior</titleShort>
+        <baseDesc>[PAWN_nameDef] was a frontline fighter for the Vipers, wielding poisoned weapons in close combat. [PAWN_pronoun] reveled in watching enemies succumb to venom after the battle ended.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Vipers</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>7</Melee>
+            <Shooting>3</Shooting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Viper Serpent Whisperer -->
+
+    <BackstoryDef>
+        <defName>FCP_Viper_SerpentWhisperer</defName>
+        <title>Viper serpent whisperer</title>
+        <titleShort>whisperer</titleShort>
+        <baseDesc>[PAWN_nameDef] claimed to communicate with snakes, understanding their needs and desires. Whether this was true or madness, the Vipers revered [PAWN_objective] as touched by the divine serpent.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Vipers</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Animals>7</Animals>
+            <Social>4</Social>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!--___ Forged ___-->
+
+    <!-- Forged Initiate -->
+
+    <BackstoryDef>
+        <defName>FCP_Forged_Initiate</defName>
+        <title>Forged initiate</title>
+        <titleShort>initiate</titleShort>
+        <baseDesc>[PAWN_nameDef] joined the Forged, a gang obsessed with fire and its purifying power. [PAWN_pronoun] underwent the brutal initiation of being branded with red-hot metal.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Forged</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>4</Melee>
+            <Shooting>2</Shooting>
+            <Crafting>2</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Forged Flamewielder -->
+
+    <BackstoryDef>
+        <defName>FCP_Forged_Flamewielder</defName>
+        <title>Forged flamewielder</title>
+        <titleShort>flamewielder</titleShort>
+        <baseDesc>[PAWN_nameDef] wielded fire as a weapon, using flamethrowers and molotovs to burn enemies alive. [PAWN_pronoun] believed fire was the ultimate purifier.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Forged</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>5</Shooting>
+            <Crafting>4</Crafting>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Forged Blacksmith -->
+
+    <BackstoryDef>
+        <defName>FCP_Forged_Blacksmith</defName>
+        <title>Forged blacksmith</title>
+        <titleShort>blacksmith</titleShort>
+        <baseDesc>[PAWN_nameDef] worked the forges at Saugus Ironworks, crafting weapons and armor in the sacred flames. [PAWN_pronoun] believed metal shaped by fire carried its purifying essence.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Hulk</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Forged</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>7</Crafting>
+            <Melee>3</Melee>
+            <Artistic>2</Artistic>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Forged Fire Preacher -->
+
+    <BackstoryDef>
+        <defName>FCP_Forged_FirePreacher</defName>
+        <title>Forged fire preacher</title>
+        <titleShort>preacher</titleShort>
+        <baseDesc>[PAWN_nameDef] preached the gospel of fire to the Forged, spreading their belief that flame cleanses all impurities. [PAWN_pronoun] converted others through zealous sermons and demonstrations of fire's power.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Forged</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>6</Social>
+            <Intellectual>4</Intellectual>
+            <Shooting>2</Shooting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Forged Incinerator -->
+
+    <BackstoryDef>
+        <defName>FCP_Forged_Incinerator</defName>
+        <title>Forged incinerator</title>
+        <titleShort>incinerator</titleShort>
+        <baseDesc>[PAWN_nameDef] specialized in burning down settlements and structures for the Forged. [PAWN_pronoun] took pleasure in watching buildings collapse in flames.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Forged</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>4</Shooting>
+            <Construction>3</Construction>
+            <Crafting>3</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Forged Burnt One -->
+
+    <BackstoryDef>
+        <defName>FCP_Forged_BurntOne</defName>
+        <title>Forged burnt one</title>
+        <titleShort>burnt one</titleShort>
+        <baseDesc>[PAWN_nameDef] survived severe burns that would have killed most people. The Forged revered [PAWN_objective] as blessed by fire, bearing scars as proof of the flame's favor.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Forged</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>5</Melee>
+            <Medicine>3</Medicine>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Forged Molotov Maker -->
+
+    <BackstoryDef>
+        <defName>FCP_Forged_MolotovMaker</defName>
+        <title>Forged molotov maker</title>
+        <titleShort>molotov maker</titleShort>
+        <baseDesc>[PAWN_nameDef] crafted incendiary weapons for the Forged - molotovs, fire bombs, and flaming projectiles. [PAWN_pronoun] constantly experimented with new ways to spread fire.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Forged</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>6</Crafting>
+            <Intellectual>4</Intellectual>
+            <Shooting>2</Shooting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Forged Firewalk Warrior -->
+
+    <BackstoryDef>
+        <defName>FCP_Forged_FirewalkWarrior</defName>
+        <title>Forged firewalk warrior</title>
+        <titleShort>firewalk warrior</titleShort>
+        <baseDesc>[PAWN_nameDef] charged through flames without fear, fighting enemies in burning buildings. The Forged believed [PAWN_pronoun] was immune to fire's wrath.</baseDesc>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Forged</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>7</Melee>
+            <Shooting>3</Shooting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Forged Arsonist -->
+
+    <BackstoryDef>
+        <defName>FCP_Forged_Arsonist</defName>
+        <title>Forged arsonist</title>
+        <titleShort>arsonist</titleShort>
+        <baseDesc>[PAWN_nameDef] set fires across the Commonwealth for the Forged, watching settlements burn and rejoicing in the flames. [PAWN_pronoun] saw beauty in destruction by fire.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Forged</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>4</Crafting>
+            <Shooting>3</Shooting>
+            <Construction>2</Construction>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Forged Forge Master -->
+
+    <BackstoryDef>
+        <defName>FCP_Forged_ForgeMaster</defName>
+        <title>Forged forge master</title>
+        <titleShort>forge master</titleShort>
+        <baseDesc>[PAWN_nameDef] tended the sacred forges at Saugus Ironworks, ensuring the flames never died. [PAWN_pronoun] held high rank in the Forged for keeping the eternal fire burning.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Forged</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>7</Crafting>
+            <Construction>4</Construction>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Forged Flame Keeper -->
+
+    <BackstoryDef>
+        <defName>FCP_Forged_FlameKeeper</defName>
+        <title>Forged flame keeper</title>
+        <titleShort>flame keeper</titleShort>
+        <baseDesc>[PAWN_nameDef] maintained the Forged's ritual fires and led fire-worship ceremonies. [PAWN_pronoun] taught newcomers that fire was the path to strength and purity.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Forged</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>5</Social>
+            <Intellectual>4</Intellectual>
+            <Crafting>3</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Forged Scorched Raider -->
+
+    <BackstoryDef>
+        <defName>FCP_Forged_ScorchedRaider</defName>
+        <title>Forged scorched raider</title>
+        <titleShort>scorched raider</titleShort>
+        <baseDesc>[PAWN_nameDef] raided with fire as [PAWN_possessive] primary weapon, leaving nothing but ash and char in [PAWN_possessive] wake. [PAWN_pronoun] believed fire made [PAWN_objective] invincible.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Forged</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>5</Shooting>
+            <Melee>4</Melee>
+            <Crafting>2</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Forged Brand Master -->
+
+    <BackstoryDef>
+        <defName>FCP_Forged_BrandMaster</defName>
+        <title>Forged brand master</title>
+        <titleShort>brand master</titleShort>
+        <baseDesc>[PAWN_nameDef] branded new members of the Forged with red-hot iron, marking them as part of the flame. [PAWN_pronoun] took pride in scarring flesh as an act of devotion.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Forged</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>5</Crafting>
+            <Artistic>4</Artistic>
+            <Medicine>2</Medicine>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Forged Inferno Enforcer -->
+
+    <BackstoryDef>
+        <defName>FCP_Forged_InfernoEnforcer</defName>
+        <title>Forged inferno enforcer</title>
+        <titleShort>enforcer</titleShort>
+        <baseDesc>[PAWN_nameDef] enforced the Forged's will through fire and violence. [PAWN_pronoun] punished traitors and weaklings by burning them alive as examples.</baseDesc>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Forged</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>7</Melee>
+            <Shooting>3</Shooting>
+            <Social>-2</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Forged Combustion Sniper -->
+
+    <BackstoryDef>
+        <defName>FCP_Forged_CombustionSniper</defName>
+        <title>Forged combustion sniper</title>
+        <titleShort>sniper</titleShort>
+        <baseDesc>[PAWN_nameDef] used incendiary rounds to ignite targets from afar. [PAWN_pronoun] loved watching victims run in flames, trying desperately to extinguish themselves.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Forged</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>8</Shooting>
+            <Crafting>2</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Forged Pyro Berserker -->
+
+    <BackstoryDef>
+        <defName>FCP_Forged_PyroBerserker</defName>
+        <title>Forged pyro berserker</title>
+        <titleShort>berserker</titleShort>
+        <baseDesc>[PAWN_nameDef] entered frenzied rages fueled by fire worship. [PAWN_pronoun] charged into battle wielding flaming weapons, burning everything in reach.</baseDesc>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+        <bodyTypeFemale>Hulk</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Forged</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>8</Melee>
+            <Shooting>-1</Shooting>
+        </skillGains>
+        <workDisables>
+            <li>Intellectual</li>
+            <li>Social</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>FCP_Forged_FlamerTechnician</defName>
+        <title>Forged flamer technician</title>
+        <titleShort>technician</titleShort>
+        <baseDesc>[PAWN_nameDef] maintained and repaired flamethrowers for the Forged. [PAWN_pronoun] understood the mechanics of spreading fire better than anyone.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Forged</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>7</Crafting>
+            <Intellectual>5</Intellectual>
+            <Shooting>2</Shooting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Forged Ashwalker Scout -->
+
+    <BackstoryDef>
+        <defName>FCP_Forged_AshwalkerScout</defName>
+        <title>Forged ashwalker scout</title>
+        <titleShort>ashwalker</titleShort>
+        <baseDesc>[PAWN_nameDef] scouted targets for the Forged to burn, marking settlements and caravans for fiery destruction. [PAWN_pronoun] walked through ash and smoke like a ghost.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Forged</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>4</Shooting>
+            <Animals>3</Animals>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Forged Flame Acolyte -->
+
+    <BackstoryDef>
+        <defName>FCP_Forged_FlameAcolyte</defName>
+        <title>Forged flame acolyte</title>
+        <titleShort>acolyte</titleShort>
+        <baseDesc>[PAWN_nameDef] studied the philosophy of fire under the Forged's leaders. [PAWN_pronoun] believed that only through fire could humanity be cleansed and reborn.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Forged</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>6</Intellectual>
+            <Social>4</Social>
+            <Crafting>2</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Forged Burning Executioner -->
+
+    <BackstoryDef>
+        <defName>FCP_Forged_BurningExecutioner</defName>
+        <title>Forged burning executioner</title>
+        <titleShort>executioner</titleShort>
+        <baseDesc>[PAWN_nameDef] carried out executions for the Forged by immolating prisoners. [PAWN_pronoun] believed death by fire was the holiest way to die.</baseDesc>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Forged</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>6</Melee>
+            <Shooting>3</Shooting>
+        </skillGains>
+        <workDisables>
+            <li>Caring</li>
+            <li>Social</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <!--___ Scorpions ___-->
+
+    <!-- Scorpion Street Thug -->
+
+    <BackstoryDef>
+        <defName>FCP_Scorpion_StreetThug</defName>
+        <title>Scorpion street thug</title>
+        <titleShort>thug</titleShort>
+        <baseDesc>[PAWN_nameDef] ran with the Scorpions, a small-time street gang in Freeside. [PAWN_pronoun] mostly shook down locals and got into fights with other gangs.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Scorpions</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>3</Melee>
+            <Shooting>2</Shooting>
+            <Social>1</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Scorpion Pickpocket -->
+
+    <BackstoryDef>
+        <defName>FCP_Scorpion_Pickpocket</defName>
+        <title>Scorpion pickpocket</title>
+        <titleShort>pickpocket</titleShort>
+        <baseDesc>[PAWN_nameDef] worked the crowds in Freeside for the Scorpions, lifting caps and valuables from tourists and wastelanders. [PAWN_pronoun] had quick hands but little ambition.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Scorpions</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>3</Social>
+            <Shooting>2</Shooting>
+            <Intellectual>1</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Scorpion Chem Pusher -->
+
+    <BackstoryDef>
+        <defName>FCP_Scorpion_ChemPusher</defName>
+        <title>Scorpion chem pusher</title>
+        <titleShort>chem pusher</titleShort>
+        <baseDesc>[PAWN_nameDef] dealt chems on the streets for the Scorpions, selling jet and psycho to addicts. It wasn't glamorous, but it paid the bills.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Scorpions</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>4</Social>
+            <Intellectual>2</Intellectual>
+            <Shooting>1</Shooting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Scorpion Alley Muscle -->
+
+    <BackstoryDef>
+        <defName>FCP_Scorpion_AlleyMuscle</defName>
+        <title>Scorpion alley muscle</title>
+        <titleShort>muscle</titleShort>
+        <baseDesc>[PAWN_nameDef] provided muscle for the Scorpions' protection rackets, intimidating shopkeepers into paying for "protection." [PAWN_pronoun] was a bully, nothing more.</baseDesc>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Scorpions</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>4</Melee>
+            <Social>-1</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Scorpion Lookout -->
+
+    <BackstoryDef>
+        <defName>FCP_Scorpion_Lookout</defName>
+        <title>Scorpion lookout</title>
+        <titleShort>lookout</titleShort>
+        <baseDesc>[PAWN_nameDef] served as a lookout for Scorpion operations, watching for Kings enforcers and NCR military police. [PAWN_pronoun] spent most nights on rooftops, bored and cold.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Scorpions</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>3</Shooting>
+            <Intellectual>2</Intellectual>
+            <Construction>1</Construction>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Scorpion Gang Recruit -->
+
+    <BackstoryDef>
+        <defName>FCP_Scorpion_GangRecruit</defName>
+        <title>Scorpion gang recruit</title>
+        <titleShort>recruit</titleShort>
+        <baseDesc>[PAWN_nameDef] joined the Scorpions as a lowly recruit, doing grunt work and taking beatings from the Kings. [PAWN_pronoun] never rose through the ranks.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Scorpions</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>2</Melee>
+            <Shooting>2</Shooting>
+            <Construction>1</Construction>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Scorpion Racketeer -->
+
+    <BackstoryDef>
+        <defName>FCP_Scorpion_ProtectionRacketeer</defName>
+        <title>Scorpion racketeer</title>
+        <titleShort>racketeer</titleShort>
+        <baseDesc>[PAWN_nameDef] ran protection rackets for the Scorpions, collecting "insurance" from Freeside businesses. Most paid up to avoid trouble.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Scorpions</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>4</Social>
+            <Melee>2</Melee>
+            <Shooting>1</Shooting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Scorpion Street Brawler -->
+
+    <BackstoryDef>
+        <defName>FCP_Scorpion_StreetBrawler</defName>
+        <title>Scorpion street brawler</title>
+        <titleShort>brawler</titleShort>
+        <baseDesc>[PAWN_nameDef] got into constant fistfights with other gangs over territory. The Scorpions valued [PAWN_objective] for being willing to throw punches, even if they usually lost.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Scorpions</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>4</Melee>
+            <Medicine>1</Medicine>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Scorpion Petty Criminal -->
+
+    <BackstoryDef>
+        <defName>FCP_Scorpion_PettyCriminal</defName>
+        <title>Scorpion petty criminal</title>
+        <titleShort>criminal</titleShort>
+        <baseDesc>[PAWN_nameDef] committed small-time crimes for the Scorpions - breaking windows, stealing supplies, vandalism. [PAWN_pronoun] was more nuisance than threat.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Scorpions</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Construction>2</Construction>
+            <Melee>2</Melee>
+            <Crafting>1</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Scorpion Alley Runner -->
+
+    <BackstoryDef>
+        <defName>FCP_Scorpion_AlleyRunner</defName>
+        <title>Scorpion alley runner</title>
+        <titleShort>runner</titleShort>
+        <baseDesc>[PAWN_nameDef] ran messages and packages between Scorpion members, navigating Freeside's back alleys. [PAWN_pronoun] knew every shortcut and hiding spot.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Scorpions</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>3</Social>
+            <Shooting>2</Shooting>
+            <Animals>1</Animals>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Scorpion Stash Keeper -->
+
+    <BackstoryDef>
+        <defName>FCP_Scorpion_StashKeeper</defName>
+        <title>Scorpion stash keeper</title>
+        <titleShort>stash keeper</titleShort>
+        <baseDesc>[PAWN_nameDef] guarded the Scorpions' stashes of stolen goods and contraband. [PAWN_pronoun] wasn't trusted with anything important, just watching junk.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Scorpions</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>3</Shooting>
+            <Construction>2</Construction>
+            <Intellectual>1</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Scorpion Gambler -->
+
+    <BackstoryDef>
+        <defName>FCP_Scorpion_Gambler</defName>
+        <title>Scorpion gambler</title>
+        <titleShort>gambler</titleShort>
+        <baseDesc>[PAWN_nameDef] ran illegal gambling operations for the Scorpions in back-alley card games. [PAWN_pronoun] cheated when possible and lost money when caught.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Scorpions</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>5</Social>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Scorpion Vandal -->
+
+    <BackstoryDef>
+        <defName>FCP_Scorpion_Vandal</defName>
+        <title>Scorpion vandal</title>
+        <titleShort>vandal</titleShort>
+        <baseDesc>[PAWN_nameDef] spray-painted Scorpion tags across Freeside and smashed rival gang symbols. [PAWN_pronoun] thought this made [PAWN_objective] tough.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Scorpions</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Artistic>4</Artistic>
+            <Melee>2</Melee>
+            <Construction>1</Construction>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Scorpion Street Hustler -->
+
+    <BackstoryDef>
+        <defName>FCP_Scorpion_StreetHustler</defName>
+        <title>Scorpion street hustler</title>
+        <titleShort>hustler</titleShort>
+        <baseDesc>[PAWN_nameDef] ran scams and cons for the Scorpions, tricking tourists out of caps with rigged games and fake goods. [PAWN_pronoun] talked a good game but wasn't clever enough for big scores.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Scorpions</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>5</Social>
+            <Intellectual>2</Intellectual>
+            <Shooting>1</Shooting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Scorpion Junk Dealer -->
+
+    <BackstoryDef>
+        <defName>FCP_Scorpion_JunkDealer</defName>
+        <title>Scorpion junk dealer</title>
+        <titleShort>junk dealer</titleShort>
+        <baseDesc>[PAWN_nameDef] fenced stolen goods for the Scorpions, selling junk and contraband to whoever would buy. [PAWN_pronoun] dealt in low-quality merchandise no one else wanted.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Scorpions</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>4</Social>
+            <Crafting>2</Crafting>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Scorpion Bar Bouncer -->
+
+    <BackstoryDef>
+        <defName>FCP_Scorpion_BarBouncer</defName>
+        <title>Scorpion bar bouncer</title>
+        <titleShort>bouncer</titleShort>
+        <baseDesc>[PAWN_nameDef] worked as muscle at Scorpion-controlled bars in Freeside, throwing out drunks and troublemakers. [PAWN_pronoun] broke up more bar fights than actual threats.</baseDesc>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Scorpions</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>5</Melee>
+            <Social>2</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Scorpion Two-Bit Enforcer -->
+
+    <BackstoryDef>
+        <defName>FCP_Scorpion_TwobitEnforcer</defName>
+        <title>Scorpion two-bit enforcer</title>
+        <titleShort>enforcer</titleShort>
+        <baseDesc>[PAWN_nameDef] enforced the Scorpions' will on the streets, roughing up people who didn't pay or disrespected the gang. [PAWN_pronoun] was small-time muscle at best.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Scorpions</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>4</Melee>
+            <Shooting>2</Shooting>
+            <Social>-1</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Scorpion Street Addict -->
+
+    <BackstoryDef>
+        <defName>FCP_Scorpion_StreetAddict</defName>
+        <title>Scorpion street addict</title>
+        <titleShort>addict</titleShort>
+        <baseDesc>[PAWN_nameDef] was a chem addict who ran with the Scorpions for access to drugs. [PAWN_pronoun] did odd jobs for the gang in exchange for jet and psycho.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Scorpions</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>2</Shooting>
+            <Melee>2</Melee>
+            <Intellectual>-2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Scorpion Squatter -->
+
+    <BackstoryDef>
+        <defName>FCP_Scorpion_Squatter</defName>
+        <title>Scorpion squatter</title>
+        <titleShort>squatter</titleShort>
+        <baseDesc>[PAWN_nameDef] lived in abandoned buildings claimed by the Scorpions, surviving on scraps and petty theft. The gang tolerated [PAWN_objective] as long as [PAWN_pronoun] helped when needed.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Scorpions</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Construction>3</Construction>
+            <Plants>2</Plants>
+            <Crafting>2</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Scorpion Gang Hanger -->
+
+    <BackstoryDef>
+        <defName>FCP_Scorpion_GangHanger</defName>
+        <title>Scorpion gang hanger</title>
+        <titleShort>hanger-on</titleShort>
+        <baseDesc>[PAWN_nameDef] hung around with the Scorpions without being a real member, doing favors and running errands hoping to get initiated. [PAWN_pronoun] never quite made it in.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Scorpions</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>3</Social>
+            <Melee>2</Melee>
+            <Shooting>1</Shooting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!--___ Fiends ___-->
+
+    <!-- Fiend Psycho Addict -->
+
+    <BackstoryDef>
+        <defName>FCP_Fiend_PsychoAddict</defName>
+        <title>Fiend psycho addict</title>
+        <titleShort>psycho addict</titleShort>
+        <baseDesc>[PAWN_nameDef] joined the Fiends and became hopelessly addicted to Psycho. [PAWN_pronoun] lived in a constant drug-fueled haze of violence and rage, barely human anymore.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Fiends</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>6</Melee>
+            <Shooting>3</Shooting>
+        </skillGains>
+        <workDisables>
+            <li>Intellectual</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <!-- Fiend Cannibal Raider -->
+
+    <BackstoryDef>
+        <defName>FCP_Fiend_CannibalRaider</defName>
+        <title>Fiend cannibal raider</title>
+        <titleShort>cannibal</titleShort>
+        <baseDesc>[PAWN_nameDef] developed a taste for human flesh while raiding with the Fiends. [PAWN_pronoun] ate victims after battles, believing it made [PAWN_objective] stronger.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Fiends</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>5</Melee>
+            <Shooting>3</Shooting>
+            <Cooking>-2</Cooking>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Fiend Chem Cooker -->
+
+    <BackstoryDef>
+        <defName>FCP_Fiend_ChemCooker</defName>
+        <title>Fiend chem cooker</title>
+        <titleShort>chem cooker</titleShort>
+        <baseDesc>[PAWN_nameDef] cooked chems for the Fiends, producing Psycho, Jet, and other drugs that fueled the gang's violent rampages. [PAWN_pronoun] sampled the product constantly.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Fiends</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>5</Intellectual>
+            <Crafting>5</Crafting>
+            <Medicine>3</Medicine>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Fiend Torturer -->
+
+    <BackstoryDef>
+        <defName>FCP_Fiend_Torturer</defName>
+        <title>Fiend torturer</title>
+        <titleShort>torturer</titleShort>
+        <baseDesc>[PAWN_nameDef] tortured captives for the Fiends' entertainment, using drugs to keep victims conscious through unimaginable pain. [PAWN_pronoun] enjoyed every moment.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Fiends</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>4</Melee>
+        </skillGains>
+        <workDisables>
+            <li>Caring</li>
+            <li>Social</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <!-- Fiend Vault 3 Massacrer -->
+
+    <BackstoryDef>
+        <defName>FCP_Fiend_VaultMassacrer</defName>
+        <title>Fiend Vault 3 massacrer</title>
+        <titleShort>massacrer</titleShort>
+        <baseDesc>[PAWN_nameDef] participated in the Fiends' massacre of Vault 3's peaceful inhabitants. [PAWN_pronoun] slaughtered men, women, and children without mercy in a drug-fueled frenzy.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Fiends</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>6</Shooting>
+            <Melee>5</Melee>
+            <Social>-4</Social>
+        </skillGains>
+        <workDisables>
+            <li>Caring</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <!-- Fiend Jet Junkie -->
+
+    <BackstoryDef>
+        <defName>FCP_Fiend_JetJunkie</defName>
+        <title>Fiend jet junkie</title>
+        <titleShort>jet junkie</titleShort>
+        <baseDesc>[PAWN_nameDef] was hopelessly addicted to Jet, requiring constant fixes to function. [PAWN_pronoun] raided for the Fiends to feed [PAWN_possessive] addiction.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Fiends</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>4</Shooting>
+            <Melee>3</Melee>
+            <Intellectual>-2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Fiend Berserker Killer -->
+
+    <BackstoryDef>
+        <defName>FCP_Fiend_BerserkerKiller</defName>
+        <title>Fiend berserker killer</title>
+        <titleShort>berserker</titleShort>
+        <baseDesc>[PAWN_nameDef] flew into drug-induced rages during raids, attacking anything that moved. The Fiends pointed [PAWN_objective] at enemies and watched the carnage unfold.</baseDesc>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+        <bodyTypeFemale>Hulk</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Fiends</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>8</Melee>
+            <Shooting>-2</Shooting>
+        </skillGains>
+        <workDisables>
+            <li>Intellectual</li>
+            <li>Artistic</li>
+            <li>Social</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <!-- Fiend Lieutenant -->
+
+    <BackstoryDef>
+        <defName>FCP_Fiend_MotorRunnerLieutenant</defName>
+        <title>Fiend lieutenant</title>
+        <titleShort>lieutenant</titleShort>
+        <baseDesc>[PAWN_nameDef] served as a lieutenant under Motor-Runner, organizing raids and distributing chems. [PAWN_pronoun] was as brutal and drug-addled as any Fiend, but clever enough to lead.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Fiends</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>6</Shooting>
+            <Melee>5</Melee>
+            <Social>3</Social>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Fiend Flamer Maniac -->
+
+    <BackstoryDef>
+        <defName>FCP_Fiend_FlamerManiac</defName>
+        <title>Fiend flamer maniac</title>
+        <titleShort>flamer maniac</titleShort>
+        <baseDesc>[PAWN_nameDef] wielded a flamethrower for the Fiends, burning everything in sight while high on chems. [PAWN_pronoun] laughed as victims burned alive.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Fiends</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>6</Shooting>
+            <Crafting>3</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Fiend Trophy Collector -->
+
+    <BackstoryDef>
+        <defName>FCP_Fiend_TrophyCollector</defName>
+        <title>Fiend trophy collector</title>
+        <titleShort>trophy collector</titleShort>
+        <baseDesc>[PAWN_nameDef] collected trophies from victims - teeth, fingers, scalps. [PAWN_pronoun] decorated Vault 3 with macabre displays of the dead.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Fiends</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>5</Melee>
+            <Artistic>4</Artistic>
+            <Crafting>3</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Fiend Chem Gunner -->
+
+    <BackstoryDef>
+        <defName>FCP_Fiend_ChemGunner</defName>
+        <title>Fiend chem gunner</title>
+        <titleShort>gunner</titleShort>
+        <baseDesc>[PAWN_nameDef] fought for the Fiends while pumped full of combat chems. [PAWN_pronoun] could take multiple bullets and keep fighting until the drugs wore off.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Fiends</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>7</Shooting>
+            <Melee>4</Melee>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Fiend Screamer Killer -->
+
+    <BackstoryDef>
+        <defName>FCP_Fiend_ScreamerKiller</defName>
+        <title>Fiend screamer killer</title>
+        <titleShort>screamer</titleShort>
+        <baseDesc>[PAWN_nameDef] was known for screaming incoherently during raids, high on a cocktail of chems. [PAWN_pronoun] terrified victims before killing them.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Fiends</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>6</Melee>
+            <Shooting>4</Shooting>
         </skillGains>
         <workDisables>
             <li>Social</li>
-            <li>Intellectual</li>
         </workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
-        <spawnCategories>
-            <li>FCP_Backstory_Raiders</li>
-        </spawnCategories>
-        <bodyTypeFemale>Female</bodyTypeFemale>
-        <bodyTypeMale>Male</bodyTypeMale>
-        <possessions />
     </BackstoryDef>
 
-    <!-- Raider Slaver -->
+    <!-- Fiend NCR Hunter -->
 
     <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Raider_Slaver</defName>
-        <identifier>FCP_Backstory_Raiders_Raider_Slaver</identifier>
+        <defName>FCP_Fiend_NCRHunter</defName>
+        <title>Fiend NCR hunter</title>
+        <titleShort>NCR hunter</titleShort>
+        <baseDesc>[PAWN_nameDef] specialized in ambushing NCR patrols for the Fiends. [PAWN_pronoun] took perverse pleasure in killing soldiers and looting their corpses.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <slot>Adulthood</slot>
-        <title>Raider Slaver</title>
-        <titleShort>Raider Slaver</titleShort>
-        <description>While most raiders aren’t among the most subtle human beings and usually prefer to wipe out all who dare oppose them, [PAWN_nameDef] had a different approach. [PAWN_pronoun] realized that it was much more profitable to beat victims into submission and sell them to the highest bidder and [PAWN_nameDef] was scarily good at it.</description>
-        <skillGains>
-            <Shooting>2</Shooting>
-            <Melee>5</Melee>
-            <Social>4</Social>
-            <Intellectual>2</Intellectual>
-        </skillGains>
-        <workDisables>None</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
+            <li>FCP_Backstory_Fiends</li>
             <li>FCP_Backstory_Raiders</li>
         </spawnCategories>
-        <bodyTypeFemale>Female</bodyTypeFemale>
-        <bodyTypeMale>Male</bodyTypeMale>
-        <possessions />
-    </BackstoryDef>
-
-    <!-- Raider Runt -->
-
-    <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Raider_Runt</defName>
-        <identifier>FCP_Backstory_Raiders_Raider_Runt</identifier>
-        <slot>Adulthood</slot>
-        <title>Raider Runt</title>
-        <titleShort>Raider Runt</titleShort>
-        <description>Raider “Society” is based upon the ancient philosophy, that might makes right. Unfortunately for [PAWN_nameDef], [PAWN_pronoun] never was among the mighty. Consequently, [PAWN_pronoun] was usually bossed around by the more physically imposing members of the gang and forced to do all the menial labour the other raiders wouldn’t do.</description>
         <skillGains>
-            <Construction>2</Construction>
-            <Mining>2</Mining>
-            <Cooking>4</Cooking>
-            <Plants>4</Plants>
-        </skillGains>
-        <workDisables>None</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
-        <spawnCategories>
-            <li>FCP_Backstory_Raiders</li>
-        </spawnCategories>
-        <bodyTypeFemale>Female</bodyTypeFemale>
-        <bodyTypeMale>Male</bodyTypeMale>
-        <possessions />
-    </BackstoryDef>
-
-    <!-- Raider Gunslinger -->
-
-    <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Raider_Gunslinger</defName>
-        <identifier>FCP_Backstory_Raiders_Raider_Gunslinger</identifier>
-        <slot>Adulthood</slot>
-        <title>Raider Gunslinger</title>
-        <titleShort>Raider Gunslinger</titleShort>
-        <description>Somewhat uncommon for a raider, [PAWN_nameDef] had a perfectly functional instinct for self-preservation. [PAWN_pronoun] always preferred to shoot people from a distance, instead of running towards them, screaming profanities and insults, just to get shot immediately. Some other raiders have thought of this as cowardly, but [PAWN_nameDef] methods were proven right as [PAWN_pronoun] outlived them all.</description>
-        <skillGains>
-            <Shooting>5</Shooting>
-            <Crafting>1</Crafting>
-            <Medicine>1</Medicine>
-            <Melee>-2</Melee>
-        </skillGains>
-        <workDisables>None</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
-        <spawnCategories>
-            <li>FCP_Backstory_Raiders</li>
-        </spawnCategories>
-        <bodyTypeFemale>Female</bodyTypeFemale>
-        <bodyTypeMale>Male</bodyTypeMale>
-        <possessions />
-    </BackstoryDef>
-
-    <!-- Raider Iconoclast -->
-
-    <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Raider_Iconoclast</defName>
-        <identifier>FCP_Backstory_Raiders_Raider_Iconoclast</identifier>
-        <slot>Adulthood</slot>
-        <title>Raider Iconoclast</title>
-        <titleShort>Raider Iconoclast</titleShort>
-        <description>[PAWN_nameDef] always had a burning passion for needless destruction and revelled in tearing down structures other, more constructive inhabitants of the wasteland erected through laborious effort.</description>
-        <skillGains>
-            <Shooting>2</Shooting>
+            <Shooting>6</Shooting>
             <Melee>4</Melee>
-            <Mining>4</Mining>
-        </skillGains>
-        <workDisables>
-            <li>Constructing</li>
-            <li>Crafting</li>
-        </workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
-        <spawnCategories>
-            <li>FCP_Backstory_Raiders</li>
-        </spawnCategories>
-        <bodyTypeFemale>Female</bodyTypeFemale>
-        <bodyTypeMale>Male</bodyTypeMale>
-        <possessions />
-    </BackstoryDef>
-
-    <!-- Raider Pit Fighter -->
-
-    <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Raider_Pit_Fighter</defName>
-        <identifier>FCP_Backstory_Raiders_Raider_Pit_Fighter</identifier>
-        <slot>Adulthood</slot>
-        <title>Raider Pit Fighter</title>
-        <titleShort>Raider Pit Fightert</titleShort>
-        <description>Aside from the consumption of vast amounts of chems and booze, organizing pit fights and betting on them always were a favourite pastime activity of many raider groups. [PAWN_nameDef] loved fighting in the pits, eviscerating [PAWN_possessive] opponents. The caps [PAWN_pronoun] made on the side were only a bonus.</description>
-        <skillGains>
-            <Melee>4</Melee>
-            <Medicine>4</Medicine>
-        </skillGains>
-        <workDisables>None</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
-        <spawnCategories>
-            <li>FCP_Backstory_Raiders</li>
-        </spawnCategories>
-        <bodyTypeFemale>Female</bodyTypeFemale>
-        <bodyTypeMale>Male</bodyTypeMale>
-        <possessions />
-    </BackstoryDef>
-
-    <!-- Raider Highwayman -->
-
-    <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Raider_Highwayman</defName>
-        <identifier>FCP_Backstory_Raiders_Raider_Highwayman</identifier>
-        <slot>Adulthood</slot>
-        <title>Raider Highwayman</title>
-        <titleShort>Raider Highwayman</titleShort>
-        <description>[PAWN_nameDef] was part of a raider group which camped close to a road often frequented by caravans. While they scored good loot every once in a while, no member was particularly fond of the other raiders. Eventually most members of [PAWN_possessive] raider gang tore each other apart after quarrelling over some especially valuable loot they pried from some trader’s corpse. [PAWN_nameDef] was one of the few survivors.</description>
-        <skillGains>
-            <Shooting>2</Shooting>
-            <Melee>3</Melee>
-            <Construction>1</Construction>
-            <Cooking>2</Cooking>
-            <Social>-4</Social>
-        </skillGains>
-        <workDisables>None</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
-        <spawnCategories>
-            <li>FCP_Backstory_Raiders</li>
-        </spawnCategories>
-        <bodyTypeFemale>Female</bodyTypeFemale>
-        <bodyTypeMale>Male</bodyTypeMale>
-        <possessions />
-    </BackstoryDef>
-
-    <!-- Raider Pyromaniac -->
-
-    <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Raider_Pyromaniac</defName>
-        <identifier>FCP_Backstory_Raiders_Raider_Pyromaniac</identifier>
-        <slot>Adulthood</slot>
-        <title>Raider Pyromaniac</title>
-        <titleShort>Raider Pyromaniac</titleShort>
-        <description>[PAWN_nameDef] loved burning things. It didn’t matter much to [PAWN_objective] if those things were animate or not, tough the latter screamed nicely after being hit with a Molotov cocktail. Naturally [PAWN_pronoun] wasn’t keen on putting fires out, even if they engulfed [PAWN_possessive] fellow raiders. At least [PAWN_nameDef] was good at tending to burns, after being scorched many times.</description>
-        <skillGains>
-            <Shooting>2</Shooting>
-            <Melee>3</Melee>
-            <Cooking>4</Cooking>
-            <Medicine>4</Medicine>
-        </skillGains>
-        <workDisables>
-            <li>Firefighting</li>
-        </workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
-        <spawnCategories>
-            <li>FCP_Backstory_Raiders</li>
-        </spawnCategories>
-        <bodyTypeFemale>Female</bodyTypeFemale>
-        <bodyTypeMale>Male</bodyTypeMale>
-        <possessions />
-    </BackstoryDef>
-
-    <!-- Raider Leader -->
-
-    <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Raider_Leader</defName>
-        <identifier>FCP_Backstory_Raiders_Raider_Leader</identifier>
-        <slot>Adulthood</slot>
-        <title>Raider Leader</title>
-        <titleShort>Raider Leader</titleShort>
-        <description>Although raider society tended to be anarchistic to some degree, [PAWN_nameDef] was always seen as a leader by [PAWN_possessive] fellow raiders. [PAWN_pronoun] managed to preserve enough of [PAWN_possessive] sanity to orchestrate assaults and the subsequent sharing of the booty. [PAWN_nameDef] was aware that many of [PAWN_possessive] underlings couldn’t be reasoned with and often settled most disputes by smashing a few skulls together. [PAWN_possessive] style of leadership was have been brutal and unforgiving, just like the wasteland itself.</description>
-        <skillGains>
-            <Shooting>5</Shooting>
-            <Melee>5</Melee>
-            <Crafting>4</Crafting>
-            <Social>4</Social>
-            <Intellectual>2</Intellectual>
-        </skillGains>
-        <workDisables>Cleaning</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
-        <spawnCategories>
-            <li>FCP_Backstory_Raiders</li>
-        </spawnCategories>
-        <bodyTypeFemale>Female</bodyTypeFemale>
-        <bodyTypeMale>Male</bodyTypeMale>
-        <possessions />
-    </BackstoryDef>
-
-    <!-- Raider Fencer -->
-
-    <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Raider_Fencer</defName>
-        <identifier>FCP_Backstory_Raiders_Raider_Fencer</identifier>
-        <slot>Adulthood</slot>
-        <title>Raider Fencer</title>
-        <titleShort>Raider Fencer</titleShort>
-        <description>[PAWN_nameDef] only recently became a raider. [PAWN_pronoun] was always a shifty person, staying afloat with all manners of shady activities especially fencing stolen goods. That was until [PAWN_nameDef] decided [PAWN_pronoun] wanted a bigger piece of the cake and joined a raider gang.</description>
-        <skillGains>
-            <Shooting>2</Shooting>
-            <Crafting>2</Crafting>
-            <Social>5</Social>
-            <Intellectual>2</Intellectual>
-        </skillGains>
-        <workDisables>None</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
-        <spawnCategories>
-            <li>FCP_Backstory_Raiders</li>
-            <li>FCP_Backstory_Raiders_Fence</li>
-        </spawnCategories>
-        <bodyTypeFemale>Female</bodyTypeFemale>
-        <bodyTypeMale>Male</bodyTypeMale>
-        <possessions />
-    </BackstoryDef>
-
-    <!-- Raider Outcast -->
-
-    <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Raider_Outcast</defName>
-        <identifier>FCP_Backstory_Raiders_Raider_Outcast</identifier>
-        <slot>Adulthood</slot>
-        <title>Raider Outcast</title>
-        <titleShort>Raider Outcast</titleShort>
-        <description>[PAWN_nameDef] once lived as a labourer in a small settlement somewhere in the wasteland. One fateful day, [PAWN_pronoun] accidentally killed another settler in a drunken brawl. Instead of outright killing [PAWN_objective], the goodhearted people of the settlement decided to banish [PAWN_nameDef]. While [PAWN_pronoun] wasn’t malignant, [PAWN_pronoun] joined up with a raider gang to survive in the harsh wasteland.</description>
-        <skillGains>
-            <Melee>4</Melee>
-            <Construction>2</Construction>
-            <Mining>3</Mining>
-            <Crafting>1</Crafting>
-        </skillGains>
-        <workDisables>None</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
-        <spawnCategories>
-            <li>FCP_Backstory_Raiders</li>
-        </spawnCategories>
-        <bodyTypeFemale>Female</bodyTypeFemale>
-        <bodyTypeMale>Male</bodyTypeMale>
-        <possessions />
-    </BackstoryDef>
-
-    <!-- Raider Tinkerer -->
-
-    <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Raider_Tinkerer</defName>
-        <identifier>FCP_Backstory_Raiders_Raider_Tinkerer</identifier>
-        <slot>Adulthood</slot>
-        <title>Raider Tinkerer</title>
-        <titleShort>Raider Tinkerer</titleShort>
-        <description>Most raiders weren’t among the particularly educated. Technically this was the case with [PAWN_nameDef] too, but unlike [PAWN_possessive] fellow raiders [PAWN_pronoun] was gifted with a talent for tinkering. While [PAWN_pronoun] was occupied with the maintenance of the raiders’ shoddy equipment most of the time, [PAWN_pronoun] never missed an opportunity to craft new instruments of destruction.</description>
-        <skillGains>
-            <Shooting>2</Shooting>
-            <Mining>2</Mining>
-            <Crafting>6</Crafting>
-            <Intellectual>2</Intellectual>
-        </skillGains>
-        <workDisables>PlantWork, Animals</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
-        <spawnCategories>
-            <li>FCP_Backstory_Raiders</li>
-        </spawnCategories>
-        <bodyTypeFemale>Female</bodyTypeFemale>
-        <bodyTypeMale>Male</bodyTypeMale>
-        <possessions />
-    </BackstoryDef>
-
-    <!-- Raider Rustler -->
-
-    <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Raider_Rustler</defName>
-        <identifier>FCP_Backstory_Raiders_Raider_Rustler</identifier>
-        <slot>Adulthood</slot>
-        <title>Raider Rustler</title>
-        <titleShort>Raider Rustler</titleShort>
-        <description>[PAWN_nameDef] was a raider specialised in stealing livestock from farmers. While this may sound like a lowly occupation for a raider, it was actually quite profitable since all humans needed to eat occasionally. Another perk of [PAWN_possessive] profession was that [PAWN_pronoun] learned how to properly care for many animals, as they fetched a higher price while still being alive and unharmed.</description>
-        <skillGains>
-            <Melee>2</Melee>
-            <Cooking>2</Cooking>
-            <Animals>6</Animals>
-            <Medicine>2</Medicine>
-        </skillGains>
-        <workDisables>None</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
-        <spawnCategories>
-            <li>FCP_Backstory_Raiders</li>
-        </spawnCategories>
-        <bodyTypeFemale>Female</bodyTypeFemale>
-        <bodyTypeMale>Male</bodyTypeMale>
-        <possessions />
-    </BackstoryDef>
-
-    <!-- Hideout Builder -->
-
-    <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Hideout_Builder</defName>
-        <identifier>FCP_Backstory_Raiders_Hideout_Builder</identifier>
-        <slot>Adulthood</slot>
-        <title>Hideout Builder</title>
-        <titleShort>Hideout Builder</titleShort>
-        <description>The majority of the countless raider gangs that plagued the wasteland had one or several hideouts. These hideouts served both as a home for the gang and a base of operations from where they went on raids and returned to afterwards. [PAWN_nameDef] was talented at building and fortifying these hideouts as well as at constructing traps for further protection. [PAWN_possessive] capabilities made [PAWN_objective] popular among the gang, since most raiders excel at destroying things, not building them.</description>
-        <skillGains>
-            <Construction>6</Construction>
-            <Mining>4</Mining>
-            <Crafting>2</Crafting>
-            <Artistic>1</Artistic>
-        </skillGains>
-        <workDisables>PlantWork</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
-        <spawnCategories>
-            <li>FCP_Backstory_Raiders</li>
-        </spawnCategories>
-        <bodyTypeFemale>Female</bodyTypeFemale>
-        <bodyTypeMale>Male</bodyTypeMale>
-        <possessions />
-    </BackstoryDef>
-
-    <!-- Raider Beastmaster -->
-
-    <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Raider_Beastmaster</defName>
-        <identifier>FCP_Backstory_Raiders_Raider_Beastmaster</identifier>
-        <slot>Adulthood</slot>
-        <title>Raider Beastmaster</title>
-        <titleShort>Raider Beastmaster</titleShort>
-        <description>Some raiders captured or bred a variety of particularly nasty animals that dwelled in the wasteland to train and use them as beasts of war. [PAWN_nameDef] was a talented tamer and preferred the company of [PAWN_possessive] savage to other humans. While the training methods employed by [PAWN_nameDef] were brutal, [PAWN_pronoun] really cared about the well-being of the animals.</description>
-        <skillGains>
-            <Melee>4</Melee>
-            <Animals>6</Animals>
-            <Medicine>2</Medicine>
-            <Social>-4</Social>
-        </skillGains>
-        <workDisables>None</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
-        <spawnCategories>
-            <li>FCP_Backstory_Raiders</li>
-        </spawnCategories>
-        <bodyTypeFemale>Female</bodyTypeFemale>
-        <bodyTypeMale>Male</bodyTypeMale>
-        <possessions />
-    </BackstoryDef>
-
-    <!-- Raider Cook -->
-
-    <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Raider_Cook</defName>
-        <identifier>FCP_Backstory_Raiders_Raider_Cook</identifier>
-        <slot>Adulthood</slot>
-        <title>Raider Cook</title>
-        <titleShort>Raider Cook</titleShort>
-        <description>[PAWN_nameDef] was the cook for [PAWN_possessive] raider gang. [PAWN_pronoun] was able to cook something adequate out of even the most spoiled or vile ingredients, which made [PAWN_objective] quite popular among the other raiders.</description>
-        <skillGains>
-            <Cooking>6</Cooking>
             <Animals>2</Animals>
-            <Plants>2</Plants>
-            <Social>2</Social>
         </skillGains>
-        <workDisables>None</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
-        <spawnCategories>
-            <li>FCP_Backstory_Raiders</li>
-        </spawnCategories>
-        <bodyTypeFemale>Female</bodyTypeFemale>
-        <bodyTypeMale>Male</bodyTypeMale>
-        <possessions />
     </BackstoryDef>
 
-    <!-- Raider Traitor -->
+    <!-- Fiend Vault Scavenger -->
 
     <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Raider_Traitor</defName>
-        <identifier>FCP_Backstory_Raiders_Raider_Traitor</identifier>
+        <defName>FCP_Fiend_VaultScavenger</defName>
+        <title>Fiend Vault scavenger</title>
+        <titleShort>scavenger</titleShort>
+        <baseDesc>[PAWN_nameDef] scavenged Vault 3 for supplies and weapons. [PAWN_pronoun] picked through the remains of the vault dwellers [PAWN_pronoun] helped massacre.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
         <slot>Adulthood</slot>
-        <title>Raider Traitor</title>
-        <titleShort>Raider Traitor</titleShort>
-        <description>[PAWN_nameDef] was once part of a thriving settlement community. The prosperous settlement attracted the attention of a nearby raider gang which wanted to loot the place, as raiders usually do. [PAWN_nameDef] proposed a bargain to the raiders, [PAWN_pronoun] would leave the settlement’s gates unbarred in exchange for a share of the loot and the permission to join the gang. The raiders agreed and the settlement was sacked and torched. [PAWN_nameDef] became a part of the gang, but the other raiders never really trusted [PAWN_objective]. Afterall, [PAWN_pronoun] already betrayed [PAWN_possessive] once.</description>
+        <spawnCategories>
+            <li>FCP_Backstory_Fiends</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
         <skillGains>
-            <Shooting>3</Shooting>
+            <Intellectual>3</Intellectual>
+            <Crafting>3</Crafting>
             <Construction>2</Construction>
-            <Mining>2</Mining>
-            <Crafting>2</Crafting>
-            <Social>-4</Social>
         </skillGains>
-        <workDisables>None</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
-        <spawnCategories>
-            <li>FCP_Backstory_Raiders</li>
-        </spawnCategories>
-        <bodyTypeFemale>Female</bodyTypeFemale>
-        <bodyTypeMale>Male</bodyTypeMale>
-        <possessions />
     </BackstoryDef>
 
-    <!-- Raider Anarchist -->
+    <!-- Fiend Chem Pusher -->
 
     <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Raider_Anarchist</defName>
-        <identifier>FCP_Backstory_Raiders_Raider_Anarchist</identifier>
+        <defName>FCP_Fiend_ChemPusher</defName>
+        <title>Fiend chem pusher</title>
+        <titleShort>chem pusher</titleShort>
+        <baseDesc>[PAWN_nameDef] distributed chems within the Fiends, ensuring everyone stayed high and violent. [PAWN_pronoun] controlled the supply and used it for power.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <slot>Adulthood</slot>
-        <title>Raider Anarchist</title>
-        <titleShort>Raider Anarchist</titleShort>
-        <description>[PAWN_nameDef] used to live in a settlement under strict control of a paramilitary militia that ruled almost every aspect of the townspeople’s lives. One day [PAWN_pronoun] had enough and fled from the town and its oppressive regime to take up arms against it. [PAWN_nameDef] became a raider not out of greed or sadism, but out of sincere belief in anarchistic ideals. This idealism often put [PAWN_objective] at odds with other raiders, but through [PAWN_possessive] eloquence, [PAWN_pronoun] managed to persuade many of them to go after the oppressors, not the oppressed.</description>
+        <spawnCategories>
+            <li>FCP_Backstory_Fiends</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
         <skillGains>
-            <Shooting>4</Shooting>
-            <Artistic>5</Artistic>
             <Social>5</Social>
-            <Intellectual>6</Intellectual>
+            <Intellectual>4</Intellectual>
+            <Shooting>2</Shooting>
         </skillGains>
-        <workDisables>None</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
-        <spawnCategories>
-            <li>FCP_Backstory_Raiders</li>
-        </spawnCategories>
-        <bodyTypeFemale>Female</bodyTypeFemale>
-        <bodyTypeMale>Male</bodyTypeMale>
-        <possessions />
     </BackstoryDef>
 
-    <!-- Raider Thrall -->
+    <!-- Fiend Savage Butcher -->
 
     <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Raider_Thrall</defName>
-        <identifier>FCP_Backstory_Raiders_Raider_Thrall</identifier>
+        <defName>FCP_Fiend_SavageButcher</defName>
+        <title>Fiend savage butcher</title>
+        <titleShort>butcher</titleShort>
+        <baseDesc>[PAWN_nameDef] butchered human corpses for the Fiends to consume. [PAWN_pronoun] prepared "meat" from raids, treating human flesh like any other food.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <slot>Adulthood</slot>
-        <title>Raider Thrall</title>
-        <titleShort>Raider Thrall</titleShort>
-        <description>[PAWN_nameDef] was a wastelander captured by a raider gang. Instead of killing or selling [PAWN_objective] into slavery, they decided to put [PAWN_objective] to work in their encampment. [PAWN_nameDef] fulfilled all kinds of menial tasks for the gang, like cooking, clearing away debris and cleaning.</description>
+        <spawnCategories>
+            <li>FCP_Backstory_Fiends</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
         <skillGains>
-            <Mining>4</Mining>
-            <Cooking>4</Cooking>
-            <Plants>2</Plants>
-            <Crafting>1</Crafting>
+            <Cooking>5</Cooking>
+            <Melee>4</Melee>
+            <Medicine>2</Medicine>
         </skillGains>
-        <workDisables>Violent</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
-        <spawnCategories>
-            <li>FCP_Backstory_Raiders</li>
-        </spawnCategories>
-        <bodyTypeFemale>Female</bodyTypeFemale>
-        <bodyTypeMale>Male</bodyTypeMale>
-        <possessions />
     </BackstoryDef>
 
-    <!-- Deranged Artist -->
+    <!-- Fiend Crazed Sniper -->
 
     <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Deranged_Artist</defName>
-        <identifier>FCP_Backstory_Raiders_Deranged_Artist</identifier>
+        <defName>FCP_Fiend_CrazedSniper</defName>
+        <title>Fiend crazed sniper</title>
+        <titleShort>sniper</titleShort>
+        <baseDesc>[PAWN_nameDef] picked off targets from afar while high on chems. [PAWN_pronoun] giggled while watching victims die through a scope.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <slot>Adulthood</slot>
-        <title>Deranged Artist</title>
-        <titleShort>Deranged Artist</titleShort>
-        <description>Many raiders were deranged to some degree, but few were as psychotic as [PAWN_nameDef]. In [PAWN_possessive] mind [PAWN_pronoun] was an artist of great talent. [PAWN_pronoun] made sculptures composed of severed heads impaled on metal spikes, pictures painted with blood and other unsavoury creations. Most other raiders of [PAWN_possessive] gang were terrified of [PAWN_objective] and rightly so, especially when [PAWN_possessive] was running low on “art supplies”.</description>
+        <spawnCategories>
+            <li>FCP_Backstory_Fiends</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>8</Shooting>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Fiend Wasteland Terror -->
+
+    <BackstoryDef>
+        <defName>FCP_Fiend_WastelandTerror</defName>
+        <title>Fiend wasteland terror</title>
+        <titleShort>terror</titleShort>
+        <baseDesc>[PAWN_nameDef] was feared across the Mojave as a Fiend killer. [PAWN_pronoun] left trails of bodies and destruction wherever [PAWN_pronoun] went, fueled by endless chems.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Fiends</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>7</Shooting>
+            <Melee>6</Melee>
+            <Social>-3</Social>
+        </skillGains>
+        <workDisables>
+            <li>Caring</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <!-- Fiend Chem Bomber -->
+
+    <BackstoryDef>
+        <defName>FCP_Fiend_ChemBomber</defName>
+        <title>Fiend chem bomber</title>
+        <titleShort>bomber</titleShort>
+        <baseDesc>[PAWN_nameDef] created explosive devices for the Fiends, often while high on their own products. [PAWN_pronoun] enjoyed blowing things up as much as the drugs.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Fiends</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>6</Crafting>
+            <Intellectual>4</Intellectual>
+            <Construction>2</Construction>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Fiend Mutilator -->
+
+    <BackstoryDef>
+        <defName>FCP_Fiend_MutilatorRaider</defName>
+        <title>Fiend mutilator</title>
+        <titleShort>mutilator</titleShort>
+        <baseDesc>[PAWN_nameDef] specialized in mutilating corpses after raids, leaving horrific displays to terrorize the wasteland. [PAWN_pronoun] considered it art.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Fiends</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
         <skillGains>
             <Melee>6</Melee>
-            <Medicine>2</Medicine>
-            <Artistic>6</Artistic>
-            <Intellectual>3</Intellectual>
+            <Artistic>4</Artistic>
         </skillGains>
-        <workDisables>Social</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
-        <spawnCategories>
-            <li>FCP_Backstory_Raiders</li>
-        </spawnCategories>
-        <bodyTypeFemale>Female</bodyTypeFemale>
-        <bodyTypeMale>Male</bodyTypeMale>
-        <possessions />
-    </BackstoryDef>
-
-    <!-- Disinherited Farmer -->
-
-    <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Disinherited_Farmer</defName>
-        <identifier>FCP_Backstory_Raiders_Disinherited_Farmer</identifier>
-        <slot>Adulthood</slot>
-        <title>Disinherited Farmer</title>
-        <titleShort>Disinherited Farmer</titleShort>
-        <description>[PAWN_nameDef] lived and worked on [PAWN_possessive] father’s farm. After the father died, [PAWN_possessive] siblings managed to trick [PAWN_objective] out of the inheritance. Enraged, [PAWN_pronoun] shot them all and the fled the farmstead to join a nearby raider gang.</description>
-        <skillGains>
-            <Shooting>4</Shooting>
-            <Construction>2</Construction>
-            <Plants>5</Plants>
-            <Animals>2</Animals>
-        </skillGains>
-        <workDisables>Intellectual</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
-        <spawnCategories>
-            <li>FCP_Backstory_Raiders</li>
-        </spawnCategories>
-        <bodyTypeFemale>Female</bodyTypeFemale>
-        <bodyTypeMale>Male</bodyTypeMale>
-        <possessions />
-    </BackstoryDef>
-
-    <!-- Raider Bartender -->
-
-    <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Raider_Bartender</defName>
-        <identifier>FCP_Backstory_Raiders_Raider_Bartender</identifier>
-        <slot>Adulthood</slot>
-        <title>Raider Bartender</title>
-        <titleShort>Raider Bartender</titleShort>
-        <description>[PAWN_nameDef] served as a bartender for [PAWN_possessive] raider gang, making good caps in the process. [PAWN_pronoun] gathered all the foodstuffs even the raiders deemed unfit for consumption and put them into [PAWN_possessive] still to make vile tasting, but exceptionally strong liquor. The raiders didn’t mind the repulsive taste much, all they cared about was the high alcohol content, which made the booze great for crafting Molotov cocktails too.</description>
-        <skillGains>
-            <Melee>4</Melee>
-            <Cooking>2</Cooking>
-            <Plants>3</Plants>
-            <Crafting>4</Crafting>
-            <Social>4</Social>
-            <Intellectual>2</Intellectual>
-        </skillGains>
-        <workDisables>None</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
-        <spawnCategories>
-            <li>FCP_Backstory_Raiders</li>
-        </spawnCategories>
-        <bodyTypeFemale>Female</bodyTypeFemale>
-        <bodyTypeMale>Male</bodyTypeMale>
-        <possessions />
-    </BackstoryDef>
-
-    <!-- Raider Junkie -->
-
-    <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Raider_Junkie</defName>
-        <identifier>FCP_Backstory_Raiders_Raider_Junkie</identifier>
-        <slot>Adulthood</slot>
-        <title>Raider Junkie</title>
-        <titleShort>Raider Junkie</titleShort>
-        <description>Most raiders were hooked on one chem or another, but [PAWN_nameDef] really outdid them all. [PAWN_pronoun] was consuming just about anything that could be snuffed, inhaled or injected. A habit which, unsurprisingly, did great damage to [PAWN_possessive] body. While [PAWN_pronoun] recently reduced [PAWN_possessive] chem intake, [PAWN_nameDef] had no intention of stopping altogether, since in battle, the drugs made [PAWN_objective] a force to be reckoned with. Plus, [PAWN_pronoun] was aware that a withdrawal probably would be lethal.</description>
-        <skillGains>
-            <Shooting>4</Shooting>
-            <Melee>2</Melee>
-            <Artistic>3</Artistic>
-            <Medicine>4</Medicine>
-            <Intellectual>4</Intellectual>
-        </skillGains>
-        <workDisables>None</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
-        <spawnCategories>
-            <li>FCP_Backstory_Raiders</li>
-        </spawnCategories>
-        <bodyTypeFemale>Female</bodyTypeFemale>
-        <bodyTypeMale>Male</bodyTypeMale>
-        <possessions />
+        <workDisables>
+            <li>Caring</li>
+        </workDisables>
     </BackstoryDef>
 
     <!--__ Children __-->
 
-    <!-- Warlord’s Kid -->
+    <!--___ Slavers ___-->
 
-    <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Warlords_Kid</defName>
-        <identifier>FCP_Backstory_Raiders_Warlords_Kid</identifier>
+    <!-- Born Into Slavery -->
+
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
+        <defName>FCP_Slaver_Child_BornIntoSlavery</defName>
+        <title>born into slavery</title>
+        <titleShort>slave child</titleShort>
+        <baseDesc>[PAWN_nameDef] was born a slave and witnessed the brutality of slavers firsthand. [PAWN_pronoun] learned that power comes from owning others.</baseDesc>
         <slot>Childhood</slot>
-        <title>Warlord’s Kid</title>
-        <titleShort>Warlord’s Kid</titleShort>
-        <description>[PAWN_nameDef] was born into the Gunner organisation. [PAWN_pronoun] spent a significant part of [PAWN_possessive] childhood being trained and drilled by stern officers. While this upbringing put little to no emphasis on creativity, it did prepare [PAWN_objective] for a life of near constant war.</description>
-        <skillGains>
-            <Shooting>2</Shooting>
-            <Melee>3</Melee>
-            <Crafting>3</Crafting>
-            <Social>1</Social>
-            <Intellectual>2</Intellectual>
-        </skillGains>
-        <workDisables>ManualDumb</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Backstory_Raiders_Child</li>
+            <li>FCP_Backstory_Slavers</li>
         </spawnCategories>
-        <possessions />
+        <skillGains>
+            <Social>2</Social>
+            <Intellectual>1</Intellectual>
+        </skillGains>
+        <workDisables>
+            <li>Caring</li>
+        </workDisables>
     </BackstoryDef>
 
-    <!-- Born Raider -->
+    <!-- Orphaned By Slaver Raid -->
 
-    <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Born_Raider</defName>
-        <identifier>FCP_Backstory_Raiders_Born_Raider</identifier>
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
+        <defName>FCP_Slaver_Child_OrphanedByRaid</defName>
+        <title>orphaned by slaver raid</title>
+        <titleShort>orphan</titleShort>
+        <baseDesc>[PAWN_nameDef] watched slavers kill [PAWN_possessive] parents and take everyone else. [PAWN_pronoun] vowed to never be a victim again.</baseDesc>
         <slot>Childhood</slot>
-        <title>Born Raider</title>
-        <titleShort>Born Raider</titleShort>
-        <description>[PAWN_nameDef] was born a raider. [PAWN_pronoun] grew up among some of the wasteland’s most despicable human beings and the fact [PAWN_pronoun] managed to live to adulthood was a testimony to [PAWN_possessive] resilience.</description>
+        <spawnCategories>
+            <li>FCP_Backstory_Slavers</li>
+        </spawnCategories>
         <skillGains>
             <Shooting>2</Shooting>
-            <Melee>3</Melee>
-            <Crafting>3</Crafting>
-            <Social>1</Social>
-            <Intellectual>2</Intellectual>
-        </skillGains>
-        <workDisables>ManualDumb</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
-        <spawnCategories>
-            <li>FCP_Backstory_Raiders_Child</li>
-        </spawnCategories>
-        <possessions />
-    </BackstoryDef>
-
-    <!-- Stolen Child -->
-
-    <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Stolen_Child</defName>
-        <identifier>FCP_Backstory_Raiders_Stolen_Child</identifier>
-        <slot>Childhood</slot>
-        <title>Stolen Child</title>
-        <titleShort>Stolen Child</titleShort>
-        <description>[PAWN_nameDef] was taken by raiders as an infant. Lucky for [PAWN_objective] on of the more compassionate (by raider standards, which really was not saying much) gang members adopted [PAWN_objective].</description>
-        <skillGains>
             <Melee>2</Melee>
-            <Mining>2</Mining>
-            <Crafting>2</Crafting>
         </skillGains>
-        <workDisables>None</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
-        <spawnCategories>
-            <li>FCP_Backstory_Raiders_Child</li>
-        </spawnCategories>
-        <possessions />
     </BackstoryDef>
 
-    <!-- Sold to Raiders -->
+    <!-- Pitt Child Worker -->
 
-    <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Sold_to_Raiders</defName>
-        <identifier>FCP_Backstory_Raiders_Sold_to_Raiders</identifier>
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
+        <defName>FCP_Slaver_Child_PittWorker</defName>
+        <title>Pitt child worker</title>
+        <titleShort>child worker</titleShort>
+        <baseDesc>[PAWN_nameDef] grew up working the steel mills in The Pitt as a child slave. [PAWN_pronoun] learned that cruelty kept others in line.</baseDesc>
         <slot>Childhood</slot>
-        <title>Sold to Raiders</title>
-        <titleShort>Sold to Raiders</titleShort>
-        <description>Either out of greed or dire need, [PAWN_nameDef] was sold to a raider gang as a small child. Instead of reselling [PAWN_objective], the gang decided to keep [PAWN_objective] around and let [PAWN_objective] do all kinds of menial labour they did not want to do.</description>
-        <skillGains>
-            <Cooking>4</Cooking>
-            <Plants>3</Plants>
-            <Animals>2</Animals>
-            <Social>-2</Social>
-        </skillGains>
-        <workDisables>None</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Backstory_Raiders_Child</li>
+            <li>FCP_Backstory_Slavers</li>
         </spawnCategories>
-        <possessions />
-    </BackstoryDef>
-
-    <!-- Pressganged -->
-
-    <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Pressganged</defName>
-        <identifier>FCP_Backstory_Raiders_Pressganged</identifier>
-        <slot>Childhood</slot>
-        <title>Pressganged</title>
-        <titleShort>Pressganged</titleShort>
-        <description>[PAWN_nameDef] was taken forcefully by raider gang in dire need of fresh meat. Thankfully, not in the literal sense. The band needed new recruits as a clash with a rival gang left their numbers severely reduced. [PAWN_nameDef] quickly adapted to [PAWN_possessive] new lifestyle as a scourge of the wasteland.</description>
         <skillGains>
-            <Shooting>3</Shooting>
-            <Melee>1</Melee>
             <Construction>2</Construction>
+            <Crafting>2</Crafting>
+            <Melee>1</Melee>
         </skillGains>
-        <workDisables>None</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
-        <spawnCategories>
-            <li>FCP_Backstory_Raiders_Child</li>
-        </spawnCategories>
-        <possessions />
     </BackstoryDef>
 
-    <!-- Jet Baby -->
+    <!-- Overseer's Child -->
 
-    <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Jet_Baby</defName>
-        <identifier>FCP_Backstory_Raiders_Jet_Baby</identifier>
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
+        <defName>FCP_Slaver_Child_SlaveOverseerKid</defName>
+        <title>overseer's child</title>
+        <titleShort>overseer's kid</titleShort>
+        <baseDesc>[PAWN_nameDef] was raised by a slave overseer and learned to see captives as property. [PAWN_pronoun] helped discipline slaves from a young age.</baseDesc>
         <slot>Childhood</slot>
-        <title>Jet Baby</title>
-        <titleShort>Jet Baby</titleShort>
-        <description>Raiders were never known for wise decisions. Unfortunately for [PAWN_nameDef] this too was the case with [PAWN_possessive] mother who used Jet while being pregnant. The drug severely damaged the development of the unborn child. [PAWN_nameDef] was born idiotic and slow. At least [PAWN_pronoun] was strong enough to crush any who dared mocking [PAWN_objective].</description>
-        <skillGains>
-            <Shooting>2</Shooting>
-            <Melee>4</Melee>
-        </skillGains>
-        <workDisables>ManualSkilled</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Backstory_Raiders_Child</li>
+            <li>FCP_Backstory_Slavers</li>
         </spawnCategories>
-        <possessions />
+        <skillGains>
+            <Social>2</Social>
+            <Melee>2</Melee>
+        </skillGains>
+        <workDisables>
+            <li>Caring</li>
+        </workDisables>
     </BackstoryDef>
 
-    <!-- Junior Arsonist -->
+    <!-- Collar Maker's Apprentice -->
 
-    <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Junior_Arsonist</defName>
-        <identifier>FCP_Backstory_Raiders_Junior_Arsonist</identifier>
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
+        <defName>FCP_Slaver_Child_CollarMaker</defName>
+        <title>collar maker's apprentice</title>
+        <titleShort>apprentice</titleShort>
+        <baseDesc>[PAWN_nameDef] apprenticed with a collar maker, learning to craft the devices that kept slaves obedient. [PAWN_pronoun] saw people as necks waiting for collars.</baseDesc>
         <slot>Childhood</slot>
-        <title>Junior Arsonist</title>
-        <titleShort>Junior Arsonist</titleShort>
-        <description>Few raider children enjoyed a wholesome childhood, and [PAWN_nameDef] was no exception. Like [PAWN_possessive] parents, [PAWN_pronoun] had a “special” relationship with fire an enjoyed setting things ablaze. At least [PAWN_pronoun] learned a lot about the treatment of burns from the accidents that happened on a regular basis.</description>
+        <spawnCategories>
+            <li>FCP_Backstory_Slavers</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>3</Crafting>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Captive Child -->
+
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
+        <defName>FCP_Slaver_Child_CaptiveChild</defName>
+        <title>captive child</title>
+        <titleShort>captive</titleShort>
+        <baseDesc>[PAWN_nameDef] was captured as a child and sold multiple times. [PAWN_pronoun] learned manipulation and decided to become the master instead of the slave.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Slavers</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>3</Social>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Paradise Falls Brat -->
+
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
+        <defName>FCP_Slaver_Child_ParadiseFallsBrat</defName>
+        <title>Paradise Falls brat</title>
+        <titleShort>brat</titleShort>
+        <baseDesc>[PAWN_nameDef] grew up in Paradise Falls surrounded by slavers. [PAWN_pronoun] tormented slave children and learned the trade early.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Slavers</li>
+        </spawnCategories>
         <skillGains>
             <Shooting>2</Shooting>
-            <Cooking>2</Cooking>
+            <Social>2</Social>
+        </skillGains>
+        <workDisables>
+            <li>Caring</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <!-- Runaway Slave Caught -->
+
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
+        <defName>FCP_Slaver_Child_RunawayCaught</defName>
+        <title>runaway slave caught</title>
+        <titleShort>runaway</titleShort>
+        <baseDesc>[PAWN_nameDef] tried to escape slavery but was caught and punished severely. [PAWN_pronoun] decided to join the slavers to avoid being on the bottom.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Slavers</li>
+        </spawnCategories>
+        <skillGains>
+            <Animals>2</Animals>
+            <Melee>2</Melee>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Auction House Child -->
+
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
+        <defName>FCP_Slaver_Child_AuctionHouseKid</defName>
+        <title>auction house child</title>
+        <titleShort>auction kid</titleShort>
+        <baseDesc>[PAWN_nameDef] grew up watching slave auctions, learning to appraise human value in caps. [PAWN_pronoun] saw people as investments.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Slavers</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>3</Social>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Betrayer's Child -->
+
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
+        <defName>FCP_Slaver_Child_TraitorChild</defName>
+        <title>betrayer's child</title>
+        <titleShort>betrayer</titleShort>
+        <baseDesc>[PAWN_nameDef] betrayed other slave children to slavers for better treatment. [PAWN_pronoun] learned early that loyalty meant nothing.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Slavers</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>3</Social>
+            <Shooting>1</Shooting>
+        </skillGains>
+        <workDisables>
+            <li>Caring</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <!-- Jackals Childhood -->
+
+    <!-- Raised By Raiders -->
+
+    <BackstoryDef>
+        <defName>FCP_Jackal_Child_RaisedByRaiders</defName>
+        <title>raised by raiders</title>
+        <titleShort>raider child</titleShort>
+        <baseDesc>[PAWN_nameDef] grew up among the Jackals, learning violence before learning to read. [PAWN_pronoun] saw brutality as normal life.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Jackals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>3</Melee>
+            <Shooting>2</Shooting>
+        </skillGains>
+        <workDisables>
+            <li>Intellectual</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <!-- War Orphan -->
+
+    <BackstoryDef>
+        <defName>FCP_Jackal_Child_WarOrphan</defName>
+        <title>war orphan</title>
+        <titleShort>orphan</titleShort>
+        <baseDesc>[PAWN_nameDef] lost [PAWN_possessive] family to raiders and joined the Jackals for survival. [PAWN_pronoun] became what [PAWN_pronoun] once feared.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Jackals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Animals>2</Animals>
+            <Melee>2</Melee>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Pack Runt -->
+
+    <BackstoryDef>
+        <defName>FCP_Jackal_Child_PackRunt</defName>
+        <title>pack runt</title>
+        <titleShort>runt</titleShort>
+        <baseDesc>[PAWN_nameDef] was the smallest in the Jackal pack and had to fight for scraps. [PAWN_pronoun] learned to be vicious to survive.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Jackals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>3</Melee>
+            <Social>-1</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Child Scavenger -->
+
+    <BackstoryDef>
+        <defName>FCP_Jackal_Child_ChildScavenger</defName>
+        <title>child scavenger</title>
+        <titleShort>scavenger</titleShort>
+        <baseDesc>[PAWN_nameDef] scavenged battlefields for the Jackals as a child, stripping corpses for loot. [PAWN_pronoun] grew numb to death.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Jackals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>2</Intellectual>
             <Medicine>2</Medicine>
         </skillGains>
-        <workDisables>Firefighting</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
-        <spawnCategories>
-            <li>FCP_Backstory_Raiders_Child</li>
-        </spawnCategories>
-        <possessions />
     </BackstoryDef>
 
-    <!-- Upstart Gangster -->
+    <!-- Child Soldier -->
 
     <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Upstart_Gangster</defName>
-        <identifier>FCP_Backstory_Raiders_Upstart_Gangster</identifier>
+        <defName>FCP_Jackal_Child_ChildSoldier</defName>
+        <title>child soldier</title>
+        <titleShort>soldier</titleShort>
+        <baseDesc>[PAWN_nameDef] was forced to fight for the Jackals from a young age. [PAWN_pronoun] killed for the first time before puberty.</baseDesc>
         <slot>Childhood</slot>
-        <title>Upstart Gangster</title>
-        <titleShort>Upstart Gangster</titleShort>
-        <description>[PAWN_nameDef] learned from an early age, that [PAWN_pronoun] could get what [PAWN_pronoun] wanted through other means than just beating up whoever had it and taking it. Extortion, Bribery, and other, more subtle tactics were [PAWN_possessive] preferred way, which set [PAWN_possessive] apart from the more brutal raiders.</description>
+        <spawnCategories>
+            <li>FCP_Backstory_Jackals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
         <skillGains>
-            <Crafting>1</Crafting>
-            <Social>4</Social>
+            <Shooting>3</Shooting>
+            <Melee>2</Melee>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Cannibal Child -->
+
+    <BackstoryDef>
+        <defName>FCP_Jackal_Child_CannibalChild</defName>
+        <title>cannibal child</title>
+        <titleShort>cannibal</titleShort>
+        <baseDesc>[PAWN_nameDef] was introduced to cannibalism young in the Jackal camp. [PAWN_pronoun] ate human flesh to survive starvation.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Jackals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Cooking>2</Cooking>
+            <Melee>2</Melee>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Wasteland Feral Child -->
+
+    <BackstoryDef>
+        <defName>FCP_Jackal_Child_WastelandFeral</defName>
+        <title>wasteland feral child</title>
+        <titleShort>feral</titleShort>
+        <baseDesc>[PAWN_nameDef] lived like an animal in the wasteland before the Jackals took [PAWN_objective] in. [PAWN_pronoun] never fully learned civilization.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Jackals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Animals>3</Animals>
+            <Melee>2</Melee>
+        </skillGains>
+        <workDisables>
+            <li>Social</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <!-- Child Chem Runner -->
+
+    <BackstoryDef>
+        <defName>FCP_Jackal_Child_ChemRunner</defName>
+        <title>child chem runner</title>
+        <titleShort>runner</titleShort>
+        <baseDesc>[PAWN_nameDef] ran chems for the Jackals as a child, too young to be suspected. [PAWN_pronoun] sampled the merchandise early.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Jackals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>2</Social>
             <Intellectual>2</Intellectual>
         </skillGains>
-        <workDisables>None</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
+    </BackstoryDef>
+
+    <!-- Raider Brat -->
+
+    <BackstoryDef>
+        <defName>FCP_Jackal_Child_RaiderBrat</defName>
+        <title>raider brat</title>
+        <titleShort>brat</titleShort>
+        <baseDesc>[PAWN_nameDef] was born into the Jackal gang and raised with no morals. [PAWN_pronoun] tortured animals and weaker children for fun.</baseDesc>
+        <slot>Childhood</slot>
         <spawnCategories>
-            <li>FCP_Backstory_Raiders_Child</li>
+            <li>FCP_Backstory_Jackals</li>
+            <li>FCP_Backstory_Raiders</li>
         </spawnCategories>
-        <possessions />
+        <skillGains>
+            <Melee>3</Melee>
+            <Animals>-1</Animals>
+        </skillGains>
+        <workDisables>
+            <li>Caring</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <!-- Child Lookout -->
+
+    <BackstoryDef>
+        <defName>FCP_Jackal_Child_LookoutKid</defName>
+        <title>child lookout</title>
+        <titleShort>lookout</titleShort>
+        <baseDesc>[PAWN_nameDef] served as a lookout for Jackal raids, small enough to hide easily. [PAWN_pronoun] watched people die from safe distances.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Jackals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>2</Shooting>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Vipers Childhood -->
+
+    <!-- Snake Cult Child -->
+
+    <BackstoryDef>
+        <defName>FCP_Viper_Child_SnakeCultInitiate</defName>
+        <title>snake cult child</title>
+        <titleShort>cult child</titleShort>
+        <baseDesc>[PAWN_nameDef] was raised in the Viper cult, taught to worship snakes and venom. [PAWN_pronoun] believed serpents were divine from birth.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Vipers</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Animals>3</Animals>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Venom Taster Child -->
+
+    <BackstoryDef>
+        <defName>FCP_Viper_Child_VenomTaster</defName>
+        <title>venom taster child</title>
+        <titleShort>taster</titleShort>
+        <baseDesc>[PAWN_nameDef] built immunity to snake venom through controlled doses as a child. [PAWN_pronoun] suffered through agonizing "training" rituals.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Vipers</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Medicine>3</Medicine>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Serpent Tender Child -->
+
+    <BackstoryDef>
+        <defName>FCP_Viper_Child_SerpentTender</defName>
+        <title>serpent tender child</title>
+        <titleShort>tender</titleShort>
+        <baseDesc>[PAWN_nameDef] cared for the Vipers' sacred snakes from a young age. [PAWN_pronoun] learned to handle venomous serpents safely.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Vipers</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Animals>4</Animals>
+            <Medicine>1</Medicine>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Ritual Victim Survivor -->
+
+    <BackstoryDef>
+        <defName>FCP_Viper_Child_RitualVictim</defName>
+        <title>ritual victim survivor</title>
+        <titleShort>survivor</titleShort>
+        <baseDesc>[PAWN_nameDef] survived a Viper sacrifice ritual and was taken into the cult. [PAWN_pronoun] learned to worship the serpent that spared [PAWN_objective].</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Vipers</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>2</Intellectual>
+            <Medicine>2</Medicine>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Poison Apprentice -->
+
+    <BackstoryDef>
+        <defName>FCP_Viper_Child_PoisonApprentice</defName>
+        <title>poison apprentice</title>
+        <titleShort>apprentice</titleShort>
+        <baseDesc>[PAWN_nameDef] apprenticed with Viper poison makers, learning to extract and mix venoms. [PAWN_pronoun] accidentally poisoned [PAWN_objective]self multiple times.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Vipers</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>3</Crafting>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Desert Nomad Child -->
+
+    <BackstoryDef>
+        <defName>FCP_Viper_Child_DesertNomad</defName>
+        <title>desert nomad child</title>
+        <titleShort>nomad</titleShort>
+        <baseDesc>[PAWN_nameDef] wandered the Mojave with the Vipers, learning to survive in harsh desert. [PAWN_pronoun] hunted snakes and other wildlife.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Vipers</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Plants>2</Plants>
+            <Animals>3</Animals>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Cannibal Cult Child -->
+
+    <BackstoryDef>
+        <defName>FCP_Viper_Child_CannibalOffering</defName>
+        <title>cannibal cult child</title>
+        <titleShort>cult child</titleShort>
+        <baseDesc>[PAWN_nameDef] participated in Viper cannibalistic rituals as a child. [PAWN_pronoun] ate human flesh as part of religious ceremonies.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Vipers</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>2</Social>
+            <Cooking>2</Cooking>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Venom Gatherer Child -->
+
+    <BackstoryDef>
+        <defName>FCP_Viper_Child_VenomGatherer</defName>
+        <title>venom gatherer child</title>
+        <titleShort>gatherer</titleShort>
+        <baseDesc>[PAWN_nameDef] gathered snake venom from the wild for the Vipers. [PAWN_pronoun] was bitten many times learning to "milk" snakes.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Vipers</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Animals>3</Animals>
+            <Medicine>2</Medicine>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Scale-Tattooed Child -->
+
+    <BackstoryDef>
+        <defName>FCP_Viper_Child_ScaleTattoos</defName>
+        <title>scale-tattooed child</title>
+        <titleShort>tattooed</titleShort>
+        <baseDesc>[PAWN_nameDef] was tattooed with snake scales as a young child, marking [PAWN_objective] as property of the cult. [PAWN_pronoun] wore the marks proudly.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Vipers</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Artistic>2</Artistic>
+            <Social>2</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Fangless Serpent -->
+
+    <BackstoryDef>
+        <defName>FCP_Viper_Child_FanglessSerpent</defName>
+        <title>fangless serpent</title>
+        <titleShort>fangless</titleShort>
+        <baseDesc>[PAWN_nameDef] was born into the Vipers but lacked the fierceness of others. [PAWN_pronoun] worked as support, preparing poisons and tending snakes.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Vipers</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>2</Crafting>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Forged Childhood -->
+
+    <!-- Fire Child -->
+
+    <BackstoryDef>
+        <defName>FCP_Forged_Child_FireChild</defName>
+        <title>fire child</title>
+        <titleShort>fire child</titleShort>
+        <baseDesc>[PAWN_nameDef] was raised by the Forged, taught that fire was sacred. [PAWN_pronoun] played with flames while other children played with toys.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Forged</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>3</Crafting>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Burn Victim Child -->
+
+    <BackstoryDef>
+        <defName>FCP_Forged_Child_BurnVictim</defName>
+        <title>burn victim child</title>
+        <titleShort>burn victim</titleShort>
+        <baseDesc>[PAWN_nameDef] was badly burned as a child and taken in by the Forged. [PAWN_pronoun] learned to see scars as blessings from the flame.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Forged</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Medicine>2</Medicine>
+            <Crafting>2</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Forge Apprentice -->
+
+    <BackstoryDef>
+        <defName>FCP_Forged_Child_ForgeApprentice</defName>
+        <title>forge apprentice</title>
+        <titleShort>apprentice</titleShort>
+        <baseDesc>[PAWN_nameDef] apprenticed at Saugus Ironworks, working the forges from a young age. [PAWN_pronoun] burned [PAWN_objective]self repeatedly learning the craft.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Forged</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>4</Crafting>
+            <Melee>1</Melee>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Ash Walker Child -->
+
+    <BackstoryDef>
+        <defName>FCP_Forged_Child_AshWalker</defName>
+        <title>ash walker child</title>
+        <titleShort>ash walker</titleShort>
+        <baseDesc>[PAWN_nameDef] grew up walking through ashes of the Forged's fires. [PAWN_pronoun] learned to find beauty in destruction and rebirth through flame.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Forged</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>2</Intellectual>
+            <Plants>2</Plants>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Pyromaniac Child -->
+
+    <BackstoryDef>
+        <defName>FCP_Forged_Child_PyroChild</defName>
+        <title>pyromaniac child</title>
+        <titleShort>pyro child</titleShort>
+        <baseDesc>[PAWN_nameDef] showed pyromanic tendencies young and was welcomed by the Forged. [PAWN_pronoun] set fires constantly, encouraged by the cult.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Forged</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>2</Crafting>
+            <Shooting>2</Shooting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Branded Child -->
+
+    <BackstoryDef>
+        <defName>FCP_Forged_Child_BrandedOne</defName>
+        <title>branded child</title>
+        <titleShort>branded</titleShort>
+        <baseDesc>[PAWN_nameDef] was branded with hot iron as an initiation into the Forged. [PAWN_pronoun] bore the mark as proof of devotion to fire.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Forged</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>3</Melee>
+            <Social>2</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Fuel Gatherer Child -->
+
+    <BackstoryDef>
+        <defName>FCP_Forged_Child_FuelGatherer</defName>
+        <title>fuel gatherer child</title>
+        <titleShort>fuel gatherer</titleShort>
+        <baseDesc>[PAWN_nameDef] gathered combustibles for the Forged's fires. [PAWN_pronoun] scavenged oil, wood, and anything that would burn.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Forged</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Plants>2</Plants>
+            <Construction>2</Construction>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Flame Bearer Child -->
+
+    <BackstoryDef>
+        <defName>FCP_Forged_Child_FlameBearer</defName>
+        <title>flame bearer child</title>
+        <titleShort>flame bearer</titleShort>
+        <baseDesc>[PAWN_nameDef] carried torches for the Forged during nighttime rituals. [PAWN_pronoun] was honored to bear the sacred flame.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Forged</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>3</Social>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Child Molotov Mixer -->
+
+    <BackstoryDef>
+        <defName>FCP_Forged_Child_MolotovMixer</defName>
+        <title>child molotov mixer</title>
+        <titleShort>mixer</titleShort>
+        <baseDesc>[PAWN_nameDef] helped mix molotov cocktails for the Forged. [PAWN_pronoun] burned [PAWN_objective]self several times but kept working.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Forged</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>3</Crafting>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Scorched Orphan -->
+
+    <BackstoryDef>
+        <defName>FCP_Forged_Child_ScorchedOrphan</defName>
+        <title>scorched orphan</title>
+        <titleShort>orphan</titleShort>
+        <baseDesc>[PAWN_nameDef] lost [PAWN_possessive] family to fire and was taken in by the Forged. [PAWN_pronoun] learned to worship what destroyed [PAWN_possessive] world.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Forged</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>2</Shooting>
+            <Melee>2</Melee>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Scorpions Childhood -->
+
+    <!-- Freeside Urchin -->
+
+    <BackstoryDef>
+        <defName>FCP_Scorpion_Child_FreesideUrchin</defName>
+        <title>Freeside urchin</title>
+        <titleShort>urchin</titleShort>
+        <baseDesc>[PAWN_nameDef] grew up on Freeside's streets, scraping by on scraps and petty theft. [PAWN_pronoun] ran with the Scorpions for protection.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Scorpions</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>2</Social>
+            <Shooting>1</Shooting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Street Pickpocket -->
+
+    <BackstoryDef>
+        <defName>FCP_Scorpion_Child_StreetPickpocket</defName>
+        <title>street pickpocket</title>
+        <titleShort>pickpocket</titleShort>
+        <baseDesc>[PAWN_nameDef] learned to pick pockets as a child in Freeside. [PAWN_pronoun] stole to eat and gave some to the Scorpions for protection.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Scorpions</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>3</Social>
+            <Intellectual>1</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Alley Rat -->
+
+    <BackstoryDef>
+        <defName>FCP_Scorpion_Child_AlleyRat</defName>
+        <title>alley rat</title>
+        <titleShort>rat</titleShort>
+        <baseDesc>[PAWN_nameDef] lived in Freeside's alleys, too poor for proper shelter. [PAWN_pronoun] scavenged trash and did small jobs for the Scorpions.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Scorpions</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Construction>2</Construction>
+            <Plants>1</Plants>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Beggar Child -->
+
+    <BackstoryDef>
+        <defName>FCP_Scorpion_Child_BeggarChild</defName>
+        <title>beggar child</title>
+        <titleShort>beggar</titleShort>
+        <baseDesc>[PAWN_nameDef] begged on Freeside's streets for caps and food. [PAWN_pronoun] sometimes spied for the Scorpions in exchange for protection.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Scorpions</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>3</Social>
+        </skillGains>
     </BackstoryDef>
 
     <!-- Runaway Kid -->
 
     <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Runaway_Kid</defName>
-        <identifier>FCP_Backstory_Raiders_Runaway_Kid</identifier>
+        <defName>FCP_Scorpion_Child_RunawayKid</defName>
+        <title>runaway kid</title>
+        <titleShort>runaway</titleShort>
+        <baseDesc>[PAWN_nameDef] ran away from home and ended up in Freeside. [PAWN_pronoun] fell in with the Scorpions as the only family [PAWN_pronoun] had left.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <slot>Childhood</slot>
-        <title>Runaway Kid</title>
-        <titleShort>Runaway Kid</titleShort>
-        <description>As a child [PAWN_nameDef] ran away from home, straight into the arms of a raider gang. Luckily, the gang decided the child would be more useful alive than dead and took [PAWN_objective] as sort of a mascot for the band.</description>
-        <skillGains>
-            <Plants>2</Plants>
-            <Medicine>1</Medicine>
-            <Social>3</Social>
-        </skillGains>
-        <workDisables>None</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Backstory_Raiders_Child</li>
-            <li>FCP_Backstory_Wastelanders_Child</li>
+            <li>FCP_Backstory_Scorpions</li>
+            <li>FCP_Backstory_Raiders</li>
         </spawnCategories>
-        <possessions />
-    </BackstoryDef>
-
-    <!-- Outcast Child -->
-
-    <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Outcast_Child</defName>
-        <identifier>FCP_Backstory_Raiders_Outcast_Child</identifier>
-        <slot>Childhood</slot>
-        <title>Outcast Child</title>
-        <titleShort>Outcast Child</titleShort>
-        <description>[PAWN_nameDef]’s family was banished while [PAWN_pronoun] was still a child. With nowhere else to go, the family joined a local raider band. [PAWN_nameDef] had troubles adapting to [PAWN_possessive] newfound group.</description>
         <skillGains>
-            <Construction>3</Construction>
-            <Mining>2</Mining>
-            <Crafting>2</Crafting>
-            <Social>-3</Social>
-        </skillGains>
-        <workDisables>None</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
-        <spawnCategories>
-            <li>FCP_Backstory_Raiders_Child</li>
-            <li>FCP_Backstory_Wastelanders_Child</li>
-        </spawnCategories>
-        <possessions />
-    </BackstoryDef>
-
-    <!-- Brutal Tribal -->
-
-    <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Brutal_Tribal</defName>
-        <identifier>FCP_Backstory_Raiders_Brutal_Tribal</identifier>
-        <slot>Childhood</slot>
-        <title>Brutal Tribal</title>
-        <titleShort>Brutal Tribal</titleShort>
-        <description>[PAWN_nameDef] grew up among one of the more warlike tribal societies. At some point, even [PAWN_possessive] couldn’t tolerate [PAWN_possessive] bloodthirsty and reckless behaviour and [PAWN_pronoun] was banished, leaving [PAWN_objective] no choice but to join a band of raiders, who were more appreciative of [PAWN_possessive] “talents”.</description>
-        <skillGains>
-            <Shooting>1</Shooting>
-            <Melee>3</Melee>
-            <Plants>4</Plants>
-            <Animals>4</Animals>
-        </skillGains>
-        <workDisables>Intellectual, Caring</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
-        <spawnCategories>
-            <li>FCP_Backstory_Raiders_Child</li>
-        </spawnCategories>
-        <possessions />
-    </BackstoryDef>
-
-    <!-- Abandoned Wastelander -->
-
-    <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Abandoned_Wastelander</defName>
-        <identifier>FCP_Backstory_Raiders_Abandoned_Wastelander</identifier>
-        <slot>Childhood</slot>
-        <title>Abandoned Wastelander</title>
-        <titleShort>Abandoned Wastelander</titleShort>
-        <description>[PAWN_nameDef] was abandoned as an infant and left in the wasteland to die. A group of raiders stumbled upon the child and decided to take the baby with them. Lucky for [PAWN_nameDef] the group was among the more civilised and they raised [PAWN_objective] as one of their own.</description>
-        <skillGains>
-            <Animals>3</Animals>
-            <Crafting>1</Crafting>
-        </skillGains>
-        <workDisables>None</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
-        <spawnCategories>
-            <li>FCP_Backstory_Raiders_Child</li>
-            <li>FCP_Backstory_Wastelanders_Child</li>
-        </spawnCategories>
-        <possessions />
-    </BackstoryDef>
-
-    <!-- Graffiti Artist -->
-
-    <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Graffiti_Artist</defName>
-        <identifier>FCP_Backstory_Raiders_Graffiti_Artist</identifier>
-        <slot>Childhood</slot>
-        <title>Graffiti Artist</title>
-        <titleShort>Graffiti Artist</titleShort>
-        <description>One day, while rummaging around in some ruins surrounding [PAWN_possessive] gangs raider camp, [PAWN_nameDef] found some old cans of spray paint. While [PAWN_pronoun] most certainly would have called [PAWN_objective]self an artist, most [PAWN_pronoun] spray-painted were tags of the gangs logos an various profanities.</description>
-        <skillGains>
-            <Crafting>3</Crafting>
-            <Artistic>4</Artistic>
-        </skillGains>
-        <workDisables>Cleaning</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
-        <spawnCategories>
-            <li>FCP_Backstory_Raiders_Child</li>
-        </spawnCategories>
-        <possessions />
-    </BackstoryDef>
-
-    <!-- Camp Tender -->
-
-    <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Camp_Tender</defName>
-        <identifier>FCP_Backstory_Raiders_Camp_Tender</identifier>
-        <slot>Childhood</slot>
-        <title>Camp Tender</title>
-        <titleShort>Camp Tender</titleShort>
-        <description>[PAWN_nameDef] grew up in a raider camp. [PAWN_possessive] task was to clean up after the raiders, to cook for them, and to patch them up after they were shot to pieces. In time, the other raiders grew to respect [PAWN_objective], as they realized their shoddy hideout would fall apart without [PAWN_possessive] work.</description>
-        <skillGains>
-            <Shooting>-2</Shooting>
-            <Melee>-2</Melee>
             <Animals>2</Animals>
-            <Cooking>4</Cooking>
-            <Construction>4</Construction>
+            <Plants>1</Plants>
         </skillGains>
-        <workDisables>None</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
-        <spawnCategories>
-            <li>FCP_Backstory_Raiders_Child</li>
-        </spawnCategories>
-        <possessions />
     </BackstoryDef>
 
-    <!-- Wilful Newby -->
+    <!-- Gang Errand Boy -->
 
     <BackstoryDef>
-        <defName>FCP_Backstory_Raiders_Wilful_Newby</defName>
-        <identifier>FCP_Backstory_Raiders_Wilful_Newby</identifier>
+        <defName>FCP_Scorpion_Child_GangErrandBoy</defName>
+        <title>gang errand boy</title>
+        <titleShort>errand boy</titleShort>
+        <baseDesc>[PAWN_nameDef] ran errands for the Scorpions as a child. [PAWN_pronoun] delivered messages and packages without asking what was inside.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <slot>Childhood</slot>
-        <title>Wilful Newby</title>
-        <titleShort>CWilful Newby</titleShort>
-        <description>[PAWN_nameDef] joined [PAWN_possessive] raider gang wilfully. As could be expected, [PAWN_pronoun] was not a particularly pleasant person to be around. At least [PAWN_pronoun] was a decent enough warrior.</description>
+        <spawnCategories>
+            <li>FCP_Backstory_Scorpions</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
         <skillGains>
-            <Shooting>3</Shooting>
-            <Melee>1</Melee>
-            <Plants>1</Plants>
+            <Social>2</Social>
+            <Shooting>1</Shooting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Street Fighter Child -->
+
+    <BackstoryDef>
+        <defName>FCP_Scorpion_Child_StreetFighter</defName>
+        <title>street fighter child</title>
+        <titleShort>fighter</titleShort>
+        <baseDesc>[PAWN_nameDef] got into constant fights with other street kids in Freeside. [PAWN_pronoun] earned a reputation among the Scorpions as a scrapper.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Scorpions</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>3</Melee>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Junk Scavenger Child -->
+
+    <BackstoryDef>
+        <defName>FCP_Scorpion_Child_JunkScavenger</defName>
+        <title>junk scavenger child</title>
+        <titleShort>scavenger</titleShort>
+        <baseDesc>[PAWN_nameDef] scavenged junk from Freeside's ruins to sell. [PAWN_pronoun] learned to spot valuable trash and trade with the Scorpions.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Scorpions</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Construction>2</Construction>
+            <Crafting>2</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Gambling Child -->
+
+    <BackstoryDef>
+        <defName>FCP_Scorpion_Child_GamblerKid</defName>
+        <title>gambling child</title>
+        <titleShort>gambler</titleShort>
+        <baseDesc>[PAWN_nameDef] learned card tricks and gambling from Scorpion members. [PAWN_pronoun] hustled tourists for pocket change.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Scorpions</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>2</Social>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Orphan Squatter -->
+
+    <BackstoryDef>
+        <defName>FCP_Scorpion_Child_OrphanSquatter</defName>
+        <title>orphan squatter</title>
+        <titleShort>squatter</titleShort>
+        <baseDesc>[PAWN_nameDef] squatted in abandoned Freeside buildings with other orphans. [PAWN_pronoun] survived under Scorpion "protection" by paying tribute.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Scorpions</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Construction>2</Construction>
             <Crafting>1</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Fiends Childhood -->
+
+    <!-- Vault 3 Massacre Orphan -->
+
+    <BackstoryDef>
+        <defName>FCP_Fiend_Child_VaultMassacreOrphan</defName>
+        <title>Vault 3 massacre orphan</title>
+        <titleShort>orphan</titleShort>
+        <baseDesc>[PAWN_nameDef] witnessed the Fiends massacre [PAWN_possessive] family in Vault 3. [PAWN_pronoun] joined the killers to survive, losing all humanity.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Fiends</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>2</Shooting>
+            <Melee>2</Melee>
+        </skillGains>
+        <workDisables>
+            <li>Caring</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <!-- Child Chem Addict -->
+
+    <BackstoryDef>
+        <defName>FCP_Fiend_Child_ChemAddict</defName>
+        <title>child chem addict</title>
+        <titleShort>addict</titleShort>
+        <baseDesc>[PAWN_nameDef] was addicted to chems from a young age by Fiend adults. [PAWN_pronoun] never knew sobriety or normalcy.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Fiends</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>2</Shooting>
+            <Melee>1</Melee>
+            <Intellectual>-1</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Motor-Runner's Pup -->
+
+    <BackstoryDef>
+        <defName>FCP_Fiend_Child_MotorRunnerPup</defName>
+        <title>Motor-Runner's pup</title>
+        <titleShort>pup</titleShort>
+        <baseDesc>[PAWN_nameDef] was raised by Motor-Runner's gang, taught violence and drug use from birth. [PAWN_pronoun] knew nothing but the Fiend lifestyle.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Fiends</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>3</Melee>
+            <Shooting>2</Shooting>
+        </skillGains>
+        <workDisables>
+            <li>Intellectual</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <!-- Cannibal Youth -->
+
+    <BackstoryDef>
+        <defName>FCP_Fiend_Child_CannibalYouth</defName>
+        <title>cannibal youth</title>
+        <titleShort>cannibal</titleShort>
+        <baseDesc>[PAWN_nameDef] ate human flesh as a child in the Fiend camps. [PAWN_pronoun] developed a taste for it and never looked back.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Fiends</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Cooking>2</Cooking>
+            <Melee>2</Melee>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Torture Witness Child -->
+
+    <BackstoryDef>
+        <defName>FCP_Fiend_Child_TortureWitness</defName>
+        <title>torture witness child</title>
+        <titleShort>witness</titleShort>
+        <baseDesc>[PAWN_nameDef] watched Fiends torture captives as entertainment growing up. [PAWN_pronoun] became desensitized to suffering.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Fiends</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
             <Social>-2</Social>
         </skillGains>
-        <workDisables>None</workDisables>
-        <requiredWorkTags>None</requiredWorkTags>
+        <workDisables>
+            <li>Caring</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <!-- Psycho Child -->
+
+    <BackstoryDef>
+        <defName>FCP_Fiend_Child_PsychoChild</defName>
+        <title>psycho child</title>
+        <titleShort>psycho</titleShort>
+        <baseDesc>[PAWN_nameDef] was fed Psycho as a child to make [PAWN_objective] violent and controllable. [PAWN_pronoun] became addicted and dependent.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
         <spawnCategories>
-            <li>FCP_Backstory_Raiders_Child</li>
+            <li>FCP_Backstory_Fiends</li>
+            <li>FCP_Backstory_Raiders</li>
         </spawnCategories>
-        <possessions />
+        <skillGains>
+            <Melee>3</Melee>
+            <Intellectual>-2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Child Raid Spotter -->
+
+    <BackstoryDef>
+        <defName>FCP_Fiend_Child_RaidSpotter</defName>
+        <title>child raid spotter</title>
+        <titleShort>spotter</titleShort>
+        <baseDesc>[PAWN_nameDef] spotted targets for Fiend raids as a child. [PAWN_pronoun] helped select victims and watched them die.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Fiends</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>2</Shooting>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Chem Cook Helper -->
+
+    <BackstoryDef>
+        <defName>FCP_Fiend_Child_ChemCookHelper</defName>
+        <title>chem cook helper</title>
+        <titleShort>helper</titleShort>
+        <baseDesc>[PAWN_nameDef] assisted Fiend chem cooks from a young age, inhaling fumes and sampling products. [PAWN_pronoun] was often high on accidental exposure.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Fiends</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>2</Crafting>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Feral Drug Child -->
+
+    <BackstoryDef>
+        <defName>FCP_Fiend_Child_FeraldDrug</defName>
+        <title>feral drug child</title>
+        <titleShort>feral</titleShort>
+        <baseDesc>[PAWN_nameDef] grew up feral among the Fiends, more animal than human. [PAWN_pronoun] attacked viciously and had no social skills.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Fiends</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>3</Melee>
+            <Animals>2</Animals>
+        </skillGains>
+        <workDisables>
+            <li>Social</li>
+            <li>Intellectual</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <!-- Child Corpse Scavenger -->
+
+    <BackstoryDef>
+        <defName>FCP_Fiend_Child_CorpseScavenger</defName>
+        <title>child corpse scavenger</title>
+        <titleShort>scavenger</titleShort>
+        <baseDesc>[PAWN_nameDef] scavenged corpses after Fiend raids, stripping bodies of valuables. [PAWN_pronoun] learned to see dead bodies as loot containers.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Fiends</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+        <workDisables>
+            <li>Caring</li>
+        </workDisables>
     </BackstoryDef>
 
 </Defs>

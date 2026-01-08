@@ -67,7 +67,6 @@
         <defName>FCP_Style_Raider</defName>
         <label>Raider</label>
         <iconPath>World_Icon/Raider_Icon/FCP_Raider_World_Icon</iconPath>
-        <soundOngoingRitual>FCP_Sound_Raider</soundOngoingRitual>
         <ritualVisualEffectDef>Rustic</ritualVisualEffectDef>
         <thingDefStyles />
       </StyleCategoryDef>

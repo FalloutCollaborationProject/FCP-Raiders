@@ -82,4 +82,85 @@
         </comps>
     </ThingDef>
 
+    <!-- Junkyard Power Armor -->
+
+    <ThingDef ParentName="FCP_Apparel_Power_Armor_Base" MayRequire="Rick.FCP.PowerArmor">
+        <defName>FCP_Apparel_Junkyard_Power_Armor</defName>
+        <label>Junkyard Power Armor</label>
+        <description>A cobbled-together suit of power armor constructed from salvaged parts and scrap metal. While the power systems are barely functional and the protection is inferior to proper military power armor, it's still an intimidating sight on the battlefield.</description>
+        <graphicData>
+            <texPath>Things/Apparel/Junkyard_Power_Armor/FCP_Junkyard_Power_Armor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <statBases>
+            <ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.25</ArmorRating_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.08</MoveSpeed>
+            <AimingDelayFactor>0.03</AimingDelayFactor>
+            <ToxicEnvironmentResistance>0.6</ToxicEnvironmentResistance>
+            <SocialImpact>-0.06</SocialImpact>
+        </equippedStatOffsets>
+        <apparel>
+            <wornGraphicPath>Things/Apparel/Junkyard_Power_Armor/FCP_Junkyard_Power_Armor</wornGraphicPath>
+        </apparel>
+    </ThingDef>
+
+    <!-- Scabber Power Armor -->
+
+    <ThingDef ParentName="FCP_Apparel_Power_Armor_Base" MayRequire="Rick.FCP.PowerArmor">
+        <defName>FCP_Apparel_Scabber_Power_Armor</defName>
+        <label>Scabber Power Armor</label>
+        <description>A heavily weathered and corroded suit of power armor that has been patched with whatever materials were available. The rust and decay give it a menacing, diseased appearance that strikes fear into enemies.</description>
+        <graphicData>
+            <texPath>Things/Apparel/Scabber_Power_Armor/FCP_Scabber_Power_Armor_Hulk</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <statBases>
+            <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.20</ArmorRating_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.09</MoveSpeed>
+            <AimingDelayFactor>0.04</AimingDelayFactor>
+            <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+            <SocialImpact>-0.08</SocialImpact>
+        </equippedStatOffsets>
+        <apparel>
+            <wornGraphicPath>Things/Apparel/Scabber_Power_Armor/FCP_Scabber_Power_Armor</wornGraphicPath>
+        </apparel>
+    </ThingDef>
+
+    <!-- Waster Power Armor -->
+
+    <ThingDef ParentName="FCP_Apparel_Power_Armor_Base" MayRequire="Rick.FCP.PowerArmor">
+        <defName>FCP_Apparel_Waster_Power_Armor</defName>
+        <label>Waster Power Armor</label>
+        <description>Power armor that has seen better days, covered in grime, scratches, and makeshift repairs. The power systems are unreliable and the armor plating is compromised, but it still provides formidable protection for wasteland raiders.</description>
+        <graphicData>
+            <texPath>Things/Apparel/Waster_Power_Armor/FCP_Waster_Power_Armor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <statBases>
+            <ArmorRating_Sharp>0.82</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.58</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.28</ArmorRating_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.07</MoveSpeed>
+            <AimingDelayFactor>0.025</AimingDelayFactor>
+            <ToxicEnvironmentResistance>0.65</ToxicEnvironmentResistance>
+            <SocialImpact>-0.055</SocialImpact>
+        </equippedStatOffsets>
+        <apparel>
+            <wornGraphicPath>Things/Apparel/Waster_Power_Armor/FCP_Waster_Power_Armor</wornGraphicPath>
+        </apparel>
+    </ThingDef>
+
 </Defs>
