@@ -32,6 +32,13 @@
         <apparelMoney>2000~3500</apparelMoney>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
         <weaponMoney>1200~2000</weaponMoney>
+        <gearHealthRange>0.5~1.2</gearHealthRange>
+        <apparelMoney>500</apparelMoney>
+        <apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
+        <apparelTags>
+            <li>FCP_Raider_Armor</li>
+        </apparelTags>
+        <weaponMoney>400</weaponMoney>
         <weaponTags>
             <li>IndustrialGunAdvanced</li>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Assault_Rifle</li>
