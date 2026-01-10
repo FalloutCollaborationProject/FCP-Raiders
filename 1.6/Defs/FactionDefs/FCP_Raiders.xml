@@ -36,6 +36,9 @@
         <allowedCultures>
             <li>FCP_Culture_Raider</li>
         </allowedCultures>
+        <fixedLeaderKinds>
+            <li>FCP_Raider_Warlord</li>
+        </fixedLeaderKinds>
 
         <!--__________ Ideology __________-->
 
@@ -113,37 +116,99 @@
         
         <pawnGroupMakers>
 
-            <!-- Raiders Attack Squad -->
+            <!-- Slavers Combat -->
 
             <li>
-                <!-- Normal fights, standard raiders -->
                 <kindDef>Combat</kindDef>
                 <disallowedStrategies>
                     <li>EmergeFromWater</li>
                 </disallowedStrategies>
                 <options>
-                    <FCP_Pawnkind_Raider_Scavver>10</FCP_Pawnkind_Raider_Scavver>
-                    <FCP_Pawnkind_Raider_Bruiser>5</FCP_Pawnkind_Raider_Bruiser>
-                    <FCP_Pawnkind_Raider_Boss>1</FCP_Pawnkind_Raider_Boss>
+                    <FCP_Slaver_Guard>10</FCP_Slaver_Guard>
+                    <FCP_Slaver_Collarer_Pawn>8</FCP_Slaver_Collarer_Pawn>
+                    <FCP_Slaver_Enforcer_Pawn>7</FCP_Slaver_Enforcer_Pawn>
+                    <FCP_Slaver_Boss>2</FCP_Slaver_Boss>
                 </options>
             </li>
 
-            <!-- Raiders Attack Squad With characters -->
+            <!-- Jackals Combat -->
 
-            <li Class="FCP.Core.GroupMakerWithCustomChar">
+            <li>
                 <kindDef>Combat</kindDef>
                 <disallowedStrategies>
                     <li>EmergeFromWater</li>
                 </disallowedStrategies>
                 <options>
-                    <FCP_Pawnkind_Raider_Scavver>10</FCP_Pawnkind_Raider_Scavver>
-                    <FCP_Pawnkind_Raider_Bruiser>5</FCP_Pawnkind_Raider_Bruiser>
-                    <FCP_Pawnkind_Raider_Boss>1</FCP_Pawnkind_Raider_Boss>
+                    <FCP_Jackal_Raider>12</FCP_Jackal_Raider>
+                    <FCP_Jackal_Gunner>8</FCP_Jackal_Gunner>
+                    <FCP_Jackal_Scavenger>6</FCP_Jackal_Scavenger>
+                    <FCP_Jackal_Bruiser>5</FCP_Jackal_Bruiser>
+                    <FCP_Jackal_Leader>2</FCP_Jackal_Leader>
                 </options>
-                <characterDefs>
+            </li>
 
-                </characterDefs>
-                <characterChance>0.50</characterChance>
+            <!-- Vipers Combat -->
+
+            <li>
+                <kindDef>Combat</kindDef>
+                <disallowedStrategies>
+                    <li>EmergeFromWater</li>
+                </disallowedStrategies>
+                <options>
+                    <FCP_Viper_Cultist_Pawn>10</FCP_Viper_Cultist_Pawn>
+                    <FCP_Viper_Marksman>7</FCP_Viper_Marksman>
+                    <FCP_Viper_PoisonBlade_Pawn>6</FCP_Viper_PoisonBlade_Pawn>
+                    <FCP_Viper_VenomMaster_Pawn>4</FCP_Viper_VenomMaster_Pawn>
+                    <FCP_Viper_Priest_Pawn>2</FCP_Viper_Priest_Pawn>
+                </options>
+            </li>
+
+            <!-- Forged Combat -->
+
+            <li>
+                <kindDef>Combat</kindDef>
+                <disallowedStrategies>
+                    <li>EmergeFromWater</li>
+                </disallowedStrategies>
+                <options>
+                    <FCP_Forged_Raider>10</FCP_Forged_Raider>
+                    <FCP_Forged_Flamer>7</FCP_Forged_Flamer>
+                    <FCP_Forged_Incinerator_Pawn>5</FCP_Forged_Incinerator_Pawn>
+                    <FCP_Forged_Smith>3</FCP_Forged_Smith>
+                    <FCP_Forged_Master>2</FCP_Forged_Master>
+                </options>
+            </li>
+
+            <!-- Scorpions Combat -->
+
+            <li>
+                <kindDef>Combat</kindDef>
+                <disallowedStrategies>
+                    <li>EmergeFromWater</li>
+                </disallowedStrategies>
+                <options>
+                    <FCP_Scorpion_Thug>12</FCP_Scorpion_Thug>
+                    <FCP_Scorpion_Enforcer>8</FCP_Scorpion_Enforcer>
+                    <FCP_Scorpion_Pickpocket_Pawn>6</FCP_Scorpion_Pickpocket_Pawn>
+                    <FCP_Scorpion_ChemDealer>4</FCP_Scorpion_ChemDealer>
+                    <FCP_Scorpion_Leader>2</FCP_Scorpion_Leader>
+                </options>
+            </li>
+
+            <!-- Fiends Combat -->
+
+            <li>
+                <kindDef>Combat</kindDef>
+                <disallowedStrategies>
+                    <li>EmergeFromWater</li>
+                </disallowedStrategies>
+                <options>
+                    <FCP_Fiend_Junkie>12</FCP_Fiend_Junkie>
+                    <FCP_Fiend_Gunner>9</FCP_Fiend_Gunner>
+                    <FCP_Fiend_Berserker>7</FCP_Fiend_Berserker>
+                    <FCP_Fiend_Slasher>6</FCP_Fiend_Slasher>
+                    <FCP_Fiend_Overlord>2</FCP_Fiend_Overlord>
+                </options>
             </li>
 
             <!-- Raiders Peaceful/Leader Generation -->
@@ -151,9 +216,20 @@
             <li>
                 <kindDef>Peaceful</kindDef>
                 <options>
-                    <FCP_Pawnkind_Raider_Scavver>10</FCP_Pawnkind_Raider_Scavver>
-                    <FCP_Pawnkind_Raider_Bruiser>5</FCP_Pawnkind_Raider_Bruiser>
-                    <FCP_Pawnkind_Raider_Boss>3</FCP_Pawnkind_Raider_Boss>
+                    <FCP_Raider_Warlord>1</FCP_Raider_Warlord>
+                    <FCP_Slaver_Boss>3</FCP_Slaver_Boss>
+                    <FCP_Slaver_Trader>5</FCP_Slaver_Trader>
+                    <FCP_Slaver_Guard>6</FCP_Slaver_Guard>
+                    <FCP_Jackal_Leader>3</FCP_Jackal_Leader>
+                    <FCP_Jackal_Raider>8</FCP_Jackal_Raider>
+                    <FCP_Viper_Priest_Pawn>3</FCP_Viper_Priest_Pawn>
+                    <FCP_Viper_Cultist_Pawn>6</FCP_Viper_Cultist_Pawn>
+                    <FCP_Forged_Master>3</FCP_Forged_Master>
+                    <FCP_Forged_Raider>7</FCP_Forged_Raider>
+                    <FCP_Scorpion_Leader>3</FCP_Scorpion_Leader>
+                    <FCP_Scorpion_Thug>8</FCP_Scorpion_Thug>
+                    <FCP_Fiend_Overlord>3</FCP_Fiend_Overlord>
+                    <FCP_Fiend_Junkie>7</FCP_Fiend_Junkie>
                 </options>
             </li>
 
@@ -162,30 +238,32 @@
             <li>
                 <kindDef>Settlement</kindDef>
                 <options>
-                    <FCP_Pawnkind_Raider_Scavver>10</FCP_Pawnkind_Raider_Scavver>
-                    <FCP_Pawnkind_Raider_Bruiser>5</FCP_Pawnkind_Raider_Bruiser>
-                    <FCP_Pawnkind_Raider_Boss>2</FCP_Pawnkind_Raider_Boss>
+                    <FCP_Raider_Warlord>1</FCP_Raider_Warlord>
+                    <FCP_Slaver_Boss>2</FCP_Slaver_Boss>
+                    <FCP_Slaver_Trader>4</FCP_Slaver_Trader>
+                    <FCP_Slaver_Guard>8</FCP_Slaver_Guard>
+                    <FCP_Slaver_Collarer_Pawn>6</FCP_Slaver_Collarer_Pawn>
+                    <FCP_Jackal_Leader>2</FCP_Jackal_Leader>
+                    <FCP_Jackal_Raider>9</FCP_Jackal_Raider>
+                    <FCP_Jackal_Scavenger>7</FCP_Jackal_Scavenger>
+                    <FCP_Viper_Priest_Pawn>2</FCP_Viper_Priest_Pawn>
+                    <FCP_Viper_Cultist_Pawn>8</FCP_Viper_Cultist_Pawn>
+                    <FCP_Forged_Master>2</FCP_Forged_Master>
+                    <FCP_Forged_Smith>3</FCP_Forged_Smith>
+                    <FCP_Forged_Raider>8</FCP_Forged_Raider>
+                    <FCP_Scorpion_Leader>2</FCP_Scorpion_Leader>
+                    <FCP_Scorpion_ChemDealer>4</FCP_Scorpion_ChemDealer>
+                    <FCP_Scorpion_Thug>10</FCP_Scorpion_Thug>
+                    <FCP_Scorpion_Pickpocket_Pawn>6</FCP_Scorpion_Pickpocket_Pawn>
+                    <FCP_Fiend_Overlord>2</FCP_Fiend_Overlord>
+                    <FCP_Fiend_Berserker>6</FCP_Fiend_Berserker>
+                    <FCP_Fiend_Gunner>7</FCP_Fiend_Gunner>
+                    <FCP_Fiend_Junkie>8</FCP_Fiend_Junkie>
                 </options>
             </li>
         </pawnGroupMakers>
         <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
         <modExtensions Inherit="False">
-            <!-- Make them hostile to the All non-raiders -->
-            <li Class="FCP.Core.ModExtension_FactionPermanentlyHostileTo">
-                <hostileFactionDefs>
-                    <li MayRequire="Rick.FCP.Legion">FCP_Faction_Caesars_Legion</li>
-                    <li MayRequire="Rick.FCP.NCR">FCP_Faction_NCR</li>
-                    <li MayRequire="Rick.FCP.NCR">FCP_Faction_NCR_Deserters</li>
-                    <li>OutlanderCivil</li>
-                    <li>OutlanderRough</li>
-                    <li>TribeCivil</li>
-                    <li>TribeRough</li>
-                    <li>TribeSavage</li>
-                    <li>Mechanoid</li>
-                    <li>Insect</li>
-                    <li>PlayerColony</li>
-                </hostileFactionDefs>
-            </li>
             <!-- Make them unable to use drop pods -->
             <li Class="FCP.Core.ModExtension_FactionBannedArrivalModes">
                 <arrivalModes>

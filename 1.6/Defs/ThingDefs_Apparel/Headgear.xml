@@ -199,7 +199,7 @@
 
     <!-- Arclight -->
 
-    <ThingDef ParentName="FCP_Raider_Helmet_Base">
+    <ThingDef Name="FCP_Apparel_Raider_Arclight_Helmet" ParentName="FCP_Raider_Helmet_Base">
         <defName>FCP_Apparel_Raider_Arclight_Helmet</defName>
         <description>A repurposed welding mask. It offers fairly good protection from the front but leaves the back of the head virtually unprotected. It encourages its wearer to storm blindly at the enemy, as retreating becomes a bad, and often fatal, idea.</description>
         <label>Raider Arclight Helmet</label>
@@ -217,11 +217,24 @@
             <EquipDelay>1.2</EquipDelay>
         </statBases>
         <graphicData>
-            <texPath>Things/Headgear/Raider_Arclight_Helmet/Raider_Arclight_Helmet</texPath>
+            <texPath>Things/Headgear/Raider_Arclight_Helmet/FCP_Raider_Arclight_Helmet_a</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <apparel>
-            <wornGraphicPath>Things/Headgear/Raider_Arclight_Helmet/Raider_Arclight_Helmet</wornGraphicPath>
+            <wornGraphicPath>Things/Headgear/Raider_Arclight_Helmet/FCP_Raider_Arclight_Helmet_a</wornGraphicPath>
+        </apparel>
+    </ThingDef>
+
+    <!-- Arclight Rust -->
+
+    <ThingDef ParentName="FCP_Apparel_Raider_Arclight_Helmet">
+        <defName>FCP_Apparel_Raider_Arclight_Rust_Helmet</defName>
+        <graphicData>
+            <texPath>Things/Headgear/Raider_Arclight_Helmet/FCP_Raider_Arclight_Helmet_b</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <apparel>
+            <wornGraphicPath>Things/Headgear/Raider_Arclight_Helmet/FCP_Raider_Arclight_Helmet_b</wornGraphicPath>
         </apparel>
     </ThingDef>
 
@@ -270,11 +283,11 @@
         <apparel>
             <bodyPartGroups>
                 <li>Neck</li>
-                <li>Torso</li>
+                <li>UpperHead</li>
             </bodyPartGroups>
             <wornGraphicPath>Things/Headgear/Sack_Hood/FCP_Sack_Hood</wornGraphicPath>
             <layers>
-                <li>Shell</li>
+                <li>Overhead</li>
             </layers>
             <tags>
                 <li>FCP_Raider_Armor</li>
