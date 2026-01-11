@@ -36,7 +36,7 @@
 
     <!-- Slave Overseer -->
     
-<BackstoryDef MayRequire="Rick.FCP.Slavers">
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_Overseer</defName>
         <title>slave overseer</title>
         <titleShort>overseer</titleShort>
@@ -62,7 +62,7 @@
 
     <!-- Slave Trader -->
     
-<BackstoryDef MayRequire="Rick.FCP.Slavers">
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_Trader</defName>
         <title>slave trader</title>
         <titleShort>trader</titleShort>
@@ -85,7 +85,7 @@
 
     <!-- Paradise Falls Slaver -->
     
-<BackstoryDef MayRequire="Rick.FCP.Slavers">
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_ParadiseFalls</defName>
         <title>Paradise Falls slaver</title>
         <titleShort>slaver</titleShort>
@@ -108,7 +108,7 @@
 
     <!-- Former Slave Turned Slaver -->
     
-<BackstoryDef MayRequire="Rick.FCP.Slavers">
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_FormerSlave</defName>
         <title>former slave turned slaver</title>
         <titleShort>turncoat</titleShort>
@@ -131,7 +131,7 @@
 
     <!-- Pitt Recruiter -->
     
-<BackstoryDef MayRequire="Rick.FCP.Slavers">
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_PittRecruiter</defName>
         <title>Pitt recruiter</title>
         <titleShort>recruiter</titleShort>
@@ -157,7 +157,7 @@
 
     <!-- Child Catcher -->
     
-<BackstoryDef MayRequire="Rick.FCP.Slavers">
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_ChildCatcher</defName>
         <title>child catcher</title>
         <titleShort>catcher</titleShort>
@@ -183,7 +183,7 @@
 
     <!-- Collar Technician -->
     
-<BackstoryDef MayRequire="Rick.FCP.Slavers">
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_CollarTech</defName>
         <title>collar technician</title>
         <titleShort>tech</titleShort>
@@ -209,7 +209,7 @@
 
     <!-- Slave Caravan Guard -->
     
-<BackstoryDef MayRequire="Rick.FCP.Slavers">
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_CaravanGuard</defName>
         <title>slave caravan guard</title>
         <titleShort>guard</titleShort>
@@ -232,7 +232,7 @@
 
     <!-- Slave Breaker -->
     
-<BackstoryDef MayRequire="Rick.FCP.Slavers">
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_Breaker</defName>
         <title>slave breaker</title>
         <titleShort>breaker</titleShort>
@@ -259,7 +259,7 @@
 
     <!-- Slave Appraiser -->
     
-<BackstoryDef MayRequire="Rick.FCP.Slavers">
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_Appraiser</defName>
         <title>slave appraiser</title>
         <titleShort>appraiser</titleShort>
@@ -282,7 +282,7 @@
 
     <!-- Raider Slave Driver -->
     
-<BackstoryDef MayRequire="Rick.FCP.Slavers">
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_RaidLeader</defName>
         <title>slaver raid leader</title>
         <titleShort>raid leader</titleShort>
@@ -306,7 +306,7 @@
 
     <!-- Slave Pen Keeper -->
     
-<BackstoryDef MayRequire="Rick.FCP.Slavers">
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_PenKeeper</defName>
         <title>slave pen keeper</title>
         <titleShort>pen keeper</titleShort>
@@ -332,7 +332,7 @@
 
     <!-- Mesmetron Specialist -->
     
-<BackstoryDef MayRequire="Rick.FCP.Slavers">
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_Mesmetron</defName>
         <title>mesmetron specialist</title>
         <titleShort>mesmetron user</titleShort>
@@ -355,7 +355,7 @@
 
     <!-- Slaver Enforcer -->
     
-<BackstoryDef MayRequire="Rick.FCP.Slavers">
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_Enforcer</defName>
         <title>slaver enforcer</title>
         <titleShort>enforcer</titleShort>
@@ -379,7 +379,7 @@
 
     <!-- Vault Dweller Hunter -->
     
-<BackstoryDef MayRequire="Rick.FCP.Slavers">
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_VaultHunter</defName>
         <title>vault dweller hunter</title>
         <titleShort>vault hunter</titleShort>
@@ -402,7 +402,7 @@
 
     <!-- Slave Auctioneer -->
     
-<BackstoryDef MayRequire="Rick.FCP.Slavers">
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_Auctioneer</defName>
         <title>slave auctioneer</title>
         <titleShort>auctioneer</titleShort>
@@ -427,7 +427,7 @@
 
     <!-- Escaped Slave Tracker -->
     
-<BackstoryDef MayRequire="Rick.FCP.Slavers">
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_Tracker</defName>
         <title>escaped slave tracker</title>
         <titleShort>tracker</titleShort>
@@ -451,7 +451,7 @@
 
     <!-- Slave Chem Dealer -->
     
-<BackstoryDef MayRequire="Rick.FCP.Slavers">
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_ChemDealer</defName>
         <title>slave chem dealer</title>
         <titleShort>chem dealer</titleShort>
@@ -474,7 +474,7 @@
 
     <!-- Slave Branding Master -->
     
-<BackstoryDef MayRequire="Rick.FCP.Slavers">
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_BrandingMaster</defName>
         <title>branding master</title>
         <titleShort>brander</titleShort>
@@ -501,7 +501,7 @@
     <!--___ Jackals ___-->
     <!-- Jackal Initiate -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Jackal_Initiate</defName>
         <title>Jackal initiate</title>
         <titleShort>initiate</titleShort>
@@ -524,7 +524,7 @@
 
     <!-- Jackal Ambusher -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Jackal_Ambusher</defName>
         <title>Jackal ambusher</title>
         <titleShort>ambusher</titleShort>
@@ -548,7 +548,7 @@
 
     <!-- Jackal Pack Leader -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Jackal_PackLeader</defName>
         <title>Jackal pack leader</title>
         <titleShort>pack leader</titleShort>
@@ -573,7 +573,7 @@
 
     <!-- Jackal Scavenger -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Jackal_Scavenger</defName>
         <title>Jackal scavenger</title>
         <titleShort>scavenger</titleShort>
@@ -597,7 +597,7 @@
 
     <!-- Jackal Enforcer -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Jackal_Enforcer</defName>
         <title>Jackal enforcer</title>
         <titleShort>enforcer</titleShort>
@@ -621,7 +621,7 @@
 
     <!-- Jackal Raider -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Jackal_Raider</defName>
         <title>Jackal raider</title>
         <titleShort>raider</titleShort>
@@ -645,7 +645,7 @@
 
     <!-- Jackal Scout -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Jackal_Scout</defName>
         <title>Jackal scout</title>
         <titleShort>scout</titleShort>
@@ -669,7 +669,7 @@
 
     <!-- Jackal Bruiser -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Jackal_Bruiser</defName>
         <title>Jackal bruiser</title>
         <titleShort>bruiser</titleShort>
@@ -695,7 +695,7 @@
 
     <!-- Jackal Gunner -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Jackal_Gunner</defName>
         <title>Jackal gunner</title>
         <titleShort>gunner</titleShort>
@@ -718,7 +718,7 @@
 
     <!-- Jackal Torturer -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Jackal_Torturer</defName>
         <title>Jackal torturer</title>
         <titleShort>torturer</titleShort>
@@ -744,7 +744,7 @@
 
     <!-- Jackal Cannibal -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Jackal_Cannibal</defName>
         <title>Jackal cannibal</title>
         <titleShort>cannibal</titleShort>
@@ -767,7 +767,7 @@
 
     <!-- Jackal Wasteland Survivor -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Jackal_WastelandSurvivor</defName>
         <title>Jackal wasteland survivor</title>
         <titleShort>survivor</titleShort>
@@ -791,7 +791,7 @@
 
     <!-- Jackal Drug Runner -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Jackal_DrugRunner</defName>
         <title>Jackal drug runner</title>
         <titleShort>drug runner</titleShort>
@@ -815,7 +815,7 @@
 
     <!-- Jackal Demolitionist -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Jackal_Demolitionist</defName>
         <title>Jackal demolitionist</title>
         <titleShort>demolitionist</titleShort>
@@ -839,7 +839,7 @@
 
     <!-- Jackal War Boy -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Jackal_WarBoy</defName>
         <title>Jackal war boy</title>
         <titleShort>war boy</titleShort>
@@ -867,7 +867,7 @@
 
     <!-- Jackal Bounty Hunter -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Jackal_BountyHunter</defName>
         <title>Jackal bounty hunter</title>
         <titleShort>bounty hunter</titleShort>
@@ -891,7 +891,7 @@
 
     <!-- Jackal Camp Guard -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Jackal_CampGuard</defName>
         <title>Jackal camp guard</title>
         <titleShort>camp guard</titleShort>
@@ -915,7 +915,7 @@
 
     <!-- Jackal Executioner -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Jackal_Executioner</defName>
         <title>Jackal executioner</title>
         <titleShort>executioner</titleShort>
@@ -941,7 +941,7 @@
 
     <!-- Jackal Mechanic -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Jackal_Mechanic</defName>
         <title>Jackal mechanic</title>
         <titleShort>mechanic</titleShort>
@@ -965,7 +965,7 @@
 
     <!-- Jackal Berserker -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Jackal_Berserker</defName>
         <title>Jackal berserker</title>
         <titleShort>berserker</titleShort>
@@ -995,7 +995,7 @@
     <!--___ Vipers ___-->
     <!-- Viper Cultist -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Viper_Cultist</defName>
         <title>Viper cultist</title>
         <titleShort>cultist</titleShort>
@@ -1019,7 +1019,7 @@
 
     <!-- Viper Venom Master -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Viper_VenomMaster</defName>
         <title>Viper venom master</title>
         <titleShort>venom master</titleShort>
@@ -1043,7 +1043,7 @@
 
     <!-- Viper Snake Handler -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Viper_SnakeHandler</defName>
         <title>Viper snake handler</title>
         <titleShort>snake handler</titleShort>
@@ -1067,7 +1067,7 @@
 
     <!-- Viper Priest -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Viper_Priest</defName>
         <title>Viper priest</title>
         <titleShort>priest</titleShort>
@@ -1091,7 +1091,7 @@
 
     <!-- Viper Poison Blade -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Viper_PoisonBlade</defName>
         <title>Viper poison blade</title>
         <titleShort>poison blade</titleShort>
@@ -1115,7 +1115,7 @@
 
     <!-- Viper Assassin -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Viper_Assassin</defName>
         <title>Viper assassin</title>
         <titleShort>assassin</titleShort>
@@ -1139,7 +1139,7 @@
 
     <!-- Viper Fangbearer -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Viper_Fangbearer</defName>
         <title>Viper fangbearer</title>
         <titleShort>fangbearer</titleShort>
@@ -1163,7 +1163,7 @@
 
     <!-- Viper Toxic Raider -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Viper_ToxicRaider</defName>
         <title>Viper toxic raider</title>
         <titleShort>toxic raider</titleShort>
@@ -1187,7 +1187,7 @@
 
     <!-- Viper Venom Brewer -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Viper_VenomBrewer</defName>
         <title>Viper venom brewer</title>
         <titleShort>venom brewer</titleShort>
@@ -1211,7 +1211,7 @@
 
     <!-- Viper Scale Warrior -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Viper_ScaleWarrior</defName>
         <title>Viper scale warrior</title>
         <titleShort>scale warrior</titleShort>
@@ -1235,7 +1235,7 @@
 
     <!-- Viper Desert Stalker -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Viper_DesertStalker</defName>
         <title>Viper desert stalker</title>
         <titleShort>stalker</titleShort>
@@ -1259,7 +1259,7 @@
 
     <!-- Viper Toxic Shaman -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Viper_ToxicShaman</defName>
         <title>Viper toxic shaman</title>
         <titleShort>shaman</titleShort>
@@ -1283,7 +1283,7 @@
 
     <!-- Viper Envenomated Marksman -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Viper_EnvenomatedMarksman</defName>
         <title>Viper envenomated marksman</title>
         <titleShort>marksman</titleShort>
@@ -1307,7 +1307,7 @@
 
     <!-- Viper Serpent Guard -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Viper_SerpentGuard</defName>
         <title>Viper serpent guard</title>
         <titleShort>serpent guard</titleShort>
@@ -1331,7 +1331,7 @@
 
     <!-- Viper Convert Maker -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Viper_ConvertMaker</defName>
         <title>Viper convert maker</title>
         <titleShort>convert maker</titleShort>
@@ -1357,7 +1357,7 @@
 
     <!-- Viper Venom Addict -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Viper_VenomAddict</defName>
         <title>Viper venom addict</title>
         <titleShort>venom addict</titleShort>
@@ -1381,7 +1381,7 @@
 
     <!-- Viper Ritual Slayer -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Viper_RitualSlayer</defName>
         <title>Viper ritual slayer</title>
         <titleShort>ritual slayer</titleShort>
@@ -1408,7 +1408,7 @@
 
     <!-- Viper Scavenger -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Viper_ScavengerCult</defName>
         <title>Viper scavenger</title>
         <titleShort>scavenger</titleShort>
@@ -1432,7 +1432,7 @@
 
     <!-- Viper Venom Warrior -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Viper_VenomWarrior</defName>
         <title>Viper venom warrior</title>
         <titleShort>venom warrior</titleShort>
@@ -1455,7 +1455,7 @@
 
     <!-- Viper Serpent Whisperer -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Viper_SerpentWhisperer</defName>
         <title>Viper serpent whisperer</title>
         <titleShort>whisperer</titleShort>
@@ -1480,7 +1480,7 @@
     <!--___ Forged ___-->
     <!-- Forged Initiate -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Forged_Initiate</defName>
         <title>Forged initiate</title>
         <titleShort>initiate</titleShort>
@@ -1504,7 +1504,7 @@
 
     <!-- Forged Flamewielder -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Forged_Flamewielder</defName>
         <title>Forged flamewielder</title>
         <titleShort>flamewielder</titleShort>
@@ -1528,7 +1528,7 @@
 
     <!-- Forged Blacksmith -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Forged_Blacksmith</defName>
         <title>Forged blacksmith</title>
         <titleShort>blacksmith</titleShort>
@@ -1552,7 +1552,7 @@
 
     <!-- Forged Fire Preacher -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Forged_FirePreacher</defName>
         <title>Forged fire preacher</title>
         <titleShort>preacher</titleShort>
@@ -1576,7 +1576,7 @@
 
     <!-- Forged Incinerator -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Forged_Incinerator</defName>
         <title>Forged incinerator</title>
         <titleShort>incinerator</titleShort>
@@ -1600,7 +1600,7 @@
 
     <!-- Forged Burnt One -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Forged_BurntOne</defName>
         <title>Forged burnt one</title>
         <titleShort>burnt one</titleShort>
@@ -1623,7 +1623,7 @@
 
     <!-- Forged Molotov Maker -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Forged_MolotovMaker</defName>
         <title>Forged molotov maker</title>
         <titleShort>molotov maker</titleShort>
@@ -1647,7 +1647,7 @@
 
     <!-- Forged Firewalk Warrior -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Forged_FirewalkWarrior</defName>
         <title>Forged firewalk warrior</title>
         <titleShort>firewalk warrior</titleShort>
@@ -1671,7 +1671,7 @@
 
     <!-- Forged Arsonist -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Forged_Arsonist</defName>
         <title>Forged arsonist</title>
         <titleShort>arsonist</titleShort>
@@ -1695,7 +1695,7 @@
 
     <!-- Forged Forge Master -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Forged_ForgeMaster</defName>
         <title>Forged forge master</title>
         <titleShort>forge master</titleShort>
@@ -1720,7 +1720,7 @@
 
     <!-- Forged Flame Keeper -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Forged_FlameKeeper</defName>
         <title>Forged flame keeper</title>
         <titleShort>flame keeper</titleShort>
@@ -1744,7 +1744,7 @@
 
     <!-- Forged Scorched Raider -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Forged_ScorchedRaider</defName>
         <title>Forged scorched raider</title>
         <titleShort>scorched raider</titleShort>
@@ -1768,7 +1768,7 @@
 
     <!-- Forged Brand Master -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Forged_BrandMaster</defName>
         <title>Forged brand master</title>
         <titleShort>brand master</titleShort>
@@ -1792,7 +1792,7 @@
 
     <!-- Forged Inferno Enforcer -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Forged_InfernoEnforcer</defName>
         <title>Forged inferno enforcer</title>
         <titleShort>enforcer</titleShort>
@@ -1817,7 +1817,7 @@
 
     <!-- Forged Combustion Sniper -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Forged_CombustionSniper</defName>
         <title>Forged combustion sniper</title>
         <titleShort>sniper</titleShort>
@@ -1840,7 +1840,7 @@
 
     <!-- Forged Pyro Berserker -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Forged_PyroBerserker</defName>
         <title>Forged pyro berserker</title>
         <titleShort>berserker</titleShort>
@@ -1890,7 +1890,7 @@
 
     <!-- Forged Ashwalker Scout -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Forged_AshwalkerScout</defName>
         <title>Forged ashwalker scout</title>
         <titleShort>ashwalker</titleShort>
@@ -1914,7 +1914,7 @@
 
     <!-- Forged Flame Acolyte -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Forged_FlameAcolyte</defName>
         <title>Forged flame acolyte</title>
         <titleShort>acolyte</titleShort>
@@ -1938,7 +1938,7 @@
 
     <!-- Forged Burning Executioner -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Forged_BurningExecutioner</defName>
         <title>Forged burning executioner</title>
         <titleShort>executioner</titleShort>
@@ -1967,7 +1967,7 @@
     <!--___ Scorpions ___-->
     <!-- Scorpion Street Thug -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Scorpion_StreetThug</defName>
         <title>Scorpion street thug</title>
         <titleShort>thug</titleShort>
@@ -1991,7 +1991,7 @@
 
     <!-- Scorpion Pickpocket -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Scorpion_Pickpocket</defName>
         <title>Scorpion pickpocket</title>
         <titleShort>pickpocket</titleShort>
@@ -2015,7 +2015,7 @@
 
     <!-- Scorpion Chem Pusher -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Scorpion_ChemPusher</defName>
         <title>Scorpion chem pusher</title>
         <titleShort>chem pusher</titleShort>
@@ -2039,7 +2039,7 @@
 
     <!-- Scorpion Alley Muscle -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Scorpion_AlleyMuscle</defName>
         <title>Scorpion alley muscle</title>
         <titleShort>muscle</titleShort>
@@ -2062,7 +2062,7 @@
 
     <!-- Scorpion Lookout -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Scorpion_Lookout</defName>
         <title>Scorpion lookout</title>
         <titleShort>lookout</titleShort>
@@ -2086,7 +2086,7 @@
 
     <!-- Scorpion Gang Recruit -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Scorpion_GangRecruit</defName>
         <title>Scorpion gang recruit</title>
         <titleShort>recruit</titleShort>
@@ -2110,7 +2110,7 @@
 
     <!-- Scorpion Racketeer -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Scorpion_ProtectionRacketeer</defName>
         <title>Scorpion racketeer</title>
         <titleShort>racketeer</titleShort>
@@ -2134,7 +2134,7 @@
 
     <!-- Scorpion Street Brawler -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Scorpion_StreetBrawler</defName>
         <title>Scorpion street brawler</title>
         <titleShort>brawler</titleShort>
@@ -2157,7 +2157,7 @@
 
     <!-- Scorpion Petty Criminal -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Scorpion_PettyCriminal</defName>
         <title>Scorpion petty criminal</title>
         <titleShort>criminal</titleShort>
@@ -2181,7 +2181,7 @@
 
     <!-- Scorpion Alley Runner -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Scorpion_AlleyRunner</defName>
         <title>Scorpion alley runner</title>
         <titleShort>runner</titleShort>
@@ -2205,7 +2205,7 @@
 
     <!-- Scorpion Stash Keeper -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Scorpion_StashKeeper</defName>
         <title>Scorpion stash keeper</title>
         <titleShort>stash keeper</titleShort>
@@ -2229,7 +2229,7 @@
 
     <!-- Scorpion Gambler -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Scorpion_Gambler</defName>
         <title>Scorpion gambler</title>
         <titleShort>gambler</titleShort>
@@ -2252,7 +2252,7 @@
 
     <!-- Scorpion Vandal -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Scorpion_Vandal</defName>
         <title>Scorpion vandal</title>
         <titleShort>vandal</titleShort>
@@ -2276,7 +2276,7 @@
 
     <!-- Scorpion Street Hustler -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Scorpion_StreetHustler</defName>
         <title>Scorpion street hustler</title>
         <titleShort>hustler</titleShort>
@@ -2300,7 +2300,7 @@
 
     <!-- Scorpion Junk Dealer -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Scorpion_JunkDealer</defName>
         <title>Scorpion junk dealer</title>
         <titleShort>junk dealer</titleShort>
@@ -2324,7 +2324,7 @@
 
     <!-- Scorpion Bar Bouncer -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Scorpion_BarBouncer</defName>
         <title>Scorpion bar bouncer</title>
         <titleShort>bouncer</titleShort>
@@ -2346,6 +2346,7 @@
     </BackstoryDef>
 
     <!-- Scorpion Two-Bit Enforcer -->
+
     <BackstoryDef>
         <defName>FCP_Scorpion_TwobitEnforcer</defName>
         <title>Scorpion two-bit enforcer</title>
@@ -2370,7 +2371,7 @@
 
     <!-- Scorpion Street Addict -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Scorpion_StreetAddict</defName>
         <title>Scorpion street addict</title>
         <titleShort>addict</titleShort>
@@ -2394,7 +2395,7 @@
 
     <!-- Scorpion Squatter -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Scorpion_Squatter</defName>
         <title>Scorpion squatter</title>
         <titleShort>squatter</titleShort>
@@ -2418,7 +2419,7 @@
 
     <!-- Scorpion Gang Hanger -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Scorpion_GangHanger</defName>
         <title>Scorpion gang hanger</title>
         <titleShort>hanger-on</titleShort>
@@ -2443,7 +2444,7 @@
     <!--___ Fiends ___-->
     <!-- Fiend Psycho Addict -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Fiend_PsychoAddict</defName>
         <title>Fiend psycho addict</title>
         <titleShort>psycho addict</titleShort>
@@ -2470,7 +2471,7 @@
 
     <!-- Fiend Cannibal Raider -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Fiend_CannibalRaider</defName>
         <title>Fiend cannibal raider</title>
         <titleShort>cannibal</titleShort>
@@ -2495,7 +2496,7 @@
 
     <!-- Fiend Chem Cooker -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Fiend_ChemCooker</defName>
         <title>Fiend chem cooker</title>
         <titleShort>chem cooker</titleShort>
@@ -2519,7 +2520,7 @@
 
     <!-- Fiend Torturer -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Fiend_Torturer</defName>
         <title>Fiend torturer</title>
         <titleShort>torturer</titleShort>
@@ -2546,7 +2547,7 @@
 
     <!-- Fiend Vault 3 Massacrer -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Fiend_VaultMassacrer</defName>
         <title>Fiend Vault 3 massacrer</title>
         <titleShort>massacrer</titleShort>
@@ -2574,7 +2575,7 @@
 
     <!-- Fiend Jet Junkie -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Fiend_JetJunkie</defName>
         <title>Fiend jet junkie</title>
         <titleShort>jet junkie</titleShort>
@@ -2598,7 +2599,7 @@
 
     <!-- Fiend Berserker Killer -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Fiend_BerserkerKiller</defName>
         <title>Fiend berserker killer</title>
         <titleShort>berserker</titleShort>
@@ -2627,7 +2628,7 @@
 
     <!-- Fiend Lieutenant -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Fiend_MotorRunnerLieutenant</defName>
         <title>Fiend lieutenant</title>
         <titleShort>lieutenant</titleShort>
@@ -2653,7 +2654,7 @@
 
     <!-- Fiend Flamer Maniac -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Fiend_FlamerManiac</defName>
         <title>Fiend flamer maniac</title>
         <titleShort>flamer maniac</titleShort>
@@ -2677,7 +2678,7 @@
 
     <!-- Fiend Trophy Collector -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Fiend_TrophyCollector</defName>
         <title>Fiend trophy collector</title>
         <titleShort>trophy collector</titleShort>
@@ -2702,7 +2703,7 @@
 
     <!-- Fiend Chem Gunner -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Fiend_ChemGunner</defName>
         <title>Fiend chem gunner</title>
         <titleShort>gunner</titleShort>
@@ -2726,7 +2727,7 @@
 
     <!-- Fiend Screamer Killer -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Fiend_ScreamerKiller</defName>
         <title>Fiend screamer killer</title>
         <titleShort>screamer</titleShort>
@@ -2753,7 +2754,7 @@
 
     <!-- Fiend NCR Hunter -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Fiend_NCRHunter</defName>
         <title>Fiend NCR hunter</title>
         <titleShort>NCR hunter</titleShort>
@@ -2778,7 +2779,7 @@
 
     <!-- Fiend Vault Scavenger -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Fiend_VaultScavenger</defName>
         <title>Fiend Vault scavenger</title>
         <titleShort>scavenger</titleShort>
@@ -2802,7 +2803,7 @@
 
     <!-- Fiend Chem Pusher -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Fiend_ChemPusher</defName>
         <title>Fiend chem pusher</title>
         <titleShort>chem pusher</titleShort>
@@ -2827,7 +2828,7 @@
 
     <!-- Fiend Savage Butcher -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Fiend_SavageButcher</defName>
         <title>Fiend savage butcher</title>
         <titleShort>butcher</titleShort>
@@ -2852,7 +2853,7 @@
 
     <!-- Fiend Crazed Sniper -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Fiend_CrazedSniper</defName>
         <title>Fiend crazed sniper</title>
         <titleShort>sniper</titleShort>
@@ -2876,7 +2877,7 @@
 
     <!-- Fiend Wasteland Terror -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Fiend_WastelandTerror</defName>
         <title>Fiend wasteland terror</title>
         <titleShort>terror</titleShort>
@@ -2904,7 +2905,7 @@
 
     <!-- Fiend Chem Bomber -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Fiend_ChemBomber</defName>
         <title>Fiend chem bomber</title>
         <titleShort>bomber</titleShort>
@@ -2928,7 +2929,7 @@
 
     <!-- Fiend Mutilator -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Fiend_MutilatorRaider</defName>
         <title>Fiend mutilator</title>
         <titleShort>mutilator</titleShort>
@@ -2958,7 +2959,7 @@
     <!--___ Slavers ___-->
     <!-- Born Into Slavery -->
     
-<BackstoryDef MayRequire="Rick.FCP.Slavers">
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_Child_BornIntoSlavery</defName>
         <title>born into slavery</title>
         <titleShort>slave child</titleShort>
@@ -2978,7 +2979,7 @@
 
     <!-- Orphaned By Slaver Raid -->
     
-<BackstoryDef MayRequire="Rick.FCP.Slavers">
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_Child_OrphanedByRaid</defName>
         <title>orphaned by slaver raid</title>
         <titleShort>orphan</titleShort>
@@ -2995,7 +2996,7 @@
 
     <!-- Pitt Child Worker -->
     
-<BackstoryDef MayRequire="Rick.FCP.Slavers">
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_Child_PittWorker</defName>
         <title>Pitt child worker</title>
         <titleShort>child worker</titleShort>
@@ -3013,7 +3014,7 @@
 
     <!-- Overseer's Child -->
     
-<BackstoryDef MayRequire="Rick.FCP.Slavers">
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_Child_SlaveOverseerKid</defName>
         <title>overseer's child</title>
         <titleShort>overseer's kid</titleShort>
@@ -3033,7 +3034,7 @@
 
     <!-- Collar Maker's Apprentice -->
     
-<BackstoryDef MayRequire="Rick.FCP.Slavers">
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_Child_CollarMaker</defName>
         <title>collar maker's apprentice</title>
         <titleShort>apprentice</titleShort>
@@ -3050,7 +3051,7 @@
 
     <!-- Captive Child -->
     
-<BackstoryDef MayRequire="Rick.FCP.Slavers">
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_Child_CaptiveChild</defName>
         <title>captive child</title>
         <titleShort>captive</titleShort>
@@ -3067,7 +3068,7 @@
 
     <!-- Paradise Falls Brat -->
     
-<BackstoryDef MayRequire="Rick.FCP.Slavers">
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_Child_ParadiseFallsBrat</defName>
         <title>Paradise Falls brat</title>
         <titleShort>brat</titleShort>
@@ -3087,7 +3088,7 @@
 
     <!-- Runaway Slave Caught -->
     
-<BackstoryDef MayRequire="Rick.FCP.Slavers">
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_Child_RunawayCaught</defName>
         <title>runaway slave caught</title>
         <titleShort>runaway</titleShort>
@@ -3104,7 +3105,7 @@
 
     <!-- Auction House Child -->
     
-<BackstoryDef MayRequire="Rick.FCP.Slavers">
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_Child_AuctionHouseKid</defName>
         <title>auction house child</title>
         <titleShort>auction kid</titleShort>
@@ -3121,7 +3122,7 @@
 
     <!-- Betrayer's Child -->
     
-<BackstoryDef MayRequire="Rick.FCP.Slavers">
+    <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_Child_TraitorChild</defName>
         <title>betrayer's child</title>
         <titleShort>betrayer</titleShort>
@@ -3140,9 +3141,10 @@
     </BackstoryDef>
 
     <!-- Jackals Childhood -->
+
     <!-- Raised By Raiders -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Jackal_Child_RaisedByRaiders</defName>
         <title>raised by raiders</title>
         <titleShort>raider child</titleShort>
@@ -3163,7 +3165,7 @@
 
     <!-- War Orphan -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Jackal_Child_WarOrphan</defName>
         <title>war orphan</title>
         <titleShort>orphan</titleShort>
@@ -3181,7 +3183,7 @@
 
     <!-- Pack Runt -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Jackal_Child_PackRunt</defName>
         <title>pack runt</title>
         <titleShort>runt</titleShort>
@@ -3199,7 +3201,7 @@
 
     <!-- Child Scavenger -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Jackal_Child_ChildScavenger</defName>
         <title>child scavenger</title>
         <titleShort>scavenger</titleShort>
@@ -3217,7 +3219,7 @@
 
     <!-- Child Soldier -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Jackal_Child_ChildSoldier</defName>
         <title>child soldier</title>
         <titleShort>soldier</titleShort>
@@ -3235,7 +3237,7 @@
 
     <!-- Cannibal Child -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Jackal_Child_CannibalChild</defName>
         <title>cannibal child</title>
         <titleShort>cannibal</titleShort>
@@ -3253,7 +3255,7 @@
 
     <!-- Wasteland Feral Child -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Jackal_Child_WastelandFeral</defName>
         <title>wasteland feral child</title>
         <titleShort>feral</titleShort>
@@ -3274,7 +3276,7 @@
 
     <!-- Child Chem Runner -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Jackal_Child_ChemRunner</defName>
         <title>child chem runner</title>
         <titleShort>runner</titleShort>
@@ -3292,7 +3294,7 @@
 
     <!-- Raider Brat -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Jackal_Child_RaiderBrat</defName>
         <title>raider brat</title>
         <titleShort>brat</titleShort>
@@ -3313,7 +3315,7 @@
 
     <!-- Child Lookout -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Jackal_Child_LookoutKid</defName>
         <title>child lookout</title>
         <titleShort>lookout</titleShort>
@@ -3330,9 +3332,10 @@
     </BackstoryDef>
 
     <!-- Vipers Childhood -->
+
     <!-- Snake Cult Child -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Viper_Child_SnakeCultInitiate</defName>
         <title>snake cult child</title>
         <titleShort>cult child</titleShort>
@@ -3352,7 +3355,7 @@
 
     <!-- Venom Taster Child -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Viper_Child_VenomTaster</defName>
         <title>venom taster child</title>
         <titleShort>taster</titleShort>
@@ -3372,7 +3375,7 @@
 
     <!-- Serpent Tender Child -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Viper_Child_SerpentTender</defName>
         <title>serpent tender child</title>
         <titleShort>tender</titleShort>
@@ -3392,7 +3395,7 @@
 
     <!-- Ritual Victim Survivor -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Viper_Child_RitualVictim</defName>
         <title>ritual victim survivor</title>
         <titleShort>survivor</titleShort>
@@ -3412,7 +3415,7 @@
 
     <!-- Poison Apprentice -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Viper_Child_PoisonApprentice</defName>
         <title>poison apprentice</title>
         <titleShort>apprentice</titleShort>
@@ -3432,7 +3435,7 @@
 
     <!-- Desert Nomad Child -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Viper_Child_DesertNomad</defName>
         <title>desert nomad child</title>
         <titleShort>nomad</titleShort>
@@ -3452,7 +3455,7 @@
 
     <!-- Cannibal Cult Child -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Viper_Child_CannibalOffering</defName>
         <title>cannibal cult child</title>
         <titleShort>cult child</titleShort>
@@ -3472,7 +3475,7 @@
 
     <!-- Venom Gatherer Child -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Viper_Child_VenomGatherer</defName>
         <title>venom gatherer child</title>
         <titleShort>gatherer</titleShort>
@@ -3491,6 +3494,7 @@
     </BackstoryDef>
 
     <!-- Scale-Tattooed Child -->
+
     <BackstoryDef>
         <defName>FCP_Viper_Child_ScaleTattoos</defName>
         <title>scale-tattooed child</title>
@@ -3511,7 +3515,7 @@
 
     <!-- Fangless Serpent -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Viper_Child_FanglessSerpent</defName>
         <title>fangless serpent</title>
         <titleShort>fangless</titleShort>
@@ -3530,9 +3534,10 @@
     </BackstoryDef>
 
     <!-- Forged Childhood -->
+
     <!-- Fire Child -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Forged_Child_FireChild</defName>
         <title>fire child</title>
         <titleShort>fire child</titleShort>
@@ -3552,7 +3557,7 @@
 
     <!-- Burn Victim Child -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Forged_Child_BurnVictim</defName>
         <title>burn victim child</title>
         <titleShort>burn victim</titleShort>
@@ -3572,7 +3577,7 @@
 
     <!-- Forge Apprentice -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Forged_Child_ForgeApprentice</defName>
         <title>forge apprentice</title>
         <titleShort>apprentice</titleShort>
@@ -3592,7 +3597,7 @@
 
     <!-- Ash Walker Child -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Forged_Child_AshWalker</defName>
         <title>ash walker child</title>
         <titleShort>ash walker</titleShort>
@@ -3612,7 +3617,7 @@
 
     <!-- Pyromaniac Child -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Forged_Child_PyroChild</defName>
         <title>pyromaniac child</title>
         <titleShort>pyro child</titleShort>
@@ -3632,7 +3637,7 @@
 
     <!-- Branded Child -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Forged_Child_BrandedOne</defName>
         <title>branded child</title>
         <titleShort>branded</titleShort>
@@ -3652,7 +3657,7 @@
 
     <!-- Fuel Gatherer Child -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Forged_Child_FuelGatherer</defName>
         <title>fuel gatherer child</title>
         <titleShort>fuel gatherer</titleShort>
@@ -3672,7 +3677,7 @@
 
     <!-- Flame Bearer Child -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Forged_Child_FlameBearer</defName>
         <title>flame bearer child</title>
         <titleShort>flame bearer</titleShort>
@@ -3692,7 +3697,7 @@
 
     <!-- Child Molotov Mixer -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Forged_Child_MolotovMixer</defName>
         <title>child molotov mixer</title>
         <titleShort>mixer</titleShort>
@@ -3712,7 +3717,7 @@
 
     <!-- Scorched Orphan -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Forged_Child_ScorchedOrphan</defName>
         <title>scorched orphan</title>
         <titleShort>orphan</titleShort>
@@ -3731,9 +3736,10 @@
     </BackstoryDef>
 
     <!-- Scorpions Childhood -->
+
     <!-- Freeside Urchin -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Scorpion_Child_FreesideUrchin</defName>
         <title>Freeside urchin</title>
         <titleShort>urchin</titleShort>
@@ -3753,7 +3759,7 @@
 
     <!-- Street Pickpocket -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Scorpion_Child_StreetPickpocket</defName>
         <title>street pickpocket</title>
         <titleShort>pickpocket</titleShort>
@@ -3773,7 +3779,7 @@
 
     <!-- Alley Rat -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Scorpion_Child_AlleyRat</defName>
         <title>alley rat</title>
         <titleShort>rat</titleShort>
@@ -3793,7 +3799,7 @@
 
     <!-- Beggar Child -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Scorpion_Child_BeggarChild</defName>
         <title>beggar child</title>
         <titleShort>beggar</titleShort>
@@ -3812,7 +3818,7 @@
 
     <!-- Runaway Kid -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Scorpion_Child_RunawayKid</defName>
         <title>runaway kid</title>
         <titleShort>runaway</titleShort>
@@ -3832,7 +3838,7 @@
 
     <!-- Gang Errand Boy -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Scorpion_Child_GangErrandBoy</defName>
         <title>gang errand boy</title>
         <titleShort>errand boy</titleShort>
@@ -3852,7 +3858,7 @@
 
     <!-- Street Fighter Child -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Scorpion_Child_StreetFighter</defName>
         <title>street fighter child</title>
         <titleShort>fighter</titleShort>
@@ -3871,7 +3877,7 @@
 
     <!-- Junk Scavenger Child -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Scorpion_Child_JunkScavenger</defName>
         <title>junk scavenger child</title>
         <titleShort>scavenger</titleShort>
@@ -3891,7 +3897,7 @@
 
     <!-- Gambling Child -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Scorpion_Child_GamblerKid</defName>
         <title>gambling child</title>
         <titleShort>gambler</titleShort>
@@ -3911,7 +3917,7 @@
 
     <!-- Orphan Squatter -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Scorpion_Child_OrphanSquatter</defName>
         <title>orphan squatter</title>
         <titleShort>squatter</titleShort>
@@ -3930,9 +3936,10 @@
     </BackstoryDef>
 
     <!-- Fiends Childhood -->
+
     <!-- Vault 3 Massacre Orphan -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Fiend_Child_VaultMassacreOrphan</defName>
         <title>Vault 3 massacre orphan</title>
         <titleShort>orphan</titleShort>
@@ -3955,7 +3962,7 @@
 
     <!-- Child Chem Addict -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Fiend_Child_ChemAddict</defName>
         <title>child chem addict</title>
         <titleShort>addict</titleShort>
@@ -3975,6 +3982,7 @@
     </BackstoryDef>
 
     <!-- Motor-Runner's Pup -->
+
     <BackstoryDef>
         <defName>FCP_Fiend_Child_MotorRunnerPup</defName>
         <title>Motor-Runner's pup</title>
@@ -3998,7 +4006,7 @@
 
     <!-- Cannibal Youth -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Fiend_Child_CannibalYouth</defName>
         <title>cannibal youth</title>
         <titleShort>cannibal</titleShort>
@@ -4018,7 +4026,7 @@
 
     <!-- Torture Witness Child -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Fiend_Child_TortureWitness</defName>
         <title>torture witness child</title>
         <titleShort>witness</titleShort>
@@ -4040,7 +4048,7 @@
 
     <!-- Psycho Child -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Fiend_Child_PsychoChild</defName>
         <title>psycho child</title>
         <titleShort>psycho</titleShort>
@@ -4060,7 +4068,7 @@
 
     <!-- Child Raid Spotter -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Fiend_Child_RaidSpotter</defName>
         <title>child raid spotter</title>
         <titleShort>spotter</titleShort>
@@ -4080,7 +4088,7 @@
 
     <!-- Chem Cook Helper -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Fiend_Child_ChemCookHelper</defName>
         <title>chem cook helper</title>
         <titleShort>helper</titleShort>
@@ -4100,7 +4108,7 @@
 
     <!-- Feral Drug Child -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Fiend_Child_FeraldDrug</defName>
         <title>feral drug child</title>
         <titleShort>feral</titleShort>
@@ -4124,7 +4132,7 @@
 
     <!-- Child Corpse Scavenger -->
     
-<BackstoryDef>
+    <BackstoryDef>
         <defName>FCP_Fiend_Child_CorpseScavenger</defName>
         <title>child corpse scavenger</title>
         <titleShort>scavenger</titleShort>

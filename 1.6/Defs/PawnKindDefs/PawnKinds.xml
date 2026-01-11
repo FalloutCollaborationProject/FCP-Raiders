@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-
     <!--__________ Pawnkinds __________-->
 
     <!--_____ Raider Pawnkinds _____-->
 
     <!--___ Base Pawnkind ___-->
-    
-<PawnKindDef Name="FCP_RaiderBase" Abstract="True">
+
+    <PawnKindDef Name="FCP_RaiderBase" Abstract="True">
         <race>Human</race>
         <defaultFactionType>FCP_Faction_Raider</defaultFactionType>
         <chemicalAddictionChance>0.15</chemicalAddictionChance>
@@ -17,9 +16,11 @@
         <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
         <forceNormalGearQuality>true</forceNormalGearQuality>
     </PawnKindDef>
-
+    
     <!--___ Overall Faction Leader ___-->
+
     <!-- Raider Warlord - Can use any backstory category -->
+    
     <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Raider_Warlord</defName>
         <label>raider warlord</label>
@@ -106,13 +107,13 @@
             <li>FCP_USA_Apparel</li>
             <li>FCP_Minutemen_Combat_Armor_Modular</li>
             <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+                    <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
         </apparelDisallowTags>
     </PawnKindDef>
-
     <!--___ Slavers ___-->
     <!-- Slaver Boss -->
-    
-<PawnKindDef ParentName="FCP_RaiderBase">
+    <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Slaver_Boss</defName>
         <label>slaver boss</label>
         <labelPlural>slaver bosses</labelPlural>
@@ -169,12 +170,12 @@
             <li>FCP_USA_Apparel</li>
             <li>FCP_Minutemen_Combat_Armor_Modular</li>
             <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+                    <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
         </apparelDisallowTags>
     </PawnKindDef>
-
     <!-- Slaver Collarer -->
-    
-<PawnKindDef ParentName="FCP_RaiderBase">
+    <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Slaver_Collarer_Pawn</defName>
         <label>slaver collarer</label>
         <labelPlural>slaver collarers</labelPlural>
@@ -230,12 +231,12 @@
             <li>FCP_USA_Apparel</li>
             <li>FCP_Minutemen_Combat_Armor_Modular</li>
             <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+                    <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
         </apparelDisallowTags>
     </PawnKindDef>
-
     <!-- Slaver Enforcer -->
-    
-<PawnKindDef ParentName="FCP_RaiderBase">
+    <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Slaver_Enforcer_Pawn</defName>
         <label>slaver enforcer</label>
         <labelPlural>slaver enforcers</labelPlural>
@@ -291,12 +292,12 @@
             <li>FCP_USA_Apparel</li>
             <li>FCP_Minutemen_Combat_Armor_Modular</li>
             <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+                    <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
         </apparelDisallowTags>
     </PawnKindDef>
-
     <!-- Slaver Caravan Guard -->
-    
-<PawnKindDef ParentName="FCP_RaiderBase">
+    <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Slaver_Guard</defName>
         <label>slaver guard</label>
         <labelPlural>slaver guards</labelPlural>
@@ -346,12 +347,12 @@
             <li>FCP_USA_Apparel</li>
             <li>FCP_Minutemen_Combat_Armor_Modular</li>
             <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+                    <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
         </apparelDisallowTags>
     </PawnKindDef>
-
     <!-- Slaver Trader -->
-    
-<PawnKindDef ParentName="FCP_RaiderBase">
+    <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Slaver_Trader</defName>
         <label>slaver trader</label>
         <labelPlural>slaver traders</labelPlural>
@@ -390,13 +391,13 @@
             <li>FCP_USA_Apparel</li>
             <li>FCP_Minutemen_Combat_Armor_Modular</li>
             <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+                    <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
         </apparelDisallowTags>
     </PawnKindDef>
-
     <!--___ Jackals ___-->
     <!-- Jackal Pack Leader -->
-    
-<PawnKindDef ParentName="FCP_RaiderBase">
+    <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Jackal_Leader</defName>
         <label>Jackal pack leader</label>
         <labelPlural>Jackal pack leaders</labelPlural>
@@ -453,12 +454,12 @@
             <li>FCP_USA_Apparel</li>
             <li>FCP_Minutemen_Combat_Armor_Modular</li>
             <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+                    <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
         </apparelDisallowTags>
     </PawnKindDef>
-
     <!-- Jackal Raider -->
-    
-<PawnKindDef ParentName="FCP_RaiderBase">
+    <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Jackal_Raider</defName>
         <label>Jackal raider</label>
         <labelPlural>Jackal raiders</labelPlural>
@@ -510,12 +511,12 @@
             <li>FCP_USA_Apparel</li>
             <li>FCP_Minutemen_Combat_Armor_Modular</li>
             <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+                    <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
         </apparelDisallowTags>
     </PawnKindDef>
-
     <!-- Jackal Gunner -->
-    
-<PawnKindDef ParentName="FCP_RaiderBase">
+    <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Jackal_Gunner</defName>
         <label>Jackal gunner</label>
         <labelPlural>Jackal gunners</labelPlural>
@@ -565,12 +566,12 @@
             <li>FCP_USA_Apparel</li>
             <li>FCP_Minutemen_Combat_Armor_Modular</li>
             <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+                    <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
         </apparelDisallowTags>
     </PawnKindDef>
-
     <!-- Jackal Scavenger -->
-    
-<PawnKindDef ParentName="FCP_RaiderBase">
+    <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Jackal_Scavenger</defName>
         <label>Jackal scavenger</label>
         <labelPlural>Jackal scavengers</labelPlural>
@@ -610,12 +611,12 @@
             <li>FCP_USA_Apparel</li>
             <li>FCP_Minutemen_Combat_Armor_Modular</li>
             <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+                    <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
         </apparelDisallowTags>
     </PawnKindDef>
-
     <!-- Jackal Bruiser -->
-    
-<PawnKindDef ParentName="FCP_RaiderBase">
+    <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Jackal_Bruiser</defName>
         <label>Jackal bruiser</label>
         <labelPlural>Jackal bruisers</labelPlural>
@@ -671,13 +672,13 @@
             <li>FCP_USA_Apparel</li>
             <li>FCP_Minutemen_Combat_Armor_Modular</li>
             <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+                    <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
         </apparelDisallowTags>
     </PawnKindDef>
-
     <!--___ Vipers ___-->
     <!-- Viper Priest -->
-    
-<PawnKindDef ParentName="FCP_RaiderBase">
+    <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Viper_Priest_Pawn</defName>
         <label>Viper priest</label>
         <labelPlural>Viper priests</labelPlural>
@@ -732,12 +733,12 @@
             <li>FCP_USA_Apparel</li>
             <li>FCP_Minutemen_Combat_Armor_Modular</li>
             <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+                    <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
         </apparelDisallowTags>
     </PawnKindDef>
-
     <!-- Viper Poison Blade -->
-    
-<PawnKindDef ParentName="FCP_RaiderBase">
+    <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Viper_PoisonBlade_Pawn</defName>
         <label>Viper poison blade</label>
         <labelPlural>Viper poison blades</labelPlural>
@@ -787,12 +788,12 @@
             <li>FCP_USA_Apparel</li>
             <li>FCP_Minutemen_Combat_Armor_Modular</li>
             <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+                    <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
         </apparelDisallowTags>
     </PawnKindDef>
-
     <!-- Viper Marksman -->
-    
-<PawnKindDef ParentName="FCP_RaiderBase">
+    <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Viper_Marksman</defName>
         <label>Viper marksman</label>
         <labelPlural>Viper marksmen</labelPlural>
@@ -847,12 +848,12 @@
             <li>FCP_USA_Apparel</li>
             <li>FCP_Minutemen_Combat_Armor_Modular</li>
             <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+                    <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
         </apparelDisallowTags>
     </PawnKindDef>
-
     <!-- Viper Venom Master -->
-    
-<PawnKindDef ParentName="FCP_RaiderBase">
+    <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Viper_VenomMaster_Pawn</defName>
         <label>Viper venom master</label>
         <labelPlural>Viper venom masters</labelPlural>
@@ -887,12 +888,12 @@
             <li>FCP_USA_Apparel</li>
             <li>FCP_Minutemen_Combat_Armor_Modular</li>
             <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+                    <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
         </apparelDisallowTags>
     </PawnKindDef>
-
     <!-- Viper Cultist -->
-    
-<PawnKindDef ParentName="FCP_RaiderBase">
+    <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Viper_Cultist_Pawn</defName>
         <label>Viper cultist</label>
         <labelPlural>Viper cultists</labelPlural>
@@ -944,13 +945,13 @@
             <li>FCP_USA_Apparel</li>
             <li>FCP_Minutemen_Combat_Armor_Modular</li>
             <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+                    <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
         </apparelDisallowTags>
     </PawnKindDef>
-
     <!--___ Forged ___-->
     <!-- Forge Master -->
-    
-<PawnKindDef ParentName="FCP_RaiderBase">
+    <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Forged_Master</defName>
         <label>forge master</label>
         <labelPlural>forge masters</labelPlural>
@@ -1006,12 +1007,12 @@
             <li>FCP_USA_Apparel</li>
             <li>FCP_Minutemen_Combat_Armor_Modular</li>
             <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+                    <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
         </apparelDisallowTags>
     </PawnKindDef>
-
     <!-- Forged Flamewielder -->
-    
-<PawnKindDef ParentName="FCP_RaiderBase">
+    <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Forged_Flamer</defName>
         <label>Forged flamewielder</label>
         <labelPlural>Forged flamewielders</labelPlural>
@@ -1065,12 +1066,12 @@
             <li>FCP_USA_Apparel</li>
             <li>FCP_Minutemen_Combat_Armor_Modular</li>
             <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+                    <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
         </apparelDisallowTags>
     </PawnKindDef>
-
     <!-- Forged Blacksmith -->
-    
-<PawnKindDef ParentName="FCP_RaiderBase">
+    <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Forged_Smith</defName>
         <label>Forged blacksmith</label>
         <labelPlural>Forged blacksmiths</labelPlural>
@@ -1105,12 +1106,12 @@
             <li>FCP_USA_Apparel</li>
             <li>FCP_Minutemen_Combat_Armor_Modular</li>
             <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+                    <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
         </apparelDisallowTags>
     </PawnKindDef>
-
     <!-- Forged Scorched Raider -->
-    
-<PawnKindDef ParentName="FCP_RaiderBase">
+    <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Forged_Raider</defName>
         <label>Forged raider</label>
         <labelPlural>Forged raiders</labelPlural>
@@ -1160,12 +1161,12 @@
             <li>FCP_USA_Apparel</li>
             <li>FCP_Minutemen_Combat_Armor_Modular</li>
             <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+                    <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
         </apparelDisallowTags>
     </PawnKindDef>
-
     <!-- Forged Incinerator -->
-    
-<PawnKindDef ParentName="FCP_RaiderBase">
+    <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Forged_Incinerator_Pawn</defName>
         <label>Forged incinerator</label>
         <labelPlural>Forged incinerators</labelPlural>
@@ -1220,13 +1221,13 @@
             <li>FCP_USA_Apparel</li>
             <li>FCP_Minutemen_Combat_Armor_Modular</li>
             <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+                    <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
         </apparelDisallowTags>
     </PawnKindDef>
-
     <!--___ Scorpions ___-->
     <!-- Scorpion Gang Leader -->
-    
-<PawnKindDef ParentName="FCP_RaiderBase">
+    <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Scorpion_Leader</defName>
         <label>Scorpion gang leader</label>
         <labelPlural>Scorpion gang leaders</labelPlural>
@@ -1278,12 +1279,12 @@
             <li>FCP_USA_Apparel</li>
             <li>FCP_Minutemen_Combat_Armor_Modular</li>
             <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+                    <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
         </apparelDisallowTags>
     </PawnKindDef>
-
     <!-- Scorpion Street Thug -->
-    
-<PawnKindDef ParentName="FCP_RaiderBase">
+    <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Scorpion_Thug</defName>
         <label>Scorpion thug</label>
         <labelPlural>Scorpion thugs</labelPlural>
@@ -1335,12 +1336,12 @@
             <li>FCP_USA_Apparel</li>
             <li>FCP_Minutemen_Combat_Armor_Modular</li>
             <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+                    <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
         </apparelDisallowTags>
     </PawnKindDef>
-
     <!-- Scorpion Chem Pusher -->
-    
-<PawnKindDef ParentName="FCP_RaiderBase">
+    <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Scorpion_ChemDealer</defName>
         <label>Scorpion chem pusher</label>
         <labelPlural>Scorpion chem pushers</labelPlural>
@@ -1374,12 +1375,12 @@
             <li>FCP_USA_Apparel</li>
             <li>FCP_Minutemen_Combat_Armor_Modular</li>
             <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+                    <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
         </apparelDisallowTags>
     </PawnKindDef>
-
     <!-- Scorpion Muscle -->
-    
-<PawnKindDef ParentName="FCP_RaiderBase">
+    <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Scorpion_Enforcer</defName>
         <label>Scorpion enforcer</label>
         <labelPlural>Scorpion enforcers</labelPlural>
@@ -1429,12 +1430,12 @@
             <li>FCP_USA_Apparel</li>
             <li>FCP_Minutemen_Combat_Armor_Modular</li>
             <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+                    <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
         </apparelDisallowTags>
     </PawnKindDef>
-
     <!-- Scorpion Pickpocket -->
-    
-<PawnKindDef ParentName="FCP_RaiderBase">
+    <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Scorpion_Pickpocket_Pawn</defName>
         <label>Scorpion pickpocket</label>
         <labelPlural>Scorpion pickpockets</labelPlural>
@@ -1485,13 +1486,13 @@
             <li>FCP_USA_Apparel</li>
             <li>FCP_Minutemen_Combat_Armor_Modular</li>
             <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+                    <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
         </apparelDisallowTags>
     </PawnKindDef>
-
     <!--___ Fiends ___-->
     <!-- Fiend Overlord -->
-    
-<PawnKindDef ParentName="FCP_RaiderBase">
+    <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Fiend_Overlord</defName>
         <label>Fiend overlord</label>
         <labelPlural>Fiend overlords</labelPlural>
@@ -1559,19 +1560,16 @@
             <li>FCP_USA_Apparel</li>
             <li>FCP_Minutemen_Combat_Armor_Modular</li>
             <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+                    <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
         </apparelDisallowTags>
         <apparelRequired>
-            <li>FCP_Apparel_Raider_Fiend_Helmet_A</li>
-            <li>FCP_Apparel_Raider_Fiend_Helmet_B</li>
-            <li>FCP_Apparel_Raider_Fiend_Helmet_C</li>
-            <li>FCP_Apparel_Raider_Fiend_Helmet_D</li>
-            <li>FCP_Apparel_Raider_Fiend_Helmet_E</li>
+            <li>FCP_Apparel_Fiend_Battle_Helmet</li>
         </apparelRequired>
     </PawnKindDef>
 
     <!-- Fiend Berserker -->
-    
-<PawnKindDef ParentName="FCP_RaiderBase">
+    <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Fiend_Berserker</defName>
         <label>Fiend berserker</label>
         <labelPlural>Fiend berserkers</labelPlural>
@@ -1629,19 +1627,16 @@
             <li>FCP_USA_Apparel</li>
             <li>FCP_Minutemen_Combat_Armor_Modular</li>
             <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+                    <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
         </apparelDisallowTags>
         <apparelRequired>
-            <li>FCP_Apparel_Raider_Fiend_Helmet_A</li>
-            <li>FCP_Apparel_Raider_Fiend_Helmet_B</li>
-            <li>FCP_Apparel_Raider_Fiend_Helmet_C</li>
-            <li>FCP_Apparel_Raider_Fiend_Helmet_D</li>
-            <li>FCP_Apparel_Raider_Fiend_Helmet_E</li>
+            <li>FCP_Apparel_Fiend_Warrior_Helmet</li>
         </apparelRequired>
     </PawnKindDef>
 
     <!-- Fiend Junkie -->
-    
-<PawnKindDef ParentName="FCP_RaiderBase">
+    <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Fiend_Junkie</defName>
         <label>Fiend junkie</label>
         <labelPlural>Fiend junkies</labelPlural>
@@ -1699,19 +1694,16 @@
             <li>FCP_USA_Apparel</li>
             <li>FCP_Minutemen_Combat_Armor_Modular</li>
             <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+                    <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
         </apparelDisallowTags>
         <apparelRequired>
-            <li>FCP_Apparel_Raider_Fiend_Helmet_A</li>
-            <li>FCP_Apparel_Raider_Fiend_Helmet_B</li>
-            <li>FCP_Apparel_Raider_Fiend_Helmet_C</li>
-            <li>FCP_Apparel_Raider_Fiend_Helmet_D</li>
-            <li>FCP_Apparel_Raider_Fiend_Helmet_E</li>
+            <li>FCP_Apparel_Fiend_Helmet</li>
         </apparelRequired>
     </PawnKindDef>
 
     <!-- Fiend Slasher -->
-    
-<PawnKindDef ParentName="FCP_RaiderBase">
+    <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Fiend_Slasher</defName>
         <label>Fiend slasher</label>
         <labelPlural>Fiend slashers</labelPlural>
@@ -1768,19 +1760,16 @@
             <li>FCP_USA_Apparel</li>
             <li>FCP_Minutemen_Combat_Armor_Modular</li>
             <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+                    <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
         </apparelDisallowTags>
         <apparelRequired>
-            <li>FCP_Apparel_Raider_Fiend_Helmet_A</li>
-            <li>FCP_Apparel_Raider_Fiend_Helmet_B</li>
-            <li>FCP_Apparel_Raider_Fiend_Helmet_C</li>
-            <li>FCP_Apparel_Raider_Fiend_Helmet_D</li>
-            <li>FCP_Apparel_Raider_Fiend_Helmet_E</li>
+            <li>FCP_Apparel_Fiend_Warrior_Helmet</li>
         </apparelRequired>
     </PawnKindDef>
 
     <!-- Fiend Gunner -->
-    
-<PawnKindDef ParentName="FCP_RaiderBase">
+    <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Fiend_Gunner</defName>
         <label>Fiend gunner</label>
         <labelPlural>Fiend gunners</labelPlural>
@@ -1839,13 +1828,12 @@
             <li>FCP_USA_Apparel</li>
             <li>FCP_Minutemen_Combat_Armor_Modular</li>
             <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+                    <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
         </apparelDisallowTags>
         <apparelRequired>
-            <li>FCP_Apparel_Raider_Fiend_Helmet_A</li>
-            <li>FCP_Apparel_Raider_Fiend_Helmet_B</li>
-            <li>FCP_Apparel_Raider_Fiend_Helmet_C</li>
-            <li>FCP_Apparel_Raider_Fiend_Helmet_D</li>
-            <li>FCP_Apparel_Raider_Fiend_Helmet_E</li>
+            <li>FCP_Apparel_Fiend_Battle_Helmet</li>
         </apparelRequired>
     </PawnKindDef>
+
 </Defs>
