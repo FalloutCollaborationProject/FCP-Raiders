@@ -144,9 +144,6 @@
 		<costList>
 			<Cloth>40</Cloth>
 		</costList>
-		<thingCategories>
-			<li>ApparelArmor</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>4000</WorkToMake>
@@ -201,9 +198,6 @@
 		<costList>
 			<Steel>40</Steel>
 		</costList>
-		<thingCategories>
-			<li>ApparelArmor</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>5200</WorkToMake>
@@ -258,9 +252,6 @@
 		<costList>
 			<Steel>65</Steel>
 		</costList>
-		<thingCategories>
-			<li>ApparelArmor</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>9200</WorkToMake>
@@ -318,9 +309,6 @@
 		<costList>
 			<Steel>100</Steel>
 		</costList>
-		<thingCategories>
-			<li>ApparelArmor</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>9200</WorkToMake>
@@ -390,7 +378,10 @@
 			<texPath>Things/Apparel/Raider_leathers/FCP_Raider_leathers</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<costList>
+				<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+<costList>
 			<Leather_Plain>55</Leather_Plain>
 			<Cloth>20</Cloth>
 		</costList>
@@ -416,7 +407,10 @@
 			<texPath>Things/Apparel/Leather_Coat/FCP_Leather_Coat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<costList>
+				<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+<costList>
 			<Leather_Plain>70</Leather_Plain>
 			<Cloth>25</Cloth>
 		</costList>
