@@ -15,6 +15,7 @@
         <itemQuality>Poor</itemQuality>
         <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
         <forceNormalGearQuality>true</forceNormalGearQuality>
+        <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     </PawnKindDef>
     
     <!--___ Overall Faction Leader ___-->
