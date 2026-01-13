@@ -1,166 +1,181 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-    <ThingDef ParentName="FCP_Apparel_Power_Armor_Base" MayRequire="Rick.FCP.PowerArmor">
-        <defName>FCP_Apparel_Raider_Power_Armor_Armor</defName>
-        <label>T-45 Power Armor</label>
-        <description>Power armor that has been "modified" over time by raiders. The repairs are crude at best and the armor has lost all power to it making it a large, heavy and combersome armor.</description>
-        <graphicData>
-            <texPath>Things/Apparel/Raider_Power_Armor/FCP_Raider_Power_Armor_Hulk_south</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>1</drawSize>
-        </graphicData>
-        <statBases>
-            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.30</ArmorRating_Heat>
-        </statBases>
-        <equippedStatOffsets>
-            <MoveSpeed>-0.06</MoveSpeed>
-            <AimingDelayFactor>0.02</AimingDelayFactor>
-            <ToxicEnvironmentResistance>0.7</ToxicEnvironmentResistance>
-            <SocialImpact>-0.05</SocialImpact>
-        </equippedStatOffsets>
-        <apparel>
-            <wornGraphicPath>Things/Apparel/Raider_Power_Armor/FCP_Raider_Power_Armor</wornGraphicPath>
-        </apparel>
-    </ThingDef>
+    <!--__________ Raider Power Armor __________-->
 
-    <ThingDef ParentName="HatBase" MayRequire="Rick.FCP.PowerArmor">
-        <defName>FCP_Apparel_Power_Armor_T45_Helmet</defName>
-        <label>T-45 Power Armor Helmet</label>
-        <description>Power armor that has been "modified" over time by raiders. The repairs are crude at best and the armor has lost all power to it making it a large, heavy and combersome armor.</description>
-        <techLevel>Industrial</techLevel>
-        <graphicData>
-            <texPath>Things/Apparel/Power_Armor_Headgear/T45_Helmet/FCP_T45_Power_Armor_Helmet_south</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <smeltable>false</smeltable>
-        <statBases>
-            <WorkToMake>3000</WorkToMake>
-            <MaxHitPoints>80</MaxHitPoints>
-            <Mass>0.8</Mass>
-            <ArmorRating_Sharp>1.00</ArmorRating_Sharp>
-            <ArmorRating_Blunt>1.00</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.80</ArmorRating_Heat>
-            <Insulation_Heat>2</Insulation_Heat>
-            <EquipDelay>3</EquipDelay>
-        </statBases>
-        <equippedStatOffsets>
-            <ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>            <!-- Good, but not perfect -->
-            <MoveSpeed>-0.5</MoveSpeed>            <!-- Bulky -->
-            <AimingDelayFactor>0.01</AimingDelayFactor>
-            <SocialImpact>-0.05</SocialImpact>
-        </equippedStatOffsets>
-        <apparel>
-            <bodyPartGroups>
-                <li>UpperHead</li>
-                <li>FullHead</li>
-            </bodyPartGroups>
-            <wornGraphicPath>Things/Apparel/Power_Armor_Headgear/T45_Helmet/FCP_T45_Power_Armor_Helmet</wornGraphicPath>
-            <layers>
-                <li>Overhead</li>
-            </layers>
-            <useDeflectMetalEffect>true</useDeflectMetalEffect>
-            <developmentalStageFilter>Adult</developmentalStageFilter>
-        </apparel>
-        <comps>
-            <li Class="FCP.Core.CompProperties_LabelColored">
-                <rarity>Rare</rarity>
-            </li>
-            <li Class="RangerRick_PowerArmor.CompProperties_ApparelRequirement">
-                <requiredApparels>
-                    <li>FCP_Apparel_Power_Armor_Frame</li>
-                </requiredApparels>
-            </li>
-            <li Class="RangerRick_PowerArmor.CompProperties_PowerArmor">
-                <workDisables>
-                    <li>Construction</li>
-                </workDisables>
-                <canSleep>False</canSleep>
-            </li>
-        </comps>
-    </ThingDef>
+    <!-- Base -->
 
-    <!-- Junkyard Power Armor -->
+	<ThingDef ParentName="ArmorMachineableBase" Name="FCP_Raider_Power_Armor_Base" Abstract="true">
+		<techLevel>Industrial</techLevel>
+		<generateCommonality>0.001</generateCommonality>
+		<smeltable>false</smeltable>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToMake>10200</WorkToMake>
+			<Mass>6.5</Mass>
+			<Insulation_Cold>3</Insulation_Cold>
+			<Insulation_Heat>3</Insulation_Heat>
+			<EquipDelay>3.5</EquipDelay>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>FCP_Research_Raider_Equipment</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>FCP_Production_Armor_Workbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<apparel>
+			<shellRenderedBehindHead>true</shellRenderedBehindHead>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Legs</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>FCP_Power_Armor</li>
+				<li>FCP_Raider_Power_Armor</li>
+			</tags>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+		</apparel>
+		<modExtensions>
+			<li Class="FalloutCore.ApparelExtension">
+				<shouldHideBody>True</shouldHideBody>
+				<displayBodyType>Hulk</displayBodyType>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="FCP.Core.CompProperties_LabelColored">
+				<rarity>Rare</rarity>
+			</li>
+			<li Class="RangerRick_PowerArmor.CompProperties_RepairableAtStation">
+				<repairResourcesPerHP>
+					<Steel>5</Steel>
+					<ComponentIndustrial>0.1</ComponentIndustrial>
+				</repairResourcesPerHP>
+				<repairTimeCostPerHP>60</repairTimeCostPerHP>
+			</li>
+			<li Class="RangerRick_PowerArmor.CompProperties_ApparelRequirement">
+				<requiredApparels>
+					<li>FCP_Apparel_Power_Armor_Frame</li>
+				</requiredApparels>
+			</li>
+		</comps>
+	</ThingDef>
 
-    <ThingDef ParentName="FCP_Apparel_Power_Armor_Base" MayRequire="Rick.FCP.PowerArmor">
-        <defName>FCP_Apparel_Junkyard_Power_Armor</defName>
-        <label>Junkyard Power Armor</label>
-        <description>A cobbled-together suit of power armor constructed from salvaged parts and scrap metal. While the power systems are barely functional and the protection is inferior to proper military power armor, it's still an intimidating sight on the battlefield.</description>
-        <graphicData>
-            <texPath>Things/Apparel/Junkyard_Power_Armor/FCP_Junkyard_Power_Armor</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>1</drawSize>
-        </graphicData>
-        <statBases>
-            <ArmorRating_Sharp>0.80</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.25</ArmorRating_Heat>
-        </statBases>
-        <equippedStatOffsets>
-            <MoveSpeed>-0.08</MoveSpeed>
-            <AimingDelayFactor>0.03</AimingDelayFactor>
-            <ToxicEnvironmentResistance>0.6</ToxicEnvironmentResistance>
-            <SocialImpact>-0.06</SocialImpact>
-        </equippedStatOffsets>
-        <apparel>
-            <wornGraphicPath>Things/Apparel/Junkyard_Power_Armor/FCP_Junkyard_Power_Armor</wornGraphicPath>
-        </apparel>
-    </ThingDef>
+    <!--_____ Raider Power Armor _____-->
 
-    <!-- Scabber Power Armor -->
+	<!-- Raider Power Armor -->
+	
+	<ThingDef ParentName="FCP_Raider_Power_Armor_Base">
+		<defName>FCP_Apparel_Raider_Power_Armor</defName>
+		<label>Raider Power Armor</label>
+		<description>A crude suit of power armor cobbled together from scavenged parts, rusted plating, and salvaged T-45 components. While it offers decent protection for a wastelander, it lacks the refinement and reliability of proper military power armor. The makeshift construction leaves gaps in coverage, and the improvised repairs make it noticeably heavier and more cumbersome than its pre-war counterparts. Still, in the wasteland, any power armor is better than none.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Raider_Power_Armor/FCP_Raider_Power_Armor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>2600</MarketValue>
+			<ArmorRating_Sharp>1.70</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.50</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.20</ArmorRating_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>0.04</MoveSpeed>
+			<AimingDelayFactor>-0.01</AimingDelayFactor>
+			<ToxicEnvironmentResistance>0.6</ToxicEnvironmentResistance>
+			<SocialImpact>-0.10</SocialImpact>
+		</equippedStatOffsets>
+		<costList>
+			<Steel>150</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Raider_Power_Armor/FCP_Raider_Power_Armor</wornGraphicPath>
+		</apparel>
+	</ThingDef>
 
-    <ThingDef ParentName="FCP_Apparel_Power_Armor_Base" MayRequire="Rick.FCP.PowerArmor">
-        <defName>FCP_Apparel_Scabber_Power_Armor</defName>
-        <label>Scabber Power Armor</label>
-        <description>A heavily weathered and corroded suit of power armor that has been patched with whatever materials were available. The rust and decay give it a menacing, diseased appearance that strikes fear into enemies.</description>
-        <graphicData>
-            <texPath>Things/Apparel/Scabber_Power_Armor/FCP_Scabber_Power_Armor_Hulk</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>1</drawSize>
-        </graphicData>
-        <statBases>
-            <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.20</ArmorRating_Heat>
-        </statBases>
-        <equippedStatOffsets>
-            <MoveSpeed>-0.09</MoveSpeed>
-            <AimingDelayFactor>0.04</AimingDelayFactor>
-            <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
-            <SocialImpact>-0.08</SocialImpact>
-        </equippedStatOffsets>
-        <apparel>
-            <wornGraphicPath>Things/Apparel/Scabber_Power_Armor/FCP_Scabber_Power_Armor</wornGraphicPath>
-        </apparel>
-    </ThingDef>
+    <!--_____ Scabber Power Armor _____-->
 
-    <!-- Waster Power Armor -->
+	<!-- Scabber Power Armor -->
+	
+	<ThingDef ParentName="FCP_Raider_Power_Armor_Base">
+		<defName>FCP_Apparel_Scabber_Power_Armor</defName>
+		<label>Scabber Power Armor</label>
+		<description>A more refined raider power armor variant favored by the Scabbers gang. Built from better-maintained salvage and reinforced with additional scrap plating, it offers improved protection while maintaining the characteristic ramshackle appearance. The Scabbers take pride in their armor's intimidating spikes and rust-stained panels, wearing them as badges of honor. Despite being heavier than standard raider power armor, it provides noticeably better protection against the dangers of the wasteland.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Scabber_Power_Armor/FCP_Scabber_Power_Armor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>2900</MarketValue>
+			<ArmorRating_Sharp>1.85</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.65</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.30</ArmorRating_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>0.05</MoveSpeed>
+			<AimingDelayFactor>-0.015</AimingDelayFactor>
+			<ToxicEnvironmentResistance>0.65</ToxicEnvironmentResistance>
+			<SocialImpact>-0.08</SocialImpact>
+		</equippedStatOffsets>
+		<costList>
+			<Steel>165</Steel>
+			<Plasteel>15</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Scabber_Power_Armor/FCP_Scabber_Power_Armor</wornGraphicPath>
+		</apparel>
+	</ThingDef>
 
-    <ThingDef ParentName="FCP_Apparel_Power_Armor_Base" MayRequire="Rick.FCP.PowerArmor">
-        <defName>FCP_Apparel_Waster_Power_Armor</defName>
-        <label>Waster Power Armor</label>
-        <description>Power armor that has seen better days, covered in grime, scratches, and makeshift repairs. The power systems are unreliable and the armor plating is compromised, but it still provides formidable protection for wasteland raiders.</description>
-        <graphicData>
-            <texPath>Things/Apparel/Waster_Power_Armor/FCP_Waster_Power_Armor</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>1</drawSize>
-        </graphicData>
-        <statBases>
-            <ArmorRating_Sharp>0.82</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.58</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.28</ArmorRating_Heat>
-        </statBases>
-        <equippedStatOffsets>
-            <MoveSpeed>-0.07</MoveSpeed>
-            <AimingDelayFactor>0.025</AimingDelayFactor>
-            <ToxicEnvironmentResistance>0.65</ToxicEnvironmentResistance>
-            <SocialImpact>-0.055</SocialImpact>
-        </equippedStatOffsets>
-        <apparel>
-            <wornGraphicPath>Things/Apparel/Waster_Power_Armor/FCP_Waster_Power_Armor</wornGraphicPath>
-        </apparel>
-    </ThingDef>
+    <!--_____ Waster Power Armor _____-->
+
+	<!-- Waster Power Armor -->
+	
+	<ThingDef ParentName="FCP_Raider_Power_Armor_Base">
+		<defName>FCP_Apparel_Waster_Power_Armor</defName>
+		<label>Waster Power Armor</label>
+		<description>The pinnacle of raider power armor engineering, the Waster variant combines salvaged military-grade components with surprisingly competent craftsmanship. Though still crude by pre-war standards, it approaches the protection level of T-45 power armor while maintaining the brutal aesthetic raiders prefer. The heavy construction and layered plating make it a formidable sight on the battlefield. Waster bosses and elite raiders prize these suits above all other armor.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Waster_Power_Armor/FCP_Waster_Power_Armor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>3100</MarketValue>
+			<ArmorRating_Sharp>1.95</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.75</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.35</ArmorRating_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>0.055</MoveSpeed>
+			<AimingDelayFactor>-0.018</AimingDelayFactor>
+			<ToxicEnvironmentResistance>0.7</ToxicEnvironmentResistance>
+			<SocialImpact>-0.06</SocialImpact>
+		</equippedStatOffsets>
+		<costList>
+			<Steel>180</Steel>
+			<Plasteel>25</Plasteel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Waster_Power_Armor/FCP_Waster_Power_Armor</wornGraphicPath>
+		</apparel>
+	</ThingDef>
 
 </Defs>

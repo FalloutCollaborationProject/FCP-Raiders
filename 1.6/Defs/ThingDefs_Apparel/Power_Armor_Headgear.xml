@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <!--__________ Raider Power Armor Helmets __________-->
+
+	<ThingDef ParentName="HatMakeableBase" Name="FCP_Raider_Power_Armor_Helmet_Base" Abstract="true">
+		<techLevel>Industrial</techLevel>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>1.0</Mass>
+			<WorkToMake>2800</WorkToMake>
+			<Insulation_Cold>3</Insulation_Cold>
+			<Insulation_Heat>2</Insulation_Heat>
+			<EquipDelay>2.0</EquipDelay>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>FCP_Research_Raider_Equipment</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>FCP_Production_Armor_Workbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>FCP_Power_Armor_Helmet</li>
+				<li>FCP_Raider_Power_Armor_Helmet</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<comps>
+			<li Class="FCP.Core.CompProperties_LabelColored">
+				<rarity>Rare</rarity>
+			</li>
+			<li Class="RangerRick_PowerArmor.CompProperties_RepairableAtStation">
+				<repairResourcesPerHP>
+					<Steel>3</Steel>
+					<ComponentIndustrial>0.05</ComponentIndustrial>
+				</repairResourcesPerHP>
+				<repairTimeCostPerHP>40</repairTimeCostPerHP>
+			</li>
+			<li Class="RangerRick_PowerArmor.CompProperties_ApparelRequirement">
+				<requiredApparels>
+					<li>FCP_Apparel_Power_Armor_Frame</li>
+				</requiredApparels>
+			</li>
+		</comps>
+	</ThingDef>
+
+    <!--_____ Raider Power Armor Helmet _____-->
+
+	<!-- Raider Power Armor Helmet -->
+	
+	<ThingDef ParentName="FCP_Raider_Power_Armor_Helmet_Base">
+		<defName>FCP_Apparel_Raider_Power_Armor_Helmet</defName>
+		<label>Raider Power Armor Helmet</label>
+		<description>A salvaged and heavily modified power armor helmet, welded together from scavenged parts and reinforced with scrap metal. The crude welds and mismatched plating are visible testaments to its improvised nature. While it provides decent head protection, the visibility is poor and the weight is punishing compared to proper military helmets. The intimidating appearance is its best feature, often decorated with war paint or trophies.</description>
+		<graphicData>
+			<texPath>Things/Headgear/Raider_Power_Armor_Helmet/FCP_Raider_Power_Armor_Helmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>650</MarketValue>
+			<ArmorRating_Sharp>1.70</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.50</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.20</ArmorRating_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.6</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+		<costList>
+			<Steel>40</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<apparel>
+			<wornGraphicPath>Things/Headgear/Raider_Power_Armor_Helmet/FCP_Raider_Power_Armor_Helmet</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+
+    <!--_____ Scabber Power Armor Helmet _____-->
+
+	<!-- Scabber Power Armor Helmet -->
+	
+	<ThingDef ParentName="FCP_Raider_Power_Armor_Helmet_Base">
+		<defName>FCP_Apparel_Scabber_Power_Armor_Helmet</defName>
+		<label>Scabber Power Armor Helmet</label>
+		<description>A more refined raider helmet bearing the characteristic markings of the Scabbers gang. Better-maintained salvage and additional reinforcement plating make it superior to standard raider helmets, though still far from military quality. The distinctive rusty-red finish and spike-adorned design strike fear into enemies while providing solid protection. Scabber elites wear these with pride, having earned them through countless battles.</description>
+		<graphicData>
+			<texPath>Things/Headgear/Scabber_Power_Armor_Helmet/FCP_Scabber_Power_Armor_Helmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>750</MarketValue>
+			<ArmorRating_Sharp>1.85</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.65</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.30</ArmorRating_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.65</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+		<costList>
+			<Steel>45</Steel>
+			<Plasteel>5</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<apparel>
+			<wornGraphicPath>Things/Headgear/Scabber_Power_Armor_Helmet/FCP_Scabber_Power_Armor_Helmet</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+
+    <!--_____ Waster Power Armor Helmet _____-->
+
+	<!-- Waster Power Armor Helmet -->
+	
+	<ThingDef ParentName="FCP_Raider_Power_Armor_Helmet_Base">
+		<defName>FCP_Apparel_Waster_Power_Armor_Helmet</defName>
+		<label>Waster Power Armor Helmet</label>
+		<description>The best raider helmet craftsmanship can produce, the Waster helmet combines quality salvaged components with surprisingly skilled metalwork. While still bearing the brutal aesthetic raiders favor, it approaches the protection level of proper military power armor helmets. The improved visibility and better-sealed environmental systems make it considerably more practical than lesser raider helmets. Only the most successful raider bosses and their champions possess such prized headgear.</description>
+		<graphicData>
+			<texPath>Things/Headgear/Waster_Power_Armor_Helmet/FCP_Waster_Power_Armor_Helmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>850</MarketValue>
+			<ArmorRating_Sharp>1.95</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.75</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.35</ArmorRating_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.7</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+		<costList>
+			<Steel>50</Steel>
+			<Plasteel>8</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<apparel>
+			<wornGraphicPath>Things/Headgear/Waster_Power_Armor_Helmet/FCP_Waster_Power_Armor_Helmet</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+		</equippedStatOffsets>
+		<costList>
+			<Steel>50</Steel>
+			<Plasteel>10</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<apparel>
+			<wornGraphicPath>Things/Headgear/Waster_Power_Armor_Helmet/FCP_Waster_Power_Armor_Helmet</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+
+</Defs>

@@ -215,7 +215,7 @@
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Apparel/Raider_Light_Armor/FCP_Raider_Light_Armor</wornGraphicPath>
 			<layers>
-				<li>Shell</li>
+				<li>FCP_Apparel_Layer_Display_Over_All</li>
 			</layers>
 			<tags>
 				<li>FCP_Raider_Armor</li>
@@ -272,7 +272,7 @@
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Apparel/Raider_Medium_Armor/FCP_Raider_Medium_Armor</wornGraphicPath>
 			<layers>
-				<li>Shell</li>
+				<li>FCP_Apparel_Layer_Display_Over_All</li>
 			</layers>
 			<tags>
 				<li>FCP_Raider_Armor</li>
@@ -329,7 +329,7 @@
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Apparel/Raider_Heavy_Armor/FCP_Raider_Heavy_Armor</wornGraphicPath>
 			<layers>
-				<li>Shell</li>
+				<li>FCP_Apparel_Layer_Display_Over_All</li>
 			</layers>
 			<tags>
 				<li>FCP_Raider_Armor</li>
