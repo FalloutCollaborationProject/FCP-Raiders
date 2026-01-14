@@ -364,6 +364,12 @@
 			<MarketValue>75</MarketValue>
 		</statBases>
 		<apparel>
+			<bodyPartGroups>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+			</layers>
 			<wornGraphicPath>Things/Apparel/Tire_Armor/FCP_Tire_Armor</wornGraphicPath>
 		</apparel>
 	</ThingDef>
