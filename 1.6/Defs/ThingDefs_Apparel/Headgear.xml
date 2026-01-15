@@ -12,7 +12,7 @@
             <skillRequirements>
                 <Crafting>4</Crafting>
             </skillRequirements>
-            <researchPrerequisite>FCP_Research_Apparel_Production</researchPrerequisite>
+            <researchPrerequisite>FCP_Research_Raider_Equipment</researchPrerequisite>
             <recipeUsers>
                 <li>FCP_Production_Tailoring_Workbench</li>
             </recipeUsers>
@@ -60,7 +60,7 @@
             <skillRequirements>
                 <Crafting>4</Crafting>
             </skillRequirements>
-            <researchPrerequisite>FCP_Research_Apparel_Production</researchPrerequisite>
+            <researchPrerequisite>FCP_Research_Raider_Equipment</researchPrerequisite>
             <recipeUsers>
                 <li>FCP_Production_Tailoring_Workbench</li>
             </recipeUsers>
@@ -256,7 +256,7 @@
             <skillRequirements>
                 <Crafting>4</Crafting>
             </skillRequirements>
-            <researchPrerequisite>FCP_Research_Apparel_Production</researchPrerequisite>
+            <researchPrerequisite>FCP_Research_Raider_Equipment</researchPrerequisite>
             <recipeUsers>
                 <li>FCP_Production_Tailoring_Workbench</li>
             </recipeUsers>
@@ -311,7 +311,7 @@
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>
-            <researchPrerequisite>FCP_Research_Apparel_Production</researchPrerequisite>
+            <researchPrerequisite>FCP_Research_Raider_Equipment</researchPrerequisite>
             <recipeUsers>
                 <li>FCP_Production_Tailoring_Workbench</li>
             </recipeUsers>
@@ -354,7 +354,7 @@
             <skillRequirements>
                 <Crafting>4</Crafting>
             </skillRequirements>
-            <researchPrerequisite>FCP_Research_Apparel_Production</researchPrerequisite>
+            <researchPrerequisite>FCP_Research_Raider_Equipment</researchPrerequisite>
             <recipeUsers>
                 <li>FCP_Production_Tailoring_Workbench</li>
             </recipeUsers>

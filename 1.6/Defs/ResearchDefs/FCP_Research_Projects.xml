@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ FCP Raider Research __________-->
+
+    <!--_____ Raider Equipment _____-->
+
+    <!-- Raiders -->
+
+    <ResearchProjectDef>
+        <defName>FCP_Research_Raider_Equipment</defName>
+        <label>Raider Equipment</label>
+        <description>Research and develop the armor and equipment used by raiders. Learn to craft their distinctive tribal armor, reinforced leathers, and elite gear that combines style with protection in the wasteland.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>FCP_Research_Armor_Production</li>
+            <li>FCP_Research_Apparel_Production</li>
+        </prerequisites>
+        <researchViewX>5.00</researchViewX>
+        <researchViewY>0.00</researchViewY>
+        <tab>FCP_Faction_Research</tab>
+    </ResearchProjectDef>
+
+</Defs>
