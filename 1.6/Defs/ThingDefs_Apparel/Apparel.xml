@@ -28,9 +28,9 @@
 			<WorkToMake>4600</WorkToMake>			<!-- Cheap and quickly made but bad for protection -->
 			<Mass>1</Mass>
 			<MarketValue>70</MarketValue>
-			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			<ArmorRating_Sharp>0.70</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.28</ArmorRating_Heat>
 			<Insulation_Cold>1</Insulation_Cold>
 			<Insulation_Heat>3</Insulation_Heat>
 			<EquipDelay>1.2</EquipDelay>
@@ -203,8 +203,8 @@
 			<WorkToMake>5200</WorkToMake>
 			<Mass>5.0</Mass>
 			<MarketValue>200</MarketValue>
-			<ArmorRating_Sharp>0.10</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.2</ArmorRating_Heat>
 			<EquipDelay>1.2</EquipDelay>
 		</statBases>
@@ -257,8 +257,8 @@
 			<WorkToMake>9200</WorkToMake>
 			<Mass>7.0</Mass>
 			<MarketValue>350</MarketValue>
-			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.28</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.4</ArmorRating_Heat>
 			<EquipDelay>1.2</EquipDelay>
 		</statBases>
@@ -314,8 +314,8 @@
 			<WorkToMake>9200</WorkToMake>
 			<Mass>7.0</Mass>
 			<MarketValue>350</MarketValue>
-			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.38</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.8</ArmorRating_Heat>
 			<EquipDelay>1.2</EquipDelay>
 		</statBases>
@@ -392,8 +392,8 @@
 			<Cloth>20</Cloth>
 		</costList>
 		<statBases>
-			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.15</ArmorRating_Heat>
 			<Mass>0.8</Mass>
 			<MarketValue>65</MarketValue>
@@ -423,8 +423,8 @@
 		<statBases>
 			<MaxHitPoints>160</MaxHitPoints>
 			<WorkToMake>5200</WorkToMake>
-			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.25</ArmorRating_Heat>
 			<Mass>1.1</Mass>
 			<MarketValue>90</MarketValue>
