@@ -66,7 +66,7 @@
 				</repairResourcesPerHP>
 				<repairTimeCostPerHP>60</repairTimeCostPerHP>
 			</li>
-			<li Class="RangerRick_PowerArmor.CompProperties_ApparelRequirement">
+			<li Class="RangerRick_PowerArmor.CompProperties_ApparelRequirement" MayRequire="Rick.FCP.PowerArmor">
 				<requiredApparels>
 					<li>FCP_Apparel_Power_Armor_Frame</li>
 				</requiredApparels>

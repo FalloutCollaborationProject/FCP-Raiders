@@ -314,6 +314,18 @@
                         <li>ComponentIndustrial</li>
                         <li>MealSurvivalPack</li>
                         <li>Neutroamine</li>
+                        <li>Steel</li>
+                        <li>Cloth</li>
+                        <li>Chemfuel</li>
+                        <li MayRequire="Rick.FCP.Chems">FCP_Chem_Jet</li>
+                        <li MayRequire="Rick.FCP.Chems">FCP_Chem_Psycho</li>
+                        <li MayRequire="Rick.FCP.Chems">FCP_Chem_Buffout</li>
+                        <li MayRequire="Rick.FCP.Chems">FCP_Chem_Mentats</li>
+                        <li MayRequire="Rick.FCP.Chems">FCP_Chem_Turbo</li>
+                        <li MayRequire="Rick.FCP.Chems">FCP_Chem_Stimpak</li>
+                        <li MayRequire="Rick.FCP.Chems">FCP_Chem_Super_Stimpak</li>
+                        <li MayRequire="Rick.FCP.Chems">FCP_Chem_MedX</li>
+                        <li MayRequire="Rick.FCP.Currency">FCP_Currency_Caps</li>
                     </thingDefs>
                 </filter>
             </fixedParams>
