@@ -389,7 +389,7 @@
 
     <!-- Raider Power Armor Helmet -->
 
-    <ThingDef ParentName="HatBase" MayRequire="Rick.FCP.PowerArmor">
+    <ThingDef ParentName="FCP_Apparel_Power_Armor_Helmet_Base" MayRequire="Rick.FCP.PowerArmor">
         <defName>FCP_Apparel_Raider_Power_Armor_Helmet</defName>
         <label>Raider Power Armor Helmet</label>
         <description>A power armor helmet that has been crudely modified by raiders. The internal systems barely function, but it still provides excellent protection against most threats.</description>
@@ -439,7 +439,7 @@
 
     <!-- Junkyard Power Armor Helmet -->
 
-    <ThingDef ParentName="HatBase" MayRequire="Rick.FCP.PowerArmor">
+    <ThingDef ParentName="FCP_Apparel_Power_Armor_Helmet_Base" MayRequire="Rick.FCP.PowerArmor">
         <defName>FCP_Apparel_Junkyard_Power_Armor_Helmet</defName>
         <label>Junkyard Power Armor Helmet</label>
         <description>A makeshift power armor helmet assembled from salvaged parts. While not as protective as military-grade helmets, it's still far superior to conventional raider headgear.</description>
@@ -489,7 +489,7 @@
 
     <!-- Scabber Power Armor Helmet -->
 
-    <ThingDef ParentName="HatBase" MayRequire="Rick.FCP.PowerArmor">
+    <ThingDef ParentName="FCP_Apparel_Power_Armor_Helmet_Base" MayRequire="Rick.FCP.PowerArmor">
         <defName>FCP_Apparel_Scabber_Power_Armor_Helmet</defName>
         <label>Scabber Power Armor Helmet</label>
         <description>A heavily corroded power armor helmet covered in rust and decay. Despite its deteriorated appearance, the core structure remains solid and provides substantial protection.</description>
@@ -539,7 +539,7 @@
 
     <!-- Waster Power Armor Helmet -->
 
-    <ThingDef ParentName="HatBase" MayRequire="Rick.FCP.PowerArmor">
+    <ThingDef ParentName="FCP_Apparel_Power_Armor_Helmet_Base" MayRequire="Rick.FCP.PowerArmor">
         <defName>FCP_Apparel_Waster_Power_Armor_Helmet</defName>
         <label>Waster Power Armor Helmet</label>
         <description>A battle-worn power armor helmet showing signs of extensive use and makeshift repairs. While not pristine, it remains a formidable piece of protective gear.</description>
@@ -605,7 +605,7 @@
 
     <!-- Mrfuzzy Power Armor Helmet -->
 
-    <ThingDef ParentName="HatBase" MayRequire="Rick.FCP.PowerArmor">
+    <ThingDef ParentName="FCP_Apparel_Power_Armor_Helmet_Base" MayRequire="Rick.FCP.PowerArmor">
         <defName>FCP_Apparel_Mrfuzzy_Power_Armor_Helmet</defName>
         <label>Mr Fuzzy Power Armor Helmet</label>
         <description>An unusual power armor helmet that has been modified with a Mr. Fuzzy mascot theme. Despite its absurd appearance, it provides the same protection as standard raider power armor helmets.</description>
