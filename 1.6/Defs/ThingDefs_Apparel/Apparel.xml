@@ -144,6 +144,9 @@
 		<costList>
 			<Cloth>40</Cloth>
 		</costList>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>4000</WorkToMake>
@@ -198,6 +201,9 @@
 		<costList>
 			<Steel>40</Steel>
 		</costList>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>5200</WorkToMake>
@@ -309,6 +315,9 @@
 		<costList>
 			<Steel>100</Steel>
 		</costList>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>9200</WorkToMake>
