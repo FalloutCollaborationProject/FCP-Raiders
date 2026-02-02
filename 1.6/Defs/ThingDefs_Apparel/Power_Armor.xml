@@ -59,14 +59,14 @@
 			<li Class="FCP.Core.CompProperties_LabelColored">
 				<rarity>Rare</rarity>
 			</li>
-			<li Class="RangerRick_PowerArmor.CompProperties_RepairableAtStation">
+			<li Class="FCP.Core.PowerArmor.CompProperties_RepairableAtStation">
 				<repairResourcesPerHP>
 					<Steel>5</Steel>
 					<ComponentIndustrial>0.1</ComponentIndustrial>
 				</repairResourcesPerHP>
 				<repairTimeCostPerHP>60</repairTimeCostPerHP>
 			</li>
-			<li Class="RangerRick_PowerArmor.CompProperties_ApparelRequirement" MayRequire="Rick.FCP.PowerArmor">
+			<li Class="FCP.Core.PowerArmor.CompProperties_ApparelRequirement" MayRequire="Rick.FCP.PowerArmor">
 				<requiredApparels>
 					<li>FCP_Apparel_Power_Armor_Frame</li>
 				</requiredApparels>
