@@ -265,7 +265,7 @@
         <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
         <modExtensions Inherit="False">
             <!-- Make them unable to use drop pods -->
-            <li Class="FCP.Core.ModExtension_FactionBannedArrivalModes">
+            <li Class="FCP.Factions.FactionExtension_BannedArrivalModes">
                 <arrivalModes>
                     <li>EdgeDrop</li>
                     <li>EdgeDropGroups</li>
@@ -274,7 +274,7 @@
                 </arrivalModes>
             </li>
             <!-- Ideology stuff -->
-            <li Class="FCP.Core.ModExtension_FixedIdeo">
+            <li Class="FCP.Factions.FactionExtension_FixedIdeo">
                 <ideoIconDef>FCP_Icon_Raider</ideoIconDef>
                 <ideoColorDef>LightGrey</ideoColorDef>
                 <memberName>Raider</memberName>
@@ -293,7 +293,7 @@
                 </roleOverrides>
             </li>
             <!-- Territory stuff -->
-            <!-- <li class="FCP.Core.ModExtension_FactionTerritory">
+            <!-- <li class="FCP.Factions.FactionExtension_HasTerritory">
                 <territoryColor>(222, 49, 41)</territoryColor>
                 <territoryBorderColor>(116, 22, 42)</territoryBorderColor>
                 <factionLabelColor>(0.9, 0.9, 0.8, 1.0)</factionLabelColor>
