@@ -264,6 +264,10 @@
         </pawnGroupMakers>
         <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
         <modExtensions Inherit="False">
+            <!-- Faction tab label override -->
+            <li Class="FCP.Factions.FactionExtension_FactionTabLabelOverride">
+                <newLabel>Wasteland Raiders</newLabel>
+            </li>
             <!-- Make them unable to use drop pods -->
             <li Class="FCP.Factions.FactionExtension_BannedArrivalModes">
                 <arrivalModes>
