@@ -5,17 +5,13 @@
 
 	<!-- Base -->
 	
-	<ThingDef Name="FCP_Raider_Armor_Base" ParentName="ApparelBase" Abstract="True">
+	<ThingDef Name="FCP_Raider_Armor_Base" ParentName="FCP_Apparel_Makeable_Base" Abstract="True">
 		<smeltable>false</smeltable>
 		<recipeMaker Inherit= "false">
-			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_Raider_Equipment</researchPrerequisite>
-			<recipeUsers>
-				<li>FCP_Production_Tailoring_Workbench</li>				<!-- Uses tailoring bench because it's mostly clothes -->
-			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>60</Cloth>
@@ -122,7 +118,7 @@
 
 	<!-- Long Johns -->
 
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="FCP_Apparel_Makeable_Base">
 		<defName>FCP_Apparel_Raider_Long_Johns</defName>
 		<description>A piece of tattered clothing, wrapped up in some places with duct tape, a wide leather belt, and black combat boots. These clothes are often worn by raiders and provide barely any protection.</description>
 		<label>Raider Armor</label>
@@ -131,22 +127,15 @@
 			<texPath>Things/Apparel/Long_Johns/Long_Johns</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<recipeMaker Inherit= "false">
-			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+		<recipeMaker>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_Raider_Equipment</researchPrerequisite>
-			<recipeUsers>
-				<li>FCP_Production_Tailoring_Workbench</li>
-			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>40</Cloth>
 		</costList>
-		<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>4000</WorkToMake>
@@ -179,7 +168,7 @@
 
 	<!-- Raider Light -->
 
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="FCP_Armor_Machineable_Base">
 		<defName>FCP_Apparel_Raider_Armor_Light</defName>
 		<description>Low-tech, homemade armour with a barbaric appearance. It varies in quality and appearance with most consisting of scrap metal plates melded into armor pieces reinforced by metal bars along with wires fastened together by leather straps. The light version of the raider armor provides only basic protection but is less heavy than other variants. Not the best armor, but certainly better than nothing.</description>
 		<label>Raider Armor</label>
@@ -188,22 +177,15 @@
 			<texPath>Things/Apparel/Raider_Light_Armor/FCP_Raider_Light_Armor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<recipeMaker Inherit= "false">
-			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+		<recipeMaker>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_Armor_Production</researchPrerequisite>
-			<recipeUsers>
-				<li>FCP_Production_Armor_Workbench</li>
-			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Steel>40</Steel>
 		</costList>
-		<thingCategories>
-			<li>ApparelArmor</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>5200</WorkToMake>
@@ -236,7 +218,7 @@
 
 	<!-- Raider Medium -->
 
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="FCP_Armor_Machineable_Base">
 		<defName>FCP_Apparel_Raider_Armor_Medium</defName>
 		<description>Low-tech, homemade armour with a barbaric appearance. It varies in quality and appearance with most consisting of scrap metal plates melded into armor pieces reinforced by metal bars along with wires fastened together by leather straps.This version offers slightly more protection than the lighter version, but still isn’t that great. Plus, it weighs a whole lot more</description>
 		<label>Sturdy Raider Armor</label>
@@ -245,15 +227,11 @@
 			<texPath>Things/Apparel/Raider_Medium_Armor/FCP_Raider_Medium_Armor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<recipeMaker Inherit= "false">
-			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+		<recipeMaker>
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_Armor_Production</researchPrerequisite>
-			<recipeUsers>
-				<li>FCP_Production_Armor_Workbench</li>
-			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Steel>65</Steel>
@@ -293,7 +271,7 @@
 
 	<!-- Raider Heavy -->
 
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="FCP_Armor_Machineable_Base">
 		<defName>FCP_Apparel_Raider_Armor_Heavy</defName>
 		<description>Low-tech, homemade armour with a barbaric appearance. It varies in quality and appearance with most consisting of scrap metal plates melded into armor pieces reinforced by metal bars along with wires fastened together by leather straps.The heavy raider armor is usually reserved for leaders and others who bellow orders to the gang. While it protects a whole lot better than the other version, it is also bulky and heavy, severely impairing the wearers freedom of movement.</description>
 		<label>Heavy Raider Armor</label>
@@ -302,22 +280,15 @@
 			<texPath>Things/Apparel/Raider_Heavy_Armor/FCP_Raider_Heavy_Armor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<recipeMaker Inherit= "false">
-			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+		<recipeMaker>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_Armor_Production</researchPrerequisite>
-			<recipeUsers>
-				<li>FCP_Production_Armor_Workbench</li>
-			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Steel>100</Steel>
 		</costList>
-		<thingCategories>
-			<li>ApparelArmor</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>9200</WorkToMake>
@@ -393,10 +364,7 @@
 			<texPath>Things/Apparel/Raider_leathers/FCP_Raider_leathers</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-				<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
-<costList>
+		<costList>
 			<Leather_Plain>55</Leather_Plain>
 			<Cloth>20</Cloth>
 		</costList>
@@ -422,10 +390,7 @@
 			<texPath>Things/Apparel/Leather_Coat/FCP_Leather_Coat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-				<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
-<costList>
+		<costList>
 			<Leather_Plain>70</Leather_Plain>
 			<Cloth>25</Cloth>
 		</costList>
