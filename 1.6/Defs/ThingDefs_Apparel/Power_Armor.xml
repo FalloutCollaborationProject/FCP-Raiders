@@ -5,13 +5,10 @@
 
     <!-- Base -->
 
-	<ThingDef ParentName="ArmorMachineableBase" Name="FCP_Raider_Power_Armor_Base" Abstract="true">
+	<ThingDef ParentName="FCP_Armor_Machineable_Base" Name="FCP_Raider_Power_Armor_Base" Abstract="true">
 		<techLevel>Industrial</techLevel>
 		<generateCommonality>0.001</generateCommonality>
 		<smeltable>false</smeltable>
-		<thingCategories>
-			<li>ApparelArmor</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>350</MaxHitPoints>
 			<WorkToMake>10200</WorkToMake>
@@ -22,13 +19,9 @@
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisite>FCP_Research_Raider_Equipment</researchPrerequisite>
-			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
-			<recipeUsers>
-				<li>FCP_Production_Armor_Workbench</li>
-			</recipeUsers>
 		</recipeMaker>
 		<apparel>
 			<shellRenderedBehindHead>true</shellRenderedBehindHead>

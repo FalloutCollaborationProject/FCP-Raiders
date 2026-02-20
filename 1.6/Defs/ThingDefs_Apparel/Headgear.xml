@@ -5,17 +5,13 @@
 
     <!-- Raider Base -->
 
-    <ThingDef Name="FCP_Raider_Helmet_Base" ParentName="ApparelBase" Abstract="True">
+    <ThingDef Name="FCP_Raider_Helmet_Base" ParentName="FCP_Hat_Makeable_Base" Abstract="True">
         <smeltable>false</smeltable>
-        <recipeMaker Inherit= "false">
-            <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+        <recipeMaker>
             <skillRequirements>
                 <Crafting>4</Crafting>
             </skillRequirements>
             <researchPrerequisite>FCP_Research_Raider_Equipment</researchPrerequisite>
-            <recipeUsers>
-                <li>FCP_Production_Tailoring_Workbench</li>
-            </recipeUsers>
         </recipeMaker>
         <costList>
             <Cloth>15</Cloth>
@@ -53,17 +49,13 @@
 
     <!-- Fiend Base -->
 
-    <ThingDef Name="FCP_Fiend_Helmet_Base" ParentName="ApparelBase" Abstract="True">
+    <ThingDef Name="FCP_Fiend_Helmet_Base" ParentName="FCP_Hat_Makeable_Base" Abstract="True">
         <smeltable>false</smeltable>
-        <recipeMaker Inherit= "false">
-            <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+        <recipeMaker>
             <skillRequirements>
                 <Crafting>4</Crafting>
             </skillRequirements>
             <researchPrerequisite>FCP_Research_Raider_Equipment</researchPrerequisite>
-            <recipeUsers>
-                <li>FCP_Production_Tailoring_Workbench</li>
-            </recipeUsers>
         </recipeMaker>
         <costList>
             <Cloth>15</Cloth>
@@ -242,7 +234,7 @@
 
     <!-- Sack Hood -->
 
-    <ThingDef ParentName="ApparelBase">
+    <ThingDef ParentName="FCP_Hat_Makeable_Base">
         <defName>FCP_Apparel_Sack_Hood</defName>
         <description>A simple hood often worn by raiders. It provides barely any protection against bullets but is (barely) better than no helmet at all.</description>
         <label>Sack Hood</label>
@@ -251,15 +243,11 @@
             <texPath>Things/Headgear/Sack_Hood/FCP_Sack_Hood</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
-        <recipeMaker Inherit= "false">
-            <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+        <recipeMaker>
             <skillRequirements>
                 <Crafting>4</Crafting>
             </skillRequirements>
             <researchPrerequisite>FCP_Research_Raider_Equipment</researchPrerequisite>
-            <recipeUsers>
-                <li>FCP_Production_Tailoring_Workbench</li>
-            </recipeUsers>
         </recipeMaker>
         <costList>
             <Cloth>25</Cloth>
@@ -306,15 +294,11 @@
         <defName>FCP_Apparel_Armored_Raider_Skull_Gas_Mask</defName>
         <description>A gas mask fitted with a reinforced metal skull plate. The combination of functional protection and terrifying aesthetics makes this a favored piece of headgear among raider elites.</description>
         <label>Armored Raider Skull Gas Mask</label>
-        <recipeMaker Inherit="false">
-            <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+        <recipeMaker>
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>
             <researchPrerequisite>FCP_Research_Raider_Equipment</researchPrerequisite>
-            <recipeUsers>
-                <li>FCP_Production_Tailoring_Workbench</li>
-            </recipeUsers>
         </recipeMaker>
         <costList Inherit="False">
             <Steel>20</Steel>
@@ -349,15 +333,11 @@
         <defName>FCP_Apparel_Rusty_Raider_Skull_Gas_Mask</defName>
         <description>A weathered gas mask with a corroded skull plate attached. Despite its deteriorated condition, it still provides adequate protection and maintains the intimidating raider aesthetic.</description>
         <label>Rusty Raider Skull Gas Mask</label>
-        <recipeMaker Inherit="false">
-            <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+        <recipeMaker>
             <skillRequirements>
                 <Crafting>4</Crafting>
             </skillRequirements>
             <researchPrerequisite>FCP_Research_Raider_Equipment</researchPrerequisite>
-            <recipeUsers>
-                <li>FCP_Production_Tailoring_Workbench</li>
-            </recipeUsers>
         </recipeMaker>
         <costList Inherit="False">
             <Steel>12</Steel>
