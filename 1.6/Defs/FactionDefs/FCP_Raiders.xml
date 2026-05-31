@@ -116,21 +116,6 @@
         
         <pawnGroupMakers>
 
-            <!-- Slavers Combat -->
-
-            <li>
-                <kindDef>Combat</kindDef>
-                <disallowedStrategies>
-                    <li>EmergeFromWater</li>
-                </disallowedStrategies>
-                <options>
-                    <FCP_Slaver_Guard>10</FCP_Slaver_Guard>
-                    <FCP_Slaver_Collarer_Pawn>8</FCP_Slaver_Collarer_Pawn>
-                    <FCP_Slaver_Enforcer_Pawn>7</FCP_Slaver_Enforcer_Pawn>
-                    <FCP_Slaver_Boss>2</FCP_Slaver_Boss>
-                </options>
-            </li>
-
             <!-- Jackals Combat -->
 
             <li>
@@ -217,9 +202,6 @@
                 <kindDef>Peaceful</kindDef>
                 <options>
                     <FCP_Raider_Warlord>1</FCP_Raider_Warlord>
-                    <FCP_Slaver_Boss>3</FCP_Slaver_Boss>
-                    <FCP_Slaver_Trader>5</FCP_Slaver_Trader>
-                    <FCP_Slaver_Guard>6</FCP_Slaver_Guard>
                     <FCP_Jackal_Leader>3</FCP_Jackal_Leader>
                     <FCP_Jackal_Raider>8</FCP_Jackal_Raider>
                     <FCP_Viper_Priest_Pawn>3</FCP_Viper_Priest_Pawn>
@@ -239,10 +221,6 @@
                 <kindDef>Settlement</kindDef>
                 <options>
                     <FCP_Raider_Warlord>1</FCP_Raider_Warlord>
-                    <FCP_Slaver_Boss>2</FCP_Slaver_Boss>
-                    <FCP_Slaver_Trader>4</FCP_Slaver_Trader>
-                    <FCP_Slaver_Guard>8</FCP_Slaver_Guard>
-                    <FCP_Slaver_Collarer_Pawn>6</FCP_Slaver_Collarer_Pawn>
                     <FCP_Jackal_Leader>2</FCP_Jackal_Leader>
                     <FCP_Jackal_Raider>9</FCP_Jackal_Raider>
                     <FCP_Jackal_Scavenger>7</FCP_Jackal_Scavenger>
