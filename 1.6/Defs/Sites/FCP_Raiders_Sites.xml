@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Site: Turf War -->
+
+    <SitePartDef>
+        <defName>FCP_Site_Raider_Turf_War</defName>
+        <label>rival gang camp</label>
+        <description>A rival gang squatting on Raider turf.</description>
+        <workerClass>SitePartWorker_Outpost</workerClass>
+        <siteTexture>World/WorldObjects/DefaultSettlement</siteTexture>
+        <expandingIconTexture>MapIcons/Sites/FCP_Scrapyard_Site</expandingIconTexture>
+        <forceExitAndRemoveMapCountdownDurationDays>6</forceExitAndRemoveMapCountdownDurationDays>
+        <requiresFaction>true</requiresFaction>
+        <wantsThreatPoints>true</wantsThreatPoints>
+        <tags>
+            <li>FCP_Site_Raider_Turf_War</li>
+        </tags>
+    </SitePartDef>
+
+    <GenStepDef>
+        <defName>FCP_Site_Raider_Turf_War_Outpost</defName>
+        <linkWithSite>FCP_Site_Raider_Turf_War</linkWithSite>
+        <order>450</order>
+        <genStep Class="GenStep_Outpost"/>
+    </GenStepDef>
+
+    <GenStepDef>
+        <defName>FCP_Site_Raider_Turf_War_Power</defName>
+        <linkWithSite>FCP_Site_Raider_Turf_War</linkWithSite>
+        <order>451</order>
+        <genStep Class="GenStep_Power"/>
+    </GenStepDef>
+
+    <!-- Site: The Big Score -->
+
+    <SitePartDef>
+        <defName>FCP_Site_Raider_Big_Score</defName>
+        <label>lightly guarded camp</label>
+        <description>A camp sitting on a haul too good to pass up.</description>
+        <workerClass>SitePartWorker_Outpost</workerClass>
+        <siteTexture>World/WorldObjects/DefaultSettlement</siteTexture>
+        <expandingIconTexture>MapIcons/Sites/FCP_Warehouse_Site</expandingIconTexture>
+        <forceExitAndRemoveMapCountdownDurationDays>6</forceExitAndRemoveMapCountdownDurationDays>
+        <requiresFaction>true</requiresFaction>
+        <wantsThreatPoints>true</wantsThreatPoints>
+        <tags>
+            <li>FCP_Site_Raider_Big_Score</li>
+        </tags>
+    </SitePartDef>
+
+    <GenStepDef>
+        <defName>FCP_Site_Raider_Big_Score_Outpost</defName>
+        <linkWithSite>FCP_Site_Raider_Big_Score</linkWithSite>
+        <order>450</order>
+        <genStep Class="GenStep_Outpost"/>
+    </GenStepDef>
+
+    <GenStepDef>
+        <defName>FCP_Site_Raider_Big_Score_Power</defName>
+        <linkWithSite>FCP_Site_Raider_Big_Score</linkWithSite>
+        <order>451</order>
+        <genStep Class="GenStep_Power"/>
+    </GenStepDef>
+
+</Defs>

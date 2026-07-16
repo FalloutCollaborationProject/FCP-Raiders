@@ -2472,6 +2472,8 @@
     
     <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_Child_BornIntoSlavery</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <title>born into slavery</title>
         <titleShort>slave child</titleShort>
         <baseDesc>[PAWN_nameDef] was born a slave and witnessed the brutality of slavers firsthand. [PAWN_pronoun] learned that power comes from owning others.</baseDesc>
@@ -2492,6 +2494,8 @@
     
     <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_Child_OrphanedByRaid</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <title>orphaned by slaver raid</title>
         <titleShort>orphan</titleShort>
         <baseDesc>[PAWN_nameDef] watched slavers kill [PAWN_possessive] parents and take everyone else. [PAWN_pronoun] vowed to never be a victim again.</baseDesc>
@@ -2509,6 +2513,8 @@
     
     <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_Child_PittWorker</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <title>Pitt child worker</title>
         <titleShort>child worker</titleShort>
         <baseDesc>[PAWN_nameDef] grew up working the steel mills in The Pitt as a child slave. [PAWN_pronoun] learned that cruelty kept others in line.</baseDesc>
@@ -2527,6 +2533,8 @@
     
     <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_Child_SlaveOverseerKid</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <title>overseer's child</title>
         <titleShort>overseer's kid</titleShort>
         <baseDesc>[PAWN_nameDef] was raised by a slave overseer and learned to see captives as property. [PAWN_pronoun] helped discipline slaves from a young age.</baseDesc>
@@ -2547,6 +2555,8 @@
     
     <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_Child_CollarMaker</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <title>collar maker's apprentice</title>
         <titleShort>apprentice</titleShort>
         <baseDesc>[PAWN_nameDef] apprenticed with a collar maker, learning to craft the devices that kept slaves obedient. [PAWN_pronoun] saw people as necks waiting for collars.</baseDesc>
@@ -2564,6 +2574,8 @@
     
     <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_Child_CaptiveChild</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <title>captive child</title>
         <titleShort>captive</titleShort>
         <baseDesc>[PAWN_nameDef] was captured as a child and sold multiple times. [PAWN_pronoun] learned manipulation and decided to become the master instead of the slave.</baseDesc>
@@ -2581,6 +2593,8 @@
     
     <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_Child_ParadiseFallsBrat</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <title>Paradise Falls brat</title>
         <titleShort>brat</titleShort>
         <baseDesc>[PAWN_nameDef] grew up in Paradise Falls surrounded by slavers. [PAWN_pronoun] tormented slave children and learned the trade early.</baseDesc>
@@ -2601,6 +2615,8 @@
     
     <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_Child_RunawayCaught</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <title>runaway slave caught</title>
         <titleShort>runaway</titleShort>
         <baseDesc>[PAWN_nameDef] tried to escape slavery but was caught and punished severely. [PAWN_pronoun] decided to join the slavers to avoid being on the bottom.</baseDesc>
@@ -2618,6 +2634,8 @@
     
     <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_Child_AuctionHouseKid</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <title>auction house child</title>
         <titleShort>auction kid</titleShort>
         <baseDesc>[PAWN_nameDef] grew up watching slave auctions, learning to appraise human value in caps. [PAWN_pronoun] saw people as investments.</baseDesc>
@@ -2635,6 +2653,8 @@
     
     <BackstoryDef MayRequire="Rick.FCP.Slavers">
         <defName>FCP_Slaver_Child_TraitorChild</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <title>betrayer's child</title>
         <titleShort>betrayer</titleShort>
         <baseDesc>[PAWN_nameDef] betrayed other slave children to slavers for better treatment. [PAWN_pronoun] learned early that loyalty meant nothing.</baseDesc>
@@ -2657,6 +2677,8 @@
     
     <BackstoryDef>
         <defName>FCP_Jackal_Child_RaisedByRaiders</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <title>raised by raiders</title>
         <titleShort>raider child</titleShort>
         <baseDesc>[PAWN_nameDef] grew up among the Jackals, learning violence before learning to read. [PAWN_pronoun] saw brutality as normal life.</baseDesc>
@@ -2678,6 +2700,8 @@
     
     <BackstoryDef>
         <defName>FCP_Jackal_Child_WarOrphan</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <title>war orphan</title>
         <titleShort>orphan</titleShort>
         <baseDesc>[PAWN_nameDef] lost [PAWN_possessive] family to raiders and joined the Jackals for survival. [PAWN_pronoun] became what [PAWN_pronoun] once feared.</baseDesc>
@@ -2696,6 +2720,8 @@
     
     <BackstoryDef>
         <defName>FCP_Jackal_Child_PackRunt</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <title>pack runt</title>
         <titleShort>runt</titleShort>
         <baseDesc>[PAWN_nameDef] was the smallest in the Jackal pack and had to fight for scraps. [PAWN_pronoun] learned to be vicious to survive.</baseDesc>
@@ -2714,6 +2740,8 @@
     
     <BackstoryDef>
         <defName>FCP_Jackal_Child_ChildScavenger</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <title>child scavenger</title>
         <titleShort>scavenger</titleShort>
         <baseDesc>[PAWN_nameDef] scavenged battlefields for the Jackals as a child, stripping corpses for loot. [PAWN_pronoun] grew numb to death.</baseDesc>
@@ -2732,6 +2760,8 @@
     
     <BackstoryDef>
         <defName>FCP_Jackal_Child_ChildSoldier</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <title>child soldier</title>
         <titleShort>soldier</titleShort>
         <baseDesc>[PAWN_nameDef] was forced to fight for the Jackals from a young age. [PAWN_pronoun] killed for the first time before puberty.</baseDesc>
@@ -2750,6 +2780,8 @@
     
     <BackstoryDef>
         <defName>FCP_Jackal_Child_CannibalChild</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <title>cannibal child</title>
         <titleShort>cannibal</titleShort>
         <baseDesc>[PAWN_nameDef] was introduced to cannibalism young in the Jackal camp. [PAWN_pronoun] ate human flesh to survive starvation.</baseDesc>
@@ -2768,6 +2800,8 @@
     
     <BackstoryDef>
         <defName>FCP_Jackal_Child_WastelandFeral</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <title>wasteland feral child</title>
         <titleShort>feral</titleShort>
         <baseDesc>[PAWN_nameDef] lived like an animal in the wasteland before the Jackals took [PAWN_objective] in. [PAWN_pronoun] never fully learned civilization.</baseDesc>
@@ -2789,6 +2823,8 @@
     
     <BackstoryDef>
         <defName>FCP_Jackal_Child_ChemRunner</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <title>child chem runner</title>
         <titleShort>runner</titleShort>
         <baseDesc>[PAWN_nameDef] ran chems for the Jackals as a child, too young to be suspected. [PAWN_pronoun] sampled the merchandise early.</baseDesc>
@@ -2807,6 +2843,8 @@
     
     <BackstoryDef>
         <defName>FCP_Jackal_Child_RaiderBrat</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <title>raider brat</title>
         <titleShort>brat</titleShort>
         <baseDesc>[PAWN_nameDef] was born into the Jackal gang and raised with no morals. [PAWN_pronoun] tortured animals and weaker children for fun.</baseDesc>
@@ -2828,6 +2866,8 @@
     
     <BackstoryDef>
         <defName>FCP_Jackal_Child_LookoutKid</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <title>child lookout</title>
         <titleShort>lookout</titleShort>
         <baseDesc>[PAWN_nameDef] served as a lookout for Jackal raids, small enough to hide easily. [PAWN_pronoun] watched people die from safe distances.</baseDesc>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <QuestScriptDef>
+        <defName>FCP_Quest_Raider_Big_Score</defName>
+        <rootSelectionWeight>1.0</rootSelectionWeight>
+        <rootMinPoints>50</rootMinPoints>
+        <defaultChallengeRating>1</defaultChallengeRating>
+        <canGiveRoyalFavor>false</canGiveRoyalFavor>
+        <expireDaysRange>4~8</expireDaysRange>
+        <questNameRules>
+            <rulesStrings>
+                <li>questName->The Big Score</li>
+                <li>questName->One of Ours</li>
+                <li>questName->Not Worth the Trouble</li>
+                <li>questName->Getting Them Back</li>
+                <li>questName->Payback Run</li>
+            </rulesStrings>
+        </questNameRules>
+        <questDescriptionRules>
+            <rulesStrings>
+                <li>questDescription->A job went sideways and one of the crew got grabbed. [asker_nameFull] doesn't do sentiment, but leaving somebody to talk is bad for business. Get them out.</li>
+                <li>questDescription->[asker_nameFull]: "Some crew's holding one of ours. We don't leave people behind - not because we're soft, because it looks bad if we do."</li>
+                <li>questDescription->Word is a rival gang's got one of the crew locked up somewhere close. [asker_nameFull] wants them pulled out before they start talking.</li>
+                <li>questDescription->[asker_nameFull] lost a guy on a run and wants him back before anybody gets ideas about what he might say under pressure.</li>
+            </rulesStrings>
+        </questDescriptionRules>
+        <root Class="QuestNode_Sequence">
+            <nodes>
+                <li Class="FCP.Core.RadiantQuests.QuestNode_GetFactionFromList">
+                    <storeAs>askerFaction</storeAs>
+                    <mustBeNonHostile>false</mustBeNonHostile>
+                    <factionDefs>
+                        <li MayRequire="Rick.FCP.Raiders">FCP_Faction_Raider</li>
+                    </factionDefs>
+                </li>
+                <li Class="FCP.Core.RadiantQuests.QuestNode_GetLeaderOfFaction">
+                    <storeAs>asker</storeAs>
+                    <factionToUse>$askerFaction</factionToUse>
+                </li>
+                <li Class="FCP.Core.RadiantQuests.QuestNode_GetPawnKind">
+                    <!--Dont change storeAs its hardcoded in C#-->
+                    <storeAs>prisonerPawnKind</storeAs>
+                    <pawnKindDef>FCP_Jackal_Raider</pawnKindDef>
+                </li>
+                <li Class="QuestNode_Set">
+                    <name>chanceToJoinVal</name>
+                    <value>1</value>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_RandomizePointsChallengeRating</def>
+                    <parms>
+                        <pointsFactorTwoStar>1.5</pointsFactorTwoStar>
+                        <pointsFactorThreeStar>2</pointsFactorThreeStar>
+                    </parms>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_AdjustPointsForDistantFight</def>
+                </li>
+                <li Class="QuestNode_GetMap" />
+                <li Class="QuestNode_GetSiteTile">
+                    <storeAs>siteTile</storeAs>
+                    <preferCloserTiles>true</preferCloserTiles>
+                </li>
+                <li Class="QuestNode_GetSitePartDefsByTagsAndFaction">
+                    <storeAs>sitePartDefs</storeAs>
+                    <storeFactionAs>siteFaction</storeFactionAs>
+                    <sitePartsTags>
+                        <li>
+                            <tag>FCP_Site_PawnRescue</tag>
+                        </li>
+                    </sitePartsTags>
+                </li>
+                <li Class="QuestNode_GetDefaultSitePartsParams">
+                    <tile>$siteTile</tile>
+                    <faction>$siteFaction</faction>
+                    <sitePartDefs>$sitePartDefs</sitePartDefs>
+                    <storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_GenerateSite</def>
+                    <parms>
+                        <hiddenSitePartsPossible>true</hiddenSitePartsPossible>
+                    </parms>
+                </li>
+                <li Class="QuestNode_SpawnWorldObjects">
+                    <worldObjects>$site</worldObjects>
+                    <defsToExcludeFromHyperlinks>Human</defsToExcludeFromHyperlinks>
+                </li>
+                <li Class="QuestNode_WorldObjectTimeout">
+                    <worldObject>$site</worldObject>
+                    <isQuestTimeout>true</isQuestTimeout>
+                    <delayTicks>$(randInt(12,28)*60000)</delayTicks>
+                    <inSignalDisable>site.MapGenerated</inSignalDisable>
+                    <node Class="QuestNode_End">
+                        <outcome>Fail</outcome>
+                        <sendStandardLetter>true</sendStandardLetter>
+                    </node>
+                </li>
+                <li Class="QuestNode_Signal">
+                    <inSignal>prisoner.RescuedFromPrison</inSignal>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_Notify_PlayerRaidedSomeone">
+                                <getRaidersFromMapParent>$site</getRaidersFromMapParent>
+                            </li>
+                            <li Class="QuestNode_GiveRewards">
+                                <parms>
+                                    <allowGoodwill>true</allowGoodwill>
+                                    <allowRoyalFavor>false</allowRoyalFavor>
+                                </parms>
+                                <addCampLootReward>true</addCampLootReward>
+                                <customLetterLabel>Debt settled</customLetterLabel>
+                                <customLetterText>The crew's out, the gang holding them isn't a problem anymore, and there's a cut waiting for you.</customLetterText>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+                <li Class="QuestNode_End">
+                    <inSignal>prisoner.RescuedFromPrison</inSignal>
+                    <outcome>Success</outcome>
+                </li>
+                <li Class="QuestNode_NoWorldObject">
+                    <worldObject>$site</worldObject>
+                    <node Class="QuestNode_End" />
+                </li>
+            </nodes>
+        </root>
+    </QuestScriptDef>
+
+</Defs>

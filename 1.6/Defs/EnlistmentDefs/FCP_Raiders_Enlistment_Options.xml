@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Enlistments with Factions __________-->
+
+    <!--_____ Raiders _____-->
+
+    <FCP.Enlist.FactionEnlistOptionsDef>
+        <defName>FCP_Enlistment_Raiders</defName>
+        <minGoodwillRequrementToEnlist>-10</minGoodwillRequrementToEnlist>
+        <enlistGoodwillGain>5</enlistGoodwillGain>
+
+        <!-- Enlistment Options -->
+
+        <enlistLetterTitleKey>FCP_Raiders_Enlist_Letter_Title</enlistLetterTitleKey>
+        <enlistLetterLabelKey>FCP_Raiders_Enlist_Letter_Label</enlistLetterLabelKey>
+        <enlistButtonLabelKey>FCP_Raiders_Enlist_Button_Label</enlistButtonLabelKey>
+        <enlistButtonDescKey>FCP_Raiders_Enlist_Button_Desc</enlistButtonDescKey>
+        <enlistRequrementsNotSatisfiedKey>FCP_Raiders_Enlist_Requrements_Not_Satisfied</enlistRequrementsNotSatisfiedKey>
+        <enlistedToHostileFactionKey>FCP_Raiders_Enlisted_To_Hostile_Faction</enlistedToHostileFactionKey>
+        <enlistButtonIconTexPath>UI/Memes/Loyalist</enlistButtonIconTexPath>
+        <enlistedSoundDef>FCP_Sound_Card_Use</enlistedSoundDef>
+        <enlistedWithKey>FCP_Raiders_Enlisted_With_Key</enlistedWithKey>
+
+        <!-- Mission Options -->
+
+        <missionsAreEnabled>true</missionsAreEnabled>
+        <missionsLabelKey>FCP_Raiders_Missions_Label</missionsLabelKey>
+        <missionsDescKey>FCP_Raiders_Missions_Desc</missionsDescKey>
+        <missionsButtonIconTexPath>UI/Abilities/CombatCommand</missionsButtonIconTexPath>
+        <missionsBackgroundMenuTexPath>UI/Abilities/CombatCommand</missionsBackgroundMenuTexPath>
+        <missionsMenuDescriptionKey>FCP_Raiders_Menu_Missions_Desc</missionsMenuDescriptionKey>
+        <missionsMenuSelectQuestKey>FCP_Raiders_Menu_Missions_Select_Quest</missionsMenuSelectQuestKey>
+        <missionsMenuStartQuestKey>FCP_Raiders_Menu_Missions_Start_Quest</missionsMenuStartQuestKey>
+        <missionsQuestCost>40</missionsQuestCost>
+        <missionsMenuStartQuestNoEnoughMoneyKey>FCP_Raiders_Not_Enough_Money</missionsMenuStartQuestNoEnoughMoneyKey>
+
+        <!-- Salary Options -->
+
+        <salaryIsEnabled>true</salaryIsEnabled>
+        <salaryDef>FCP_Currency_Caps</salaryDef>
+        <salaryLabelKey>FCP_Raiders_Salary_Label</salaryLabelKey>
+        <salaryDescKey>FCP_Raiders_Salary_Desc</salaryDescKey>
+        <salaryButtonIconTexPath>Things/Items/Currencies/FCP_Bottle_Caps_Currency/FCP_Bottle_Caps_Currency_a</salaryButtonIconTexPath>
+        <salaryRange>500~900</salaryRange>
+        <salaryPeriodDays>10</salaryPeriodDays>
+
+        <!-- Provision Options -->
+
+        <provisionOptions>
+            <li>
+                <provisionsLabelKey>FCP_Raiders_Provisions_Label</provisionsLabelKey>
+                <provisionsDescKey>FCP_Raiders_Provisions_Desc</provisionsDescKey>
+                <provisionsButtonIconTexPath>UI/Icons/ThingCategories/FoodMeals</provisionsButtonIconTexPath>
+                <provisions>
+                    <li>
+                        <thing>MealSurvivalPack</thing>
+                        <amountRange>10~16</amountRange>
+                    </li>
+                    <li>
+                        <thing>MedicineIndustrial</thing>
+                        <amountRange>3~6</amountRange>
+                    </li>
+                </provisions>
+                <provisionsRestockInDays>12</provisionsRestockInDays>
+            </li>
+        </provisionOptions>
+
+        <!-- Storage Options -->
+
+        <storageIsEnabled>true</storageIsEnabled>
+        <storageLabelKey>FCP_Raiders_Storage_Label</storageLabelKey>
+        <storageDescKey>FCP_Raiders_Storage_Desc</storageDescKey>
+        <storageButtonIconTexPath>UI/Icons/ThingCategories/ResourcesRaw</storageButtonIconTexPath>
+
+        <!-- Work Options -->
+
+        <recreationGainPerTick>0.0001</recreationGainPerTick>
+        <workOptions>
+            <li>
+                <workLabelKey>FCP_Raiders_Muscle_Work_Label</workLabelKey>
+                <workDescKey>FCP_Raiders_Muscle_Work_Desc</workDescKey>
+                <workButtonIconTexPath>UI/Roles/SpecialistProduction</workButtonIconTexPath>
+                <additionalRestFall>0.3</additionalRestFall>
+                <silverGainPerHour>12</silverGainPerHour>
+            </li>
+            <li>
+                <workLabelKey>FCP_Raiders_Patch_Job_Label</workLabelKey>
+                <workDescKey>FCP_Raiders_Patch_Job_Desc</workDescKey>
+                <workButtonIconTexPath>UI/Icons/ThingCategories/Medicine</workButtonIconTexPath>
+                <additionalRestFall>0.25</additionalRestFall>
+                <tendCaravanMembersEveryTicks>600</tendCaravanMembersEveryTicks>
+                <medicinesToTend>
+                    <li>MedicineIndustrial</li>
+                </medicinesToTend>
+                <immunityGainSpeedMultiplier>1.5</immunityGainSpeedMultiplier>
+            </li>
+            <li>
+                <workLabelKey>FCP_Raiders_Gang_Drills_Label</workLabelKey>
+                <workDescKey>FCP_Raiders_Gang_Drills_Desc</workDescKey>
+                <workButtonIconTexPath>UI/Roles/SpecialistShooting</workButtonIconTexPath>
+                <experienceGainsPerHour>
+                    <Shooting>500</Shooting>
+                    <Melee>400</Melee>
+                </experienceGainsPerHour>
+                <additionalRestFall>0.15</additionalRestFall>
+            </li>
+        </workOptions>
+
+        <!-- Resign Options -->
+
+        <resignGoodwillGain>-15</resignGoodwillGain>
+        <resignMenuTextKey>FCP_Raiders_Resign_Menu_Text</resignMenuTextKey>
+        <resignLetterTitleKey>FCP_Raiders_Resign_Letter_Title</resignLetterTitleKey>
+        <resignLetterLabelKey>FCP_Raiders_Resign_Letter_Label</resignLetterLabelKey>
+        <resignButtonLabelKey>FCP_Raiders_Resign_Button_Label</resignButtonLabelKey>
+        <resignButtonDescKey>FCP_Raiders_Resign_Button_Desc</resignButtonDescKey>
+        <resignButtonIconTexPath>UI/Issues/Apostasy</resignButtonIconTexPath>
+
+        <!-- Kicked Out Options -->
+
+        <kickOutLetterTitleKey>FCP_Raiders_Kick_Out_Letter_Title</kickOutLetterTitleKey>
+        <kickOutLetterLabelKey>FCP_Raiders_Kick_Out_Label_Title</kickOutLetterLabelKey>
+
+        <!-- Reinforcements Options -->
+
+        <reinforcementsAreEnabled>true</reinforcementsAreEnabled>
+        <reinforcementsButtonLabelKey>FCP_Raiders_Reinforcements_Button_Label</reinforcementsButtonLabelKey>
+        <reinforcementsButtonDescKey>FCP_Raiders_Reinforcements_Button_Desc</reinforcementsButtonDescKey>
+        <reinforcementsButtonIconTexPath>UI/Commands/WarTrumpet</reinforcementsButtonIconTexPath>
+        <reinforcementCallGoodwillCost>-5</reinforcementCallGoodwillCost>
+        <reinforcementCallCooldownTicks>50000</reinforcementCallCooldownTicks>
+        <reinforcementOptions>
+            <li>
+                <relationsRange>-100~100</relationsRange>
+                <pointsRange>500~1400</pointsRange>
+            </li>
+        </reinforcementOptions>
+
+    </FCP.Enlist.FactionEnlistOptionsDef>
+
+</Defs>

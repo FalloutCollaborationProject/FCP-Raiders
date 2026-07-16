@@ -282,6 +282,13 @@
                 <initialTerritoryRadius>10</initialTerritoryRadius>
                 <renderTerritoryOverWater>false</renderTerritoryOverWater>
             </li> -->
+            <!-- Enlistment stuff -->
+            <li Class="FCP.Enlist.FactionEnlistOptions">
+                <enlistOptionsDefs>
+                    <li>FCP_Enlistment_Raiders</li>
+                </enlistOptionsDefs>
+                <ignoreAutoAssignedDefs>true</ignoreAutoAssignedDefs>
+            </li>
         </modExtensions>
     </FactionDef>
 

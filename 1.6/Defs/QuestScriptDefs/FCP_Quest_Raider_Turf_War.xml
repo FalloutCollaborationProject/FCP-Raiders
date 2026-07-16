@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <QuestScriptDef>
+        <defName>FCP_Quest_Raider_Turf_War</defName>
+        <rootSelectionWeight>1.0</rootSelectionWeight>
+        <rootMinPoints>150</rootMinPoints>
+        <defaultChallengeRating>2</defaultChallengeRating>
+        <canGiveRoyalFavor>false</canGiveRoyalFavor>
+        <expireDaysRange>5~10</expireDaysRange>
+        <questNameRules>
+            <rulesStrings>
+                <li>questName->Turf War</li>
+                <li>questName->Clearing the Block</li>
+                <li>questName->Making Room</li>
+                <li>questName->Muscling In</li>
+                <li>questName->Taking Their Scrap</li>
+            </rulesStrings>
+        </questNameRules>
+        <questDescriptionRules>
+            <rulesStrings>
+                <li>questDescription->Some other crew set up shop too close to the turf. [asker_nameFull] wants that to stop being true, and doesn't much care how.</li>
+                <li>questDescription->[asker_nameFull]: "Another gang's been squatting near our patch, eating into the take. Boss wants 'em gone. Whatever you carry off their bodies is yours to keep."</li>
+                <li>questDescription->A rival crew's been getting bold, working ground that isn't theirs. [asker_nameFull] figures it's time somebody reminded them how this works.</li>
+                <li>questDescription->Kill 'em, take their stuff, simple as that. [asker_nameFull] wants a rival gang cleared out before they get any ideas about the turf.</li>
+                <li>questDescription->Some crew thinks they can set up shop on the patch without asking. [asker_nameFull] says that ends today.</li>
+            </rulesStrings>
+        </questDescriptionRules>
+        <root Class="QuestNode_Sequence">
+            <nodes>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_RandomizePointsChallengeRating</def>
+                    <parms>
+                        <pointsFactorTwoStar>1.3</pointsFactorTwoStar>
+                        <pointsFactorThreeStar>1.7</pointsFactorThreeStar>
+                    </parms>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_AdjustPointsForDistantFight</def>
+                </li>
+                <li Class="QuestNode_GetMap" />
+                <li Class="FCP.Core.RadiantQuests.QuestNode_GetFactionFromList">
+                    <storeAs>askerFaction</storeAs>
+                    <mustBeNonHostile>false</mustBeNonHostile>
+                    <factionDefs>
+                        <li MayRequire="Rick.FCP.Raiders">FCP_Faction_Raider</li>
+                    </factionDefs>
+                </li>
+                <li Class="FCP.Core.RadiantQuests.QuestNode_GetLeaderOfFaction">
+                    <storeAs>asker</storeAs>
+                    <factionToUse>$askerFaction</factionToUse>
+                </li>
+                <li Class="QuestNode_GetSiteTile">
+                    <storeAs>siteTile</storeAs>
+                    <preferCloserTiles>true</preferCloserTiles>
+                </li>
+                <li Class="QuestNode_GetSitePartDefsByTagsAndFaction">
+                    <storeAs>sitePartDefs</storeAs>
+                    <storeFactionAs>siteFaction</storeFactionAs>
+                    <sitePartsTags>
+                        <li>
+                            <tag>FCP_Site_Raider_Turf_War</tag>
+                        </li>
+                    </sitePartsTags>
+                    <mustBeHostileToFactionOf>$asker</mustBeHostileToFactionOf>
+                </li>
+                <li Class="QuestNode_GetDefaultSitePartsParams">
+                    <tile>$siteTile</tile>
+                    <faction>$siteFaction</faction>
+                    <sitePartDefs>$sitePartDefs</sitePartDefs>
+                    <storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_GenerateSite</def>
+                    <parms>
+                        <hiddenSitePartsPossible>true</hiddenSitePartsPossible>
+                    </parms>
+                </li>
+                <li Class="QuestNode_LoopCount">
+                    <loopCount>$(randInt(2,4))</loopCount>
+                    <node Class="QuestNode_GeneratePawn">
+                        <kindDef>FCP_Jackal_Raider</kindDef>
+                        <faction>$askerFaction</faction>
+                        <addToList>escorts</addToList>
+                        <allowAddictions>false</allowAddictions>
+                        <biocodeWeaponChance>1</biocodeWeaponChance>
+                        <biocodeApparelChance>1</biocodeApparelChance>
+                    </node>
+                </li>
+                <li Class="QuestNode_SetAllApparelLocked">
+                    <pawns>$escorts</pawns>
+                </li>
+                <li Class="QuestNode_JoinPlayer">
+                    <pawns>$escorts</pawns>
+                    <joinPlayer>true</joinPlayer>
+                </li>
+                <li Class="QuestNode_ExtraFaction">
+                    <factionOf>$asker</factionOf>
+                    <pawns>$escorts</pawns>
+                    <factionType>HomeFaction</factionType>
+                    <inSignalsRemovePawn>
+                        <li>escorts.RanWild</li>
+                    </inSignalsRemovePawn>
+                </li>
+                <li Class="FCP.Core.RadiantQuests.QuestNode_SpawnPawns">
+                    <inSignal>site.MapGenerated</inSignal>
+                    <pawns>$escorts</pawns>
+                    <mapParent>$site</mapParent>
+                </li>
+                <li Class="QuestNode_LeaveOnCleanup">
+                    <pawns>$escorts</pawns>
+                    <sendStandardLetter>false</sendStandardLetter>
+                </li>
+                <li Class="QuestNode_SpawnWorldObjects">
+                    <worldObjects>$site</worldObjects>
+                    <defsToExcludeFromHyperlinks>Human</defsToExcludeFromHyperlinks>
+                </li>
+                <li Class="QuestNode_WorldObjectTimeout">
+                    <worldObject>$site</worldObject>
+                    <isQuestTimeout>true</isQuestTimeout>
+                    <delayTicks>$(randInt(15,30)*60000)</delayTicks>
+                    <inSignalDisable>site.MapGenerated</inSignalDisable>
+                    <node Class="QuestNode_End">
+                        <outcome>Fail</outcome>
+                        <sendStandardLetter>true</sendStandardLetter>
+                    </node>
+                </li>
+                <li Class="QuestNode_Signal">
+                    <inSignal>site.AllEnemiesDefeated</inSignal>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_Letter">
+                                <letterDef>PositiveEvent</letterDef>
+                                <label>Block cleared</label>
+                                <text>The rival crew is dead. The turf's ours again.</text>
+                            </li>
+                            <li Class="QuestNode_Notify_PlayerRaidedSomeone">
+                                <getRaidersFromMapParent>$site</getRaidersFromMapParent>
+                            </li>
+                            <li Class="QuestNode_GiveRewards">
+                                <parms>
+                                    <allowGoodwill>true</allowGoodwill>
+                                    <allowRoyalFavor>false</allowRoyalFavor>
+                                </parms>
+                                <addCampLootReward>true</addCampLootReward>
+                                <customLetterLabel>Cut arrived</customLetterLabel>
+                                <customLetterText>Your cut from the gang has arrived.</customLetterText>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+                <li Class="QuestNode_End">
+                    <inSignal>site.AllEnemiesDefeated</inSignal>
+                    <outcome>Success</outcome>
+                </li>
+                <li Class="QuestNode_NoWorldObject">
+                    <worldObject>$site</worldObject>
+                    <node Class="QuestNode_End" />
+                </li>
+            </nodes>
+        </root>
+    </QuestScriptDef>
+
+</Defs>

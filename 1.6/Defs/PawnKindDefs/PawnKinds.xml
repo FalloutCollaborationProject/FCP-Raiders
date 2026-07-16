@@ -225,6 +225,8 @@
             <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Bladed</li>
             <li>IndustrialGun</li>
             <li>IndustrialMelee</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
         </weaponTags>
         <backstoryFiltersOverride>
             <li>
@@ -296,6 +298,8 @@
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Shotgun</li>
             <li>IndustrialGun</li>
             <li>IndustrialMelee</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
         </weaponTags>
         <backstoryFiltersOverride>
             <li>
@@ -430,6 +434,8 @@
             <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Advanced</li>
             <li>IndustrialGun</li>
             <li>IndustrialMelee</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
         </weaponTags>
         <backstoryFiltersOverride>
             <li>
@@ -579,6 +585,8 @@
             <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Advanced</li>
             <li>IndustrialGun</li>
             <li>IndustrialMelee</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
         </weaponTags>
         <backstoryFiltersOverride>
             <li>
@@ -642,6 +650,8 @@
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Assault_Rifle</li>
             <li>IndustrialGun</li>
             <li>IndustrialMelee</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
         </weaponTags>
         <backstoryFiltersOverride>
             <li>
@@ -769,6 +779,8 @@
             <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Bladed</li>
             <li>IndustrialGun</li>
             <li>IndustrialMelee</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
         </weaponTags>
         <backstoryFiltersOverride>
             <li>
@@ -905,6 +917,8 @@
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Shotgun</li>
             <li>IndustrialGun</li>
             <li>IndustrialMelee</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
         </weaponTags>
         <backstoryFiltersOverride>
             <li>
@@ -979,6 +993,8 @@
             <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Advanced</li>
             <li>IndustrialGun</li>
             <li>IndustrialMelee</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
         </weaponTags>
         <backstoryFiltersOverride>
             <li>
@@ -1034,6 +1050,8 @@
             <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Bladed</li>
             <li>IndustrialGun</li>
             <li>IndustrialMelee</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
         </weaponTags>
         <backstoryFiltersOverride>
             <li>
@@ -1101,6 +1119,8 @@
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Shotgun</li>
             <li>IndustrialGun</li>
             <li>IndustrialMelee</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
         </weaponTags>
         <backstoryFiltersOverride>
             <li>
@@ -1180,6 +1200,8 @@
             <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Bladed</li>
             <li>IndustrialGun</li>
             <li>IndustrialMelee</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
         </weaponTags>
         <backstoryFiltersOverride>
             <li>
@@ -1380,6 +1402,8 @@
             <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Blunt</li>
             <li>IndustrialGun</li>
             <li>IndustrialMelee</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
         </weaponTags>
         <backstoryFiltersOverride>
             <li>
@@ -1625,6 +1649,8 @@
             <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Bladed</li>
             <li>IndustrialGun</li>
             <li>IndustrialMelee</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
         </weaponTags>
         <backstoryFiltersOverride>
             <li>
@@ -1711,6 +1737,8 @@
             <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Makeshift</li>
             <li>IndustrialGun</li>
             <li>IndustrialMelee</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
         </weaponTags>
         <backstoryFiltersOverride>
             <li>
@@ -1798,6 +1826,8 @@
             <li MayRequire="Rick.FCP.UnarmedWeapons">FCP_Unarmed_Special</li>
             <li>IndustrialGun</li>
             <li>IndustrialMelee</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
         </weaponTags>
         <backstoryFiltersOverride>
             <li>
@@ -1885,6 +1915,8 @@
             <li MayRequire="Rick.FCP.EnergyWeapons">FCP_Laser_Rifle</li>
             <li>IndustrialGun</li>
             <li>IndustrialMelee</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
         </weaponTags>
         <backstoryFiltersOverride>
             <li>

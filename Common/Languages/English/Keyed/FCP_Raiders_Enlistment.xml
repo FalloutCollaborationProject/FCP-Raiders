@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!--__________ Enlistments with Factions Letter Text __________-->
+
+	<!--_____ Raiders _____-->
+
+	<!-- Enlistment Options -->
+
+	<FCP_Raiders_Enlist_Letter_Title>You have joined the gang.</FCP_Raiders_Enlist_Letter_Title>
+	<FCP_Raiders_Enlist_Letter_Label>Welcome to the crew. Rules are simple: you pull your weight, you get paid, and you don't ask where the caps came from. Provisions and gear are yours to draw whenever the gang's holding a camp.\n\n Don't screw us and we won't screw you.</FCP_Raiders_Enlist_Letter_Label>
+	<FCP_Raiders_Enlist_Button_Label>Join the gang.</FCP_Raiders_Enlist_Button_Label>
+	<FCP_Raiders_Enlist_Button_Desc>Throw in with this raider gang.</FCP_Raiders_Enlist_Button_Desc>
+	<FCP_Raiders_Enlist_Requrements_Not_Satisfied>You need to have minimum of -10 goodwill, currently you have only {0} goodwill.</FCP_Raiders_Enlist_Requrements_Not_Satisfied>
+	<FCP_Raiders_Enlisted_With_Key>Enlisted with: The Raiders</FCP_Raiders_Enlisted_With_Key>
+
+	<!-- Mission Options -->
+
+	<FCP_Raiders_Missions_Label>Tasks</FCP_Raiders_Missions_Label>
+	<FCP_Raiders_Missions_Desc>Task descriptions</FCP_Raiders_Missions_Desc>
+	<FCP_Raiders_Menu_Missions_Desc>Someone in the gang's looking for an extra pair of hands, no questions asked.</FCP_Raiders_Menu_Missions_Desc>
+	<FCP_Raiders_Menu_Missions_Select_Quest>Select a Task: </FCP_Raiders_Menu_Missions_Select_Quest>
+	<FCP_Raiders_Menu_Missions_Start_Quest>Start Task ({0})</FCP_Raiders_Menu_Missions_Start_Quest>
+	<FCP_Raiders_Not_Enough_Money>Not enough caps</FCP_Raiders_Not_Enough_Money>
+
+	<!-- Salary Options -->
+
+	<FCP_Raiders_Salary_Label>Cut</FCP_Raiders_Salary_Label>
+	<FCP_Raiders_Salary_Desc>You are entitled to collect your cut from this gang every 10 days.</FCP_Raiders_Salary_Desc>
+
+	<!-- Provision Options -->
+
+	<FCP_Raiders_Provisions_Label>Provisions</FCP_Raiders_Provisions_Label>
+	<FCP_Raiders_Provisions_Desc>Provisions will arrive via your caravan inventory every 12 days:\n\n- Survival meals\n- Industrial medicine</FCP_Raiders_Provisions_Desc>
+
+	<!-- Storage Options -->
+
+	<FCP_Raiders_Storage_Label>Storage</FCP_Raiders_Storage_Label>
+	<FCP_Raiders_Storage_Desc>Store items from your caravan to your gang's stash. Stashes transfer across all of the gang's camps and will save contents even if you are no longer enlisted.</FCP_Raiders_Storage_Desc>
+
+	<!-- Work Options -->
+
+	<FCP_Raiders_Muscle_Work_Label>Muscle Work</FCP_Raiders_Muscle_Work_Label>
+	<FCP_Raiders_Muscle_Work_Desc>Lean on people for the gang for $12 an hour.</FCP_Raiders_Muscle_Work_Desc>
+	<FCP_Raiders_Patch_Job_Label>Patch Job</FCP_Raiders_Patch_Job_Label>
+	<FCP_Raiders_Patch_Job_Desc>Get patched up by whoever passes for a medic around here. This service tends to all of your team with industrial medicine. Immunity gain is also increased while your team is under care.</FCP_Raiders_Patch_Job_Desc>
+	<FCP_Raiders_Gang_Drills_Label>Gang Drills</FCP_Raiders_Gang_Drills_Label>
+	<FCP_Raiders_Gang_Drills_Desc>Train alongside the gang with hourly experience gain on the following skills:\n\n- Shooting, Melee\n\nHourly experience gain stops when this faction is resting at night.</FCP_Raiders_Gang_Drills_Desc>
+
+	<!-- Resign Options -->
+
+	<FCP_Raiders_Resign_Menu_Text>You will resign from the gang effective immediately. (-15 in relations)</FCP_Raiders_Resign_Menu_Text>
+	<FCP_Raiders_Resign_Letter_Title>Resigned</FCP_Raiders_Resign_Letter_Title>
+	<FCP_Raiders_Resign_Letter_Label>Resign</FCP_Raiders_Resign_Letter_Label>
+	<FCP_Raiders_Resign_Button_Label>You have successfully resigned from the gang. (-15 relations)</FCP_Raiders_Resign_Button_Label>
+	<FCP_Raiders_Resign_Button_Desc>Leave this faction.</FCP_Raiders_Resign_Button_Desc>
+	<FCP_Raiders_Enlisted_To_Hostile_Faction>cannot join because you are enlisted with their enemy, {HOSTILEFACTION_name}</FCP_Raiders_Enlisted_To_Hostile_Faction>
+
+	<!-- Kicked Out Options -->
+
+	<FCP_Raiders_Kick_Out_Letter_Title>Kicked out</FCP_Raiders_Kick_Out_Letter_Title>
+	<FCP_Raiders_Kick_Out_Label_Title>The gang's cut you loose. You have been let go from the {FACTION_name}.</FCP_Raiders_Kick_Out_Label_Title>
+
+	<!-- Reinforcement Options -->
+
+	<FCP_Raiders_Reinforcements_Button_Label>Reinforcements</FCP_Raiders_Reinforcements_Button_Label>
+	<FCP_Raiders_Reinforcements_Button_Desc>Call for reinforcements from your gang. Amount they send depends on your current relations.</FCP_Raiders_Reinforcements_Button_Desc>
+
+</LanguageData>
