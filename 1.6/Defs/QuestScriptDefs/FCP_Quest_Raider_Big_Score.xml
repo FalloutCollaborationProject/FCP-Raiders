@@ -19,10 +19,11 @@
         </questNameRules>
         <questDescriptionRules>
             <rulesStrings>
-                <li>questDescription->A job went sideways and one of the crew got grabbed. [asker_nameFull] doesn't do sentiment, but leaving somebody to talk is bad for business. Get them out.</li>
-                <li>questDescription->[asker_nameFull]: "Some crew's holding one of ours. We don't leave people behind - not because we're soft, because it looks bad if we do."</li>
-                <li>questDescription->Word is a rival gang's got one of the crew locked up somewhere close. [asker_nameFull] wants them pulled out before they start talking.</li>
-                <li>questDescription->[asker_nameFull] lost a guy on a run and wants him back before anybody gets ideas about what he might say under pressure.</li>
+                <li>requirements->Requirements: get the prisoner out of the site alive. If they die before you free them, the crew loses the cut.</li>
+                <li>questDescription->A job went sideways and one of the crew got grabbed. [asker_nameFull] doesn't do sentiment, but leaving somebody to talk is bad for business. Get them out.\n\n[requirements]</li>
+                <li>questDescription->[asker_nameFull]: "Some crew's holding one of ours. We don't leave people behind - not because we're soft, because it looks bad if we do."\n\n[requirements]</li>
+                <li>questDescription->Word is a rival gang's got one of the crew locked up somewhere close. [asker_nameFull] wants them pulled out before they start talking.\n\n[requirements]</li>
+                <li>questDescription->[asker_nameFull] lost a guy on a run and wants him back before anybody gets ideas about what he might say under pressure.\n\n[requirements]</li>
             </rulesStrings>
         </questDescriptionRules>
         <root Class="QuestNode_Sequence">

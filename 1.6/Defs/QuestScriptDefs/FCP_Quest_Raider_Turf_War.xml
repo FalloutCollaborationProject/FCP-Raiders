@@ -19,11 +19,12 @@
         </questNameRules>
         <questDescriptionRules>
             <rulesStrings>
-                <li>questDescription->Some other crew set up shop too close to the turf. [asker_nameFull] wants that to stop being true, and doesn't much care how.</li>
-                <li>questDescription->[asker_nameFull]: "Another gang's been squatting near our patch, eating into the take. Boss wants 'em gone. Whatever you carry off their bodies is yours to keep."</li>
-                <li>questDescription->A rival crew's been getting bold, working ground that isn't theirs. [asker_nameFull] figures it's time somebody reminded them how this works.</li>
-                <li>questDescription->Kill 'em, take their stuff, simple as that. [asker_nameFull] wants a rival gang cleared out before they get any ideas about the turf.</li>
-                <li>questDescription->Some crew thinks they can set up shop on the patch without asking. [asker_nameFull] says that ends today.</li>
+                <li>requirements->Requirements: defeat every member of the rival crew at the site. If they scatter before you arrive, the turf's still contested.</li>
+                <li>questDescription->Some other crew set up shop too close to the turf. [asker_nameFull] wants that to stop being true, and doesn't much care how.\n\n[requirements]</li>
+                <li>questDescription->[asker_nameFull]: "Another gang's been squatting near our patch, eating into the take. Boss wants 'em gone. Whatever you carry off their bodies is yours to keep."\n\n[requirements]</li>
+                <li>questDescription->A rival crew's been getting bold, working ground that isn't theirs. [asker_nameFull] figures it's time somebody reminded them how this works.\n\n[requirements]</li>
+                <li>questDescription->Kill 'em, take their stuff, simple as that. [asker_nameFull] wants a rival gang cleared out before they get any ideas about the turf.\n\n[requirements]</li>
+                <li>questDescription->Some crew thinks they can set up shop on the patch without asking. [asker_nameFull] says that ends today.\n\n[requirements]</li>
             </rulesStrings>
         </questDescriptionRules>
         <root Class="QuestNode_Sequence">

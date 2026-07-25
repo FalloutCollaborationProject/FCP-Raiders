@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ScenarioDef ParentName="ScenarioBase">
+        <defName>FCP_Scenario_Raider_Breakaway</defName>
+        <label>Raider Breakaway</label>
+        <description>No warlord, no territory, no colors worth flying - just a handful of raiders who decided the old gang wasn't worth dying for anymore. Out here, whatever you take is yours to keep.</description>
+        <scenario>
+            <summary>A small crew of raiders strike out on their own, gang loyalties abandoned.</summary>
+            <parts>
+
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+                    <def>ConfigurePawnsKindDefs</def>
+                    <pawnChoiceCount>8</pawnChoiceCount>
+                    <leftBehindPawnKind>FCP_Jackal_Raider</leftBehindPawnKind>
+                    <kindCounts>
+                        <li>
+                            <kindDef>FCP_Jackal_Raider</kindDef>
+                            <count>2</count>
+                            <requiredAtStart>true</requiredAtStart>
+                        </li>
+                        <li>
+                            <kindDef>FCP_Jackal_Scavenger</kindDef>
+                            <count>1</count>
+                            <requiredAtStart>false</requiredAtStart>
+                        </li>
+                        <li>
+                            <kindDef>FCP_Viper_Cultist_Pawn</kindDef>
+                            <count>1</count>
+                            <requiredAtStart>false</requiredAtStart>
+                        </li>
+                        <li>
+                            <kindDef>FCP_Forged_Raider</kindDef>
+                            <count>1</count>
+                            <requiredAtStart>false</requiredAtStart>
+                        </li>
+                    </kindCounts>
+                </li>
+
+                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                    <def>PlayerPawnsArriveMethod</def>
+                    <method>DropPods</method>
+                    <visible>false</visible>
+                </li>
+
+                <li Class="FCP.Enlist.ScenPart_StartEnlisted">
+                    <def>FCP_StartEnlisted</def>
+                    <factionDef>FCP_Faction_Raider</factionDef>
+                    <enlistOptionsDef>FCP_Enlistment_Raiders</enlistOptionsDef>
+                </li>
+
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>FCP_Currency_Caps</thingDef>
+                    <count>100</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>FCP_Apparel_Raider_Armor_Light</thingDef>
+                    <count>5</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>FCP_Apparel_Raider_Leathers</thingDef>
+                    <count>5</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined" MayRequire="Rick.FCP.BallisticWeapons">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>FCP_Gun_Pipe_Pistol</thingDef>
+                    <count>5</count>
+                </li>
+
+                <li Class="ScenPart_GameStartDialog">
+                    <def>GameStartDialog</def>
+                    <text>It is the year [FCP_Year]. The old crew is somebody else's problem now. You took what you could carry and left in the night - no warlord to answer to, no cut to hand up the chain. Whatever you build from here, it's actually yours.\n\nThe wasteland doesn't care where you came from. It only cares what you're willing to take.</text>
+                </li>
+
+            </parts>
+        </scenario>
+    </ScenarioDef>
+
+</Defs>
