@@ -25,6 +25,7 @@
         <li>Rick.FCP.MeleeWeapons</li>
         <li>Rick.FCP.NCR</li>
         <li>Rick.FCP.PowerArmor</li>
+        <li>Rick.FCP.Robotics</li>
     </loadAfter>
 
 </ModMetaData>

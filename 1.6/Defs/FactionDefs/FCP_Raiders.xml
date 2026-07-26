@@ -129,6 +129,7 @@
                     <FCP_Jackal_Scavenger>6</FCP_Jackal_Scavenger>
                     <FCP_Jackal_Bruiser>5</FCP_Jackal_Bruiser>
                     <FCP_Jackal_Leader>2</FCP_Jackal_Leader>
+                    <FCP_Pawnkind_Protectron MayRequire="Rick.FCP.Robotics">1</FCP_Pawnkind_Protectron>
                 </options>
             </li>
 
@@ -161,6 +162,7 @@
                     <FCP_Forged_Incinerator_Pawn>5</FCP_Forged_Incinerator_Pawn>
                     <FCP_Forged_Smith>3</FCP_Forged_Smith>
                     <FCP_Forged_Master>2</FCP_Forged_Master>
+                    <FCP_Pawnkind_Protectron MayRequire="Rick.FCP.Robotics">1</FCP_Pawnkind_Protectron>
                 </options>
             </li>
 
