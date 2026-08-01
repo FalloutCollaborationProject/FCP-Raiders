@@ -23,7 +23,7 @@
         <pawnSingular>Raider</pawnSingular>
         <pawnsPlural>Raiders</pawnsPlural>
         <categoryTag>Outlander</categoryTag>
-        <settlementGenerationWeight>1</settlementGenerationWeight>
+        <settlementGenerationWeight>0.4</settlementGenerationWeight>
         <requiredCountAtGameStart>1</requiredCountAtGameStart>
         <permanentEnemy>true</permanentEnemy>
         <canSiege>true</canSiege>
