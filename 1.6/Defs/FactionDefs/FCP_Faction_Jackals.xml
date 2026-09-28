@@ -3,12 +3,12 @@
 
     <!--__________ Factions __________-->
 
-    <!-- Raiders -->
+    <!-- Jackals -->
 
     <FactionDef ParentName="FactionBase">
-        <defName>FCP_Faction_Raider</defName>
-        <label>Raider Gangs</label>
-        <description>The Raider Gangs are a loose confederation of bandit groups operating in the wasteland. They are known for their brutal tactics, scavenging, and raiding of settlements. While they often fight among themselves, they can unite against common foes. The Raiders reject the old world values and instead embrace a survival-of-the-fittest mentality. They are feared and despised by many, but also hold a certain allure for those seeking freedom from the constraints of civilization.</description>
+        <defName>FCP_Faction_Jackals</defName>
+        <label>Jackals</label>
+        <description>The Jackals are the most common raider gang in the wasteland: a loose, ever-shifting pack of scavengers and thugs who never hold a settlement for long before moving on to the next one. What they lack in discipline or organization, they make up for in sheer numbers, jumping anything that looks weaker than they are and running from anything that doesn't. Other gangs look down on them as low-rent opportunists, but the Jackals outlast most of them anyway.</description>
         <royalTitleTags>
             <li>FCP_Title_Raider</li>
         </royalTitleTags>
@@ -20,37 +20,36 @@
             <li>(1, 1, 1)</li>
         </colorSpectrum>
         <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
-        <pawnSingular>Raider</pawnSingular>
-        <pawnsPlural>Raiders</pawnsPlural>
+        <pawnSingular>Jackal</pawnSingular>
+        <pawnsPlural>Jackals</pawnsPlural>
         <categoryTag>Outlander</categoryTag>
         <settlementGenerationWeight>0.4</settlementGenerationWeight>
         <requiredCountAtGameStart>1</requiredCountAtGameStart>
         <permanentEnemy>true</permanentEnemy>
         <canSiege>true</canSiege>
         <canStageAttacks>true</canStageAttacks>
-        <leaderTitle>Raider Boss</leaderTitle>
+        <leaderTitle>Pack Leader</leaderTitle>
         <factionIconPath>World_Icon/Raider_Icon/FCP_Raider_World_Icon</factionIconPath>
         <techLevel>Industrial</techLevel>
-        <fixedName>Raider Gangs</fixedName>
+        <fixedName>The Jackals</fixedName>
         <settlementNameMaker>FCP_Namer_Settlement_Raiders</settlementNameMaker>
         <allowedCultures>
             <li>FCP_Culture_Raider</li>
         </allowedCultures>
         <fixedLeaderKinds>
-            <li>FCP_Raider_Warlord</li>
+            <li>FCP_Unique_Pawnkind_Jackal_Mange</li>
         </fixedLeaderKinds>
 
         <!--__________ Ideology __________-->
 
         <fixedIdeo>true</fixedIdeo>
-        <ideoName>Raiding Mentality</ideoName>
-        <ideoDescription>Founded on principles of survival and strength, the Raider Gangs believe in taking what they need by force. They reject the old world's values and embrace a brutal code of conduct where only the strong survive.</ideoDescription>
+        <ideoName>Pack Law</ideoName>
+        <ideoDescription>The Jackals don't have a creed so much as an understanding: the pack looks after its own, everyone else is prey or predator, and whoever's strongest today gives the orders until somebody stronger comes along.</ideoDescription>
         <styles>
             <li>FCP_Style_Raider</li>
             <li MayRequire="Ludeon.RimWorld.Ideology">Morbid</li>
         </styles>
         <forcedMemes>
-            <!-- Structure -->
             <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
         </forcedMemes>
         <requiredPreceptsOnly>true</requiredPreceptsOnly>
@@ -70,7 +69,7 @@
 		</xenotypeSet>
 
         <!--__________ Backstories __________-->
-        
+
         <backstoryFilters>
             <li>
                 <categories>
@@ -83,29 +82,21 @@
 
         <!--__________ Kinds __________-->
 
-        <!-- Caravan Trader Kinds -->
-        
         <caravanTraderKinds>
         </caravanTraderKinds>
 
-        <!-- Vistor Trader Kinds -->
-        
         <visitorTraderKinds>
         </visitorTraderKinds>
 
-        <!-- Base Trader Kinds -->
-        
         <baseTraderKinds>
         </baseTraderKinds>
 
-        <!-- Trader Kind Arrival Options -->
-        
         <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
         <raidLootMaker>FCP_RaiderRaidLootMaker</raidLootMaker>
         <maxPawnCostPerTotalPointsCurve>
             <points>
-                <li>(0,35)</li>
-                <li>(70, 50)</li>
+                <li>(0,65)</li>
+                <li>(70, 85)</li>
                 <li>(700, 100)</li>
                 <li>(1300, 150)</li>
                 <li>(100000, 10000)</li>
@@ -113,10 +104,8 @@
         </maxPawnCostPerTotalPointsCurve>
 
         <!--__________ Group Makers __________-->
-        
-        <pawnGroupMakers>
 
-            <!-- Jackals Combat -->
+        <pawnGroupMakers>
 
             <li>
                 <kindDef>Combat</kindDef>
@@ -129,76 +118,10 @@
                     <FCP_Jackal_Scavenger>6</FCP_Jackal_Scavenger>
                     <FCP_Jackal_Bruiser>5</FCP_Jackal_Bruiser>
                     <FCP_Jackal_Leader>2</FCP_Jackal_Leader>
+                    <FCP_Unique_Pawnkind_Jackal_Mange>1</FCP_Unique_Pawnkind_Jackal_Mange>
                     <FCP_Pawnkind_Protectron MayRequire="Rick.FCP.Robotics">1</FCP_Pawnkind_Protectron>
                 </options>
             </li>
-
-            <!-- Vipers Combat -->
-
-            <li>
-                <kindDef>Combat</kindDef>
-                <disallowedStrategies>
-                    <li>EmergeFromWater</li>
-                </disallowedStrategies>
-                <options>
-                    <FCP_Viper_Cultist_Pawn>10</FCP_Viper_Cultist_Pawn>
-                    <FCP_Viper_Marksman>7</FCP_Viper_Marksman>
-                    <FCP_Viper_PoisonBlade_Pawn>6</FCP_Viper_PoisonBlade_Pawn>
-                    <FCP_Viper_VenomMaster_Pawn>4</FCP_Viper_VenomMaster_Pawn>
-                    <FCP_Viper_Priest_Pawn>2</FCP_Viper_Priest_Pawn>
-                </options>
-            </li>
-
-            <!-- Forged Combat -->
-
-            <li>
-                <kindDef>Combat</kindDef>
-                <disallowedStrategies>
-                    <li>EmergeFromWater</li>
-                </disallowedStrategies>
-                <options>
-                    <FCP_Forged_Raider>10</FCP_Forged_Raider>
-                    <FCP_Forged_Flamer>7</FCP_Forged_Flamer>
-                    <FCP_Forged_Incinerator_Pawn>5</FCP_Forged_Incinerator_Pawn>
-                    <FCP_Forged_Smith>3</FCP_Forged_Smith>
-                    <FCP_Forged_Master>2</FCP_Forged_Master>
-                    <FCP_Pawnkind_Protectron MayRequire="Rick.FCP.Robotics">1</FCP_Pawnkind_Protectron>
-                </options>
-            </li>
-
-            <!-- Scorpions Combat -->
-
-            <li>
-                <kindDef>Combat</kindDef>
-                <disallowedStrategies>
-                    <li>EmergeFromWater</li>
-                </disallowedStrategies>
-                <options>
-                    <FCP_Scorpion_Thug>12</FCP_Scorpion_Thug>
-                    <FCP_Scorpion_Enforcer>8</FCP_Scorpion_Enforcer>
-                    <FCP_Scorpion_Pickpocket_Pawn>6</FCP_Scorpion_Pickpocket_Pawn>
-                    <FCP_Scorpion_ChemDealer>4</FCP_Scorpion_ChemDealer>
-                    <FCP_Scorpion_Leader>2</FCP_Scorpion_Leader>
-                </options>
-            </li>
-
-            <!-- Fiends Combat -->
-
-            <li>
-                <kindDef>Combat</kindDef>
-                <disallowedStrategies>
-                    <li>EmergeFromWater</li>
-                </disallowedStrategies>
-                <options>
-                    <FCP_Fiend_Junkie>12</FCP_Fiend_Junkie>
-                    <FCP_Fiend_Gunner>9</FCP_Fiend_Gunner>
-                    <FCP_Fiend_Berserker>7</FCP_Fiend_Berserker>
-                    <FCP_Fiend_Slasher>6</FCP_Fiend_Slasher>
-                    <FCP_Fiend_Overlord>2</FCP_Fiend_Overlord>
-                </options>
-            </li>
-
-            <!-- Raiders Peaceful/Leader Generation -->
 
             <li>
                 <kindDef>Peaceful</kindDef>
@@ -206,18 +129,8 @@
                     <FCP_Raider_Warlord>1</FCP_Raider_Warlord>
                     <FCP_Jackal_Leader>3</FCP_Jackal_Leader>
                     <FCP_Jackal_Raider>8</FCP_Jackal_Raider>
-                    <FCP_Viper_Priest_Pawn>3</FCP_Viper_Priest_Pawn>
-                    <FCP_Viper_Cultist_Pawn>6</FCP_Viper_Cultist_Pawn>
-                    <FCP_Forged_Master>3</FCP_Forged_Master>
-                    <FCP_Forged_Raider>7</FCP_Forged_Raider>
-                    <FCP_Scorpion_Leader>3</FCP_Scorpion_Leader>
-                    <FCP_Scorpion_Thug>8</FCP_Scorpion_Thug>
-                    <FCP_Fiend_Overlord>3</FCP_Fiend_Overlord>
-                    <FCP_Fiend_Junkie>7</FCP_Fiend_Junkie>
                 </options>
             </li>
-
-            <!-- Raiders Settlement -->
 
             <li>
                 <kindDef>Settlement</kindDef>
@@ -226,29 +139,16 @@
                     <FCP_Jackal_Leader>2</FCP_Jackal_Leader>
                     <FCP_Jackal_Raider>9</FCP_Jackal_Raider>
                     <FCP_Jackal_Scavenger>7</FCP_Jackal_Scavenger>
-                    <FCP_Viper_Priest_Pawn>2</FCP_Viper_Priest_Pawn>
-                    <FCP_Viper_Cultist_Pawn>8</FCP_Viper_Cultist_Pawn>
-                    <FCP_Forged_Master>2</FCP_Forged_Master>
-                    <FCP_Forged_Smith>3</FCP_Forged_Smith>
-                    <FCP_Forged_Raider>8</FCP_Forged_Raider>
-                    <FCP_Scorpion_Leader>2</FCP_Scorpion_Leader>
-                    <FCP_Scorpion_ChemDealer>4</FCP_Scorpion_ChemDealer>
-                    <FCP_Scorpion_Thug>10</FCP_Scorpion_Thug>
-                    <FCP_Scorpion_Pickpocket_Pawn>6</FCP_Scorpion_Pickpocket_Pawn>
-                    <FCP_Fiend_Overlord>2</FCP_Fiend_Overlord>
-                    <FCP_Fiend_Berserker>6</FCP_Fiend_Berserker>
-                    <FCP_Fiend_Gunner>7</FCP_Fiend_Gunner>
-                    <FCP_Fiend_Junkie>8</FCP_Fiend_Junkie>
+                    <FCP_Jackal_Gunner>7</FCP_Jackal_Gunner>
+                    <FCP_Jackal_Bruiser>6</FCP_Jackal_Bruiser>
                 </options>
             </li>
         </pawnGroupMakers>
         <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
         <modExtensions Inherit="False">
-            <!-- Faction tab label override -->
             <li Class="FCP.Factions.FactionExtension_FlavorOverride">
-                <newLabel>Wasteland Raiders</newLabel>
+                <newLabel>Jackals</newLabel>
             </li>
-            <!-- Make them unable to use drop pods -->
             <li Class="FCP.Factions.FactionExtension_BannedArrivalModes">
                 <arrivalModes>
                     <li>EdgeDrop</li>
@@ -257,12 +157,11 @@
                     <li>RandomDrop</li>
                 </arrivalModes>
             </li>
-            <!-- Ideology stuff -->
             <li Class="FCP.Factions.FactionExtension_FixedIdeo">
                 <ideoIconDef>FCP_Icon_Raider</ideoIconDef>
                 <ideoColorDef>LightGrey</ideoColorDef>
-                <memberName>Raider</memberName>
-                <adjective>Raider Gang</adjective>
+                <memberName>Jackal</memberName>
+                <adjective>Jackal</adjective>
                 <roleOverrides>
                     <li>
                         <preceptDef>IdeoRole_Leader</preceptDef>
@@ -272,24 +171,52 @@
                         <preceptDef>IdeoRole_Moralist</preceptDef>
                         <newName>Representative</newName>
                         <disableApparelRequirements>true</disableApparelRequirements>
-                        <!--<apparelRequirementsOverride></apparelRequirementsOverride>-->
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_ShootingSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_MeleeSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_ResearchSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_PlantSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_ProductionSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_MiningSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_AnimalsSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_MedicalSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
                     </li>
                 </roleOverrides>
             </li>
-            <!-- Territory stuff -->
-            <!-- <li class="FCP.Factions.FactionExtension_HasTerritory">
-                <territoryColor>(222, 49, 41)</territoryColor>
-                <territoryBorderColor>(116, 22, 42)</territoryBorderColor>
-                <factionLabelColor>(0.9, 0.9, 0.8, 1.0)</factionLabelColor>
-                <initialTerritoryRadius>10</initialTerritoryRadius>
+            <li Class="FCP.Factions.FactionExtension_HasTerritory">
+                <territoryColor>(0.75, 0.75, 0.72, 1.0)</territoryColor>
+                <territoryBorderColor>(0.4, 0.4, 0.38, 1.0)</territoryBorderColor>
+                <factionLabelColor>(0.9, 0.9, 0.85, 1.0)</factionLabelColor>
+                <initialTerritoryRadius>9</initialTerritoryRadius>
                 <renderTerritoryOverWater>false</renderTerritoryOverWater>
-            </li> -->
-            <!-- Enlistment stuff -->
-            <li Class="FCP.Enlist.FactionEnlistOptions">
-                <enlistOptionsDefs>
-                    <li>FCP_Enlistment_Raiders</li>
-                </enlistOptionsDefs>
-                <ignoreAutoAssignedDefs>true</ignoreAutoAssignedDefs>
+            </li>
+            <li Class="FCP.Factions.FactionExtension_PermanentlyHostileTo">
+                <hostileFactionDefs>
+                    <li>FCP_Faction_Vipers</li>
+                </hostileFactionDefs>
             </li>
         </modExtensions>
     </FactionDef>
@@ -311,12 +238,12 @@
                         <li MayRequire="Rick.FCP.Chems">FCP_Chem_Jet</li>
                         <li MayRequire="Rick.FCP.Chems">FCP_Chem_Psycho</li>
                         <li MayRequire="Rick.FCP.Chems">FCP_Chem_Buffout</li>
-                        <li MayRequire="Rick.FCP.Chems">FCP_Chem_Mentats</li>
+                        <li MayRequire="Rick.FCP.Chems,Rick.FCP.Plants">FCP_Chem_Mentats</li>
                         <li MayRequire="Rick.FCP.Chems">FCP_Chem_Turbo</li>
                         <li MayRequire="Rick.FCP.Chems">FCP_Chem_Stimpak</li>
                         <li MayRequire="Rick.FCP.Chems">FCP_Chem_Super_Stimpak</li>
                         <li MayRequire="Rick.FCP.Chems">FCP_Chem_MedX</li>
-                        <li MayRequire="Rick.FCP.Currency">FCP_Currency_Caps</li>
+                        <li MayRequire="Rick.FCP.Core.Tools">FCP_Currency_Caps</li>
                     </thingDefs>
                 </filter>
             </fixedParams>

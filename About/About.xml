@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 
-    <!-- About Information -->
-
     <packageId>Rick.FCP.Raiders</packageId>
     <author>Rick</author>
     <name>FCP - Raiders</name>
@@ -26,6 +24,7 @@
         <li>Rick.FCP.NCR</li>
         <li>Rick.FCP.PowerArmor</li>
         <li>Rick.FCP.Robotics</li>
+        <li>Rick.FCP.Wastelanders</li>
     </loadAfter>
 
 </ModMetaData>

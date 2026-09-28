@@ -9,6 +9,10 @@
             <summary>A small crew of raiders strike out on their own, gang loyalties abandoned.</summary>
             <parts>
 
+                <li Class="FCP.Core.GOAT.ScenPart_GOATExam">
+                    <def>FCP_GOATExam</def>
+                </li>
+
                 <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
                     <def>ConfigurePawnsKindDefs</def>
                     <pawnChoiceCount>8</pawnChoiceCount>
@@ -43,12 +47,6 @@
                     <visible>false</visible>
                 </li>
 
-                <li Class="FCP.Enlist.ScenPart_StartEnlisted">
-                    <def>FCP_StartEnlisted</def>
-                    <factionDef>FCP_Faction_Raider</factionDef>
-                    <enlistOptionsDef>FCP_Enlistment_Raiders</enlistOptionsDef>
-                </li>
-
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
                     <thingDef>FCP_Currency_Caps</thingDef>
@@ -70,8 +68,9 @@
                     <count>5</count>
                 </li>
 
-                <li Class="ScenPart_GameStartDialog">
+                <li Class="FCP.Core.ScenPart_TerminalStartDialog">
                     <def>GameStartDialog</def>
+                    <title>No More Cuts</title>
                     <text>It is the year [FCP_Year]. The old crew is somebody else's problem now. You took what you could carry and left in the night - no warlord to answer to, no cut to hand up the chain. Whatever you build from here, it's actually yours.\n\nThe wasteland doesn't care where you came from. It only cares what you're willing to take.</text>
                 </li>
 

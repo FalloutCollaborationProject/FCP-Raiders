@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Commonwealth Raiders __________-->
+
+    <FactionDef ParentName="FactionBase">
+        <defName>FCP_Faction_CommonwealthRaiders</defName>
+        <label>Commonwealth raiders</label>
+        <description>The Commonwealth raiders don't hold much beyond whatever gutted office block or collapsed overpass they've claimed this month. What they lack in organization they make up for with sheer opportunism: ambush a caravan, strip a ruin bare, move on before anyone can organize a response.</description>
+        <colorSpectrum>
+            <li>(0.45, 0.42, 0.35)</li>
+        </colorSpectrum>
+        <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+        <pawnSingular>Commonwealth raider</pawnSingular>
+        <pawnsPlural>Commonwealth raiders</pawnsPlural>
+        <categoryTag>Outlander</categoryTag>
+        <settlementGenerationWeight>0.1</settlementGenerationWeight>
+        <requiredCountAtGameStart>0</requiredCountAtGameStart>
+        <naturalEnemy>true</naturalEnemy>
+        <permanentEnemy>true</permanentEnemy>
+        <canSiege>true</canSiege>
+        <canStageAttacks>true</canStageAttacks>
+        <leaderTitle>Boss</leaderTitle>
+        <factionIconPath>World_Icon/Raider_Icon/FCP_Raider_World_Icon</factionIconPath>
+        <techLevel>Industrial</techLevel>
+        <fixedName>Commonwealth Raiders</fixedName>
+        <settlementNameMaker>FCP_Namer_Settlement_Raiders</settlementNameMaker>
+        <allowedCultures>
+            <li>FCP_Culture_Raider</li>
+        </allowedCultures>
+        <fixedLeaderKinds>
+            <li>FCP_Unique_Pawnkind_CommonwealthRaider_Ratchet</li>
+        </fixedLeaderKinds>
+
+        <!--__________ Ideology __________-->
+
+        <fixedIdeo>true</fixedIdeo>
+        <ideoName>Scrap Law</ideoName>
+        <ideoDescription>The Commonwealth raiders don't waste time on loyalty to a place, since nowhere they've held has lasted. What matters is the crew, the next score, and staying quick enough to be gone before anyone can hit back.</ideoDescription>
+        <styles>
+            <li>FCP_Style_Raider</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Morbid</li>
+        </styles>
+        <forcedMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+        </forcedMemes>
+        <requiredPreceptsOnly>true</requiredPreceptsOnly>
+
+        <!--__________ Biotech __________-->
+
+        <xenotypeSet>
+            <xenotypeChances>
+                <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
+                <Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
+                <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+                <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+                <Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+                <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+                <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+            </xenotypeChances>
+        </xenotypeSet>
+
+        <!--__________ Backstories __________-->
+
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>FCP_Backstory_CommonwealthRaiders</li>
+                    <li>FCP_Backstory_Raiders_Child</li>
+                    <li MayRequire="Rick.FCP.Wastelanders">FCP_Backstory_Wastelander_Child</li>
+                </categories>
+                <commonality>1</commonality>
+            </li>
+        </backstoryFilters>
+
+        <!--__________ Kinds __________-->
+
+        <caravanTraderKinds>
+        </caravanTraderKinds>
+
+        <visitorTraderKinds>
+        </visitorTraderKinds>
+
+        <baseTraderKinds>
+        </baseTraderKinds>
+
+        <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+        <raidLootMaker>FCP_RaiderRaidLootMaker</raidLootMaker>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(0,65)</li>
+                <li>(70, 85)</li>
+                <li>(700, 100)</li>
+                <li>(1300, 150)</li>
+                <li>(100000, 10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+
+        <!--__________ Group Makers __________-->
+
+        <pawnGroupMakers>
+
+            <li>
+                <kindDef>Combat</kindDef>
+                <disallowedStrategies>
+                    <li>EmergeFromWater</li>
+                </disallowedStrategies>
+                <options>
+                    <FCP_CommonwealthRaider_Gunner>10</FCP_CommonwealthRaider_Gunner>
+                    <FCP_CommonwealthRaider_Scrapper>8</FCP_CommonwealthRaider_Scrapper>
+                    <FCP_CommonwealthRaider_Scout>6</FCP_CommonwealthRaider_Scout>
+                    <FCP_CommonwealthRaider_Boss>2</FCP_CommonwealthRaider_Boss>
+                    <FCP_Unique_Pawnkind_CommonwealthRaider_Ratchet>1</FCP_Unique_Pawnkind_CommonwealthRaider_Ratchet>
+                </options>
+            </li>
+
+            <li>
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <FCP_CommonwealthRaider_Boss>3</FCP_CommonwealthRaider_Boss>
+                    <FCP_CommonwealthRaider_Gunner>7</FCP_CommonwealthRaider_Gunner>
+                </options>
+            </li>
+
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <FCP_CommonwealthRaider_Boss>2</FCP_CommonwealthRaider_Boss>
+                    <FCP_CommonwealthRaider_Gunner>8</FCP_CommonwealthRaider_Gunner>
+                    <FCP_CommonwealthRaider_Scrapper>7</FCP_CommonwealthRaider_Scrapper>
+                    <FCP_CommonwealthRaider_Scout>6</FCP_CommonwealthRaider_Scout>
+                </options>
+            </li>
+
+        </pawnGroupMakers>
+        <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+        <modExtensions Inherit="False">
+            <li Class="FCP.Factions.FactionExtension_FlavorOverride">
+                <newLabel>Commonwealth Raiders</newLabel>
+            </li>
+            <li Class="FCP.Factions.FactionExtension_BannedArrivalModes">
+                <arrivalModes>
+                    <li>EdgeDrop</li>
+                    <li>EdgeDropGroups</li>
+                    <li>CenterDrop</li>
+                    <li>RandomDrop</li>
+                </arrivalModes>
+            </li>
+            <li Class="FCP.Factions.FactionExtension_FixedIdeo">
+                <ideoIconDef>TechGearchains</ideoIconDef>
+                <ideoColorDef>DarkOlive</ideoColorDef>
+                <memberName>Commonwealth raider</memberName>
+                <adjective>Commonwealth raider</adjective>
+                <roleOverrides>
+                    <li>
+                        <preceptDef>IdeoRole_Leader</preceptDef>
+                        <newName>Boss</newName>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_Moralist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_ShootingSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_MeleeSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_ResearchSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_PlantSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_ProductionSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_MiningSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_AnimalsSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_MedicalSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                </roleOverrides>
+            </li>
+            <li Class="FCP.Factions.FactionExtension_HasTerritory">
+                <territoryColor>(0.45, 0.42, 0.35, 1.0)</territoryColor>
+                <territoryBorderColor>(0.22, 0.2, 0.17, 1.0)</territoryBorderColor>
+                <factionLabelColor>(0.75, 0.72, 0.6, 1.0)</factionLabelColor>
+                <initialTerritoryRadius>5</initialTerritoryRadius>
+                <renderTerritoryOverWater>false</renderTerritoryOverWater>
+            </li>
+            <li Class="FCP.Factions.FactionExtension_PermanentlyHostileTo">
+                <hostileFactionDefs>
+                    <li>FCP_Faction_Scorpions</li>
+                </hostileFactionDefs>
+            </li>
+        </modExtensions>
+    </FactionDef>
+
+</Defs>

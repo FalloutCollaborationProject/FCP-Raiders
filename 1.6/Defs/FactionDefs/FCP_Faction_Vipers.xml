@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Vipers __________-->
+
+    <FactionDef ParentName="FactionBase">
+        <defName>FCP_Faction_Vipers</defName>
+        <label>the Vipers</label>
+        <description>The Vipers treat poison like the Jackals treat numbers: it's the edge that keeps them alive out here. They coat blades, salt water supplies, and worship whatever in the wasteland can kill slow and quiet. Smaller and more scattered than the bigger gangs, but nobody wants to be the one who finds out the hard way what's in their canteen.</description>
+        <colorSpectrum>
+            <li>(0.2, 0.5, 0.25)</li>
+        </colorSpectrum>
+        <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+        <pawnSingular>Viper</pawnSingular>
+        <pawnsPlural>Vipers</pawnsPlural>
+        <categoryTag>Outlander</categoryTag>
+        <settlementGenerationWeight>0.15</settlementGenerationWeight>
+        <requiredCountAtGameStart>0</requiredCountAtGameStart>
+        <naturalEnemy>true</naturalEnemy>
+        <permanentEnemy>true</permanentEnemy>
+        <canSiege>true</canSiege>
+        <canStageAttacks>true</canStageAttacks>
+        <leaderTitle>High Priest</leaderTitle>
+        <factionIconPath>World_Icon/Raider_Icon/FCP_Raider_World_Icon</factionIconPath>
+        <techLevel>Industrial</techLevel>
+        <fixedName>The Vipers</fixedName>
+        <settlementNameMaker>FCP_Namer_Settlement_Raiders</settlementNameMaker>
+        <allowedCultures>
+            <li>FCP_Culture_Raider</li>
+        </allowedCultures>
+        <fixedLeaderKinds>
+            <li>FCP_Unique_Pawnkind_Viper_SisterRue</li>
+        </fixedLeaderKinds>
+
+        <!--__________ Ideology __________-->
+
+        <fixedIdeo>true</fixedIdeo>
+        <ideoName>The Serpent's Path</ideoName>
+        <ideoDescription>The Vipers hold that the wasteland rewards patience over strength: strike from hiding, poison what you can't outfight, and let the slow kill do the work a gun can't.</ideoDescription>
+        <styles>
+            <li>FCP_Style_Raider</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Morbid</li>
+        </styles>
+        <forcedMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+        </forcedMemes>
+        <requiredPreceptsOnly>true</requiredPreceptsOnly>
+
+        <!--__________ Biotech __________-->
+
+        <xenotypeSet>
+            <xenotypeChances>
+                <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
+                <Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
+                <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+                <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+                <Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+                <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+                <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+            </xenotypeChances>
+        </xenotypeSet>
+
+        <!--__________ Backstories __________-->
+
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>FCP_Backstory_Vipers</li>
+                    <li>FCP_Backstory_Raiders_Child</li>
+                </categories>
+                <commonality>1</commonality>
+            </li>
+        </backstoryFilters>
+
+        <!--__________ Kinds __________-->
+
+        <caravanTraderKinds>
+        </caravanTraderKinds>
+
+        <visitorTraderKinds>
+        </visitorTraderKinds>
+
+        <baseTraderKinds>
+        </baseTraderKinds>
+
+        <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+        <raidLootMaker>FCP_RaiderRaidLootMaker</raidLootMaker>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(0,75)</li>
+                <li>(70, 95)</li>
+                <li>(700, 100)</li>
+                <li>(1300, 150)</li>
+                <li>(100000, 10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+
+        <!--__________ Group Makers __________-->
+
+        <pawnGroupMakers>
+
+            <li>
+                <kindDef>Combat</kindDef>
+                <disallowedStrategies>
+                    <li>EmergeFromWater</li>
+                </disallowedStrategies>
+                <options>
+                    <FCP_Viper_Cultist_Pawn>10</FCP_Viper_Cultist_Pawn>
+                    <FCP_Viper_Marksman>7</FCP_Viper_Marksman>
+                    <FCP_Viper_PoisonBlade_Pawn>6</FCP_Viper_PoisonBlade_Pawn>
+                    <FCP_Viper_VenomMaster_Pawn>4</FCP_Viper_VenomMaster_Pawn>
+                    <FCP_Viper_Priest_Pawn>2</FCP_Viper_Priest_Pawn>
+                    <FCP_Unique_Pawnkind_Viper_SisterRue>1</FCP_Unique_Pawnkind_Viper_SisterRue>
+                </options>
+            </li>
+
+            <li>
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <FCP_Viper_Priest_Pawn>3</FCP_Viper_Priest_Pawn>
+                    <FCP_Viper_Cultist_Pawn>6</FCP_Viper_Cultist_Pawn>
+                </options>
+            </li>
+
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <FCP_Viper_Priest_Pawn>2</FCP_Viper_Priest_Pawn>
+                    <FCP_Viper_Cultist_Pawn>8</FCP_Viper_Cultist_Pawn>
+                    <FCP_Viper_Marksman>6</FCP_Viper_Marksman>
+                    <FCP_Viper_PoisonBlade_Pawn>6</FCP_Viper_PoisonBlade_Pawn>
+                    <FCP_Viper_VenomMaster_Pawn>4</FCP_Viper_VenomMaster_Pawn>
+                </options>
+            </li>
+
+        </pawnGroupMakers>
+        <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+        <modExtensions Inherit="False">
+            <li Class="FCP.Factions.FactionExtension_FlavorOverride">
+                <newLabel>The Vipers</newLabel>
+            </li>
+            <li Class="FCP.Factions.FactionExtension_BannedArrivalModes">
+                <arrivalModes>
+                    <li>EdgeDrop</li>
+                    <li>EdgeDropGroups</li>
+                    <li>CenterDrop</li>
+                    <li>RandomDrop</li>
+                </arrivalModes>
+            </li>
+            <li Class="FCP.Factions.FactionExtension_FixedIdeo">
+                <ideoIconDef>Ouroboros</ideoIconDef>
+                <ideoColorDef>DarkGreen</ideoColorDef>
+                <memberName>Viper</memberName>
+                <adjective>Viper</adjective>
+                <roleOverrides>
+                    <li>
+                        <preceptDef>IdeoRole_Leader</preceptDef>
+                        <newName>High Priest</newName>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_Moralist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_ShootingSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_MeleeSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_ResearchSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_PlantSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_ProductionSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_MiningSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_AnimalsSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_MedicalSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                </roleOverrides>
+            </li>
+            <li Class="FCP.Factions.FactionExtension_HasTerritory">
+                <territoryColor>(0.2, 0.5, 0.25, 1.0)</territoryColor>
+                <territoryBorderColor>(0.1, 0.25, 0.12, 1.0)</territoryBorderColor>
+                <factionLabelColor>(0.6, 0.9, 0.65, 1.0)</factionLabelColor>
+                <initialTerritoryRadius>5</initialTerritoryRadius>
+                <renderTerritoryOverWater>false</renderTerritoryOverWater>
+            </li>
+            <li Class="FCP.Factions.FactionExtension_PermanentlyHostileTo">
+                <hostileFactionDefs>
+                    <li>FCP_Faction_Jackals</li>
+                </hostileFactionDefs>
+            </li>
+        </modExtensions>
+    </FactionDef>
+
+</Defs>

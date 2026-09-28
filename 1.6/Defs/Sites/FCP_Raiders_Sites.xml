@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <!-- Site: Turf War -->
+    <!-- Turf War -->
 
     <SitePartDef>
         <defName>FCP_Site_Raider_Turf_War</defName>
@@ -32,7 +32,7 @@
         <genStep Class="GenStep_Power"/>
     </GenStepDef>
 
-    <!-- Site: The Big Score -->
+    <!-- The Big Score -->
 
     <SitePartDef>
         <defName>FCP_Site_Raider_Big_Score</defName>

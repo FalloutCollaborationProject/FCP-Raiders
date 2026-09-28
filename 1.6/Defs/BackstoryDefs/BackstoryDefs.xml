@@ -3702,4 +3702,527 @@
             <li>Caring</li>
         </workDisables>
     </BackstoryDef>
+
+    <!--___ Commonwealth Raiders ___-->
+    <!-- Commonwealth Raider Boss -->
+
+    <BackstoryDef>
+        <defName>FCP_CommonwealthRaider_Boss_Clawed</defName>
+        <title>Commonwealth raider boss</title>
+        <titleShort>boss</titleShort>
+        <baseDesc>[PAWN_nameDef] clawed [PAWN_possessive] way up through a Commonwealth raider crew the same way everyone does there: by outlasting whoever held the job before. [PAWN_pronoun] hasn't been challenged in a while.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_CommonwealthRaiders</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>5</Melee>
+            <Social>3</Social>
+        </skillGains>
+        <forcedTraits>
+            <Brawler>0</Brawler>
+        </forcedTraits>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>FCP_CommonwealthRaider_Boss_Ruled</defName>
+        <title>Commonwealth raider boss</title>
+        <titleShort>boss</titleShort>
+        <baseDesc>[PAWN_nameDef] runs [PAWN_possessive] crew out of whatever scrapped-together ruin they've claimed this month, and the biggest cut of every haul goes to whoever's strong enough to take it first. Right now that's [PAWN_objective].</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_CommonwealthRaiders</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>4</Melee>
+            <Social>3</Social>
+        </skillGains>
+        <forcedTraits>
+            <Bloodlust>0</Bloodlust>
+        </forcedTraits>
+    </BackstoryDef>
+
+    <!-- Commonwealth Raider Gunner -->
+
+    <BackstoryDef>
+        <defName>FCP_CommonwealthRaider_Gunner_Salvaged</defName>
+        <title>Commonwealth raider gunner</title>
+        <titleShort>gunner</titleShort>
+        <baseDesc>[PAWN_nameDef] runs with whatever gun [PAWN_pronoun] managed to keep running, patched together from three different scrapped models. It still puts people down just fine.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_CommonwealthRaiders</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>4</Shooting>
+            <Crafting>3</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>FCP_CommonwealthRaider_Gunner_Ambushed</defName>
+        <title>Commonwealth raider gunner</title>
+        <titleShort>gunner</titleShort>
+        <baseDesc>[PAWN_nameDef] picks a rooftop or a gutted doorway and waits for a caravan to walk into range. By the time anyone spots [PAWN_objective], it's already too late to matter.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_CommonwealthRaiders</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>5</Shooting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Commonwealth Raider Scrapper -->
+
+    <BackstoryDef>
+        <defName>FCP_CommonwealthRaider_Scrapper_Broke</defName>
+        <title>Commonwealth raider scrapper</title>
+        <titleShort>scrapper</titleShort>
+        <baseDesc>[PAWN_nameDef] doesn't bother with guns when a length of pipe does the job just as well and lets [PAWN_objective] hear what happens up close. [PAWN_pronoun]'s broken more bones than [PAWN_pronoun] can count.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Fat</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_CommonwealthRaiders</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>5</Melee>
+        </skillGains>
+        <forcedTraits>
+            <Brawler>0</Brawler>
+        </forcedTraits>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>FCP_CommonwealthRaider_Scrapper_Stripped</defName>
+        <title>Commonwealth raider scrapper</title>
+        <titleShort>scrapper</titleShort>
+        <baseDesc>[PAWN_nameDef] strips a ruin down to bare girders looking for anything worth hauling off, and doesn't much care if the last person who lived there is still around to argue about it.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_CommonwealthRaiders</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>4</Melee>
+            <Crafting>2</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Commonwealth Raider Scout -->
+
+    <BackstoryDef>
+        <defName>FCP_CommonwealthRaider_Scout_Ranged</defName>
+        <title>Commonwealth raider scout</title>
+        <titleShort>scout</titleShort>
+        <baseDesc>[PAWN_nameDef] ranges ahead of the rest of the crew, marking targets and calling in the others once a mark is cornered. Quick, quiet, and gone before anyone else knows [PAWN_pronoun] was there.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_CommonwealthRaiders</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>3</Shooting>
+            <Melee>2</Melee>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>FCP_CommonwealthRaider_Scout_Ruined</defName>
+        <title>Commonwealth raider scout</title>
+        <titleShort>scout</titleShort>
+        <baseDesc>[PAWN_nameDef] grew up picking through the Commonwealth's ruins and knows every collapsed overpass and gutted office block worth hiding in. [PAWN_pronoun] reads a wrecked city better than most people read a room.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_CommonwealthRaiders</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>3</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!--___ Cannibals ___-->
+    <!-- Cannibal Butcher -->
+
+    <BackstoryDef>
+        <defName>FCP_Cannibal_Butcher_Carved</defName>
+        <title>cannibal butcher</title>
+        <titleShort>butcher</titleShort>
+        <baseDesc>[PAWN_nameDef] leads by example, and the example is whatever's left of the last person who crossed [PAWN_objective]. [PAWN_pronoun] stopped pretending the meat was anything else a long time ago.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Cannibals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>4</Melee>
+            <Cooking>3</Cooking>
+        </skillGains>
+        <forcedTraits>
+            <Cannibal>0</Cannibal>
+        </forcedTraits>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>FCP_Cannibal_Butcher_Presided</defName>
+        <title>cannibal butcher</title>
+        <titleShort>butcher</titleShort>
+        <baseDesc>[PAWN_nameDef] runs the gang's larder personally, deciding who eats and who's eaten. [PAWN_pronoun] treats the whole business with a calm that unsettles even the rest of [PAWN_possessive] crew.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Cannibals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Cooking>4</Cooking>
+            <Social>3</Social>
+        </skillGains>
+        <forcedTraits>
+            <Cannibal>0</Cannibal>
+            <Psychopath>0</Psychopath>
+        </forcedTraits>
+    </BackstoryDef>
+
+    <!-- Cannibal Stalker -->
+
+    <BackstoryDef>
+        <defName>FCP_Cannibal_Stalker_Trailed</defName>
+        <title>cannibal stalker</title>
+        <titleShort>stalker</titleShort>
+        <baseDesc>[PAWN_nameDef] trails travelers for days before ever showing [PAWN_objective]self, waiting for the moment they're too tired or too far from help to fight back.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Cannibals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>4</Melee>
+            <Shooting>2</Shooting>
+        </skillGains>
+        <forcedTraits>
+            <Cannibal>0</Cannibal>
+        </forcedTraits>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>FCP_Cannibal_Stalker_Lured</defName>
+        <title>cannibal stalker</title>
+        <titleShort>stalker</titleShort>
+        <baseDesc>[PAWN_nameDef] plays wounded, lost, or friendly, whatever gets someone close enough. By the time they realize what [PAWN_pronoun] actually is, it's already too late.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Cannibals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>3</Social>
+            <Melee>3</Melee>
+        </skillGains>
+        <forcedTraits>
+            <Cannibal>0</Cannibal>
+        </forcedTraits>
+    </BackstoryDef>
+
+    <!-- Cannibal Skinner -->
+
+    <BackstoryDef>
+        <defName>FCP_Cannibal_Skinner_Rendered</defName>
+        <title>cannibal skinner</title>
+        <titleShort>skinner</titleShort>
+        <baseDesc>[PAWN_nameDef] handles what's left after a raid: hides, bones, meat, nothing goes to waste. [PAWN_pronoun] trades what the gang doesn't eat and never once looks bothered doing it.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Cannibals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Cooking>4</Cooking>
+            <Crafting>2</Crafting>
+        </skillGains>
+        <forcedTraits>
+            <Cannibal>0</Cannibal>
+        </forcedTraits>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>FCP_Cannibal_Skinner_Scavenged</defName>
+        <title>cannibal skinner</title>
+        <titleShort>skinner</titleShort>
+        <baseDesc>[PAWN_nameDef] picks over battlefields and old camps for anything worth keeping, and doesn't much distinguish between salvage and supper.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Cannibals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Cooking>3</Cooking>
+            <Melee>2</Melee>
+        </skillGains>
+        <forcedTraits>
+            <Cannibal>0</Cannibal>
+        </forcedTraits>
+    </BackstoryDef>
+
+    <!-- Cannibal Brute -->
+
+    <BackstoryDef>
+        <defName>FCP_Cannibal_Brute_Gorged</defName>
+        <title>cannibal brute</title>
+        <titleShort>brute</titleShort>
+        <baseDesc>[PAWN_nameDef] eats more than anyone else in the gang and hits harder because of it. Nobody argues with [PAWN_objective] about either one.</baseDesc>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+        <bodyTypeFemale>Fat</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Cannibals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>5</Melee>
+        </skillGains>
+        <forcedTraits>
+            <Cannibal>0</Cannibal>
+            <Brawler>0</Brawler>
+        </forcedTraits>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>FCP_Cannibal_Brute_Feasted</defName>
+        <title>cannibal brute</title>
+        <titleShort>brute</titleShort>
+        <baseDesc>[PAWN_nameDef] wades into a fight expecting to eat well afterward, and that's usually exactly what happens.</baseDesc>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+        <bodyTypeFemale>Hulk</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Cannibals</li>
+            <li>FCP_Backstory_Raiders</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>4</Melee>
+            <Shooting>1</Shooting>
+        </skillGains>
+        <forcedTraits>
+            <Cannibal>0</Cannibal>
+        </forcedTraits>
+    </BackstoryDef>
+
+    <!--_____ Unique Characters _____-->
+
+    <!-- Violet -->
+
+    <BackstoryDef>
+        <defName>FCP_Fiend_Violet</defName>
+        <title>Fiend dog handler</title>
+        <titleShort>dog handler</titleShort>
+        <baseDesc>[PAWN_nameDef] breeds and doses her own pack of hounds on Psycho and human meat until they'll tear apart anything that moves. [PAWN_pronoun] keeps apart from the rest of the gang, picking off stragglers from a distance while the dogs finish what the bullet started.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Fiend_Violet</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>6</Shooting>
+            <Animals>5</Animals>
+            <Melee>2</Melee>
+        </skillGains>
+        <forcedTraits>
+            <Psychopath>0</Psychopath>
+        </forcedTraits>
+    </BackstoryDef>
+
+    <!-- Bedlam -->
+
+    <BackstoryDef>
+        <defName>FCP_Forged_Bedlam</defName>
+        <title>Forged quarry warden</title>
+        <titleShort>quarry warden</titleShort>
+        <baseDesc>[PAWN_nameDef] was sent by Slag to find out why the scrap shipments from Dunwich Borers had stopped coming. [PAWN_pronoun] held the quarry against the ferals in its depths, but something down there got to [PAWN_possessive] mind long before it got to [PAWN_possessive] raiders.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Hulk</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Forged_Bedlam</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>6</Melee>
+            <Mining>3</Mining>
+            <Social>-2</Social>
+        </skillGains>
+        <forcedTraits>
+            <Psychopath>0</Psychopath>
+        </forcedTraits>
+    </BackstoryDef>
+
+    <!-- Yvette -->
+
+    <BackstoryDef>
+        <defName>FCP_Scorpion_Yvette</defName>
+        <title>Scorpion co-leader</title>
+        <titleShort>co-leader</titleShort>
+        <baseDesc>[PAWN_nameDef] built the Scorpions' racket out of the Monte Carlo Suites, cutting deals and keeping the caps flowing while Roller handles what the deals don't fix. The .44 on [PAWN_possessive] hip has never had to be fired twice.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Scorpion_Yvette</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>5</Social>
+            <Shooting>4</Shooting>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+        <forcedTraits>
+            <Greedy>0</Greedy>
+        </forcedTraits>
+    </BackstoryDef>
+
+    <!-- Roller -->
+
+    <BackstoryDef>
+        <defName>FCP_Scorpion_Roller</defName>
+        <title>Scorpion co-leader</title>
+        <titleShort>co-leader</titleShort>
+        <baseDesc>[PAWN_nameDef] runs the muscle side of the Scorpions' operation out of the Monte Carlo Suites, collecting on debts Yvette's deals don't cover. [PAWN_pronoun] doesn't ask twice.</baseDesc>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+        <bodyTypeFemale>Hulk</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Scorpion_Roller</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>5</Melee>
+            <Shooting>3</Shooting>
+            <Social>1</Social>
+        </skillGains>
+        <forcedTraits>
+            <Brawler>0</Brawler>
+        </forcedTraits>
+    </BackstoryDef>
+
+    <!-- Jack Smith -->
+
+    <BackstoryDef>
+        <defName>FCP_Cannibal_JackSmith</defName>
+        <title>cannibal patriarch</title>
+        <titleShort>patriarch</titleShort>
+        <baseDesc>[PAWN_nameDef] keeps Andale looking exactly like the town it pretends to be, mowed lawns and friendly waves included. Every traveler who stays the night ends up feeding the family, and [PAWN_pronoun] has never once let the mask slip in front of them.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Cannibal_JackSmith</li>
+        </spawnCategories>
+        <skillGains>
+            <Cooking>4</Cooking>
+            <Social>4</Social>
+            <Melee>2</Melee>
+        </skillGains>
+        <forcedTraits>
+            <Cannibal>0</Cannibal>
+        </forcedTraits>
+    </BackstoryDef>
+
+    <!-- Mange -->
+
+    <BackstoryDef>
+        <defName>FCP_Jackal_Mange</defName>
+        <title>Jackal pack leader</title>
+        <titleShort>pack leader</titleShort>
+        <baseDesc>[PAWN_nameDef] has outlived three rival pack leaders who tried to take the job the same way [PAWN_pronoun] did. The pack doesn't love [PAWN_nameDef], but it's still here, and that's more than most gangs out here can say.</baseDesc>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+        <bodyTypeFemale>Hulk</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Jackal_Mange</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>4</Melee>
+            <Social>3</Social>
+            <Shooting>2</Shooting>
+        </skillGains>
+        <forcedTraits>
+            <Bloodlust>0</Bloodlust>
+        </forcedTraits>
+    </BackstoryDef>
+
+    <!-- Sister Rue -->
+
+    <BackstoryDef>
+        <defName>FCP_Viper_SisterRue</defName>
+        <title>Viper high priestess</title>
+        <titleShort>high priestess</titleShort>
+        <baseDesc>[PAWN_nameDef] tends the Vipers' stills personally, testing every batch on [PAWN_possessive] own tongue before it goes on a blade. The scars from the ones that went wrong are how the rest of the cult knows to trust the ones that didn't.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Viper_SisterRue</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>4</Intellectual>
+            <Melee>3</Melee>
+            <Social>2</Social>
+        </skillGains>
+        <forcedTraits>
+            <Psychopath>0</Psychopath>
+        </forcedTraits>
+    </BackstoryDef>
+
+    <!-- Ratchet -->
+
+    <BackstoryDef>
+        <defName>FCP_CommonwealthRaider_Ratchet</defName>
+        <title>Commonwealth raider boss</title>
+        <titleShort>boss</titleShort>
+        <baseDesc>[PAWN_nameDef] has run six different crews out of six different ruins, never staying anywhere long enough for anyone to organize a response. The gutted office block this week won't be the one [PAWN_nameDef] dies defending.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_CommonwealthRaider_Ratchet</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>4</Shooting>
+            <Social>3</Social>
+            <Melee>2</Melee>
+        </skillGains>
+        <forcedTraits>
+            <Tough>0</Tough>
+        </forcedTraits>
+    </BackstoryDef>
 </Defs>

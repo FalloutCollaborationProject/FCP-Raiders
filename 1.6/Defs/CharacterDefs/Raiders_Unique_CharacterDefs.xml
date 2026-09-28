@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Fiends __________-->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Fiend_MotorRunner</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Fiend_MotorRunner</pawnKind>
+        <faction>FCP_Faction_Fiends</faction>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <nickname>Motor-Runner</nickname>
+                <gender>Male</gender>
+                <age>38</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(20, 20, 20)</hairColor>
+                <hairDef>Bald</hairDef>
+                <beardDef>Stubble</beardDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Fiend_CookCook</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Fiend_CookCook</pawnKind>
+        <faction>FCP_Faction_Fiends</faction>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <nickname>Cook-Cook</nickname>
+                <gender>Male</gender>
+                <age>41</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(30, 25, 20)</hairColor>
+                <hairDef>Bald</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Fiend_DriverNephi</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Fiend_DriverNephi</pawnKind>
+        <faction>FCP_Faction_Fiends</faction>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Nephi</firstName>
+                <nickname>Driver</nickname>
+                <gender>Male</gender>
+                <age>44</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(20, 20, 20)</hairColor>
+                <hairDef>Bald</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <bodyTypeDef>Hulk</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Fiend_Violet</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Fiend_Violet</pawnKind>
+        <faction>FCP_Faction_Fiends</faction>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <nickname>Violet</nickname>
+                <gender>Female</gender>
+                <age>35</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(70, 15, 75)</hairColor>
+                <hairDef>Mohawk</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!--__________ The Forged __________-->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Forged_Slag</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Forged_Slag</pawnKind>
+        <faction>FCP_Faction_Forged</faction>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <nickname>Slag</nickname>
+                <gender>Male</gender>
+                <age>47</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(25, 20, 15)</hairColor>
+                <hairDef>Bald</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <bodyTypeDef>Hulk</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Forged_Bedlam</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Forged_Bedlam</pawnKind>
+        <faction>FCP_Faction_Forged</faction>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <nickname>Bedlam</nickname>
+                <gender>Female</gender>
+                <age>36</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(35, 25, 20)</hairColor>
+                <hairDef>Revolt</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!--__________ Scorpions __________-->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Scorpion_Yvette</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Scorpion_Yvette</pawnKind>
+        <faction>FCP_Faction_Scorpions</faction>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <nickname>Yvette</nickname>
+                <gender>Female</gender>
+                <age>34</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(20, 15, 10)</hairColor>
+                <hairDef>Bob</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+            <li Class="FCP.Core.CharacterUniqueItemDefinition" MayRequire="Rick.FCP.BallisticWeapons">
+                <uniqueItem>FCP_Gun_44Magnum_Revolver</uniqueItem>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Scorpion_Roller</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Scorpion_Roller</pawnKind>
+        <faction>FCP_Faction_Scorpions</faction>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <nickname>Roller</nickname>
+                <gender>Male</gender>
+                <age>39</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(15, 15, 15)</hairColor>
+                <hairDef>Shaved</hairDef>
+                <beardDef>Stubble</beardDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!--__________ Cannibals __________-->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Cannibal_JackSmith</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Cannibal_JackSmith</pawnKind>
+        <faction>FCP_Faction_Cannibals</faction>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Jack</firstName>
+                <lastName>Smith</lastName>
+                <gender>Male</gender>
+                <age>52</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(60, 55, 45)</hairColor>
+                <hairDef>Bald</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!--__________ Jackals __________-->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Jackal_Mange</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Jackal_Mange</pawnKind>
+        <faction>FCP_Faction_Jackals</faction>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <nickname>Mange</nickname>
+                <gender>Male</gender>
+                <age>40</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(40, 35, 30)</hairColor>
+                <hairDef>Bald</hairDef>
+                <beardDef>Stubble</beardDef>
+                <bodyTypeDef>Hulk</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!--__________ Vipers __________-->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Viper_SisterRue</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Viper_SisterRue</pawnKind>
+        <faction>FCP_Faction_Vipers</faction>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <nickname>Sister Rue</nickname>
+                <gender>Female</gender>
+                <age>45</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(15, 10, 10)</hairColor>
+                <hairDef>Mohawk</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!--__________ Commonwealth Raiders __________-->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_CommonwealthRaider_Ratchet</defName>
+        <pawnKind>FCP_Unique_Pawnkind_CommonwealthRaider_Ratchet</pawnKind>
+        <faction>FCP_Faction_CommonwealthRaiders</faction>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <nickname>Ratchet</nickname>
+                <gender>Male</gender>
+                <age>36</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(25, 20, 15)</hairColor>
+                <hairDef>Shaved</hairDef>
+                <beardDef>Stubble</beardDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+</Defs>

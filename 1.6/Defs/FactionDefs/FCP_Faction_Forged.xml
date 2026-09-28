@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ The Forged __________-->
+
+    <FactionDef ParentName="FactionBase">
+        <defName>FCP_Faction_Forged</defName>
+        <label>the Forged</label>
+        <description>The Forged hole up in the ruin of an old ironworks, keeping the furnaces lit and worshipping the fire that runs them. They see themselves as tempered by flame into something harder than everyone who came before, and they're happy to prove it on anyone who wanders too close to the forge.</description>
+        <colorSpectrum>
+            <li>(0.8, 0.4, 0.1)</li>
+        </colorSpectrum>
+        <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+        <pawnSingular>Forged</pawnSingular>
+        <pawnsPlural>Forged</pawnsPlural>
+        <categoryTag>Outlander</categoryTag>
+        <settlementGenerationWeight>0.15</settlementGenerationWeight>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <maxCountAtGameStart>1</maxCountAtGameStart>
+        <naturalEnemy>true</naturalEnemy>
+        <permanentEnemy>true</permanentEnemy>
+        <canSiege>true</canSiege>
+        <canStageAttacks>true</canStageAttacks>
+        <leaderTitle>Forgemaster</leaderTitle>
+        <factionIconPath>World_Icon/Raider_Icon/FCP_Raider_World_Icon</factionIconPath>
+        <techLevel>Industrial</techLevel>
+        <fixedName>The Forged</fixedName>
+        <settlementNameMaker>FCP_Namer_Settlement_Raiders</settlementNameMaker>
+        <allowedCultures>
+            <li>FCP_Culture_Raider</li>
+        </allowedCultures>
+        <fixedLeaderKinds>
+            <li>FCP_Unique_Pawnkind_Forged_Slag</li>
+        </fixedLeaderKinds>
+
+        <!--__________ Ideology __________-->
+
+        <fixedIdeo>true</fixedIdeo>
+        <ideoName>Cult of the Forge</ideoName>
+        <ideoDescription>The Forged believe the fire in the furnaces burned away everything weak in them and left only what could survive it. Every scar is proof, every burn is a lesson, and the ironworks itself is treated less like a base than a shrine.</ideoDescription>
+        <styles>
+            <li>FCP_Style_Raider</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Morbid</li>
+        </styles>
+        <forcedMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+        </forcedMemes>
+        <requiredPreceptsOnly>true</requiredPreceptsOnly>
+
+        <!--__________ Biotech __________-->
+
+        <xenotypeSet>
+            <xenotypeChances>
+                <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
+                <Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
+                <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+                <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+                <Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+                <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+                <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+            </xenotypeChances>
+        </xenotypeSet>
+
+        <!--__________ Backstories __________-->
+
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>FCP_Backstory_Forged</li>
+                    <li>FCP_Backstory_Raiders_Child</li>
+                </categories>
+                <commonality>1</commonality>
+            </li>
+        </backstoryFilters>
+
+        <!--__________ Kinds __________-->
+
+        <caravanTraderKinds>
+        </caravanTraderKinds>
+
+        <visitorTraderKinds>
+        </visitorTraderKinds>
+
+        <baseTraderKinds>
+        </baseTraderKinds>
+
+        <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+        <raidLootMaker>FCP_RaiderRaidLootMaker</raidLootMaker>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(0,80)</li>
+                <li>(70, 100)</li>
+                <li>(700, 100)</li>
+                <li>(1300, 150)</li>
+                <li>(100000, 10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+
+        <!--__________ Group Makers __________-->
+
+        <pawnGroupMakers>
+
+            <li Class="FCP.Core.GroupMakerWithCustomChar">
+                <kindDef>Combat</kindDef>
+                <disallowedStrategies>
+                    <li>EmergeFromWater</li>
+                </disallowedStrategies>
+                <options>
+                    <FCP_Forged_Raider>10</FCP_Forged_Raider>
+                    <FCP_Forged_Flamer>7</FCP_Forged_Flamer>
+                    <FCP_Forged_Incinerator_Pawn>5</FCP_Forged_Incinerator_Pawn>
+                    <FCP_Forged_Smith>3</FCP_Forged_Smith>
+                    <FCP_Forged_Master>2</FCP_Forged_Master>
+                    <FCP_Pawnkind_Protectron MayRequire="Rick.FCP.Robotics">1</FCP_Pawnkind_Protectron>
+                </options>
+                <characterDefs>
+                    <li>FCP_Character_Forged_Bedlam</li>
+                </characterDefs>
+                <characterChance>0.15</characterChance>
+            </li>
+
+            <li>
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <FCP_Unique_Pawnkind_Forged_Slag>1</FCP_Unique_Pawnkind_Forged_Slag>
+                    <FCP_Forged_Master>3</FCP_Forged_Master>
+                    <FCP_Forged_Raider>7</FCP_Forged_Raider>
+                </options>
+            </li>
+
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <FCP_Forged_Master>2</FCP_Forged_Master>
+                    <FCP_Forged_Smith>3</FCP_Forged_Smith>
+                    <FCP_Forged_Raider>8</FCP_Forged_Raider>
+                    <FCP_Forged_Flamer>6</FCP_Forged_Flamer>
+                    <FCP_Forged_Incinerator_Pawn>5</FCP_Forged_Incinerator_Pawn>
+                </options>
+            </li>
+
+        </pawnGroupMakers>
+        <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+        <modExtensions Inherit="False">
+            <li Class="FCP.Factions.FactionExtension_FlavorOverride">
+                <newLabel>The Forged</newLabel>
+            </li>
+            <li Class="FCP.Factions.FactionExtension_BannedArrivalModes">
+                <arrivalModes>
+                    <li>EdgeDrop</li>
+                    <li>EdgeDropGroups</li>
+                    <li>CenterDrop</li>
+                    <li>RandomDrop</li>
+                </arrivalModes>
+            </li>
+            <li Class="FCP.Factions.FactionExtension_FixedIdeo">
+                <ideoIconDef>FireLeaves</ideoIconDef>
+                <ideoColorDef>DarkOrange</ideoColorDef>
+                <memberName>Forged</memberName>
+                <adjective>Forged</adjective>
+                <roleOverrides>
+                    <li>
+                        <preceptDef>IdeoRole_Leader</preceptDef>
+                        <newName>Forgemaster</newName>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_Moralist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_ShootingSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_MeleeSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_ResearchSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_PlantSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_ProductionSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_MiningSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_AnimalsSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_MedicalSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                </roleOverrides>
+            </li>
+            <li Class="FCP.Factions.FactionExtension_HasTerritory">
+                <territoryColor>(0.8, 0.4, 0.1, 1.0)</territoryColor>
+                <territoryBorderColor>(0.4, 0.18, 0.05, 1.0)</territoryBorderColor>
+                <factionLabelColor>(1.0, 0.7, 0.4, 1.0)</factionLabelColor>
+                <initialTerritoryRadius>6</initialTerritoryRadius>
+                <renderTerritoryOverWater>false</renderTerritoryOverWater>
+            </li>
+            <li Class="FCP.Factions.FactionExtension_PermanentlyHostileTo">
+                <hostileFactionDefs>
+                    <li>FCP_Faction_Fiends</li>
+                </hostileFactionDefs>
+            </li>
+            <li Class="FCP.Factions.FactionExtension_SettlementControl">
+                <maxSettlements>1</maxSettlements>
+                <searchRadius>500</searchRadius>
+                <allowedBiomes>
+                    <li>TemperateForest</li>
+                </allowedBiomes>
+                <namedSettlements>
+                    <li>
+                        <name>Saugus Ironworks</name>
+                        <preferredHilliness>
+                            <li>SmallHills</li>
+                            <li>Flat</li>
+                        </preferredHilliness>
+                        <allowedBiomes>
+                            <li>TemperateForest</li>
+                        </allowedBiomes>
+                    </li>
+                </namedSettlements>
+            </li>
+        </modExtensions>
+    </FactionDef>
+
+</Defs>

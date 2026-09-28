@@ -9,19 +9,23 @@
 
     <PawnKindDef Name="FCP_RaiderBase" Abstract="True">
         <race>Human</race>
-        <defaultFactionType>FCP_Faction_Raider</defaultFactionType>
+        <defaultFactionType>FCP_Faction_Jackals</defaultFactionType>
         <chemicalAddictionChance>0.15</chemicalAddictionChance>
         <invNutrition>2.55</invNutrition>
         <itemQuality>Poor</itemQuality>
         <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
         <forceNormalGearQuality>true</forceNormalGearQuality>
         <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+        <apparelTags>
+            <li>FCP_Raider_Armor</li>
+            <li MayRequire="Rick.FCP.Wastelanders">FCP_Wastelander_Apparel</li>
+        </apparelTags>
     </PawnKindDef>
     
     <!--___ Overall Faction Leader ___-->
 
-    <!-- Raider Warlord - Can use any backstory category -->
-    
+    <!-- Raider Warlord -->
+
     <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Raider_Warlord</defName>
         <label>raider warlord</label>
@@ -39,16 +43,17 @@
         <apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
         <apparelTags>
             <li>FCP_Raider_Armor</li>
+            <li MayRequire="Rick.FCP.Wastelanders">FCP_Wastelander_Apparel</li>
         </apparelTags>
         <weaponMoney>400</weaponMoney>
         <weaponTags>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Assault_Rifle</li>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Shotgun</li>
-            <li MayRequire="Rick.FCP.EnergyWeapons">FCP_Laser_Rifle</li>
-            <li MayRequire="Rick.FCP.EnergyWeapons">FCP_Plasma_Rifle</li>
+            <li MayRequire="Rick.FCP.EnergyWeapons">FCP_Laser_Weapon</li>
+            <li MayRequire="Rick.FCP.EnergyWeapons">FCP_Plasma_Weapon</li>
             <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Advanced</li>
             <li>IndustrialGunAdvanced</li>
-            <li>IndustrialMeleeAdvanced</li>
+            <li>MedievalMeleeAdvanced</li>
         </weaponTags>
         <specificApparelRequirements>
             <li>
@@ -147,10 +152,9 @@
         <weaponTags>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Assault_Rifle</li>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Shotgun</li>
-            <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Bladed</li>
             <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Advanced</li>
             <li>IndustrialGunAdvanced</li>
-            <li>IndustrialMeleeAdvanced</li>
+            <li>MedievalMeleeAdvanced</li>
         </weaponTags>
         <backstoryFiltersOverride>
             <li>
@@ -222,9 +226,6 @@
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pistol</li>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Shotgun</li>
             <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Makeshift</li>
-            <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Bladed</li>
-            <li>IndustrialGun</li>
-            <li>IndustrialMelee</li>
             <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
             <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
         </weaponTags>
@@ -296,8 +297,6 @@
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Assault_Rifle</li>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_SMG</li>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Shotgun</li>
-            <li>IndustrialGun</li>
-            <li>IndustrialMelee</li>
             <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
             <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
         </weaponTags>
@@ -371,8 +370,6 @@
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pistol</li>
             <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Makeshift</li>
             <li>Gun</li>
-            <li>MeleeIndustrial</li>
-            <li>NeolithicMelee</li>
         </weaponTags>
         <backstoryFiltersOverride>
             <li>
@@ -429,11 +426,7 @@
         <weaponMoney>300~600</weaponMoney>
         <weaponTags>
             <li>MedievalMeleeAdvanced</li>
-            <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Blunt</li>
-            <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Bladed</li>
             <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Advanced</li>
-            <li>IndustrialGun</li>
-            <li>IndustrialMelee</li>
             <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
             <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
         </weaponTags>
@@ -500,6 +493,7 @@
     <!-- Viper Priest -->
     <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Viper_Priest_Pawn</defName>
+        <defaultFactionType>FCP_Faction_Vipers</defaultFactionType>
         <label>Viper priest</label>
         <labelPlural>Viper priests</labelPlural>
         <combatPower>100</combatPower>
@@ -510,9 +504,8 @@
         <weaponTags>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Assault_Rifle</li>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pistol</li>
-            <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Bladed</li>
             <li>IndustrialGunAdvanced</li>
-            <li>IndustrialMeleeAdvanced</li>
+            <li>MedievalMeleeAdvanced</li>
         </weaponTags>
         <backstoryFiltersOverride>
             <li>
@@ -572,6 +565,7 @@
     <!-- Viper Poison Blade -->
     <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Viper_PoisonBlade_Pawn</defName>
+        <defaultFactionType>FCP_Faction_Vipers</defaultFactionType>
         <label>Viper poison blade</label>
         <labelPlural>Viper poison blades</labelPlural>
         <combatPower>75</combatPower>
@@ -581,10 +575,7 @@
         <weaponMoney>400~700</weaponMoney>
         <weaponTags>
             <li>MedievalMeleeAdvanced</li>
-            <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Bladed</li>
             <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Advanced</li>
-            <li>IndustrialGun</li>
-            <li>IndustrialMelee</li>
             <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
             <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
         </weaponTags>
@@ -637,6 +628,7 @@
     <!-- Viper Marksman -->
     <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Viper_Marksman</defName>
+        <defaultFactionType>FCP_Faction_Vipers</defaultFactionType>
         <label>Viper marksman</label>
         <labelPlural>Viper marksmen</labelPlural>
         <combatPower>85</combatPower>
@@ -648,8 +640,6 @@
             <li>SniperRifle</li>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Sniper_Rifle</li>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Assault_Rifle</li>
-            <li>IndustrialGun</li>
-            <li>IndustrialMelee</li>
             <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
             <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
         </weaponTags>
@@ -707,6 +697,7 @@
     <!-- Viper Venom Master -->
     <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Viper_VenomMaster_Pawn</defName>
+        <defaultFactionType>FCP_Faction_Vipers</defaultFactionType>
         <label>Viper venom master</label>
         <labelPlural>Viper venom masters</labelPlural>
         <combatPower>65</combatPower>
@@ -718,10 +709,7 @@
         <weaponTags>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pistol</li>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_SMG</li>
-            <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Bladed</li>
             <li>Gun</li>
-            <li>MeleeIndustrial</li>
-            <li>NeolithicMelee</li>
         </weaponTags>
         <backstoryFiltersOverride>
             <li>
@@ -764,6 +752,7 @@
     <!-- Viper Cultist -->
     <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Viper_Cultist_Pawn</defName>
+        <defaultFactionType>FCP_Faction_Vipers</defaultFactionType>
         <label>Viper cultist</label>
         <labelPlural>Viper cultists</labelPlural>
         <combatPower>70</combatPower>
@@ -776,9 +765,6 @@
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pistol</li>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Shotgun</li>
             <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Makeshift</li>
-            <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Bladed</li>
-            <li>IndustrialGun</li>
-            <li>IndustrialMelee</li>
             <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
             <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
         </weaponTags>
@@ -832,6 +818,7 @@
     <!-- Forge Master -->
     <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Forged_Master</defName>
+        <defaultFactionType>FCP_Faction_Forged</defaultFactionType>
         <label>forge master</label>
         <labelPlural>forge masters</labelPlural>
         <combatPower>115</combatPower>
@@ -842,10 +829,10 @@
         <weaponMoney>700~1200</weaponMoney>
         <weaponTags>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Assault_Rifle</li>
-            <li MayRequire="Rick.FCP.EnergyWeapons">FCP_Flamer</li>
+            <li MayRequire="Rick.FCP.EnergyWeapons">FCP_Flame_Weapon</li>
             <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Advanced</li>
             <li>IndustrialGunAdvanced</li>
-            <li>IndustrialMeleeAdvanced</li>
+            <li>MedievalMeleeAdvanced</li>
         </weaponTags>
         <backstoryFiltersOverride>
             <li>
@@ -905,6 +892,7 @@
     <!-- Forged Flamewielder -->
     <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Forged_Flamer</defName>
+        <defaultFactionType>FCP_Faction_Forged</defaultFactionType>
         <label>Forged flamewielder</label>
         <labelPlural>Forged flamewielders</labelPlural>
         <combatPower>95</combatPower>
@@ -913,10 +901,8 @@
         <apparelMoney>700~1300</apparelMoney>
         <weaponMoney>600~1000</weaponMoney>
         <weaponTags>
-            <li MayRequire="Rick.FCP.EnergyWeapons">FCP_Flamer</li>
+            <li MayRequire="Rick.FCP.EnergyWeapons">FCP_Flame_Weapon</li>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Shotgun</li>
-            <li>IndustrialGun</li>
-            <li>IndustrialMelee</li>
             <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
             <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
         </weaponTags>
@@ -978,6 +964,7 @@
     <!-- Forged Blacksmith -->
     <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Forged_Smith</defName>
+        <defaultFactionType>FCP_Faction_Forged</defaultFactionType>
         <label>Forged blacksmith</label>
         <labelPlural>Forged blacksmiths</labelPlural>
         <combatPower>70</combatPower>
@@ -988,11 +975,8 @@
         <weaponMoney>500~800</weaponMoney>
         <weaponTags>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Shotgun</li>
-            <li MayRequire="Rick.FCP.EnergyWeapons">FCP_Flamer</li>
-            <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Bladed</li>
+            <li MayRequire="Rick.FCP.EnergyWeapons">FCP_Flame_Weapon</li>
             <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Advanced</li>
-            <li>IndustrialGun</li>
-            <li>IndustrialMelee</li>
             <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
             <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
         </weaponTags>
@@ -1037,6 +1021,7 @@
     <!-- Forged Scorched Raider -->
     <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Forged_Raider</defName>
+        <defaultFactionType>FCP_Faction_Forged</defaultFactionType>
         <label>Forged raider</label>
         <labelPlural>Forged raiders</labelPlural>
         <combatPower>75</combatPower>
@@ -1045,11 +1030,8 @@
         <apparelMoney>600~1000</apparelMoney>
         <weaponMoney>400~700</weaponMoney>
         <weaponTags>
-            <li MayRequire="Rick.FCP.EnergyWeapons">FCP_Flamer</li>
+            <li MayRequire="Rick.FCP.EnergyWeapons">FCP_Flame_Weapon</li>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_SMG</li>
-            <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Bladed</li>
-            <li>IndustrialGun</li>
-            <li>IndustrialMelee</li>
             <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
             <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
         </weaponTags>
@@ -1106,6 +1088,7 @@
     <!-- Forged Incinerator -->
     <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Forged_Incinerator_Pawn</defName>
+        <defaultFactionType>FCP_Faction_Forged</defaultFactionType>
         <label>Forged incinerator</label>
         <labelPlural>Forged incinerators</labelPlural>
         <combatPower>85</combatPower>
@@ -1114,11 +1097,9 @@
         <apparelMoney>700~1200</apparelMoney>
         <weaponMoney>500~900</weaponMoney>
         <weaponTags>
-            <li MayRequire="Rick.FCP.EnergyWeapons">FCP_Flamer</li>
+            <li MayRequire="Rick.FCP.EnergyWeapons">FCP_Flame_Weapon</li>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Assault_Rifle</li>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Shotgun</li>
-            <li>IndustrialGun</li>
-            <li>IndustrialMelee</li>
             <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
             <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
         </weaponTags>
@@ -1185,6 +1166,7 @@
     <!-- Scorpion Gang Leader -->
     <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Scorpion_Leader</defName>
+        <defaultFactionType>FCP_Faction_Scorpions</defaultFactionType>
         <label>Scorpion gang leader</label>
         <labelPlural>Scorpion gang leaders</labelPlural>
         <combatPower>95</combatPower>
@@ -1197,9 +1179,6 @@
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pistol</li>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_SMG</li>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Shotgun</li>
-            <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Bladed</li>
-            <li>IndustrialGun</li>
-            <li>IndustrialMelee</li>
             <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
             <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
         </weaponTags>
@@ -1260,6 +1239,7 @@
     <!-- Scorpion Street Thug -->
     <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Scorpion_Thug</defName>
+        <defaultFactionType>FCP_Faction_Scorpions</defaultFactionType>
         <label>Scorpion thug</label>
         <labelPlural>Scorpion thugs</labelPlural>
         <combatPower>60</combatPower>
@@ -1271,10 +1251,7 @@
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pipe_Weapons</li>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pistol</li>
             <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Makeshift</li>
-            <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Blunt</li>
             <li>Gun</li>
-            <li>MeleeIndustrial</li>
-            <li>NeolithicMelee</li>
         </weaponTags>
         <backstoryFiltersOverride>
             <li>
@@ -1333,6 +1310,7 @@
     <!-- Scorpion Chem Pusher -->
     <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Scorpion_ChemDealer</defName>
+        <defaultFactionType>FCP_Faction_Scorpions</defaultFactionType>
         <label>Scorpion chem pusher</label>
         <labelPlural>Scorpion chem pushers</labelPlural>
         <combatPower>50</combatPower>
@@ -1345,8 +1323,6 @@
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pistol</li>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_SMG</li>
             <li>Gun</li>
-            <li>MeleeIndustrial</li>
-            <li>NeolithicMelee</li>
         </weaponTags>
         <backstoryFiltersOverride>
             <li>
@@ -1389,6 +1365,7 @@
     <!-- Scorpion Muscle -->
     <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Scorpion_Enforcer</defName>
+        <defaultFactionType>FCP_Faction_Scorpions</defaultFactionType>
         <label>Scorpion enforcer</label>
         <labelPlural>Scorpion enforcers</labelPlural>
         <combatPower>70</combatPower>
@@ -1399,9 +1376,6 @@
         <weaponTags>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Shotgun</li>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_SMG</li>
-            <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Blunt</li>
-            <li>IndustrialGun</li>
-            <li>IndustrialMelee</li>
             <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
             <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
         </weaponTags>
@@ -1462,6 +1436,7 @@
     <!-- Scorpion Pickpocket -->
     <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Scorpion_Pickpocket_Pawn</defName>
+        <defaultFactionType>FCP_Faction_Scorpions</defaultFactionType>
         <label>Scorpion pickpocket</label>
         <labelPlural>Scorpion pickpockets</labelPlural>
         <combatPower>45</combatPower>
@@ -1474,8 +1449,6 @@
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pistol</li>
             <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Makeshift</li>
             <li>Gun</li>
-            <li>MeleeIndustrial</li>
-            <li>NeolithicMelee</li>
         </weaponTags>
         <backstoryFiltersOverride>
             <li>
@@ -1535,6 +1508,7 @@
     <!-- Fiend Overlord -->
     <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Fiend_Overlord</defName>
+        <defaultFactionType>FCP_Faction_Fiends</defaultFactionType>
         <label>Fiend overlord</label>
         <labelPlural>Fiend overlords</labelPlural>
         <combatPower>130</combatPower>
@@ -1545,14 +1519,15 @@
         <weaponMoney>900~1400</weaponMoney>
         <apparelTags>
             <li>FCP_Raider_Armor</li>
+            <li MayRequire="Rick.FCP.Wastelanders">FCP_Wastelander_Apparel</li>
         </apparelTags>
         <weaponTags>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Assault_Rifle</li>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Shotgun</li>
-            <li MayRequire="Rick.FCP.EnergyWeapons">FCP_Plasma_Rifle</li>
+            <li MayRequire="Rick.FCP.EnergyWeapons">FCP_Plasma_Weapon</li>
             <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Advanced</li>
             <li>IndustrialGunAdvanced</li>
-            <li>IndustrialMeleeAdvanced</li>
+            <li>MedievalMeleeAdvanced</li>
         </weaponTags>
         <backstoryFiltersOverride>
             <li>
@@ -1632,6 +1607,7 @@
     <!-- Fiend Berserker -->
     <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Fiend_Berserker</defName>
+        <defaultFactionType>FCP_Faction_Fiends</defaultFactionType>
         <label>Fiend berserker</label>
         <labelPlural>Fiend berserkers</labelPlural>
         <combatPower>95</combatPower>
@@ -1641,14 +1617,11 @@
         <weaponMoney>600~1000</weaponMoney>
         <apparelTags>
             <li>FCP_Raider_Armor</li>
+            <li MayRequire="Rick.FCP.Wastelanders">FCP_Wastelander_Apparel</li>
         </apparelTags>
         <weaponTags>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Shotgun</li>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_SMG</li>
-            <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Blunt</li>
-            <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Bladed</li>
-            <li>IndustrialGun</li>
-            <li>IndustrialMelee</li>
             <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
             <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
         </weaponTags>
@@ -1721,6 +1694,7 @@
     <!-- Fiend Junkie -->
     <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Fiend_Junkie</defName>
+        <defaultFactionType>FCP_Faction_Fiends</defaultFactionType>
         <label>Fiend junkie</label>
         <labelPlural>Fiend junkies</labelPlural>
         <combatPower>70</combatPower>
@@ -1730,13 +1704,12 @@
         <weaponMoney>350~600</weaponMoney>
         <apparelTags>
             <li>FCP_Raider_Armor</li>
+            <li MayRequire="Rick.FCP.Wastelanders">FCP_Wastelander_Apparel</li>
         </apparelTags>
         <weaponTags>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pipe_Weapons</li>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pistol</li>
             <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Makeshift</li>
-            <li>IndustrialGun</li>
-            <li>IndustrialMelee</li>
             <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
             <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
         </weaponTags>
@@ -1810,6 +1783,7 @@
     <!-- Fiend Slasher -->
     <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Fiend_Slasher</defName>
+        <defaultFactionType>FCP_Faction_Fiends</defaultFactionType>
         <label>Fiend slasher</label>
         <labelPlural>Fiend slashers</labelPlural>
         <combatPower>85</combatPower>
@@ -1819,13 +1793,10 @@
         <weaponMoney>500~800</weaponMoney>
         <apparelTags>
             <li>FCP_Raider_Armor</li>
+            <li MayRequire="Rick.FCP.Wastelanders">FCP_Wastelander_Apparel</li>
         </apparelTags>
         <weaponTags>
-            <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Bladed</li>
             <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Advanced</li>
-            <li MayRequire="Rick.FCP.UnarmedWeapons">FCP_Unarmed_Special</li>
-            <li>IndustrialGun</li>
-            <li>IndustrialMelee</li>
             <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
             <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
         </weaponTags>
@@ -1898,6 +1869,7 @@
     <!-- Fiend Gunner -->
     <PawnKindDef ParentName="FCP_RaiderBase">
         <defName>FCP_Fiend_Gunner</defName>
+        <defaultFactionType>FCP_Faction_Fiends</defaultFactionType>
         <label>Fiend gunner</label>
         <labelPlural>Fiend gunners</labelPlural>
         <combatPower>80</combatPower>
@@ -1907,14 +1879,13 @@
         <weaponMoney>550~900</weaponMoney>
         <apparelTags>
             <li>FCP_Raider_Armor</li>
+            <li MayRequire="Rick.FCP.Wastelanders">FCP_Wastelander_Apparel</li>
         </apparelTags>
         <weaponTags>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Assault_Rifle</li>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_SMG</li>
-            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_LMG</li>
-            <li MayRequire="Rick.FCP.EnergyWeapons">FCP_Laser_Rifle</li>
-            <li>IndustrialGun</li>
-            <li>IndustrialMelee</li>
+            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Light_Machine_Gun</li>
+            <li MayRequire="Rick.FCP.EnergyWeapons">FCP_Laser_Weapon</li>
             <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
             <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
         </weaponTags>
@@ -1983,6 +1954,463 @@
         <apparelRequired>
             <li>FCP_Apparel_Fiend_Battle_Helmet</li>
         </apparelRequired>
+    </PawnKindDef>
+
+    <!--___ Commonwealth Raiders ___-->
+    <!-- Commonwealth Raider Boss -->
+    <PawnKindDef ParentName="FCP_RaiderBase">
+        <defName>FCP_CommonwealthRaider_Boss</defName>
+        <defaultFactionType>FCP_Faction_CommonwealthRaiders</defaultFactionType>
+        <label>Commonwealth raider boss</label>
+        <labelPlural>Commonwealth raider bosses</labelPlural>
+        <combatPower>110</combatPower>
+        <canBeSapper>true</canBeSapper>
+        <itemQuality>Normal</itemQuality>
+        <gearHealthRange>0.7~1.7</gearHealthRange>
+        <apparelMoney>1000~1800</apparelMoney>
+        <weaponMoney>700~1100</weaponMoney>
+        <weaponTags>
+            <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Advanced</li>
+            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Shotgun</li>
+            <li>IndustrialGunAdvanced</li>
+            <li>MedievalMeleeAdvanced</li>
+        </weaponTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_CommonwealthRaiders</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <forcedTraits>
+            <li>
+                <def>Brawler</def>
+            </li>
+        </forcedTraits>
+        <initialWillRange>3~5</initialWillRange>
+        <initialResistanceRange>22~32</initialResistanceRange>
+        <inventoryOptions>
+            <skipChance>0.50</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>FCP_Currency_Caps</thingDef>
+                    <countRange>50~150</countRange>
+                </li>
+                <li>
+                    <thingDef>GoJuice</thingDef>
+                    <countRange>1~3</countRange>
+                </li>
+                <li MayRequire="Rick.FCP.Chems">
+                    <thingDef>FCP_Chem_Psycho</thingDef>
+                    <countRange>2~3</countRange>
+                </li>
+                <li MayRequire="Rick.FCP.WastelandFood">
+                    <thingDef>FCP_Food_Black_Blood_Sausage</thingDef>
+                    <countRange>1~2</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <apparelDisallowTags>
+            <li>FCP_BoS_Apparel</li>
+            <li>FCP_NCR_Apparel</li>
+            <li>FCP_Legion_Apparel</li>
+            <li>FCP_Enclave_Apparel</li>
+            <li>FCP_USA_Apparel</li>
+            <li>FCP_Minutemen_Combat_Armor_Modular</li>
+            <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+            <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
+        </apparelDisallowTags>
+    </PawnKindDef>
+
+    <!-- Commonwealth Raider Gunner -->
+    <PawnKindDef ParentName="FCP_RaiderBase">
+        <defName>FCP_CommonwealthRaider_Gunner</defName>
+        <defaultFactionType>FCP_Faction_CommonwealthRaiders</defaultFactionType>
+        <label>Commonwealth raider gunner</label>
+        <labelPlural>Commonwealth raider gunners</labelPlural>
+        <combatPower>80</combatPower>
+        <itemQuality>Poor</itemQuality>
+        <gearHealthRange>0.5~1.5</gearHealthRange>
+        <apparelMoney>600~1000</apparelMoney>
+        <weaponMoney>400~700</weaponMoney>
+        <weaponTags>
+            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Shotgun</li>
+            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pistol</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
+        </weaponTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_CommonwealthRaiders</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <initialWillRange>2~4</initialWillRange>
+        <initialResistanceRange>16~26</initialResistanceRange>
+        <inventoryOptions>
+            <skipChance>0.75</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>FCP_Currency_Caps</thingDef>
+                    <countRange>10~50</countRange>
+                </li>
+                <li MayRequire="Rick.FCP.WastelandFood">
+                    <thingDef>FCP_Food_Bug_Mush</thingDef>
+                    <countRange>1~2</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <apparelDisallowTags>
+            <li>FCP_BoS_Apparel</li>
+            <li>FCP_NCR_Apparel</li>
+            <li>FCP_Legion_Apparel</li>
+            <li>FCP_Enclave_Apparel</li>
+            <li>FCP_USA_Apparel</li>
+            <li>FCP_Minutemen_Combat_Armor_Modular</li>
+            <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+            <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
+        </apparelDisallowTags>
+    </PawnKindDef>
+
+    <!-- Commonwealth Raider Scrapper -->
+    <PawnKindDef ParentName="FCP_RaiderBase">
+        <defName>FCP_CommonwealthRaider_Scrapper</defName>
+        <defaultFactionType>FCP_Faction_CommonwealthRaiders</defaultFactionType>
+        <label>Commonwealth raider scrapper</label>
+        <labelPlural>Commonwealth raider scrappers</labelPlural>
+        <combatPower>85</combatPower>
+        <itemQuality>Poor</itemQuality>
+        <gearHealthRange>0.5~1.5</gearHealthRange>
+        <apparelMoney>600~1100</apparelMoney>
+        <weaponMoney>300~600</weaponMoney>
+        <weaponTags>
+            <li>MedievalMeleeAdvanced</li>
+        </weaponTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_CommonwealthRaiders</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <forcedTraits>
+            <li>
+                <def>Brawler</def>
+            </li>
+        </forcedTraits>
+        <initialWillRange>2~4</initialWillRange>
+        <initialResistanceRange>18~28</initialResistanceRange>
+        <inventoryOptions>
+            <skipChance>0.65</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>FCP_Currency_Caps</thingDef>
+                    <countRange>25~100</countRange>
+                </li>
+                <li MayRequire="Rick.FCP.WastelandFood">
+                    <thingDef>FCP_Food_Black_Blood_Sausage</thingDef>
+                    <countRange>1~2</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <apparelDisallowTags>
+            <li>FCP_BoS_Apparel</li>
+            <li>FCP_NCR_Apparel</li>
+            <li>FCP_Legion_Apparel</li>
+            <li>FCP_Enclave_Apparel</li>
+            <li>FCP_USA_Apparel</li>
+            <li>FCP_Minutemen_Combat_Armor_Modular</li>
+            <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+            <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
+        </apparelDisallowTags>
+    </PawnKindDef>
+
+    <!-- Commonwealth Raider Scout -->
+    <PawnKindDef ParentName="FCP_RaiderBase">
+        <defName>FCP_CommonwealthRaider_Scout</defName>
+        <defaultFactionType>FCP_Faction_CommonwealthRaiders</defaultFactionType>
+        <label>Commonwealth raider scout</label>
+        <labelPlural>Commonwealth raider scouts</labelPlural>
+        <combatPower>55</combatPower>
+        <trader>true</trader>
+        <itemQuality>Awful</itemQuality>
+        <gearHealthRange>0.3~1.3</gearHealthRange>
+        <apparelMoney>400~700</apparelMoney>
+        <weaponMoney>300~500</weaponMoney>
+        <weaponTags>
+            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pipe_Weapons</li>
+            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pistol</li>
+            <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Makeshift</li>
+            <li>Gun</li>
+        </weaponTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_CommonwealthRaiders</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~20</initialResistanceRange>
+        <inventoryOptions>
+            <skipChance>0.80</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>FCP_Currency_Caps</thingDef>
+                    <countRange>5~30</countRange>
+                </li>
+                <li MayRequire="Rick.FCP.WastelandFood">
+                    <thingDef>FCP_Food_Bug_Mush</thingDef>
+                    <countRange>1~2</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <apparelDisallowTags>
+            <li>FCP_BoS_Apparel</li>
+            <li>FCP_NCR_Apparel</li>
+            <li>FCP_Legion_Apparel</li>
+            <li>FCP_Enclave_Apparel</li>
+            <li>FCP_USA_Apparel</li>
+            <li>FCP_Minutemen_Combat_Armor_Modular</li>
+            <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+            <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
+        </apparelDisallowTags>
+    </PawnKindDef>
+
+    <!--___ Cannibals ___-->
+    <!-- Cannibal Butcher -->
+    <PawnKindDef ParentName="FCP_RaiderBase">
+        <defName>FCP_Cannibal_Butcher</defName>
+        <defaultFactionType>FCP_Faction_Cannibals</defaultFactionType>
+        <label>cannibal butcher</label>
+        <labelPlural>cannibal butchers</labelPlural>
+        <combatPower>100</combatPower>
+        <canBeSapper>true</canBeSapper>
+        <itemQuality>Normal</itemQuality>
+        <gearHealthRange>0.7~1.7</gearHealthRange>
+        <apparelMoney>900~1600</apparelMoney>
+        <weaponMoney>600~1000</weaponMoney>
+        <weaponTags>
+            <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Advanced</li>
+            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Shotgun</li>
+            <li>IndustrialGunAdvanced</li>
+            <li>MedievalMeleeAdvanced</li>
+        </weaponTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Cannibals</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <forcedTraits>
+            <li>
+                <def>Cannibal</def>
+            </li>
+            <li>
+                <def>Psychopath</def>
+            </li>
+        </forcedTraits>
+        <initialWillRange>3~5</initialWillRange>
+        <initialResistanceRange>20~30</initialResistanceRange>
+        <inventoryOptions>
+            <skipChance>0.65</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>FCP_Currency_Caps</thingDef>
+                    <countRange>25~100</countRange>
+                </li>
+                <li MayRequire="Rick.FCP.WastelandFood">
+                    <thingDef>FCP_Food_Black_Blood_Sausage</thingDef>
+                    <countRange>1~2</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <apparelDisallowTags>
+            <li>FCP_BoS_Apparel</li>
+            <li>FCP_NCR_Apparel</li>
+            <li>FCP_Legion_Apparel</li>
+            <li>FCP_Enclave_Apparel</li>
+            <li>FCP_USA_Apparel</li>
+            <li>FCP_Minutemen_Combat_Armor_Modular</li>
+            <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+            <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
+        </apparelDisallowTags>
+    </PawnKindDef>
+
+    <!-- Cannibal Stalker -->
+    <PawnKindDef ParentName="FCP_RaiderBase">
+        <defName>FCP_Cannibal_Stalker</defName>
+        <defaultFactionType>FCP_Faction_Cannibals</defaultFactionType>
+        <label>cannibal stalker</label>
+        <labelPlural>cannibal stalkers</labelPlural>
+        <combatPower>75</combatPower>
+        <itemQuality>Poor</itemQuality>
+        <gearHealthRange>0.5~1.5</gearHealthRange>
+        <apparelMoney>600~1000</apparelMoney>
+        <weaponMoney>400~700</weaponMoney>
+        <weaponTags>
+            <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Makeshift</li>
+            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pistol</li>
+        </weaponTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Cannibals</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <forcedTraits>
+            <li>
+                <def>Cannibal</def>
+            </li>
+        </forcedTraits>
+        <initialWillRange>2~4</initialWillRange>
+        <initialResistanceRange>15~25</initialResistanceRange>
+        <inventoryOptions>
+            <skipChance>0.75</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>FCP_Currency_Caps</thingDef>
+                    <countRange>10~50</countRange>
+                </li>
+                <li MayRequire="Rick.FCP.WastelandFood">
+                    <thingDef>FCP_Food_Bug_Mush</thingDef>
+                    <countRange>1~2</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <apparelDisallowTags>
+            <li>FCP_BoS_Apparel</li>
+            <li>FCP_NCR_Apparel</li>
+            <li>FCP_Legion_Apparel</li>
+            <li>FCP_Enclave_Apparel</li>
+            <li>FCP_USA_Apparel</li>
+            <li>FCP_Minutemen_Combat_Armor_Modular</li>
+            <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+            <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
+        </apparelDisallowTags>
+    </PawnKindDef>
+
+    <!-- Cannibal Skinner -->
+    <PawnKindDef ParentName="FCP_RaiderBase">
+        <defName>FCP_Cannibal_Skinner</defName>
+        <defaultFactionType>FCP_Faction_Cannibals</defaultFactionType>
+        <label>cannibal skinner</label>
+        <labelPlural>cannibal skinners</labelPlural>
+        <combatPower>55</combatPower>
+        <trader>true</trader>
+        <itemQuality>Awful</itemQuality>
+        <gearHealthRange>0.3~1.3</gearHealthRange>
+        <apparelMoney>400~700</apparelMoney>
+        <weaponMoney>300~500</weaponMoney>
+        <weaponTags>
+            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pipe_Weapons</li>
+            <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Makeshift</li>
+            <li>Gun</li>
+        </weaponTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Cannibals</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <forcedTraits>
+            <li>
+                <def>Cannibal</def>
+            </li>
+        </forcedTraits>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~20</initialResistanceRange>
+        <inventoryOptions>
+            <skipChance>0.80</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>FCP_Currency_Caps</thingDef>
+                    <countRange>5~30</countRange>
+                </li>
+                <li MayRequire="Rick.FCP.WastelandFood">
+                    <thingDef>FCP_Food_Bug_Mush</thingDef>
+                    <countRange>1~2</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <apparelDisallowTags>
+            <li>FCP_BoS_Apparel</li>
+            <li>FCP_NCR_Apparel</li>
+            <li>FCP_Legion_Apparel</li>
+            <li>FCP_Enclave_Apparel</li>
+            <li>FCP_USA_Apparel</li>
+            <li>FCP_Minutemen_Combat_Armor_Modular</li>
+            <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+            <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
+        </apparelDisallowTags>
+    </PawnKindDef>
+
+    <!-- Cannibal Brute -->
+    <PawnKindDef ParentName="FCP_RaiderBase">
+        <defName>FCP_Cannibal_Brute</defName>
+        <defaultFactionType>FCP_Faction_Cannibals</defaultFactionType>
+        <label>cannibal brute</label>
+        <labelPlural>cannibal brutes</labelPlural>
+        <combatPower>90</combatPower>
+        <itemQuality>Poor</itemQuality>
+        <gearHealthRange>0.5~1.5</gearHealthRange>
+        <apparelMoney>600~1100</apparelMoney>
+        <weaponMoney>300~600</weaponMoney>
+        <weaponTags>
+            <li>MedievalMeleeAdvanced</li>
+        </weaponTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Cannibals</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <forcedTraits>
+            <li>
+                <def>Cannibal</def>
+            </li>
+            <li>
+                <def>Brawler</def>
+            </li>
+        </forcedTraits>
+        <initialWillRange>2~4</initialWillRange>
+        <initialResistanceRange>18~28</initialResistanceRange>
+        <inventoryOptions>
+            <skipChance>0.65</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>FCP_Currency_Caps</thingDef>
+                    <countRange>25~100</countRange>
+                </li>
+                <li MayRequire="Rick.FCP.WastelandFood">
+                    <thingDef>FCP_Food_Black_Blood_Sausage</thingDef>
+                    <countRange>1~2</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <apparelDisallowTags>
+            <li>FCP_BoS_Apparel</li>
+            <li>FCP_NCR_Apparel</li>
+            <li>FCP_Legion_Apparel</li>
+            <li>FCP_Enclave_Apparel</li>
+            <li>FCP_USA_Apparel</li>
+            <li>FCP_Minutemen_Combat_Armor_Modular</li>
+            <li>FCP_Weapon_USA_Alloy_Steel_Assault_Rifle</li>
+            <li>FCP_Great_Khan_Armor</li>
+            <li>FCP_Great_Khan_Helmet</li>
+        </apparelDisallowTags>
     </PawnKindDef>
 
 </Defs>

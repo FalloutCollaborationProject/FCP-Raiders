@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<!--_____ Raider Armor (FoNV) _____-->
+	<!--_____ Raider Armor _____-->
 
 	<!-- Base -->
 	
@@ -21,7 +21,7 @@
 		</thingCategories>
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
-			<WorkToMake>4600</WorkToMake>			<!-- Cheap and quickly made but bad for protection -->
+			<WorkToMake>4600</WorkToMake>
 			<Mass>1</Mass>
 			<MarketValue>70</MarketValue>
 			<ArmorRating_Sharp>0.70</ArmorRating_Sharp>

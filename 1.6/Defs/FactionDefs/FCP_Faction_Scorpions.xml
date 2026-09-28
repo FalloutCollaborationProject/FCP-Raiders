@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Scorpions __________-->
+
+    <FactionDef ParentName="FactionBase">
+        <defName>FCP_Faction_Scorpions</defName>
+        <label>the Scorpions</label>
+        <description>The Scorpions don't hold ground, they don't need to. They run protection money, fence stolen goods, and collect on debts, working out of whatever building they've leaned on this week instead of a settlement anyone could find and burn down. Cross them and you don't get raided so much as quietly ruined.</description>
+        <colorSpectrum>
+            <li>(0.35, 0.15, 0.4)</li>
+        </colorSpectrum>
+        <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+        <pawnSingular>Scorpion</pawnSingular>
+        <pawnsPlural>Scorpions</pawnsPlural>
+        <categoryTag>Outlander</categoryTag>
+        <settlementGenerationWeight>0.02</settlementGenerationWeight>
+        <requiredCountAtGameStart>0</requiredCountAtGameStart>
+        <naturalEnemy>true</naturalEnemy>
+        <permanentEnemy>true</permanentEnemy>
+        <canSiege>true</canSiege>
+        <canStageAttacks>true</canStageAttacks>
+        <leaderTitle>The Fixer</leaderTitle>
+        <factionIconPath>World_Icon/Raider_Icon/FCP_Raider_World_Icon</factionIconPath>
+        <techLevel>Industrial</techLevel>
+        <fixedName>The Scorpions</fixedName>
+        <settlementNameMaker>FCP_Namer_Settlement_Raiders</settlementNameMaker>
+        <allowedCultures>
+            <li>FCP_Culture_Raider</li>
+        </allowedCultures>
+        <fixedLeaderKinds>
+            <li>FCP_Unique_Pawnkind_Scorpion_Yvette</li>
+        </fixedLeaderKinds>
+
+        <!--__________ Ideology __________-->
+
+        <fixedIdeo>true</fixedIdeo>
+        <ideoName>The Deal</ideoName>
+        <ideoDescription>The Scorpions believe territory is a liability; leverage is what actually keeps a gang fed. Everything is a transaction, every favor has a price, and the only real loyalty is to whoever's currently making them richer.</ideoDescription>
+        <styles>
+            <li>FCP_Style_Raider</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Morbid</li>
+        </styles>
+        <forcedMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+        </forcedMemes>
+        <requiredPreceptsOnly>true</requiredPreceptsOnly>
+
+        <!--__________ Biotech __________-->
+
+        <xenotypeSet>
+            <xenotypeChances>
+                <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
+                <Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
+                <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+                <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+                <Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+                <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+                <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+            </xenotypeChances>
+        </xenotypeSet>
+
+        <!--__________ Backstories __________-->
+
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>FCP_Backstory_Scorpions</li>
+                    <li>FCP_Backstory_Raiders_Child</li>
+                </categories>
+                <commonality>1</commonality>
+            </li>
+        </backstoryFilters>
+
+        <!--__________ Kinds __________-->
+
+        <caravanTraderKinds>
+        </caravanTraderKinds>
+
+        <visitorTraderKinds>
+        </visitorTraderKinds>
+
+        <baseTraderKinds>
+        </baseTraderKinds>
+
+        <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+        <raidLootMaker>FCP_RaiderRaidLootMaker</raidLootMaker>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(0,55)</li>
+                <li>(70, 75)</li>
+                <li>(700, 100)</li>
+                <li>(1300, 150)</li>
+                <li>(100000, 10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+
+        <!--__________ Group Makers __________-->
+
+        <pawnGroupMakers>
+
+            <li Class="FCP.Core.GroupMakerWithCustomChar">
+                <kindDef>Combat</kindDef>
+                <disallowedStrategies>
+                    <li>EmergeFromWater</li>
+                </disallowedStrategies>
+                <options>
+                    <FCP_Scorpion_Thug>12</FCP_Scorpion_Thug>
+                    <FCP_Scorpion_Enforcer>8</FCP_Scorpion_Enforcer>
+                    <FCP_Scorpion_Pickpocket_Pawn>6</FCP_Scorpion_Pickpocket_Pawn>
+                    <FCP_Scorpion_ChemDealer>4</FCP_Scorpion_ChemDealer>
+                    <FCP_Scorpion_Leader>2</FCP_Scorpion_Leader>
+                </options>
+                <characterDefs>
+                    <li>FCP_Character_Scorpion_Roller</li>
+                </characterDefs>
+                <characterChance>0.15</characterChance>
+            </li>
+
+            <li>
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <FCP_Unique_Pawnkind_Scorpion_Yvette>1</FCP_Unique_Pawnkind_Scorpion_Yvette>
+                    <FCP_Scorpion_Leader>3</FCP_Scorpion_Leader>
+                    <FCP_Scorpion_Thug>8</FCP_Scorpion_Thug>
+                </options>
+            </li>
+
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <FCP_Scorpion_Leader>2</FCP_Scorpion_Leader>
+                    <FCP_Scorpion_ChemDealer>4</FCP_Scorpion_ChemDealer>
+                    <FCP_Scorpion_Thug>10</FCP_Scorpion_Thug>
+                    <FCP_Scorpion_Pickpocket_Pawn>6</FCP_Scorpion_Pickpocket_Pawn>
+                    <FCP_Scorpion_Enforcer>8</FCP_Scorpion_Enforcer>
+                </options>
+            </li>
+
+        </pawnGroupMakers>
+        <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+        <modExtensions Inherit="False">
+            <li Class="FCP.Factions.FactionExtension_FlavorOverride">
+                <newLabel>The Scorpions</newLabel>
+            </li>
+            <li Class="FCP.Factions.FactionExtension_BannedArrivalModes">
+                <arrivalModes>
+                    <li>EdgeDrop</li>
+                    <li>EdgeDropGroups</li>
+                    <li>CenterDrop</li>
+                    <li>RandomDrop</li>
+                </arrivalModes>
+            </li>
+            <li Class="FCP.Factions.FactionExtension_FixedIdeo">
+                <ideoIconDef>ScarHands</ideoIconDef>
+                <ideoColorDef>DarkPurple</ideoColorDef>
+                <memberName>Scorpion</memberName>
+                <adjective>Scorpion</adjective>
+                <roleOverrides>
+                    <li>
+                        <preceptDef>IdeoRole_Leader</preceptDef>
+                        <newName>The Fixer</newName>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_Moralist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_ShootingSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_MeleeSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_ResearchSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_PlantSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_ProductionSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_MiningSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_AnimalsSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                    <li>
+                        <preceptDef>IdeoRole_MedicalSpecialist</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
+                    </li>
+                </roleOverrides>
+            </li>
+            <li Class="FCP.Factions.FactionExtension_PermanentlyHostileTo">
+                <hostileFactionDefs>
+                    <li>FCP_Faction_CommonwealthRaiders</li>
+                </hostileFactionDefs>
+            </li>
+            <li Class="FCP.Factions.FactionExtension_SettlementControl">
+                <maxSettlements>0</maxSettlements>
+            </li>
+        </modExtensions>
+    </FactionDef>
+
+</Defs>
