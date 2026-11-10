@@ -5,7 +5,7 @@
 
 	<!-- Base -->
 	
-	<ThingDef Name="FCP_Raider_Armor_Base" ParentName="FCP_Apparel_Makeable_Base" Abstract="True">
+	<ThingDef Name="FCP_Raider_Armor_Base" ParentName="FCP_Armor_Machineable_Base" Abstract="True">
 		<smeltable>false</smeltable>
 		<recipeMaker Inherit= "false">
 			<skillRequirements>
@@ -16,9 +16,6 @@
 		<costList>
 			<Cloth>60</Cloth>
 		</costList>
-		<thingCategories>
-			<li>ApparelArmor</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
 			<WorkToMake>4600</WorkToMake>			<!-- Cheap and quickly made but bad for protection -->

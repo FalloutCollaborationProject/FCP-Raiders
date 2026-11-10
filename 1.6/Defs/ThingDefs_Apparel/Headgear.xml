@@ -5,7 +5,7 @@
 
     <!-- Raider Base -->
 
-    <ThingDef Name="FCP_Raider_Helmet_Base" ParentName="FCP_Hat_Makeable_Base" Abstract="True">
+    <ThingDef Name="FCP_Raider_Helmet_Base" ParentName="FCP_Armor_Helmet_Makeable_Base" Abstract="True">
         <smeltable>false</smeltable>
         <recipeMaker>
             <skillRequirements>
@@ -16,9 +16,6 @@
         <costList>
             <Cloth>15</Cloth>
         </costList>
-        <thingCategories>
-            <li>ApparelArmor</li>
-        </thingCategories>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
             <WorkToMake>1200</WorkToMake>
@@ -49,7 +46,7 @@
 
     <!-- Fiend Base -->
 
-    <ThingDef Name="FCP_Fiend_Helmet_Base" ParentName="FCP_Hat_Makeable_Base" Abstract="True">
+    <ThingDef Name="FCP_Fiend_Helmet_Base" ParentName="FCP_Armor_Helmet_Makeable_Base" Abstract="True">
         <smeltable>false</smeltable>
         <recipeMaker>
             <skillRequirements>
@@ -60,9 +57,6 @@
         <costList>
             <Cloth>15</Cloth>
         </costList>
-        <thingCategories>
-            <li>ApparelArmor</li>
-        </thingCategories>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
             <WorkToMake>3600</WorkToMake>
@@ -234,7 +228,7 @@
 
     <!-- Sack Hood -->
 
-    <ThingDef ParentName="FCP_Hat_Makeable_Base">
+    <ThingDef ParentName="FCP_Raider_Helmet_Base">
         <defName>FCP_Apparel_Sack_Hood</defName>
         <description>A simple hood often worn by raiders. It provides barely any protection against bullets but is (barely) better than no helmet at all.</description>
         <label>Sack Hood</label>
@@ -252,9 +246,6 @@
         <costList>
             <Cloth>25</Cloth>
         </costList>
-        <thingCategories>
-            <li>ApparelArmor</li>
-        </thingCategories>
         <statBases>
             <MaxHitPoints>200</MaxHitPoints>
             <WorkToMake>4000</WorkToMake>
