@@ -247,7 +247,7 @@
 			<EquipDelay>1.2</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.5</MoveSpeed>
+			<MoveSpeed>-0.05</MoveSpeed>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
