@@ -228,7 +228,7 @@
 
     <!-- Sack Hood -->
 
-    <ThingDef ParentName="FCP_Hat_Makeable_Base">
+    <ThingDef ParentName="FCP_Raider_Helmet_Base">
         <defName>FCP_Apparel_Sack_Hood</defName>
         <description>A simple hood often worn by raiders. It provides barely any protection against bullets but is (barely) better than no helmet at all.</description>
         <label>Sack Hood</label>
@@ -246,9 +246,6 @@
         <costList>
             <Cloth>25</Cloth>
         </costList>
-        <thingCategories>
-            <li>ApparelArmor</li>
-        </thingCategories>
         <statBases>
             <MaxHitPoints>200</MaxHitPoints>
             <WorkToMake>4000</WorkToMake>
