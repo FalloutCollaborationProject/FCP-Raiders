@@ -32,8 +32,8 @@
         <missionsMenuDescriptionKey>FCP_Raiders_Menu_Missions_Desc</missionsMenuDescriptionKey>
         <missionsMenuSelectQuestKey>FCP_Raiders_Menu_Missions_Select_Quest</missionsMenuSelectQuestKey>
         <missionsMenuStartQuestKey>FCP_Raiders_Menu_Missions_Start_Quest</missionsMenuStartQuestKey>
-        <missionsQuestCost>40</missionsQuestCost>
-        <missionsMenuStartQuestNoEnoughMoneyKey>FCP_Raiders_Not_Enough_Money</missionsMenuStartQuestNoEnoughMoneyKey>
+        <missionsBountyRewardRange>30~80</missionsBountyRewardRange>
+        <missionsMenuCollectBountyKey>FCP_Raiders_Menu_Missions_Collect_Bounty</missionsMenuCollectBountyKey>
 
         <!-- Salary Options -->
 

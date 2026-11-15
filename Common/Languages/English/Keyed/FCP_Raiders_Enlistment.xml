@@ -20,8 +20,8 @@
 	<FCP_Raiders_Missions_Desc>Task descriptions</FCP_Raiders_Missions_Desc>
 	<FCP_Raiders_Menu_Missions_Desc>Someone in the gang's looking for an extra pair of hands, no questions asked.</FCP_Raiders_Menu_Missions_Desc>
 	<FCP_Raiders_Menu_Missions_Select_Quest>Select a Task: </FCP_Raiders_Menu_Missions_Select_Quest>
-	<FCP_Raiders_Menu_Missions_Start_Quest>Start Task ({0})</FCP_Raiders_Menu_Missions_Start_Quest>
-	<FCP_Raiders_Not_Enough_Money>Not enough caps</FCP_Raiders_Not_Enough_Money>
+	<FCP_Raiders_Menu_Missions_Start_Quest>Start Task</FCP_Raiders_Menu_Missions_Start_Quest>
+	<FCP_Raiders_Menu_Missions_Collect_Bounty>Collect Payment</FCP_Raiders_Menu_Missions_Collect_Bounty>
 
 	<!-- Salary Options -->
 
