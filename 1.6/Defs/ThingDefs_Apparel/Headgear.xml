@@ -5,7 +5,7 @@
 
     <!-- Raider Base -->
 
-    <ThingDef Name="FCP_Raider_Helmet_Base" ParentName="FCP_Hat_Makeable_Base" Abstract="True">
+    <ThingDef Name="FCP_Raider_Helmet_Base" ParentName="FCP_Armor_Helmet_Makeable_Base" Abstract="True">
         <smeltable>false</smeltable>
         <recipeMaker>
             <skillRequirements>
@@ -16,9 +16,6 @@
         <costList>
             <Cloth>15</Cloth>
         </costList>
-        <thingCategories>
-            <li>ApparelArmor</li>
-        </thingCategories>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
             <WorkToMake>1200</WorkToMake>
@@ -49,7 +46,7 @@
 
     <!-- Fiend Base -->
 
-    <ThingDef Name="FCP_Fiend_Helmet_Base" ParentName="FCP_Hat_Makeable_Base" Abstract="True">
+    <ThingDef Name="FCP_Fiend_Helmet_Base" ParentName="FCP_Armor_Helmet_Makeable_Base" Abstract="True">
         <smeltable>false</smeltable>
         <recipeMaker>
             <skillRequirements>
@@ -60,9 +57,6 @@
         <costList>
             <Cloth>15</Cloth>
         </costList>
-        <thingCategories>
-            <li>ApparelArmor</li>
-        </thingCategories>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
             <WorkToMake>3600</WorkToMake>
@@ -76,7 +70,7 @@
         <equippedStatOffsets>
             <ShootingAccuracyPawn>0.05</ShootingAccuracyPawn>
         </equippedStatOffsets>
-        <apparel>40
+        <apparel>
             <bodyPartGroups>
                 <li>UpperHead</li>
             </bodyPartGroups>

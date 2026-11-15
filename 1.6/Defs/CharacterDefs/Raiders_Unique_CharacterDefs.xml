@@ -199,7 +199,7 @@
             <li Class="FCP.Core.CharacterAppearanceDefinition">
                 <hairColor>(60, 55, 45)</hairColor>
                 <hairDef>Bald</hairDef>
-                <beardDef>NoBeard</beardDef>
+                <beardDef>FCP_Beard_Rough_Beard</beardDef>
                 <bodyTypeDef>Male</bodyTypeDef>
             </li>
         </definitions>
