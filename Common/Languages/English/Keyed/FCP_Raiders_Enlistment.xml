@@ -12,7 +12,7 @@
 	<FCP_Raiders_Enlist_Button_Label>Join the gang.</FCP_Raiders_Enlist_Button_Label>
 	<FCP_Raiders_Enlist_Button_Desc>Throw in with this raider gang.</FCP_Raiders_Enlist_Button_Desc>
 	<FCP_Raiders_Enlist_Requrements_Not_Satisfied>You need to have minimum of -10 goodwill, currently you have only {0} goodwill.</FCP_Raiders_Enlist_Requrements_Not_Satisfied>
-	<FCP_Raiders_Enlisted_With_Key>Enlisted with: The Raiders</FCP_Raiders_Enlisted_With_Key>
+	<FCP_Raiders_Enlisted_With_Key>Enlisted with: {FACTION_name}</FCP_Raiders_Enlisted_With_Key>
 
 	<!-- Mission Options -->
 
@@ -20,14 +20,9 @@
 	<FCP_Raiders_Missions_Desc>Task descriptions</FCP_Raiders_Missions_Desc>
 	<FCP_Raiders_Menu_Missions_Desc>Someone in the gang's looking for an extra pair of hands, no questions asked.</FCP_Raiders_Menu_Missions_Desc>
 	<FCP_Raiders_Menu_Missions_Select_Quest>Select a Task: </FCP_Raiders_Menu_Missions_Select_Quest>
-<<<<<<< HEAD
 	<FCP_Raiders_Menu_Missions_Start_Quest>Accept Task</FCP_Raiders_Menu_Missions_Start_Quest>
 	<FCP_Raiders_Menu_Missions_Collect_Bounty>Get Paid</FCP_Raiders_Menu_Missions_Collect_Bounty>
 	<FCP_Raiders_Not_Enough_Money>Not enough caps</FCP_Raiders_Not_Enough_Money>
-=======
-	<FCP_Raiders_Menu_Missions_Start_Quest>Start Task</FCP_Raiders_Menu_Missions_Start_Quest>
-	<FCP_Raiders_Menu_Missions_Collect_Bounty>Collect Payment</FCP_Raiders_Menu_Missions_Collect_Bounty>
->>>>>>> 0fbe97586a04091c9e1db35b8656a7f8c6161999
 
 	<!-- Salary Options -->
 

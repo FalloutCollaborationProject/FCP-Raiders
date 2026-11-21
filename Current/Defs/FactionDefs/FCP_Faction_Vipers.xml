@@ -208,6 +208,13 @@
                     <li>FCP_Faction_Jackals</li>
                 </hostileFactionDefs>
             </li>
+            <!-- Enlistment stuff -->
+            <li Class="FCP.Enlist.FactionEnlistOptions">
+                <enlistOptionsDefs>
+                    <li>FCP_Enlistment_Raiders</li>
+                </enlistOptionsDefs>
+                <ignoreAutoAssignedDefs>true</ignoreAutoAssignedDefs>
+            </li>
         </modExtensions>
     </FactionDef>
 
